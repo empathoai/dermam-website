@@ -1,0 +1,266 @@
+import { HubPageContent } from '../types/hub';
+import { siteConfig } from './siteConfig';
+
+export const facialHubContent: HubPageContent = {
+  type: 'facial',
+  seo: {
+    title: 'Tratamientos Faciales West Palm Beach | DERMA.M',
+    description: 'Tratamientos faciales en West Palm Beach con diagnóstico personalizado. PRF, limpieza facial, microneedling, manchas y acné. Evalúa tu piel gratis.',
+    canonical: 'https://dermamskinhealth.com/es/tratamientos-faciales/',
+    hreflangEs: 'https://dermamskinhealth.com/es/tratamientos-faciales/',
+    hreflangEn: 'https://dermamskinhealth.com/en/facial-treatments/',
+    ogImage: 'https://dermamskinhealth.com/og/tratamientos-faciales.jpg'
+  },
+  hero: {
+    eyebrow: 'West Palm Beach · MedSpa Certificado',
+    headline: 'Tratamientos Faciales en DERMA.M',
+    subheadline: 'Protocolos clínicos para cada tipo de piel. Diagnóstico personalizado antes de cualquier tratamiento.',
+    ctaLabel: 'Evalúa tu piel — gratis',
+    trustLine: '⭐ 4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
+    image: {
+      src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?q=80&w=2070&auto=format&fit=crop',
+      alt: 'Tratamiento facial en DERMA.M',
+      prompt: 'Bright premium medical aesthetics facial treatment hero image, calm woman receiving a gentle facial treatment in a clean ivory treatment room, white headband, luminous realistic skin, soft sage and pearl gray accents, warm natural light, botanical minimal decor, professional DERMA.M-style medspa environment, clinical but welcoming, no redness, no harsh tools, no aggressive procedure, no dark background, 16:9 horizontal.'
+    }
+  },
+  intro: {
+    stats: [
+      { value: '10+', label: 'Años de experiencia' },
+      { value: '1,000+', label: 'Pacientes atendidas' },
+      { value: '100%', label: 'Diagnóstico personalizado' }
+    ],
+    benefits: [
+      {
+        title: 'Diagnóstico antes de tratamiento',
+        description: 'Evaluamos tu piel antes de recomendar cualquier protocolo. Sin suposiciones.'
+      },
+      {
+        title: 'Protocolos clínicos certificados',
+        description: 'Cada tratamiento sigue un protocolo médico-estético validado. No improvisamos.'
+      },
+      {
+        title: 'Resultados documentados',
+        description: 'Antes y después reales de pacientes atendidas en DERMA.M West Palm Beach.'
+      }
+    ]
+  },
+  featured: {
+    headline: 'Nuestros tratamientos principales',
+    subheadline: 'Los protocolos más solicitados en DERMA.M West Palm Beach',
+    items: [
+      {
+        id: 'prf',
+        title: 'Plasma Rico en Plaquetas y Fibrina',
+        description: 'Regeneración facial avanzada desde la primera sesión.',
+        ctaLabel: 'Ver tratamiento →',
+        href: '/es/plasma-rico-en-plaquetas-west-palm-beach',
+        badge: 'Más solicitado',
+        image: {
+          src: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+          alt: 'Tratamiento PRF',
+          prompt: 'Premium clinical aesthetics editorial photo, gloved hands holding a small PRP/PRF vial with golden plasma layer, clean ivory clinical surface, soft natural light, blurred centrifuge in background, elegant medical precision, no visible blood spill, no aggressive needle, no patient face, pastel ivory and soft sage environment, luxury skincare clinic photography, realistic, calm, professional, 4:3 ratio.'
+        }
+      },
+      {
+        id: 'limpieza-profunda',
+        title: 'Limpieza Facial Profunda',
+        description: 'El primer paso para conocer y cuidar tu piel.',
+        ctaLabel: 'Ver tratamiento →',
+        href: '/es/limpieza-facial-profunda',
+        badge: 'Ideal para empezar',
+        image: {
+          src: 'https://images.unsplash.com/photo-1570172619669-df427613e200?q=80&w=2070&auto=format&fit=crop',
+          alt: 'Limpieza Facial Profunda',
+          prompt: 'Premium deep facial cleansing treatment editorial photo, woman lying down with white headband receiving a gentle cleansing or hydrating treatment, luminous natural skin, soft white treatment room, pastel sage accents, no pore extraction, no redness, no harsh tools, calm luxury skincare photography, 4:3 ratio.'
+        }
+      },
+      {
+        id: 'microneedling',
+        title: 'Microneedling',
+        description: 'Textura, poros y cicatrices de acné con resultados progresivos.',
+        ctaLabel: 'Ver tratamiento →',
+        href: '/es/reservar',
+        image: {
+          src: 'https://images.unsplash.com/photo-1629299443270-e67c9d96fb57?q=80&w=2070&auto=format&fit=crop',
+          alt: 'Tratamiento Microneedling',
+          prompt: 'Premium microneedling facial treatment editorial image, professional hands using a modern dermapen device near client’s cheek, client calm with white headband, clean ivory clinical room, soft sage accents, no blood, no redness, no pain expression, high-end medspa photography, 4:3 ratio.'
+        }
+      }
+    ]
+  },
+  allGrid: {
+    headline: 'Todos nuestros tratamientos faciales',
+    items: [
+      {
+        id: 'limpieza-grid',
+        title: 'Limpieza Facial Profunda',
+        category: 'Limpieza clínica',
+        ctaLabel: 'Ver más →',
+        href: '/es/limpieza-facial-profunda',
+        image: {
+          src: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2020&auto=format&fit=crop',
+          alt: 'Limpieza Facial',
+          prompt: 'High-end facial cleansing icon-style photo, water splashes, clear skin, ivory background.'
+        }
+      },
+      {
+        id: 'hidrofacial',
+        title: 'Hidrofacial',
+        category: 'Hidratación',
+        ctaLabel: 'Ver más →',
+        href: '/es/reservar',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512290903422-d122bb416e78?q=80&w=2070&auto=format&fit=crop',
+          alt: 'Hidrofacial',
+          prompt: 'Premium hydrofacial skincare treatment image, soft hydrating facial device gently used on client’s cheek, white headband, luminous skin, clean ivory room, watery blue-green and sage accents, luxury medspa photography, no redness, no harsh suction close-up, 4:3 ratio.'
+        }
+      },
+      {
+        id: 'peel-coreano',
+        title: 'Peel Coreano',
+        category: 'Exfoliación',
+        ctaLabel: 'Ver más →',
+        href: '/es/reservar',
+        image: {
+          src: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1974&auto=format&fit=crop',
+          alt: 'Peel Coreano',
+          prompt: 'Premium Korean peel skincare image, aesthetic specialist applying a gentle transparent peel solution with soft brush, client calm, luminous skin, clean white linens, pastel sage and ivory room, no peeling skin, no irritation, elegant clinical spa photography, 4:3 ratio.'
+        }
+      },
+      {
+        id: 'oxigenoterapia',
+        title: 'Oxigenoterapia Facial',
+        category: 'Vitalidad',
+        ctaLabel: 'Ver más →',
+        href: '/es/reservar',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512290746422-3c02fc33a822?q=80&w=2070&auto=format&fit=crop',
+          alt: 'Oxigenoterapia',
+          prompt: 'Premium oxygen facial therapy image, soft oxygen infusion device near client’s face, clean ivory treatment room, white headband, gentle light, pastel sage accents, calm professional medspa atmosphere, no hospital equipment feeling, 4:3 ratio.'
+        }
+      },
+      {
+        id: 'radiofrecuencia',
+        title: 'Radiofrecuencia Facial',
+        category: 'Firmeza',
+        ctaLabel: 'Ver más →',
+        href: '/es/reservar',
+        image: {
+          src: 'https://images.unsplash.com/photo-1522335789203-aa9fb3922df2?q=80&w=2070&auto=format&fit=crop',
+          alt: 'Radiofrecuencia',
+          prompt: 'Premium radiofrequency facial treatment image, aesthetic device gently applied to jawline or cheek, client calm, clean ivory medspa room, warm natural light, soft sage accents, no redness, no pain, no aggressive machine look, 4:3 ratio.'
+        }
+      },
+      {
+        id: 'acne',
+        title: 'Tratamiento de Acné',
+        category: 'Cuidado clínico',
+        ctaLabel: 'Ver más →',
+        href: '/es/reservar',
+        image: {
+          src: 'https://images.unsplash.com/photo-1505944270255-bd2b896e3ad3?q=80&w=2070&auto=format&fit=crop',
+          alt: 'Tratamiento Acné',
+          prompt: 'Premium acne care facial consultation image, aesthetic specialist examining skin gently under soft clinical light, calm patient with natural skin texture, no graphic acne close-up, no inflamed skin dramatization, clean ivory and sage clinic environment, professional and reassuring, 4:3 ratio.'
+        }
+      },
+      {
+        id: 'manchas',
+        title: 'Tratamiento de Manchas',
+        category: 'Despigmentación',
+        ctaLabel: 'Ver más →',
+        href: '/es/reservar',
+        image: {
+          src: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop',
+          alt: 'Tratamiento Manchas',
+          prompt: 'Premium facial pigmentation treatment consultation image, aesthetic specialist reviewing skin tone with client using mirror or tablet, warm ivory room, sage accents, natural skin texture, no harsh before-after, no dramatic pigmentation close-up, professional skincare clinic atmosphere, 4:3 ratio.'
+        }
+      },
+      {
+        id: 'rejuvenecimiento',
+        title: 'Rejuvenecimiento / Lifting',
+        category: 'Antiedad',
+        ctaLabel: 'Ver más →',
+        href: '/es/reservar',
+        image: {
+          src: 'https://images.unsplash.com/photo-1498842812179-c81beecf902c?q=80&w=1974&auto=format&fit=crop',
+          alt: 'Rejuvenecimiento',
+          prompt: 'Elegant woman with luminous skin, ivory medspa background, soft focus.'
+        }
+      }
+    ]
+  },
+  faqs: {
+    headline: 'Preguntas frecuentes sobre tratamientos faciales',
+    items: [
+      {
+        question: '¿Cómo sé qué tratamiento facial necesito?',
+        answer: 'Lo ideal es empezar con una evaluación gratuita. Nuestros especialistas analizarán tu tipo de piel, necesidades y objetivos para recomendarte el protocolo más efectivo.'
+      },
+      {
+        question: '¿Cuál es el mejor tratamiento para empezar?',
+        answer: 'Recomendamos la Limpieza Facial Profunda como punto de partida. Permite limpiar impurezas y realizar un análisis real de tu piel bajo condiciones clínicas.'
+      },
+      {
+        question: '¿Puedo combinar varios tratamientos faciales?',
+        answer: 'Sí. De hecho, muchos de nuestros protocolos ganan efectividad cuando se combinan, como la radiofrecuencia con oxigenoterapia para mejorar firmeza y luminosidad.'
+      },
+      {
+        question: '¿Cada cuánto debo hacerme un tratamiento facial?',
+        answer: 'Para mantenimiento preventivo, una vez al mes es lo ideal (siguiendo el ciclo de renovación celular). Sin embargo, esto depende de tu tipo de piel y el tratamiento específico.'
+      },
+      {
+        question: '¿Qué tratamiento ayuda con manchas?',
+        answer: 'Contamos con protocolos de peelings químicos, microneedling y láser especializados en despigmentación, siempre adaptados a tu fototipo de piel.'
+      },
+      {
+        question: '¿Qué tratamiento ayuda con acné?',
+        answer: 'Desde limpiezas clínicas profundas hasta carboxiterapia y luz pulsada, diseñamos planes para controlar brotes activos y tratar secuelas cicatriciales.'
+      },
+      {
+        question: '¿Los tratamientos faciales tienen tiempo de recuperación?',
+        answer: 'La mayoría no requieren tiempo de inactividad. Algunos, como el Microneedling o peelings intensos, pueden generar un enrojecimiento leve por 24-48 horas.'
+      },
+      {
+        question: '¿Necesito evaluación antes de elegir?',
+        answer: 'Es altamente recomendado. En DERMA.M priorizamos la seguridad y los resultados, por lo que una evaluación diagnóstica asegura que recibas lo que tu piel realmente necesita.'
+      }
+    ]
+  },
+  socialProof: {
+    headline: 'Pacientes que empezaron con un diagnóstico',
+    googleRating: '4.9',
+    googleLink: siteConfig.mapsUrl,
+    items: [
+      {
+        quote: 'Me explicaron qué necesitaba mi piel antes de recomendarme cualquier tratamiento.',
+        author: 'Carolina M.',
+        role: 'Diagnóstico Facial',
+        isPlaceholder: true
+      },
+      {
+        quote: 'DERMA.M cambió la forma en que entiendo mi piel.',
+        author: 'Valeria R.',
+        role: 'Facial',
+        isPlaceholder: true
+      },
+      {
+        quote: 'No sentí presión. Me orientaron con mucha claridad.',
+        author: 'Andrea S.',
+        role: 'Evaluación de piel',
+        isPlaceholder: true
+      }
+    ]
+  },
+  finalCTA: {
+    headline: 'Empieza con una evaluación de piel',
+    description: 'Si no sabes qué tratamiento necesitas, el primer paso es evaluar tu piel y recibir una recomendación profesional.',
+    primaryCTA: 'Evalúa tu piel — gratis',
+    secondaryCTA: 'Escríbenos por WhatsApp',
+    image: {
+      src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?q=80&w=2070&auto=format&fit=crop',
+      alt: 'Cuidado facial DERMA.M',
+      prompt: 'Soft premium facial skincare still-life, serum bottle, white towel, ceramic tray, sage leaves, watery blue-green accent, warm pearl-gray background, calm clean skin wellness mood, lots of negative space for CTA text, no people, no dark background, 16:9 horizontal.'
+    },
+    whatsappMessage: 'Hola, quiero información sobre tratamientos faciales en DERMA.M.'
+  }
+};

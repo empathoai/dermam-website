@@ -1,3 +1,4 @@
+import React from 'react';
 import { TeamMember } from '../../../types/team';
 import MotionAvatar from '../../ui/MotionAvatar';
 import VCardButton from '../../ui/VCardButton';
@@ -8,7 +9,7 @@ interface TeamMemberCardProps {
   idx: number;
 }
 
-export default function TeamMemberCard({ member, idx }: TeamMemberCardProps) {
+const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, idx }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -52,4 +53,6 @@ export default function TeamMemberCard({ member, idx }: TeamMemberCardProps) {
       </div>
     </motion.div>
   );
-}
+};
+
+export default TeamMemberCard;

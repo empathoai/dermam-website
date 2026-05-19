@@ -65,9 +65,11 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:block">
-            <Button variant="primary" className="px-6 py-2">
-              Reservar
-            </Button>
+            <Link to="/es/reservar">
+              <Button variant="primary" className="px-6 py-2">
+                Reservar
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -119,9 +121,11 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <Button variant="primary" className="mt-4 w-full">
-            Reservar
-          </Button>
+          <Link to="/es/reservar" className="block w-full mt-4" onClick={() => setIsOpen(false)}>
+            <Button variant="primary" className="w-full">
+              Reservar
+            </Button>
+          </Link>
         </div>
       )}
     </header>

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Treatment } from '../../types/treatment';
 import ResponsiveImage from './ResponsiveImage';
 import Card from './Card';
@@ -8,7 +9,7 @@ interface TreatmentCardProps {
   treatment: Treatment;
 }
 
-export default function TreatmentCard({ treatment }: TreatmentCardProps) {
+const TreatmentCard: React.FC<TreatmentCardProps> = ({ treatment }) => {
   return (
     <Card className="flex flex-col h-full group hover:shadow-subtle transition-shadow duration-300">
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -39,4 +40,6 @@ export default function TreatmentCard({ treatment }: TreatmentCardProps) {
       </div>
     </Card>
   );
-}
+};
+
+export default TreatmentCard;

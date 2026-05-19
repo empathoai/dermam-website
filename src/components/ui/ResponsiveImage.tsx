@@ -7,6 +7,8 @@ interface ResponsiveImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   height?: number;
   className?: string;
   fetchPriority?: 'high' | 'low' | 'auto';
+  loading?: 'lazy' | 'eager';
+  onLoad?: () => void;
 }
 
 export default function ResponsiveImage({
