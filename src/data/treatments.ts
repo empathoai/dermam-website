@@ -7,7 +7,7 @@ export const featuredTreatments: Treatment[] = [
     title: 'Plasma Rico en Plaquetas',
     description: 'Bioestimulación regenerativa que mejora la calidad, firmeza y vitalidad de tu piel.',
     category: 'Facial',
-    href: '#',
+    href: '/es/plasma-rico-en-plaquetas-west-palm-beach',
     featured: true,
     image: {
       src: 'https://picsum.photos/seed/dermam_prp/800/600',
@@ -20,9 +20,9 @@ export const featuredTreatments: Treatment[] = [
   {
     id: 'post-op',
     title: 'Post-Operatorio',
-    description: 'Cuidados especializados que apoyan tu recuperación y optimizan tus resultados.',
+    description: 'Acompañamiento especializado con drenaje linfático manual para una recuperación segura y óptima.',
     category: 'Corporal',
-    href: '#',
+    href: '/es/postoperatorio-west-palm-beach',
     featured: true,
     image: {
       src: 'https://picsum.photos/seed/dermam_postop/800/600',
@@ -35,9 +35,9 @@ export const featuredTreatments: Treatment[] = [
   {
     id: 'facial-cleansing',
     title: 'Limpieza Facial Profunda',
-    description: 'Limpieza avanzada que purifica, hidrata y devuelve luminosidad a tu piel.',
+    description: 'El punto de partida ideal para cualquier plan de cuidado, con diagnóstico de piel incluido.',
     category: 'Facial',
-    href: '#',
+    href: '/es/limpieza-facial-profunda',
     featured: true,
     image: {
       src: 'https://picsum.photos/seed/dermam_facial/800/600',

@@ -2,6 +2,7 @@ import { Treatment } from '../../types/treatment';
 import ResponsiveImage from './ResponsiveImage';
 import Card from './Card';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface TreatmentCardProps {
   treatment: Treatment;
@@ -29,12 +30,12 @@ export default function TreatmentCard({ treatment }: TreatmentCardProps) {
         <p className="text-text-secondary text-sm leading-relaxed mb-6 flex-grow">
           {treatment.description}
         </p>
-        <a
-          href={treatment.href}
+        <Link
+          to={treatment.href}
           className="inline-flex items-center text-sm font-medium text-text-primary hover:text-sage transition-colors duration-300"
         >
           Ver tratamiento <ArrowRight size={16} className="ml-2" />
-        </a>
+        </Link>
       </div>
     </Card>
   );

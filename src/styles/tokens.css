@@ -13,6 +13,11 @@
   --color-border-soft: rgba(80, 80, 80, 0.12);
   --color-focus: #2B2B2B;
 
+  /* PRF Specific Tokens - Sober Plasma Rose */
+  --color-prf-accent: #A85F5A;
+  --color-prf-accent-soft: #E8D3D0;
+  --color-prf-accent-deep: #7E3F3B;
+
   /* Typography */
   --font-serif: "Cormorant Garamond", "Playfair Display", serif;
   --font-sans: "Poppins", system-ui, sans-serif;
@@ -47,4 +52,8 @@
 
   --radius-md: var(--radius-md);
   --radius-lg: var(--radius-lg);
+
+  --color-prf: var(--color-prf-accent);
+  --color-prf-soft: var(--color-prf-accent-soft);
+  --color-prf-deep: var(--color-prf-accent-deep);
 }

@@ -65,7 +65,7 @@ export default function HeroMedia({
           initial={{ opacity: 0 }}
           animate={{ opacity: isReady ? 1 : 0 }}
           transition={{ duration: 1 }}
-          className="absolute inset-0 bg-gradient-to-r from-canvas/80 via-canvas/40 to-transparent z-[1]"
+          className="absolute inset-0 bg-gradient-to-r from-[rgba(247,245,242,0.94)] via-[rgba(247,245,242,0.70)] to-[rgba(247,245,242,0.35)] z-[1]"
         />
       )}
     </div>

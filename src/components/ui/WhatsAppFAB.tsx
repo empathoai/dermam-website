@@ -1,8 +1,18 @@
 import { siteConfig } from '../../data/siteConfig';
 import { MessageCircle } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 export default function WhatsAppFAB() {
-  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(siteConfig.whatsappMessage)}`;
+  const location = useLocation();
+  const isPrfPage = location.pathname.includes('plasma-rico-en-plaquetas');
+  const isPostOpPage = location.pathname.includes('postoperatorio');
+  const isDeepFacialPage = location.pathname.includes('limpieza-facial-profunda');
+
+  let message = siteConfig.whatsappMessage;
+  if (isPrfPage) message = siteConfig.whatsappMessagePrf;
+  if (isPostOpPage) message = siteConfig.whatsappMessagePostOp;
+  if (isDeepFacialPage) message = siteConfig.whatsappMessageDeepFacial;
+  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <a

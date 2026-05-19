@@ -12,7 +12,7 @@ export default function HomePage() {
   const seoProps = {
     title: 'DERMA.M Skin Health | Estética Profesional en WPB',
     description: 'Tratamientos médico-estéticos personalizados en West Palm Beach. Agenda tu evaluación en DERMA.M Skin Health y cuida tu piel con confianza.',
-    canonical: 'https://ais-dev-5b3b2kkzfslgmbwymdudl2-165930146839.us-east1.run.app/es/', // Using dev URL but normally canonical would be production
+    canonical: 'https://dermamskinhealth.com/es/',
     hreflangEs: 'https://dermamskinhealth.com/es/',
     hreflangEn: 'https://dermamskinhealth.com/en/',
     hreflangDefault: 'https://dermamskinhealth.com/es/',

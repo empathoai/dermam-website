@@ -4,10 +4,12 @@ import { siteConfig } from '../../data/siteConfig';
 import Button from '../ui/Button';
 import Container from '../ui/Container';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,21 +28,40 @@ export default function Navbar() {
       <Container>
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="text-xl font-serif font-semibold tracking-tighter text-text-primary">
+          <Link to="/es" className="text-xl font-serif font-semibold tracking-tighter text-text-primary">
             DERMA.M
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            {navigationLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors duration-300"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navigationLinks.map((link) => {
+              const isHashLink = link.href.startsWith('#');
+              const href = isHashLink && location.pathname !== '/es' ? `/es${link.href}` : link.href;
+              
+              if (isHashLink) {
+                return (
+                  <a
+                    key={link.label}
+                    href={href}
+                    className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors duration-300"
+                  >
+                    {link.label}
+                  </a>
+                );
+              }
+              
+              return (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className={`text-sm font-medium transition-colors duration-300 ${
+                    location.pathname === link.href ? 'text-prf font-semibold' : 'text-text-secondary hover:text-text-primary'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
 
           <div className="hidden lg:block">
@@ -68,16 +89,36 @@ export default function Navbar() {
           role="dialog"
           aria-modal="true"
         >
-          {navigationLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="text-lg font-medium text-text-primary border-b border-border-soft pb-4"
-              onClick={() => setIsOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
+          {navigationLinks.map((link) => {
+            const isHashLink = link.href.startsWith('#');
+            const href = isHashLink && location.pathname !== '/es' ? `/es${link.href}` : link.href;
+
+            if (isHashLink) {
+              return (
+                <a
+                  key={link.label}
+                  href={href}
+                  className="text-lg font-medium text-text-primary border-b border-border-soft pb-4"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </a>
+              );
+            }
+
+            return (
+              <Link
+                key={link.label}
+                to={link.href}
+                className={`text-lg font-medium border-b border-border-soft pb-4 ${
+                  location.pathname === link.href ? 'text-prf font-semibold' : 'text-text-primary'
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
           <Button variant="primary" className="mt-4 w-full">
             Reservar
           </Button>
