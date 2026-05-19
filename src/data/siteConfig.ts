@@ -1,0 +1,22 @@
+export const siteConfig = {
+  businessName: 'DERMA.M Skin Health',
+  tagline: 'Salud profesional para tu piel',
+  phone: '+1 (561) 253-5384',
+  phoneRaw: '+15612535384',
+  whatsappNumber: '15612535384',
+  whatsappMessage: 'Hola, me interesa agendar una evaluación en DERMA.M.',
+  address: '5707 S Dixie Hwy Unit D',
+  city: 'West Palm Beach',
+  state: 'FL',
+  zip: '33405',
+  email: 'info@dermamskinhealth.com',
+  hours: 'Mon-Fri: 9am - 6pm, Sat: 10am - 2pm',
+  socialLinks: {
+    instagram: 'https://instagram.com/dermam.skinhealth',
+    facebook: 'https://facebook.com/dermam.skinhealth',
+    google: 'https://g.page/dermam-skin-health/review'
+  },
+  baseUrl: 'https://dermamskinhealth.com', // Added base URL for SEO/Schema
+  defaultLanguage: 'es',
+  supportedLanguages: ['es', 'en']
+};

@@ -1,0 +1,50 @@
+:root {
+  /* Color Palette - Soft Clinical Wellness */
+  --color-canvas: #F7F5F2;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #F2F1F1;
+  --color-sage: #8FA77E;
+  --color-sage-soft: #DDE8D6;
+  --color-lavender-soft: #D8CDE6;
+  --color-linen: #E8DED2;
+  --color-pearl: #D8D8D6;
+  --color-text-primary: #2B2B2B;
+  --color-text-secondary: #5C5C5C;
+  --color-border-soft: rgba(80, 80, 80, 0.12);
+  --color-focus: #2B2B2B;
+
+  /* Typography */
+  --font-serif: "Cormorant Garamond", "Playfair Display", serif;
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --font-script: "Cormorant Garamond", serif; /* Fallback for script, should use a real script font if possible */
+
+  /* Spacing & Borders */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --container-max-width: 1280px;
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+@theme {
+  --color-canvas: var(--color-canvas);
+  --color-surface: var(--color-surface);
+  --color-surface-soft: var(--color-surface-soft);
+  --color-sage: var(--color-sage);
+  --color-sage-soft: var(--color-sage-soft);
+  --color-lavender-soft: var(--color-lavender-soft);
+  --color-linen: var(--color-linen);
+  --color-pearl: var(--color-pearl);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-border-soft: var(--color-border-soft);
+
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-script: var(--font-script);
+
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+}
