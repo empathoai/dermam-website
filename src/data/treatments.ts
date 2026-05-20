@@ -10,7 +10,7 @@ export const featuredTreatments: Treatment[] = [
     href: '/es/plasma-rico-en-plaquetas-west-palm-beach',
     featured: true,
     image: {
-      src: 'https://picsum.photos/seed/dermam_prp/800/600',
+      src: '/assets/treatments/prp-card.jpg',
       alt: 'Plasma Rico en Plaquetas en DERMA.M',
       width: 800,
       height: 600,
@@ -25,7 +25,7 @@ export const featuredTreatments: Treatment[] = [
     href: '/es/postoperatorio-west-palm-beach',
     featured: true,
     image: {
-      src: 'https://picsum.photos/seed/dermam_postop/800/600',
+      src: '/assets/treatments/postop-card.jpg',
       alt: 'Cuidado Post-Operatorio en DERMA.M',
       width: 800,
       height: 600,
@@ -40,7 +40,7 @@ export const featuredTreatments: Treatment[] = [
     href: '/es/limpieza-facial-profunda',
     featured: true,
     image: {
-      src: 'https://picsum.photos/seed/dermam_facial/800/600',
+      src: '/assets/treatments/facial-card.jpg',
       alt: 'Limpieza Facial Profunda en DERMA.M',
       width: 800,
       height: 600,

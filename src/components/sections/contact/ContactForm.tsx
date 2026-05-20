@@ -1,10 +1,11 @@
 import { useState, FormEvent } from 'react';
 import { contactContent } from '../../../data/contactContent';
+import { siteConfig } from '../../../data/siteConfig';
 import FormField from '../../ui/FormField';
 import SelectField from '../../ui/SelectField';
 import TextareaField from '../../ui/TextareaField';
 import Button from '../../ui/Button';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
 
 export default function ContactForm() {
@@ -42,12 +43,19 @@ export default function ContactForm() {
     setErrors({});
     setIsSubmitting(true);
 
-    // MOCK API CALL
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      console.log('Form submitted:', formData);
+      const messageText = `Hola DERMA.M, mi nombre es ${formData.name}.
+Email: ${formData.email}
+${formData.phone ? `Teléfono: ${formData.phone}` : ''}
+${formData.treatment ? `Tratamiento de interés: ${formData.treatment}` : ''}
+${formData.message ? `Mensaje: ${formData.message}` : ''}`;
+
+      const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(messageText)}`;
+      
+      // Redirect to WhatsApp safely
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      
       setSubmitted(true);
-      // TRACKING: Lead form submitted
     } catch (err) {
       console.error('Submission error:', err);
     } finally {
@@ -60,19 +68,19 @@ export default function ContactForm() {
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="bg-white p-12 rounded-[32px] border border-sage-soft text-center shadow-xl shadow-sage/5"
+        className="bg-white p-12 rounded-[32px] border border-border-soft text-center shadow-xl shadow-canvas/50"
       >
-        <div className="w-16 h-16 bg-sage/10 text-sage rounded-full flex items-center justify-center mx-auto mb-6">
+        <div className="w-16 h-16 bg-base-900/10 text-base-900 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle2 size={32} />
         </div>
         <h3 className="text-2xl font-serif mb-4">¡Gracias por escribirnos!</h3>
         <p className="text-text-secondary leading-relaxed mb-8 px-4">
-          Hemos recibido tu mensaje. Un miembro de nuestro equipo te contactará en menos de 24 horas.
+          Hemos recibido tu consulta y abierto una conversación en WhatsApp. Te responderemos de inmediato.
         </p>
         <Button 
           variant="outline" 
           onClick={() => setSubmitted(false)}
-          className="border-sage text-sage hover:bg-sage hover:text-white"
+          className="mx-auto"
         >
           Enviar otro mensaje
         </Button>
@@ -139,7 +147,7 @@ export default function ContactForm() {
           <Button 
             type="submit" 
             isLoading={isSubmitting}
-            className="w-full bg-sage hover:bg-sage-deep text-white py-4 shadow-lg shadow-sage/10"
+            className="w-full py-4 shadow-lg"
           >
             {form.submitCTA}
           </Button>

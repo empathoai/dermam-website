@@ -18,7 +18,7 @@ export const bodyHubContent: HubPageContent = {
     ctaLabel: 'Evalúa tu caso — gratis',
     trustLine: '⭐ 4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
     image: {
-      src: 'https://images.unsplash.com/photo-1544161515-4ae6ce6fe858?q=80&w=2070&auto=format&fit=crop',
+      src: '/assets/images/body-massage.jpg',
       alt: 'Tratamiento corporal en DERMA.M',
       prompt: 'Bright premium body treatment room for a medical aesthetics clinic, calm patient receiving professional body wellness treatment with modest coverage, white linens, soft sage and ivory palette, warm natural light, clinical wellness atmosphere, professional hands, no surgery visuals, no bruising, no explicit nudity, no harsh equipment, high-end medspa photography, 16:9 horizontal.'
     }
@@ -56,7 +56,7 @@ export const bodyHubContent: HubPageContent = {
         href: '/es/postoperatorio-west-palm-beach',
         badge: 'Más solicitado',
         image: {
-          src: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1974&auto=format&fit=crop',
+          src: '/assets/treatments/peel-treatment.jpg',
           alt: 'Post-Operatorio',
           prompt: 'Premium post-operative lymphatic drainage image, professional hands performing gentle body drainage over white linens, patient modestly covered, warm ivory treatment room, sage accents, calm recovery atmosphere, no bruising, no scars, no surgery, no hospital look, high-end clinical wellness photography, 4:3 ratio.'
         }
@@ -68,7 +68,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver tratamiento →',
         href: '/es/cavitacion',
         image: {
-          src: 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/body-massage-oil.jpg',
           alt: 'Cavitación',
           prompt: 'Premium non-invasive body contouring treatment image, aesthetic device applied gently over modestly framed body area, clean ivory room, soft sage accents, calm professional medspa atmosphere, no pain, no redness, no explicit nudity, 4:3 ratio.'
         }
@@ -81,7 +81,7 @@ export const bodyHubContent: HubPageContent = {
         href: '/es/reservar',
         isPlaceholderRoute: true,
         image: {
-          src: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2020&auto=format&fit=crop',
+          src: '/assets/images/body-stretching.jpg',
           alt: 'Estrías y Celulitis',
           prompt: 'Soft premium body skin treatment image, natural skin texture on modestly framed thigh or hip area, warm ivory clinical wellness light, sage accents, no explicit nudity, no harsh before-after, professional and discreet, 4:3 ratio.'
         }
@@ -97,7 +97,7 @@ export const bodyHubContent: HubPageContent = {
         category: 'Reafirmación',
         ctaLabel: 'Ver más →',
         href: '/es/radiofrecuencia-corporal',
-        image: { src: 'https://images.unsplash.com/photo-1522335789203-aa9fb3922df2?q=80&w=2070&auto=format&fit=crop', alt: 'RF Corporal', prompt: 'Body RF' }
+        image: { src: '/assets/images/consultation-room.jpg', alt: 'RF Corporal', prompt: 'Body RF' }
       },
       {
         id: 'drenaje-corp',
@@ -105,7 +105,7 @@ export const bodyHubContent: HubPageContent = {
         category: 'Desinflamación',
         ctaLabel: 'Ver más →',
         href: '/es/drenaje-linfatico-corporal',
-        image: { src: 'https://images.unsplash.com/photo-1544161515-4ae6ce6fe858?q=80&w=2070&auto=format&fit=crop', alt: 'Drenaje Corporal', prompt: 'Drainage' }
+        image: { src: '/assets/images/body-massage.jpg', alt: 'Drenaje Corporal', prompt: 'Drainage' }
       },
       {
         id: 'cavitacion-grid',
@@ -113,7 +113,7 @@ export const bodyHubContent: HubPageContent = {
         category: 'Reducción',
         ctaLabel: 'Ver más →',
         href: '/es/cavitacion',
-        image: { src: 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?q=80&w=2070&auto=format&fit=crop', alt: 'Cavitación', prompt: 'Cavitation' }
+        image: { src: '/assets/images/body-massage-oil.jpg', alt: 'Cavitación', prompt: 'Cavitation' }
       },
       {
         id: 'postop-grid',
@@ -121,7 +121,7 @@ export const bodyHubContent: HubPageContent = {
         category: 'Recuperación',
         ctaLabel: 'Ver más →',
         href: '/es/postoperatorio-west-palm-beach',
-        image: { src: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1974&auto=format&fit=crop', alt: 'Post-Operatorio', prompt: 'Post-Op' }
+        image: { src: '/assets/treatments/peel-treatment.jpg', alt: 'Post-Operatorio', prompt: 'Post-Op' }
       },
       {
         id: 'estrias-grid',
@@ -130,7 +130,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2020&auto=format&fit=crop', alt: 'Estrías', prompt: 'Stretch marks' }
+        image: { src: '/assets/images/body-stretching.jpg', alt: 'Estrías', prompt: 'Stretch marks' }
       },
       {
         id: 'remodelacion',
@@ -139,7 +139,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1498842812179-c81beecf902c?q=80&w=1974&auto=format&fit=crop', alt: 'Remodelación', prompt: 'Body contour' }
+        image: { src: '/assets/images/skincare-products.jpg', alt: 'Remodelación', prompt: 'Body contour' }
       },
       {
         id: 'maderoterapia',
@@ -148,7 +148,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?q=80&w=2070&auto=format&fit=crop', alt: 'Maderoterapia', prompt: 'Wood therapy' }
+        image: { src: '/assets/images/laser-treatment.jpg', alt: 'Maderoterapia', prompt: 'Wood therapy' }
       },
       {
         id: 'reduccion',
@@ -157,7 +157,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop', alt: 'Reducción', prompt: 'Weight loss' }
+        image: { src: '/assets/images/skin-therapy.jpg', alt: 'Reducción', prompt: 'Weight loss' }
       }
     ]
   },
@@ -230,7 +230,7 @@ export const bodyHubContent: HubPageContent = {
     secondaryCTA: 'Escríbenos por WhatsApp',
     whatsappMessage: 'Hola, quiero información sobre tratamientos corporales en DERMA.M.',
     image: {
-      src: 'https://images.unsplash.com/photo-1544161515-4ae6ce6fe858?q=80&w=2070&auto=format&fit=crop',
+      src: '/assets/images/body-massage.jpg',
       alt: 'Cuidado corporal DERMA.M',
       prompt: 'Minimal premium body care scene, ivory palette, sage accents.'
     }

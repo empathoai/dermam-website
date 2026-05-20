@@ -6,8 +6,7 @@ import IVTherapyEducationSection from '../components/sections/iv-therapy/IVThera
 import IVKitsGridSection from '../components/sections/iv-therapy/IVKitsGridSection';
 import IVTherapyFAQSection from '../components/sections/iv-therapy/IVTherapyFAQSection';
 import IVTherapyFinalCTA from '../components/sections/iv-therapy/IVTherapyFinalCTA';
-import WhatsAppFAB from '../components/ui/WhatsAppFAB';
-import { Helmet } from 'react-helmet-async';
+import PageShell from '../components/layout/PageShell';
 
 export default function IVTherapyPage() {
   const kitsSectionRef = useRef<HTMLDivElement>(null);
@@ -17,24 +16,12 @@ export default function IVTherapyPage() {
   };
 
   return (
-    <main className="bg-white">
-      <Helmet>
-        <title>{ivTherapyContent.seo.title}</title>
-        <meta name="description" content={ivTherapyContent.seo.description} />
-        <link rel="canonical" href={ivTherapyContent.seo.canonical} />
-        
-        {/* Hreflang */}
-        <link rel="alternate" hrefLang="es" href="https://dermamskinhealth.com/es/iv-therapy/" />
-        <link rel="alternate" hrefLang="en" href="https://dermamskinhealth.com/en/iv-therapy/" />
-        <link rel="alternate" hrefLang="x-default" href="https://dermamskinhealth.com/es/iv-therapy/" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content={ivTherapyContent.seo.title} />
-        <meta property="og:description" content={ivTherapyContent.seo.description} />
-        <meta property="og:image" content={ivTherapyContent.seo.ogImage} />
-        <meta property="og:url" content={ivTherapyContent.seo.canonical} />
-        <meta property="og:type" content="website" />
-      </Helmet>
+    <PageShell
+      title={ivTherapyContent.seo.title}
+      description={ivTherapyContent.seo.description}
+      ogImage={ivTherapyContent.seo.ogImage}
+      ogType="website"
+    >
 
       {/* 01 Hero */}
       <IVTherapyHeroSection 
@@ -60,12 +47,21 @@ export default function IVTherapyPage() {
 
       {/* 05 CTA Final */}
       <IVTherapyFinalCTA content={ivTherapyContent.finalCTA} />
-
-      {/* 06 WhatsApp FAB */}
-      <WhatsAppFAB 
-        phoneNumber="15615663762"
-        message="Hola, quiero información sobre IV Therapy en DERMA.M."
-      />
-    </main>
+    </PageShell>
   );
 }
+
+export const ssgOptions = {
+  slug: 'es/iv-therapy/index',
+  routeUrl: '/es/iv-therapy',
+  context: async (children: any) => {
+    const React = await import('react');
+    const { MemoryRouter } = await import('react-router-dom');
+    const { HelmetProvider } = await import('react-helmet-async');
+    return React.createElement(
+      HelmetProvider,
+      null,
+      React.createElement(MemoryRouter, { initialEntries: ['/es/iv-therapy'] }, children)
+    );
+  }
+};

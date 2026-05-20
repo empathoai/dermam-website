@@ -1,5 +1,4 @@
 import PageShell from '../components/layout/PageShell';
-import SEO from '../components/layout/SEO';
 import PostOpHeroSection from '../components/sections/postop/PostOpHeroSection';
 import PostOpSurgeryTypesSection from '../components/sections/postop/PostOpSurgeryTypesSection';
 import PostOpUrgencySection from '../components/sections/postop/PostOpUrgencySection';
@@ -20,20 +19,13 @@ export default function PostOpLandingPage() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  const seoProps = {
-    title: 'Masaje Post Operatorio West Palm Beach | DERMA.M',
-    description: 'Protocolos especializados de recuperación post-operatoria en West Palm Beach. Drenaje linfático, reducción de inflamación y fibrosis. Consulta tu caso hoy.',
-    canonical: `https://dermamskinhealth.com/es/postoperatorio-west-palm-beach/`,
-    hreflangEs: 'https://dermamskinhealth.com/es/postoperatorio-west-palm-beach/',
-    hreflangEn: 'https://dermamskinhealth.com/en/post-surgery-recovery-west-palm-beach/',
-    hreflangDefault: 'https://dermamskinhealth.com/es/postoperatorio-west-palm-beach/',
-    ogImage: 'https://dermamskinhealth.com/og/postoperatorio-west-palm-beach.jpg',
-    ogType: 'article'
-  };
-
   return (
-    <PageShell>
-      <SEO {...seoProps} />
+    <PageShell
+      title="Masaje Post Operatorio West Palm Beach | DERMA.M"
+      description="Protocolos especializados de recuperación post-operatoria en West Palm Beach. Drenaje linfático, reducción de inflamación y fibrosis. Consulta tu caso hoy."
+      ogImage="https://dermamskinhealth.com/og/postoperatorio-west-palm-beach.jpg"
+      ogType="article"
+    >
       <PostOpHeroSection />
       <PostOpSurgeryTypesSection />
       <PostOpUrgencySection />
@@ -47,3 +39,18 @@ export default function PostOpLandingPage() {
     </PageShell>
   );
 }
+
+export const ssgOptions = {
+  slug: 'es/postoperatorio-west-palm-beach/index',
+  routeUrl: '/es/postoperatorio-west-palm-beach',
+  context: async (children: any) => {
+    const React = await import('react');
+    const { MemoryRouter } = await import('react-router-dom');
+    const { HelmetProvider } = await import('react-helmet-async');
+    return React.createElement(
+      HelmetProvider,
+      null,
+      React.createElement(MemoryRouter, { initialEntries: ['/es/postoperatorio-west-palm-beach'] }, children)
+    );
+  }
+};

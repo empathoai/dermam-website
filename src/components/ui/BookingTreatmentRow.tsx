@@ -24,10 +24,10 @@ const BookingTreatmentRow: React.FC<BookingTreatmentRowProps> = ({ treatment }) 
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className={`inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 ${
+          className={`inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 ${
             isSquare 
-              ? 'border-2 border-sage text-sage hover:bg-sage hover:text-white shadow-sm' 
-              : 'bg-canvas text-text-secondary border border-border-soft hover:border-sage-soft hover:text-sage'
+              ? 'border-[2px] border-base-900 text-base-900 hover:bg-base-900 hover:text-base-100 shadow-sm' 
+              : 'bg-canvas text-text-secondary border border-border-soft hover:border-base-900/30 hover:text-base-900'
           }`}
         >
           {isSquare ? (

@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import PageShell from '../components/layout/PageShell';
-import SEO from '../components/layout/SEO';
 import AboutHeroSection from '../components/sections/about/AboutHeroSection';
 import AboutFounderStorySection from '../components/sections/about/AboutFounderStorySection';
 import TeamSection from '../components/sections/about/TeamSection';
@@ -16,20 +15,13 @@ export default function AboutPage() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  const seoProps = {
-    title: 'Sobre Nosotros | DERMA.M Skin Health WPB',
-    description: 'Conoce al equipo de DERMA.M Skin Health en West Palm Beach. Especialistas certificados, diagnóstico personalizado y cuidado profesional para tu piel.',
-    canonical: 'https://dermamskinhealth.com/es/sobre-nosotros/',
-    hreflangEs: 'https://dermamskinhealth.com/es/sobre-nosotros/',
-    hreflangEn: 'https://dermamskinhealth.com/en/about/',
-    hreflangDefault: 'https://dermamskinhealth.com/es/sobre-nosotros/',
-    ogImage: 'https://dermamskinhealth.com/og/dermam-about.jpg',
-    ogType: 'website'
-  };
-
   return (
-    <PageShell>
-      <SEO {...seoProps} />
+    <PageShell
+      title="Sobre Nosotros | DERMA.M Skin Health WPB"
+      description="Conoce al equipo de DERMA.M Skin Health en West Palm Beach. Especialistas certificados, diagnóstico personalizado y cuidado profesional para tu piel."
+      ogImage="https://dermamskinhealth.com/og/dermam-about.jpg"
+      ogType="website"
+    >
       <AboutHeroSection />
       <AboutFounderStorySection />
       <TeamSection />
@@ -39,3 +31,18 @@ export default function AboutPage() {
     </PageShell>
   );
 }
+
+export const ssgOptions = {
+  slug: 'es/sobre-nosotros/index',
+  routeUrl: '/es/sobre-nosotros',
+  context: async (children: any) => {
+    const React = await import('react');
+    const { MemoryRouter } = await import('react-router-dom');
+    const { HelmetProvider } = await import('react-helmet-async');
+    return React.createElement(
+      HelmetProvider,
+      null,
+      React.createElement(MemoryRouter, { initialEntries: ['/es/sobre-nosotros'] }, children)
+    );
+  }
+};

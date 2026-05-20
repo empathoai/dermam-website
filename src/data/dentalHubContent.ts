@@ -18,7 +18,7 @@ export const dentalHubContent: HubPageContent = {
     ctaLabel: 'Agenda una evaluación',
     trustLine: 'Atención profesional · Ambiente bilingüe · WPB, FL',
     image: {
-      src: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
+      src: '/assets/images/dental-office.jpg',
       alt: 'Servicio dental en DERMA.M',
       prompt: 'Premium aesthetic dental care image in a bright ivory clinical wellness room, calm patient smiling subtly in dental chair, professional dental specialist preparing consultation, pearl gray and soft sage accents, clean modern environment, not cold hospital, no tools inside mouth, no exaggerated smile, no harsh dental stock feel, premium approachable dental aesthetic photography, 16:9 horizontal.'
     }
@@ -56,7 +56,7 @@ export const dentalHubContent: HubPageContent = {
         href: '/es/reservar',
         badge: 'Recomendado',
         image: {
-          src: 'https://images.unsplash.com/photo-1460676746866-99037a09d0da?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/dental-teeth.jpg',
           alt: 'Evaluación Dental',
           prompt: 'Premium dental consultation scene, specialist speaking with patient in bright ivory clinic room, tablet or mirror in hand, calm professional atmosphere, soft sage and pearl gray accents, no mouth close-up, no invasive tools, approachable dental wellness photography, 4:3 ratio.'
         }
@@ -68,7 +68,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver servicio →',
         href: '/es/blanqueamiento-dental',
         image: {
-          src: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/dental-office.jpg',
           alt: 'Blanqueamiento',
           prompt: 'Premium teeth whitening aesthetic image, calm patient in bright dental wellness room with protective setup, clean ivory and pearl gray palette, subtle soft smile, no exaggerated Hollywood smile, no harsh blue light, professional and approachable, 4:3 ratio.'
         }
@@ -80,7 +80,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver servicio →',
         href: '/es/limpieza-dental',
         image: {
-          src: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop',
+          src: '/assets/images/dental-mouth.jpg',
           alt: 'Limpieza Dental',
           prompt: 'Premium dental cleaning consultation image, professional dental specialist preparing gentle cleaning in clean bright dental room, calm patient, no invasive close-up, no visible discomfort, ivory and soft sage aesthetic, modern and welcoming, 4:3 ratio.'
         }
@@ -96,7 +96,7 @@ export const dentalHubContent: HubPageContent = {
         category: 'Diagnóstico',
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
-        image: { src: 'https://images.unsplash.com/photo-1460676746866-99037a09d0da?q=80&w=2070&auto=format&fit=crop', alt: 'Evaluación', prompt: 'Dental eval' }
+        image: { src: '/assets/images/dental-teeth.jpg', alt: 'Evaluación', prompt: 'Dental eval' }
       },
       {
         id: 'limpieza-grid',
@@ -105,7 +105,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop', alt: 'Limpieza', prompt: 'Dental cleaning' }
+        image: { src: '/assets/images/dental-mouth.jpg', alt: 'Limpieza', prompt: 'Dental cleaning' }
       },
       {
         id: 'blanqueamiento-grid',
@@ -114,7 +114,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop', alt: 'Blanqueamiento', prompt: 'Whitening' }
+        image: { src: '/assets/images/dental-office.jpg', alt: 'Blanqueamiento', prompt: 'Whitening' }
       },
       {
         id: 'sonrisa-grid',
@@ -123,7 +123,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1552046122-03184de85e08?q=80&w=1974&auto=format&fit=crop', alt: 'Diseño Sonrisa', prompt: 'Smile design' }
+        image: { src: '/assets/images/dental-veneers.jpg', alt: 'Diseño Sonrisa', prompt: 'Smile design' }
       },
       {
         id: 'carillas-grid',
@@ -132,7 +132,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1552046122-03184de85e08?q=80&w=1974&auto=format&fit=crop', alt: 'Carillas', prompt: 'Veneers' }
+        image: { src: '/assets/images/dental-veneers.jpg', alt: 'Carillas', prompt: 'Veneers' }
       },
       {
         id: 'preventivo',
@@ -141,7 +141,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop', alt: 'Cuidado', prompt: 'Oral health' }
+        image: { src: '/assets/images/dental-mouth.jpg', alt: 'Cuidado', prompt: 'Oral health' }
       },
       {
         id: 'consulta-estetica',
@@ -150,7 +150,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1460676746866-99037a09d0da?q=80&w=2070&auto=format&fit=crop', alt: 'Consulta', prompt: 'Aesthetic consult' }
+        image: { src: '/assets/images/dental-teeth.jpg', alt: 'Consulta', prompt: 'Aesthetic consult' }
       }
     ]
   },
@@ -223,7 +223,7 @@ export const dentalHubContent: HubPageContent = {
     secondaryCTA: 'Escríbenos por WhatsApp',
     whatsappMessage: 'Hola, quiero información sobre servicios dentales en DERMA.M.',
     image: {
-      src: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
+      src: '/assets/images/dental-office.jpg',
       alt: 'Sonrisa DERMA.M',
       prompt: 'Clean bright dental wellness scene, ivory palette, minimalist.'
     }

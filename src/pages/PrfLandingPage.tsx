@@ -1,5 +1,4 @@
 import PageShell from '../components/layout/PageShell';
-import SEO from '../components/layout/SEO';
 import PrfHeroSection from '../components/sections/prf/PrfHeroSection';
 import PrfAudienceSection from '../components/sections/prf/PrfAudienceSection';
 import PrfEducationSection from '../components/sections/prf/PrfEducationSection';
@@ -21,20 +20,13 @@ export default function PrfLandingPage() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  const seoProps = {
-    title: 'Plasma Rico en Plaquetas West Palm Beach | DERMA.M',
-    description: 'Tratamiento clínico de Plasma Rico en Plaquetas y Fibrina en West Palm Beach. Protocolo avanzado, resultados reales. Agenda tu evaluación gratuita.',
-    canonical: `https://dermamskinhealth.com/es/plasma-rico-en-plaquetas-west-palm-beach/`,
-    hreflangEs: 'https://dermamskinhealth.com/es/plasma-rico-en-plaquetas-west-palm-beach/',
-    hreflangEn: 'https://dermamskinhealth.com/en/platelet-rich-plasma-west-palm-beach/',
-    hreflangDefault: 'https://dermamskinhealth.com/es/plasma-rico-en-plaquetas-west-palm-beach/',
-    ogImage: 'https://dermamskinhealth.com/og/prf-west-palm-beach.jpg',
-    ogType: 'article'
-  };
-
   return (
-    <PageShell>
-      <SEO {...seoProps} />
+    <PageShell
+      title="Plasma Rico en Plaquetas West Palm Beach | DERMA.M"
+      description="Tratamiento clínico de Plasma Rico en Plaquetas y Fibrina en West Palm Beach. Protocolo avanzado, resultados reales. Agenda tu evaluación gratuita."
+      ogImage="https://dermamskinhealth.com/og/prf-west-palm-beach.jpg"
+      ogType="article"
+    >
       <PrfHeroSection />
       <PrfAudienceSection />
       <PrfEducationSection />
@@ -49,3 +41,18 @@ export default function PrfLandingPage() {
     </PageShell>
   );
 }
+
+export const ssgOptions = {
+  slug: 'es/plasma-rico-en-plaquetas-west-palm-beach/index',
+  routeUrl: '/es/plasma-rico-en-plaquetas-west-palm-beach',
+  context: async (children: any) => {
+    const React = await import('react');
+    const { MemoryRouter } = await import('react-router-dom');
+    const { HelmetProvider } = await import('react-helmet-async');
+    return React.createElement(
+      HelmetProvider,
+      null,
+      React.createElement(MemoryRouter, { initialEntries: ['/es/plasma-rico-en-plaquetas-west-palm-beach'] }, children)
+    );
+  }
+};

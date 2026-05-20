@@ -9,7 +9,7 @@ export const postOpContent = {
     secondaryCTA: 'Escríbenos por WhatsApp',
     trustLine: 'MedSpa Certificado · Especialistas en Post-Op · WPB, FL',
     image: {
-      src: 'https://picsum.photos/seed/dermam_postop_hero/1920/1080',
+      src: '/assets/images/hero-postop.jpg',
       alt: 'Recuperación Post-Operatorio en DERMA.M',
       prompt: 'Premium clinical wellness editorial image for post-operative recovery care at a medical aesthetics clinic, professional hands performing gentle lymphatic drainage on a calm patient, white and ivory linens, soft sage accents, warm natural light, clean treatment room, serene recovery atmosphere, medical spa but not hospital, emotionally reassuring, no visible bruising, no scars, no surgical wounds, no blood, no dramatic bandages, no fear-based visuals, high-end post-op care photography, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -25,7 +25,7 @@ export const postOpContent = {
       'Cualquier procedimiento estético'
     ],
     image: {
-      src: 'https://picsum.photos/seed/dermam_postop_care/800/600',
+      src: '/assets/treatments/postop-care.jpg',
       alt: 'Drenaje linfático post-operatorio',
       prompt: 'Soft clinical post-operative lymphatic drainage image, professional hands applying gentle pressure on torso or arm over clean white clinical linens, patient calm and covered appropriately, warm ivory treatment room, sage botanical detail, recovery-focused and safe, no exposed wounds, no bruising, no scars, no medical alarm feeling, premium medspa photography, 4:3 ratio.'
     }
@@ -50,7 +50,7 @@ export const postOpContent = {
       }
     ],
     image: {
-        src: 'https://picsum.photos/seed/dermam_postop_urgency/1920/1080',
+        src: '/assets/treatments/postop-urgency.jpg',
         alt: 'Planificación post-operatoria',
         prompt: 'Elegant clinical recovery still-life, folded compression garment, white towel, small notebook with recovery plan, glass of water, soft sage leaves, warm ivory background, calm medical spa atmosphere, subtle visual metaphor for post-surgery planning, no people, no surgery tools, no blood, no alarm tone, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -76,19 +76,19 @@ export const postOpContent = {
     ],
     cta: '¿Cuántas sesiones necesito?',
     image: {
-        src: 'https://picsum.photos/seed/dermam_postop_protocol/1920/1080',
+        src: '/assets/treatments/postop-protocol.jpg',
         alt: 'Sala de recuperación post-operatoria',
         prompt: 'Premium editorial image of a treatment room prepared for post-operative lymphatic drainage, clean massage table with white linens, soft warm light, sage and ivory palette, folded towel, subtle botanical decor, clinically clean but warm and reassuring, no people, no surgical equipment, no hospital aesthetic, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   founder: {
-    name: 'Nancy Meléndez',
+    name: 'Nancy Nieto',
     title: 'Especialista en recuperación post-quirúrgica · 10+ años · MedSpa Certificado',
     quote: '“Cada recuperación es distinta. Por eso evaluamos tu caso antes de recomendar un protocolo.”',
     cta: 'Consulta tu caso',
     image: {
-      src: 'https://picsum.photos/seed/dermam_postop_nancy/600/800',
-      alt: 'Nancy Meléndez especialista en post-operatorio',
+      src: '/assets/avatars/nancy-nieto-founder-postop.jpg',
+      alt: 'Nancy Nieto especialista en post-operatorio',
       prompt: 'Premium editorial portrait of a Latina woman aesthetic clinic founder and post-operative recovery specialist, 35-45 years old, warm confident expression, long dark hair styled naturally, wearing elegant white clinical uniform, seated in a bright treatment room with hands visible, soft ivory and sage clinical wellness environment, professional but deeply approachable, not corporate, not hospital, not white coat cliché, luxury medspa portrait, 4:5 vertical.'
     },
     backgroundMedia: undefined
@@ -122,22 +122,22 @@ export const postOpContent = {
     items: [
       {
         title: 'Post-Liposucción',
-        imageBefore: 'https://picsum.photos/seed/postop_res1_b/400/400',
-        imageAfter: 'https://picsum.photos/seed/postop_res1_a/400/400',
+        imageBefore: '/assets/treatments/postop-result-1-before.jpg',
+        imageAfter: '/assets/treatments/postop-result-1-after.jpg',
         sessions: '8 sesiones',
         prompt: 'Tasteful clinical before-and-after style post-liposuction recovery documentation image, same patient torso area shown in two adjacent panels, modest and non-graphic framing, improved inflammation and contour shown subtly, clean ivory background, no exposed wounds, no bruising, no scars, no explicit nudity, premium medical aesthetic documentation style, realistic, professional, 4:3 ratio.'
       },
       {
         title: 'Post-Abdominoplastia',
-        imageBefore: 'https://picsum.photos/seed/postop_res2_b/400/400',
-        imageAfter: 'https://picsum.photos/seed/postop_res2_a/400/400',
+        imageBefore: '/assets/treatments/postop-result-2-before.jpg',
+        imageAfter: '/assets/treatments/postop-result-2-after.jpg',
         sessions: '10 sesiones',
         prompt: 'Tasteful clinical before-and-after style abdominoplasty recovery documentation image, same patient abdominal contour shown in two adjacent panels, modest non-graphic framing, visible improvement in swelling and contour, clean ivory clinical background, no wounds, no scars, no bruising, no explicit nudity, professional post-op recovery documentation, 4:3 ratio.'
       },
       {
         title: 'Post-BBL',
-        imageBefore: 'https://picsum.photos/seed/postop_res3_b/400/400',
-        imageAfter: 'https://picsum.photos/seed/postop_res3_a/400/400',
+        imageBefore: '/assets/treatments/postop-result-3-before.jpg',
+        imageAfter: '/assets/treatments/postop-result-3-after.jpg',
         sessions: '6 sesiones',
         prompt: 'Tasteful clinical before-and-after style BBL recovery documentation image, same patient body contour shown in two adjacent panels, modest and non-graphic framing, improved swelling and contour balance, clean ivory background, no surgical wounds, no bruising, no scars, no explicit nudity, premium post-operative care documentation, professional and discreet, 4:3 ratio.'
       }
@@ -183,7 +183,7 @@ export const postOpContent = {
     primaryCTA: 'Consulta tu caso',
     secondaryCTA: 'Escríbenos por WhatsApp',
     image: {
-        src: 'https://picsum.photos/seed/postop_final/1920/1080',
+        src: '/assets/images/postop-final-cta.jpg',
         alt: 'Final CTA Post-Op background',
         prompt: 'Soft premium clinical recovery still-life, folded white towel, sage leaves, ivory candle, clean recovery care card, warm pearl-gray surface, calm post-operative support mood, lots of negative space for CTA text, reassuring medical spa atmosphere, no people, no surgical imagery, no blood, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -196,7 +196,7 @@ export const postOpContent = {
       category: 'Corporal',
       href: '#',
       image: {
-        src: 'https://picsum.photos/seed/related_postop1/400/300',
+        src: '/assets/treatments/related-postop-1.jpg',
         alt: 'Drenaje linfático corporal',
         prompt: 'Premium body lymphatic drainage treatment image, professional hands performing gentle manual drainage over covered body area, white linens, warm ivory light, soft sage clinical wellness room, calm and discreet, no surgery visuals, 4:3 ratio.'
       }
@@ -208,7 +208,7 @@ export const postOpContent = {
       category: 'Corporal',
       href: '#',
       image: {
-        src: 'https://picsum.photos/seed/related_postop2/400/300',
+        src: '/assets/treatments/related-postop-2.jpg',
         alt: 'Radiofrecuencia corporal',
         prompt: 'Premium non-invasive body treatment image, aesthetic device applied gently over covered or modestly framed body area, clean ivory clinical room, soft sage accents, professional wellness atmosphere, no pain, no redness, no aggressive machine look, 4:3 ratio.'
       }
@@ -220,7 +220,7 @@ export const postOpContent = {
       category: 'Corporal',
       href: '#',
       image: {
-        src: 'https://picsum.photos/seed/related_postop3/400/300',
+        src: '/assets/treatments/related-postop-3.jpg',
         alt: 'Tratamiento de estrías y celulitis',
         prompt: 'Soft premium body skin treatment image, close-up of natural skin texture on thigh or hip area in modest framing, clinical wellness light, warm ivory background, no extreme retouching, no explicit nudity, no harsh before/after, calm and professional, 4:3 ratio.'
       }

@@ -35,47 +35,45 @@ export default function Tier3HeroSection({
 
       <Container className="relative z-10 w-full mt-12 md:mt-0">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          {isMediaReady && (
-            <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               animate={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.8, ease: "easeOut" }}
-               className="max-w-2xl text-center lg:text-left"
+          <motion.div
+             initial={{ opacity: 0, y: 20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, ease: "easeOut" }}
+             className="max-w-2xl text-center lg:text-left"
+          >
+            <motion.span 
+               initial={{ opacity: 0 }}
+               animate={{ opacity: 1 }}
+               transition={{ delay: 0.3 }}
+               className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-[10px] md:text-xs text-white font-bold tracking-widest uppercase mb-6"
             >
-              <motion.span 
-                 initial={{ opacity: 0 }}
-                 animate={{ opacity: 1 }}
-                 transition={{ delay: 0.3 }}
-                 className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-[10px] md:text-xs text-white font-bold tracking-widest uppercase mb-6"
-              >
-                  {eyebrow}
-              </motion.span>
-              
-              <h1 className="text-4xl md:text-6xl mb-6 leading-tight text-white drop-shadow-md font-serif">
-                {h1}
-              </h1>
-              
-              <p className="text-white/90 text-lg md:text-xl mb-10 leading-relaxed drop-shadow-md">
-                {subheadline}
-              </p>
+                {eyebrow}
+            </motion.span>
+            
+            <h1 className="text-4xl md:text-6xl mb-6 leading-tight text-white drop-shadow-md font-serif">
+              {h1}
+            </h1>
+            
+            <p className="text-white/90 text-lg md:text-xl mb-10 leading-relaxed drop-shadow-md">
+              {subheadline}
+            </p>
 
-              <div className="flex flex-col sm:flex-row items-center gap-8 justify-center lg:justify-start">
-                  <Button 
-                    onClick={onScrollToContent}
-                    className="bg-white text-sage hover:bg-white/90 min-w-[220px]"
-                  >
-                    {ctaLabel}
-                  </Button>
-                  
-                  <div className="flex items-center gap-4 text-white/90 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10 text-[10px] uppercase tracking-widest font-bold">
-                    <div className="flex text-yellow-400">
-                        {[...Array(5)].map((_, i) => <Star key={i} size={10} fill="currentColor" />)}
-                    </div>
-                    <span>4.9 Google</span>
+            <div className="flex flex-col sm:flex-row items-center gap-8 justify-center lg:justify-start">
+                <Button 
+                  onClick={onScrollToContent}
+                  className="bg-white text-sage hover:bg-white/90 min-w-[220px]"
+                >
+                  {ctaLabel}
+                </Button>
+                
+                <div className="flex items-center gap-4 text-white/90 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10 text-[10px] uppercase tracking-widest font-bold">
+                  <div className="flex text-yellow-400">
+                      {[...Array(5)].map((_, i) => <Star key={i} size={10} fill="currentColor" />)}
                   </div>
-              </div>
-            </motion.div>
-          )}
+                  <span>4.9 Google</span>
+                </div>
+            </div>
+          </motion.div>
         </div>
       </Container>
       

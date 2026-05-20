@@ -1,0 +1,344 @@
+
+<h2 class="sr-only">Tier 3 treatment page template wireframe for DERMA.M</h2>
+
+<style>
+.sec { border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-lg); margin-bottom: 10px; overflow: hidden; }
+.sec-head { display: flex; align-items: center; justify-content: space-between; padding: 8px 14px; background: var(--color-background-secondary); border-bottom: 0.5px solid var(--color-border-tertiary); }
+.sec-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-secondary); }
+.tag { font-size: 11px; padding: 2px 8px; border-radius: var(--border-radius-md); font-weight: 500; }
+.tag-c { background: var(--color-background-danger); color: var(--color-text-danger); }
+.tag-t { background: var(--color-background-success); color: var(--color-text-success); }
+.tag-e { background: var(--color-background-warning); color: var(--color-text-warning); }
+.tag-n { background: var(--color-background-secondary); color: var(--color-text-secondary); }
+.tag-cv { background: var(--color-background-info); color: var(--color-text-info); }
+.sec-body { padding: 12px 14px; }
+.row { display: flex; gap: 8px; margin-bottom: 8px; }
+.box { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 10px 12px; background: var(--color-background-primary); flex: 1; }
+.box-d { background: var(--color-background-secondary); }
+.lbl { font-size: 11px; color: var(--color-text-secondary); margin-bottom: 3px; }
+.ttl { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+.sub { font-size: 11px; color: var(--color-text-secondary); margin-top: 2px; line-height: 1.5; }
+.media { border: 1.5px dashed var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 10px; text-align: center; background: var(--color-background-secondary); flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; }
+.cta { background: var(--color-background-primary); border: 2px solid var(--color-border-primary); border-radius: var(--border-radius-md); padding: 8px 14px; text-align: center; font-size: 12px; font-weight: 500; color: var(--color-text-primary); }
+.cta-s { border: 0.5px solid var(--color-border-secondary); font-weight: 400; color: var(--color-text-secondary); }
+.note { font-size: 11px; color: var(--color-text-secondary); font-style: italic; margin-top: 4px; }
+.div { height: 0.5px; background: var(--color-border-tertiary); margin: 8px 0; }
+.data-pill { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; padding: 2px 8px; border-radius: var(--border-radius-md); background: var(--color-background-info); color: var(--color-text-info); font-weight: 500; }
+.check { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+</style>
+
+<div style="margin-bottom: 14px; padding: 0 2px;">
+  <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Plantilla Tier 3 — Tratamiento Individual</p>
+  <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Una plantilla · N páginas · Todo desde <code>data/treatments/[slug].ts</code></p>
+</div>
+
+<!-- TRATAMIENTOS QUE USAN ESTA PLANTILLA -->
+<div style="border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-lg); padding: 10px 14px; margin-bottom: 12px; background: var(--color-background-secondary);">
+  <p style="font-size: 11px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 8px;">Páginas generadas con esta plantilla</p>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;">
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+      <p style="font-size: 10px; font-weight: 500; color: var(--color-text-secondary); margin: 0; text-transform: uppercase; letter-spacing: 0.06em;">Faciales</p>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Microneedling</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Dermabrasión Facial</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Maderoterapia Facial</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Carboxiterapia Facial</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Rejuvenecimiento Facial</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Manchas y Cicatrices</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">BB Glow</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Hidratación Profunda</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+      <p style="font-size: 10px; font-weight: 500; color: var(--color-text-secondary); margin: 0; text-transform: uppercase; letter-spacing: 0.06em;">Corporales</p>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Estrías y Celulitis</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Cavitación</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Radiofrecuencia Corporal</span>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Drenaje Linfático Corporal</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+      <p style="font-size: 10px; font-weight: 500; color: var(--color-text-secondary); margin: 0; text-transform: uppercase; letter-spacing: 0.06em;">Otros</p>
+      <span style="font-size: 11px; color: var(--color-text-primary);">Limpieza Dental</span>
+      <span style="font-size: 11px; color: var(--color-text-secondary); font-style: italic;">+ Láser (pendiente Nancy)</span>
+      <div style="margin-top: 8px; padding: 6px 8px; background: var(--color-background-primary); border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 10px; color: var(--color-text-secondary); margin: 0;">Total: 13+ páginas</p>
+        <p style="font-size: 10px; color: var(--color-text-secondary); margin: 2px 0 0;">1 componente TSX</p>
+        <p style="font-size: 10px; color: var(--color-text-secondary); margin: 2px 0 0;">1 data file por tratamiento</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRINCIPIO MODULAR -->
+<div style="border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-lg); padding: 10px 14px; margin-bottom: 12px; background: var(--color-background-primary);">
+  <p style="font-size: 11px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 6px;">Principio modular — agregar un nuevo tratamiento</p>
+  <div style="font-size: 11px; color: var(--color-text-secondary); font-family: var(--font-mono); background: var(--color-background-secondary); padding: 8px 10px; border-radius: var(--border-radius-md); line-height: 1.7;">
+    <span style="color: var(--color-text-secondary);">1. Crear </span><code>data/treatments/dermaplaning.ts</code><br>
+    <span style="color: var(--color-text-secondary);">2. Agregar a </span><code>data/treatments/index.ts</code><br>
+    <span style="color: var(--color-text-secondary);">3. Agregar al hub correspondiente en </span><code>data/hubs.ts</code><br>
+    <span style="color: var(--color-text-secondary);">4. La página existe automáticamente en </span><code>/es/dermaplaning/</code>
+  </div>
+  <p style="font-size: 10px; color: var(--color-text-secondary); margin: 6px 0 0; font-style: italic;">Quitar un tratamiento: eliminar el data file y el item del hub. Cero cambios en componentes.</p>
+</div>
+
+<!-- 01 HERO -->
+<div class="sec">
+  <div class="sec-head">
+    <span class="sec-label">01 · Hero</span>
+    <span class="tag tag-c">Above the fold · keyword del tratamiento</span>
+  </div>
+  <div class="sec-body">
+    <div class="row">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 6px;">
+        <div class="box">
+          <div class="lbl">Eyebrow — desde data file</div>
+          <div class="ttl">West Palm Beach · <span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> hub.label</span></div>
+        </div>
+        <div class="box">
+          <div class="lbl">H1 — keyword SEO</div>
+          <div class="ttl"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> treatment.h1</span></div>
+          <div class="sub">Ej: "Microneedling en West Palm Beach"</div>
+        </div>
+        <div class="box">
+          <div class="lbl">Subheadline</div>
+          <div class="ttl"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> treatment.subheadline</span></div>
+        </div>
+        <div class="cta">Agenda tu evaluación</div>
+        <div class="box" style="padding: 6px 10px;">
+          <div class="sub">⭐ 4.9 Google · MedSpa Certificado · WPB, FL</div>
+        </div>
+      </div>
+      <div class="media" style="flex: 1.2; min-height: 160px;">
+        <i class="ti ti-player-play" style="font-size: 20px; color: var(--color-text-secondary);" aria-hidden="true"></i>
+        <span style="font-size: 11px; color: var(--color-text-secondary);">Video o imagen full-bleed</span>
+        <span class="data-pill" style="margin-top: 4px;"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> treatment.heroMedia</span>
+      </div>
+    </div>
+    <p class="note">H1 incluye "West Palm Beach" — keyword local en cada Tier 3 · mismo load sequence que Tier 1</p>
+  </div>
+</div>
+
+<!-- 02 DESCRIPCIÓN -->
+<div class="sec">
+  <div class="sec-head">
+    <span class="sec-label">02 · Qué es + Para quién</span>
+    <span class="tag tag-e">Split · imagen + texto</span>
+  </div>
+  <div class="sec-body">
+    <div class="row">
+      <div class="media" style="min-height: 120px;">
+        <i class="ti ti-photo" style="font-size: 18px; color: var(--color-text-secondary);" aria-hidden="true"></i>
+        <span class="data-pill" style="margin-top: 4px;"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> treatment.image</span>
+      </div>
+      <div style="flex: 1.3; display: flex; flex-direction: column; gap: 6px;">
+        <div class="box">
+          <div class="lbl">H2</div>
+          <div class="ttl">Qué es <span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> treatment.name</span></div>
+        </div>
+        <div class="box">
+          <div class="lbl">Descripción clínica accesible</div>
+          <div class="ttl"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> treatment.description</span></div>
+        </div>
+        <div class="box">
+          <div class="lbl">Checklist — para quién es</div>
+          <div style="display: flex; flex-direction: column; gap: 0; margin-top: 4px;">
+            <div class="check"><span style="font-size: 12px; font-weight: 500;">✓</span><span class="sub"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> treatment.indications[0]</span></span></div>
+            <div class="check"><span style="font-size: 12px; font-weight: 500;">✓</span><span class="sub"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> treatment.indications[1]</span></span></div>
+            <div class="check" style="border-bottom: none;"><span style="font-size: 12px; font-weight: 500;">✓</span><span class="sub"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> treatment.indications[n]</span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="note">Más corto que Tier 1 — no necesita tabla comparativa ni educación extensa · va directo al valor</p>
+  </div>
+</div>
+
+<!-- 03 BENEFICIOS + PROTOCOLO -->
+<div class="sec">
+  <div class="sec-head">
+    <span class="sec-label">03 · Beneficios + Protocolo</span>
+    <span class="tag tag-e">Condensado vs Tier 1</span>
+  </div>
+  <div class="sec-body">
+    <div class="row" style="margin-bottom: 10px;">
+      <div class="box">
+        <div class="lbl">Beneficios — 3 items máximo</div>
+        <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 6px;">
+          <div style="display: flex; align-items: flex-start; gap: 8px;">
+            <span style="font-size: 14px; color: var(--color-text-primary);">◆</span>
+            <div><div class="ttl" style="font-size: 12px;"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> benefits[0].title</span></div><div class="sub"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> benefits[0].desc</span></div></div>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 8px;">
+            <span style="font-size: 14px; color: var(--color-text-primary);">◆</span>
+            <div><div class="ttl" style="font-size: 12px;"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> benefits[1].title</span></div><div class="sub"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> benefits[1].desc</span></div></div>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 8px;">
+            <span style="font-size: 14px; color: var(--color-text-primary);">◆</span>
+            <div><div class="ttl" style="font-size: 12px;"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> benefits[2].title</span></div><div class="sub"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> benefits[2].desc</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="box box-d">
+        <div class="lbl">Datos clínicos</div>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
+          <div style="display: flex; justify-content: space-between; padding-bottom: 6px; border-bottom: 0.5px solid var(--color-border-tertiary);">
+            <span style="font-size: 11px; color: var(--color-text-secondary);">Duración</span>
+            <span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> duration</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding-bottom: 6px; border-bottom: 0.5px solid var(--color-border-tertiary);">
+            <span style="font-size: 11px; color: var(--color-text-secondary);">Sesiones</span>
+            <span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> sessions</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span style="font-size: 11px; color: var(--color-text-secondary);">Recuperación</span>
+            <span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> recovery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="note">Tier 3 no tiene protocolo paso a paso — solo datos clínicos y beneficios clave · más corto que Tier 1</p>
+  </div>
+</div>
+
+<!-- 04 RESULTADOS -->
+<div class="sec">
+  <div class="sec-head">
+    <span class="sec-label">04 · Resultados</span>
+    <span class="tag tag-t">Galería antes/después · misma que Tier 1</span>
+  </div>
+  <div class="sec-body">
+    <div class="row">
+      <div class="box" style="display: flex; flex-direction: column; gap: 4px;">
+        <div class="row" style="margin-bottom: 0;">
+          <div class="media" style="min-height: 50px;"><span style="font-size: 10px; color: var(--color-text-secondary);">Antes</span></div>
+          <div class="media" style="min-height: 50px;"><span style="font-size: 10px; color: var(--color-text-secondary);">Después</span></div>
+        </div>
+        <div class="sub" style="text-align: center;"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> results[0].sessions</span></div>
+      </div>
+      <div class="box" style="display: flex; flex-direction: column; gap: 4px;">
+        <div class="row" style="margin-bottom: 0;">
+          <div class="media" style="min-height: 50px;"><span style="font-size: 10px; color: var(--color-text-secondary);">Antes</span></div>
+          <div class="media" style="min-height: 50px;"><span style="font-size: 10px; color: var(--color-text-secondary);">Después</span></div>
+        </div>
+        <div class="sub" style="text-align: center;"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> results[1].sessions</span></div>
+      </div>
+      <div class="box" style="display: flex; flex-direction: column; gap: 4px;">
+        <div class="row" style="margin-bottom: 0;">
+          <div class="media" style="min-height: 50px;"><span style="font-size: 10px; color: var(--color-text-secondary);">Antes</span></div>
+          <div class="media" style="min-height: 50px;"><span style="font-size: 10px; color: var(--color-text-secondary);">Después</span></div>
+        </div>
+        <div class="sub" style="text-align: center;"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> results[2].sessions</span></div>
+      </div>
+    </div>
+    <div class="box" style="text-align: center; padding: 6px; margin-top: 2px;">
+      <div class="sub" style="font-style: italic;">Resultados individuales pueden variar.</div>
+    </div>
+    <p class="note">Si no hay resultados disponibles para este tratamiento → sección se oculta automáticamente</p>
+  </div>
+</div>
+
+<!-- 05 FAQ CORTO -->
+<div class="sec">
+  <div class="sec-head">
+    <span class="sec-label">05 · FAQ</span>
+    <span class="tag tag-e">Mínimo 5 preguntas · schema FAQPage</span>
+  </div>
+  <div class="sec-body">
+    <div style="display: flex; flex-direction: column; gap: 0;">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 0.5px solid var(--color-border-tertiary);">
+        <span class="sub"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> faq[0].question</span></span>
+        <i class="ti ti-chevron-down" style="font-size: 14px; color: var(--color-text-secondary);" aria-hidden="true"></i>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 0.5px solid var(--color-border-tertiary);">
+        <span class="sub"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> faq[1].question</span></span>
+        <i class="ti ti-chevron-down" style="font-size: 14px; color: var(--color-text-secondary);" aria-hidden="true"></i>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+        <span class="sub"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> faq[n].question</span></span>
+        <i class="ti ti-chevron-down" style="font-size: 14px; color: var(--color-text-secondary);" aria-hidden="true"></i>
+      </div>
+    </div>
+    <p class="note">FAQPage schema · mínimo 5 preguntas por tratamiento · viven en el data file</p>
+  </div>
+</div>
+
+<!-- 06 CTA + RELACIONADOS -->
+<div class="sec">
+  <div class="sec-head">
+    <span class="sec-label">06 · CTA + Tratamientos relacionados</span>
+    <span class="tag tag-cv">Conversión + retención</span>
+  </div>
+  <div class="sec-body">
+    <div class="row" style="margin-bottom: 10px;">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 6px;">
+        <div class="box">
+          <div class="lbl">H2</div>
+          <div class="ttl">¿Lista para tu sesión?</div>
+        </div>
+        <div class="sub" style="padding: 0 4px;">Evaluación gratuita incluida. West Palm Beach, FL.</div>
+      </div>
+      <div style="flex: 0 0 1px; background: var(--color-border-tertiary);"></div>
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 6px; justify-content: center;">
+        <div class="cta">Agenda tu evaluación</div>
+        <div class="cta cta-s">Escríbenos por WhatsApp</div>
+      </div>
+    </div>
+
+    <div class="div"></div>
+
+    <div class="box box-d" style="margin-bottom: 8px;">
+      <div class="lbl">Tratamientos relacionados — desde data file</div>
+      <div class="ttl" style="font-size: 12px;">Otros tratamientos que complementan este resultado</div>
+    </div>
+    <div class="row" style="margin-bottom: 0;">
+      <div class="box" style="display: flex; flex-direction: column; gap: 4px;">
+        <div class="media" style="min-height: 50px;">
+          <i class="ti ti-photo" style="font-size: 14px; color: var(--color-text-secondary);" aria-hidden="true"></i>
+        </div>
+        <div class="ttl" style="font-size: 11px;"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> related[0].name</span></div>
+        <div style="font-size: 10px; color: var(--color-text-secondary);">Ver tratamiento →</div>
+      </div>
+      <div class="box" style="display: flex; flex-direction: column; gap: 4px;">
+        <div class="media" style="min-height: 50px;">
+          <i class="ti ti-photo" style="font-size: 14px; color: var(--color-text-secondary);" aria-hidden="true"></i>
+        </div>
+        <div class="ttl" style="font-size: 11px;"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> related[1].name</span></div>
+        <div style="font-size: 10px; color: var(--color-text-secondary);">Ver tratamiento →</div>
+      </div>
+      <div class="box" style="display: flex; flex-direction: column; gap: 4px;">
+        <div class="media" style="min-height: 50px;">
+          <i class="ti ti-photo" style="font-size: 14px; color: var(--color-text-secondary);" aria-hidden="true"></i>
+        </div>
+        <div class="ttl" style="font-size: 11px;"><span class="data-pill"><i class="ti ti-database" style="font-size: 10px;" aria-hidden="true"></i> related[2].name</span></div>
+        <div style="font-size: 10px; color: var(--color-text-secondary);">Ver tratamiento →</div>
+      </div>
+    </div>
+    <p class="note">Relacionados desde data file — no hardcodeados en el componente · imagen obligatoria</p>
+  </div>
+</div>
+
+<!-- DATA FILE STRUCTURE -->
+<div style="border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-lg); overflow: hidden;">
+  <div style="padding: 8px 14px; background: var(--color-background-secondary); border-bottom: 0.5px solid var(--color-border-tertiary);">
+    <p style="font-size: 11px; font-weight: 500; color: var(--color-text-primary); margin: 0;">Estructura del data file — <code>data/treatments/microneedling.ts</code></p>
+  </div>
+  <div style="padding: 10px 14px; font-family: var(--font-mono); font-size: 11px; color: var(--color-text-secondary); background: var(--color-background-primary); line-height: 1.8;">
+    <span style="color: var(--color-text-primary);">export const microneedling = {</span><br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">slug:</span> <span style="color: var(--color-text-primary);">'microneedling'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">hub:</span> <span style="color: var(--color-text-primary);">'faciales'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">name:</span> <span style="color: var(--color-text-primary);">'Microneedling'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">h1:</span> <span style="color: var(--color-text-primary);">'Microneedling en West Palm Beach'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">subheadline:</span> <span style="color: var(--color-text-primary);">'...'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">description:</span> <span style="color: var(--color-text-primary);">'...'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">heroMedia:</span> <span style="color: var(--color-text-primary);">'/media/microneedling-hero.mp4'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">image:</span> <span style="color: var(--color-text-primary);">'/images/microneedling.jpg'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">indications:</span> [<span style="color: var(--color-text-primary);">'Poros dilatados'</span>, <span style="color: var(--color-text-primary);">'...'</span>],<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">benefits:</span> [{ title, desc }, ...],<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">duration:</span> <span style="color: var(--color-text-primary);">'60 min'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">sessions:</span> <span style="color: var(--color-text-primary);">'3–6'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">recovery:</span> <span style="color: var(--color-text-primary);">'24–48h'</span>,<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">results:</span> [{ before, after, sessions }],<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">faq:</span> [{ question, answer }, ...],<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">related:</span> [<span style="color: var(--color-text-primary);">'prf'</span>, <span style="color: var(--color-text-primary);">'dermabrasion'</span>, <span style="color: var(--color-text-primary);">'bb-glow'</span>],<br>
+    &nbsp;&nbsp;<span style="color: var(--color-text-secondary);">meta:</span> { title, description, canonical },<br>
+    <span style="color: var(--color-text-primary);">}</span>
+  </div>
+</div>

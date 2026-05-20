@@ -18,7 +18,7 @@ export const laserLightHubContent: HubPageContent = {
     ctaLabel: 'Evalúa tu piel — gratis',
     trustLine: 'Tecnología avanzada · Diagnóstico personalizado · WPB, FL',
     image: {
-      src: 'https://images.unsplash.com/photo-1579154235828-4519939f9394?q=80&w=2070&auto=format&fit=crop',
+      src: '/assets/images/laser-device.jpg',
       alt: 'Láser y luz en DERMA.M',
       prompt: 'Premium aesthetic laser and light treatment room, modern skin technology device in bright ivory clinical wellness space, soft pearl gray and sage accents, professional aesthetic specialist preparing treatment, calm patient with protective eyewear, no bright neon beams, no harsh hospital feeling, no dramatic sci-fi light, high-end medspa photography, clean and precise, 16:9 horizontal.'
     }
@@ -57,7 +57,7 @@ export const laserLightHubContent: HubPageContent = {
         isPlaceholderRoute: true,
         badge: 'Más solicitado',
         image: {
-          src: 'https://images.unsplash.com/photo-1598440499092-2313643b2fba?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/laser-hair.jpg',
           alt: 'IPL',
           prompt: 'Premium IPL light treatment image, aesthetic specialist using modern IPL device near patient’s cheek, patient wearing protective eyewear, clean ivory room, pearl gray and sage accents, no harsh flash, no redness, no discomfort, professional medspa photography, 4:3 ratio.'
         }
@@ -70,7 +70,7 @@ export const laserLightHubContent: HubPageContent = {
         href: '/es/reservar',
         isPlaceholderRoute: true,
         image: {
-          src: 'https://images.unsplash.com/photo-1579154235828-4519939f9394?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/laser-device.jpg',
           alt: 'Láser Facial',
           prompt: 'Premium facial laser treatment image, modern aesthetic laser handpiece near calm patient’s face, protective eyewear, clean ivory medspa room, soft clinical light, no redness, no pain, no sci-fi glow, elegant technical precision, 4:3 ratio.'
         }
@@ -83,7 +83,7 @@ export const laserLightHubContent: HubPageContent = {
         href: '/es/reservar',
         isPlaceholderRoute: true,
         image: {
-          src: 'https://images.unsplash.com/photo-1522335789203-aa9fb3922df2?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/consultation-room.jpg',
           alt: 'RF Fraccionada',
           prompt: 'Premium fractional radiofrequency facial treatment image, aesthetic device applied gently to jawline or cheek, calm patient, white headband, ivory clinical wellness room, soft sage accents, no redness, no aggressive machine look, high-end medspa photography, 4:3 ratio.'
         }
@@ -100,7 +100,7 @@ export const laserLightHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1598440499092-2313643b2fba?q=80&w=2070&auto=format&fit=crop', alt: 'IPL', prompt: 'IPL' }
+        image: { src: '/assets/images/laser-hair.jpg', alt: 'IPL', prompt: 'IPL' }
       },
       {
         id: 'laser-facial-grid',
@@ -109,7 +109,7 @@ export const laserLightHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1579154235828-4519939f9394?q=80&w=2070&auto=format&fit=crop', alt: 'Láser', prompt: 'Laser' }
+        image: { src: '/assets/images/laser-device.jpg', alt: 'Láser', prompt: 'Laser' }
       },
       {
         id: 'rf-frac-grid',
@@ -118,7 +118,7 @@ export const laserLightHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1522335789203-aa9fb3922df2?q=80&w=2070&auto=format&fit=crop', alt: 'RF Fraccionada', prompt: 'RF' }
+        image: { src: '/assets/images/consultation-room.jpg', alt: 'RF Fraccionada', prompt: 'RF' }
       },
       {
         id: 'rf-facial-grid',
@@ -126,7 +126,7 @@ export const laserLightHubContent: HubPageContent = {
         category: 'Firmeza',
         ctaLabel: 'Ver más →',
         href: '/es/radiofrecuencia-facial',
-        image: { src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?q=80&w=2070&auto=format&fit=crop', alt: 'RF Facial', prompt: 'RF' }
+        image: { src: '/assets/images/laser-treatment.jpg', alt: 'RF Facial', prompt: 'RF' }
       },
       {
         id: 'evefus',
@@ -135,7 +135,7 @@ export const laserLightHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1974&auto=format&fit=crop', alt: 'Evefus', prompt: 'Evefus' }
+        image: { src: '/assets/treatments/peel-treatment.jpg', alt: 'Evefus', prompt: 'Evefus' }
       },
       {
         id: 'plasma-frio',
@@ -144,7 +144,7 @@ export const laserLightHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop', alt: 'Plasma', prompt: 'Cold Plasma' }
+        image: { src: '/assets/images/facial-massage.jpg', alt: 'Plasma', prompt: 'Cold Plasma' }
       },
       {
         id: 'oxigeno-grid',
@@ -152,7 +152,7 @@ export const laserLightHubContent: HubPageContent = {
         category: 'Luminosidad',
         ctaLabel: 'Ver más →',
         href: '/es/oxigenoterapia-facial',
-        image: { src: 'https://images.unsplash.com/photo-1512290746422-3c02fc33a822?q=80&w=2070&auto=format&fit=crop', alt: 'Oxígeno', prompt: 'Oxygen' }
+        image: { src: '/assets/images/facial-scrub.jpg', alt: 'Oxígeno', prompt: 'Oxygen' }
       },
       {
         id: 'carbox-face',
@@ -161,7 +161,7 @@ export const laserLightHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop', alt: 'Carbox', prompt: 'Carboxy' }
+        image: { src: '/assets/images/skin-therapy.jpg', alt: 'Carbox', prompt: 'Carboxy' }
       }
     ]
   },
@@ -234,7 +234,7 @@ export const laserLightHubContent: HubPageContent = {
     secondaryCTA: 'Escríbenos por WhatsApp',
     whatsappMessage: 'Hola, quiero información sobre tratamientos de láser y luz en DERMA.M.',
     image: {
-      src: 'https://images.unsplash.com/photo-1579154235828-4519939f9394?q=80&w=2070&auto=format&fit=crop',
+      src: '/assets/images/laser-device.jpg',
       alt: 'Tecnología DERMA.M',
       prompt: 'Clean medical technology scene, ivory and pearl gray, soft lighting.'
     }

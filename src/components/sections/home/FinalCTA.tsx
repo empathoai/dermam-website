@@ -2,9 +2,12 @@ import { homeContent } from '../../../data/homeContent';
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import SectionMedia from '../../ui/SectionMedia';
+import { Link } from 'react-router-dom';
+import { siteConfig } from '../../../data/siteConfig';
 
 export default function FinalCTA() {
   const { finalCTA } = homeContent;
+  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hola DERMA.M, me gustaría agendar una evaluación de piel.')}`;
 
   return (
     <section className="py-32 relative overflow-hidden isolation-isolate">
@@ -30,10 +33,16 @@ export default function FinalCTA() {
           </div>
 
           <div className="flex flex-col gap-4 w-full md:w-auto min-w-[280px]">
-            <Button variant="primary" className="py-4">
+            <Button variant="primary" to="/es/reservar" className="py-4 w-full">
               {finalCTA.primaryCTA}
             </Button>
-            <Button variant="outline" className="py-4 border-text-secondary text-text-secondary bg-white/10 backdrop-blur-sm">
+            <Button 
+              variant="outline"
+              href={whatsappUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="py-4 w-full"
+            >
               {finalCTA.secondaryCTA}
             </Button>
             <p className="text-[10px] text-center text-text-secondary uppercase tracking-widest mt-2">

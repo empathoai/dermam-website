@@ -4,17 +4,14 @@ import Container from '../../ui/Container';
 import SectionMedia from '../../ui/SectionMedia';
 import Button from '../../ui/Button';
 import { MessageCircle, Calendar } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { siteConfig } from '../../../data/siteConfig';
 
 interface IVTherapyFinalCTAProps {
   content: IVTherapyFinalCTAContent;
 }
 
 export default function IVTherapyFinalCTA({ content }: IVTherapyFinalCTAProps) {
-  const handleWhatsAppClick = () => {
-    const url = `https://wa.me/15615663762?text=${encodeURIComponent(content.secondaryCTA.whatsappMessage)}`;
-    window.open(url, '_blank', 'noreferrer');
-  };
+  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(content.secondaryCTA.whatsappMessage)}`;
 
   return (
     <section className="relative py-24 overflow-hidden bg-canvas isolation-isolate">
@@ -22,7 +19,7 @@ export default function IVTherapyFinalCTA({ content }: IVTherapyFinalCTAProps) {
         type="image"
         src={content.image.src}
         alt={content.image.alt}
-        overlay="sage"
+        overlay="soft"
         opacity={0.5}
       />
 
@@ -40,17 +37,20 @@ export default function IVTherapyFinalCTA({ content }: IVTherapyFinalCTAProps) {
 
           {/* Actions */}
           <div className="flex-1 p-10 md:p-16 flex flex-col justify-center gap-6 bg-canvas/30">
-            <Link to={content.primaryCTA.href} className="w-full">
-              <Button className="w-full justify-center gap-3 py-6 h-auto text-lg">
-                <Calendar size={20} />
-                {content.primaryCTA.label}
-              </Button>
-            </Link>
+            <Button 
+              to={content.primaryCTA.href} 
+              className="w-full justify-center gap-3 py-6 h-auto text-lg"
+            >
+              <Calendar size={20} />
+              {content.primaryCTA.label}
+            </Button>
 
             <Button 
-              onClick={handleWhatsAppClick}
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               variant="outline" 
-              className="w-full justify-center gap-3 py-6 h-auto text-lg border-sage/30 text-sage hover:bg-sage/5"
+              className="w-full justify-center gap-3 py-6 h-auto text-lg"
             >
               <MessageCircle size={20} />
               {content.secondaryCTA.label}

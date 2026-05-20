@@ -37,6 +37,7 @@ export default function AboutHeroSection() {
           alt={hero.image.alt}
           onLoaded={() => setMediaLoaded(true)}
           overlay={true}
+          overlayType="dark"
         />
       </div>
 
@@ -44,7 +45,7 @@ export default function AboutHeroSection() {
         <motion.div
            variants={containerVariants}
            initial="hidden"
-           animate={mediaLoaded ? "visible" : "hidden"}
+           animate="visible"
            className="max-w-3xl"
         >
           <motion.h1 

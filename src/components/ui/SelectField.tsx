@@ -20,12 +20,12 @@ export default function SelectField({ label, options, error, id, placeholder, ..
         htmlFor={id} 
         className="text-[10px] font-bold uppercase tracking-[0.2em] text-text-primary ml-1"
       >
-        {label} {props.required && <span className="text-sage">*</span>}
+        {label} {props.required && <span className="text-base-900">*</span>}
       </label>
       <div className="relative">
         <select
           id={id}
-          className={`w-full px-5 py-4 rounded-xl bg-canvas border transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-sage/20 text-sm appearance-none ${error ? 'border-red-300' : 'border-border-soft focus:border-sage'}`}
+          className={`w-full px-5 py-4 rounded-xl bg-canvas border transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-base-900/10 text-sm appearance-none ${error ? 'border-red-300' : 'border-border-soft focus:border-base-900'}`}
           aria-invalid={error ? 'true' : 'false'}
           aria-describedby={error ? `${id}-error` : undefined}
           {...rest}

@@ -6,6 +6,7 @@ const icons: Record<string, LucideIcon> = {
   droplets: Droplets,
   sparkles: Sparkles,
   focus: Target,
+  target: Target,
   layers: Layers,
   maximize: Maximize,
   palette: Palette
@@ -18,7 +19,7 @@ interface TreatmentBenefitCardProps {
 }
 
 export default function TreatmentBenefitCard({ title, description, icon }: TreatmentBenefitCardProps) {
-  const Icon = icon ? icons[icon] : Sparkles;
+  const Icon = (icon && icons[icon]) || Sparkles;
 
   return (
     <motion.div

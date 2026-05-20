@@ -5,21 +5,21 @@ export const aboutContent: AboutContent = {
     headline: 'El equipo detrás de tu piel',
     subheadline: 'Especialistas certificados en cada área. Un solo objetivo: resultados reales para tu piel.',
     image: {
-      src: 'https://picsum.photos/seed/dermam_team_hero/1920/1080',
+      src: '/assets/images/hero-team.jpg',
       alt: 'Equipo DERMA.M Skin Health',
       prompt: 'Premium editorial group portrait of a medical aesthetics clinic team in a bright treatment room, Latina founder and diverse team of specialists, elegant white or soft neutral clinical uniforms, warm confident expressions, soft ivory and sage environment, professional but approachable, clean medspa setting, botanical minimal decor, natural light, no hospital feeling, no corporate stiffness, luxury wellness clinic team photography, 16:9 horizontal.'
     }
   },
   story: {
     eyebrow: 'Nuestra historia',
-    headline: 'Nancy Meléndez · Fundadora',
+    headline: 'Nancy Nieto · Fundadora',
     subcopy: 'Especialista en Salud Dermal · MedSpa Certificado desde 2024',
-    storyCopy: 'Nancy creó DERMA.M para ofrecer una experiencia estética basada en diagnóstico, criterio profesional y protocolos personalizados. La evolución de DERMA.M a MedSpa certificado marcó un paso importante: pasar de tratamientos aislados a un sistema de cuidado de piel con mayor seguridad, tecnología y seguimiento.',
+    storyCopy: 'Nancy Nieto creó DERMA.M para ofrecer una experiencia estética basada en diagnóstico, criterio profesional y protocolos personalizados. La evolución de DERMA.M a MedSpa certificado marcó un paso importante: pasar de tratamientos aislados a un sistema de cuidado de piel con mayor seguridad, tecnología y seguimiento.',
     quote: '“Diagnóstico antes de tratamiento. Siempre.”',
     image: {
-      src: 'https://picsum.photos/seed/nancy_founder_main/800/1000',
-      alt: 'Nancy Meléndez Fundadora',
-      prompt: 'Premium editorial portrait of Nancy Meléndez, Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, elegant white or ivory clinical uniform, hands visible, seated or standing inside a bright DERMA.M treatment room, soft sage and ivory palette, botanical minimal decor, professional but approachable, no corporate headshot, no hospital look, no white coat cliché, luxury clinical wellness portrait, 4:5 vertical.'
+      src: '/assets/avatars/nancy-nieto-founder-about.jpg',
+      alt: 'Nancy Nieto Fundadora',
+      prompt: 'Premium editorial portrait of Nancy Nieto, Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, elegant white or ivory clinical uniform, hands visible, seated or standing inside a bright DERMA.M treatment room, soft sage and ivory palette, botanical minimal decor, professional but approachable, no corporate headshot, no hospital look, no white coat cliché, luxury clinical wellness portrait, 4:5 vertical.'
     },
     backgroundMedia: undefined,
     stats: [

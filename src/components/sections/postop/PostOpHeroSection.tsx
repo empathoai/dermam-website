@@ -53,7 +53,7 @@ export default function PostOpHeroSection() {
         <motion.div
            variants={containerVariants}
            initial="hidden"
-           animate={mediaLoaded || shouldReduceMotion ? "visible" : "hidden"}
+           animate="visible"
            className="max-w-3xl"
         >
           <motion.div variants={itemVariants} className="mb-6">
@@ -79,14 +79,14 @@ export default function PostOpHeroSection() {
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button 
                 onClick={handleConsultClick}
-                className="bg-sage hover:bg-sage-deep text-white shadow-lg shadow-sage/20 px-10 py-4"
+                className="px-10 py-4 shadow-lg"
             >
               {hero.primaryCTA}
             </Button>
             <Button 
                 variant="outline"
                 onClick={handleConsultClick}
-                className="bg-white/40 backdrop-blur-md border-sage text-sage px-10 py-4"
+                className="px-10 py-4"
             >
               {hero.secondaryCTA}
             </Button>

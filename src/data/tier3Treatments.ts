@@ -29,7 +29,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/hidro_hero/1920/1080',
+      src: '/assets/treatments/hidrofacial/hero.jpg',
       alt: 'Hidrofacial en DERMA.M',
       position: 'center'
     },
@@ -51,7 +51,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: '¿Qué es el Hidrofacial?',
       body: 'El Hidrofacial es una tecnología avanzada que combina limpieza, exfoliación, extracción e hidratación simultánea. Utiliza una punta de succión especial para eliminar impurezas mientras infunde sueros nutritivos profundamente en la dermis, dejando la piel visiblemente más limpia, suave y radiante.',
       media: {
-        src: 'https://picsum.photos/seed/hidro_exp/1200/900',
+        src: '/assets/treatments/hidrofacial/explanation.jpg',
         alt: 'Proceso de Hidrofacial',
         prompt: `IMAGE PROMPT — HIDROFACIAL PROCESS: ${commonImagePrompt} ${'Professional hands performing a hydro-facial treatment on a calm patient, visible water-based glow on skin, 4:3 ratio.'}`
       }
@@ -92,7 +92,7 @@ export const tier3Treatments: Tier3Treatment[] = [
         'No requiere tiempo de inactividad',
         'Se puede aplicar maquillaje inmediatamente después'
       ],
-      disclaimer: 'Aunque es gentil, Nancy evaluará tu piel para asegurar que no haya contraindicaciones activas.'
+      disclaimer: 'Aunque es gentil, Nancy Nieto evaluará tu piel para asegurar que no haya contraindicaciones activas.'
     },
     faqs: [
       {
@@ -111,7 +111,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Cita',
       secondaryLabel: 'Consultar por WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/hidro_cta/1920/1080',
+        src: '/assets/treatments/hidrofacial/cta.jpg',
         alt: 'Final CTA Hidrofacial',
         prompt: `IMAGE PROMPT — HIDROFACIAL CTA: ${commonImagePrompt} ${'Soft still-life with fresh water droplets, sage leaves and ivory towels, 16:9 horizontal.'}`
       }
@@ -146,7 +146,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/micro_hero/1920/1080',
+      src: '/assets/treatments/microneedling/hero.jpg',
       alt: 'Microneedling Dermapen 3 en DERMA.M',
       position: 'center'
     },
@@ -168,7 +168,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: '¿Cómo funciona?',
       body: 'Utilizamos tecnología Dermapen 3 para crear micro-canales controlados en la piel. Esto estimula la respuesta natural de curación del cuerpo, produciendo nuevo colágeno y elastina, mientras permite que sueros de grado médico penetren profundamente.',
       media: {
-        src: 'https://picsum.photos/seed/micro_exp/1200/900',
+        src: '/assets/treatments/microneedling/explanation.jpg',
         alt: 'Dispositivo Dermapen 3',
         prompt: `IMAGE PROMPT — MICRONEEDLING PROCESS: ${commonImagePrompt} ${'Close up of a professional microneedling device held by gloved hands, calm clinical background, 4:3 ratio.'}`
       }
@@ -223,7 +223,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Reservar Evaluación',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/micro_cta/1920/1080',
+        src: '/assets/treatments/microneedling/cta.jpg',
         alt: 'Final CTA Microneedling',
         prompt: `IMAGE PROMPT — MICRONEEDLING CTA: ${commonImagePrompt} ${'Still-life with medical vials and sage botanical leaves, 16:9 horizontal.'}`
       }
@@ -258,7 +258,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/dental_white_hero/1920/1080',
+      src: '/assets/treatments/blanqueamiento-dental/hero.jpg',
       alt: 'Blanqueamiento dental en DERMA.M',
       position: 'center'
     },
@@ -280,7 +280,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: '¿En qué consiste?',
       body: 'Nuestro blanqueamiento dental utiliza agentes aclaradores de alta concentración supervisados por profesionales. El proceso elimina manchas profundas en el esmalte sin comprometer la estructura dental, logrando varios tonos de aclarado en una sola sesión.',
       media: {
-        src: 'https://picsum.photos/seed/dental_white_exp/1200/900',
+        src: '/assets/treatments/blanqueamiento-dental/explanation.jpg',
         alt: 'Proceso de blanqueamiento',
         prompt: `IMAGE PROMPT — BLANQUEAMIENTO DENTAL PROCESS: ${commonImagePrompt} ${'Professional dental whitening setup, protective gel applied to gums, bright clinical setting, 4:3 ratio.'}`
       }
@@ -330,7 +330,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Evaluación',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/dental_white_cta/1920/1080',
+        src: '/assets/treatments/blanqueamiento-dental/cta.jpg',
         alt: 'Final CTA Blanqueamiento',
         prompt: `IMAGE PROMPT — BLANQUEAMIENTO DENTAL CTA: ${commonImagePrompt} ${'Clean white clinical still-life with dental mirror and sage branch, 16:9 horizontal.'}`
       }
@@ -365,7 +365,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/dental_clean_hero/1920/1080',
+      src: '/assets/treatments/limpieza-dental/hero.jpg',
       alt: 'Limpieza dental profesional en DERMA.M',
       position: 'center'
     },
@@ -387,7 +387,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'Importancia de la profilaxis',
       body: 'La limpieza dental profesional o profilaxis elimina la placa bacteriana y el sarro que el cepillado diario no alcanza. Es la base fundamental para prevenir problemas mayores y mantener una estética dental saludable.',
       media: {
-        src: 'https://picsum.photos/seed/dental_clean_exp/1200/900',
+        src: '/assets/treatments/limpieza-dental/explanation.jpg',
         alt: 'Higiene dental profesional',
         prompt: `IMAGE PROMPT — LIMPIEZA DENTAL PROCESS: ${commonImagePrompt} ${'Close up of clean dental instruments on a white tray, soft ivory background, 4:3 ratio.'}`
       }
@@ -436,7 +436,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Limpieza',
       secondaryLabel: 'Dudas por WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/dental_clean_cta/1920/1080',
+        src: '/assets/treatments/limpieza-dental/cta.jpg',
         alt: 'Final CTA Limpieza Dental',
         prompt: `IMAGE PROMPT — LIMPIEZA DENTAL CTA: ${commonImagePrompt} ${'Soft white dental still-life, fresh mint or sage, ivory background, 16:9 horizontal.'}`
       }
@@ -465,7 +465,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/peel_hero/1920/1080',
+      src: '/assets/treatments/peel-coreano/hero.jpg',
       alt: 'Peel Coreano en DERMA.M',
       position: 'center'
     },
@@ -487,7 +487,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'Renovación sin drama',
       body: 'A diferencia de los peelings químicos tradicionales que pueden causar descamación agresiva, el Peel Coreano utiliza una mezcla de ácidos suaves y extractos botánicos que trabajan en sintonía con la piel. Remueve impurezas y células muertas mientras calma e hidrata simultáneamente.',
       media: {
-        src: 'https://picsum.photos/seed/peel_exp/1200/900',
+        src: '/assets/treatments/peel-coreano/explanation.jpg',
         alt: 'Aplicación de Peel Coreano',
         prompt: `IMAGE PROMPT — PEEL COREANO PROCESS: ${commonImagePrompt} ${'Aesthetic specialist applying a gentle solution with a brush, luminous skin, 4:3 ratio.'}`
       }
@@ -535,7 +535,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Evaluación',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/peel_cta/1920/1080',
+        src: '/assets/treatments/peel-coreano/cta.jpg',
         alt: 'Final CTA Peel Coreano',
         prompt: `IMAGE PROMPT — PEEL COREANO CTA: ${commonImagePrompt} ${'Soft still-life with botanical glass bottles and sage, 16:9 horizontal.'}`
       }
@@ -564,7 +564,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/oxy_hero/1920/1080',
+      src: '/assets/treatments/oxigenoterapia-facial/hero.jpg',
       alt: 'Oxigenoterapia facial en DERMA.M',
       position: 'center'
     },
@@ -586,7 +586,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'Oxígeno que renueva',
       body: 'Utilizamos una corriente de oxígeno puro a presión controlada para introducir sueros cargados de vitaminas, antioxidantes y ácido hialurónico. Esto acelera la regeneración celular y devuelve el volumen y brillo que la piel pierde con el cansancio diario.',
       media: {
-        src: 'https://picsum.photos/seed/oxy_exp/1200/900',
+        src: '/assets/treatments/oxigenoterapia-facial/explanation.jpg',
         alt: 'Infusión de oxígeno',
         prompt: `IMAGE PROMPT — OXIGENOTERAPIA PROCESS: ${commonImagePrompt} ${'Soft oxygen airbrush device used on skin, misty refreshing feel, 4:3 ratio.'}`
       }
@@ -634,7 +634,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Reservar Ahora',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/oxy_cta/1920/1080',
+        src: '/assets/treatments/oxigenoterapia-facial/cta.jpg',
         alt: 'Final CTA Oxigenoterapia',
         prompt: `IMAGE PROMPT — OXIGENOTERAPIA CTA: ${commonImagePrompt} ${'Airy light still-life with glass and clear water, sage accents, 16:9 horizontal.'}`
       }
@@ -663,7 +663,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/cav_hero/1920/1080',
+      src: '/assets/treatments/cavitacion/hero.jpg',
       alt: 'Cavitación corporal en DERMA.M',
       position: 'center'
     },
@@ -685,7 +685,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: '¿Cómo funciona?',
       body: 'La cavitación utiliza ultrasonidos de baja frecuencia que generan micro-burbujas en el tejido graso. Estas burbujas colapsan y rompen selectivamente las células adiposas, convirtiéndolas en una sustancia líquida que el cuerpo elimina naturalmente a través del sistema linfático y la orina.',
       media: {
-        src: 'https://picsum.photos/seed/cav_exp/1200/900',
+        src: '/assets/treatments/cavitacion/explanation.jpg',
         alt: 'Proceso de cavitación',
         prompt: `IMAGE PROMPT — CAVITACION PROCESS: ${commonImagePrompt} ${'Non-invasive body device gently applied to a modestly framed abdominal area, professional setting, 4:3 ratio.'}`
       }
@@ -734,7 +734,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Evaluar mi Caso',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/cav_cta/1920/1080',
+        src: '/assets/treatments/cavitacion/cta.jpg',
         alt: 'Final CTA Cavitación',
         prompt: `IMAGE PROMPT — CAVITACION CTA: ${commonImagePrompt} ${'Soft minimalist still-life with measuring tape and sage, pearl gray background, 16:9 horizontal.'}`
       }
@@ -763,7 +763,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/rf_hero/1920/1080',
+      src: '/assets/treatments/radiofrecuencia-corporal/hero.jpg',
       alt: 'Radiofrecuencia corporal en DERMA.M',
       position: 'center'
     },
@@ -785,7 +785,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'Tecnología de calor profundo',
       body: 'La radiofrecuencia entrega energía térmica a las capas profundas de la piel sin dañar la superficie. Este calor estimula la contracción de las fibras de colágeno existentes y promueve la formación de nuevas, resultando en una piel más tersa y firme.',
       media: {
-        src: 'https://picsum.photos/seed/rf_exp/1200/900',
+        src: '/assets/treatments/radiofrecuencia-corporal/explanation.jpg',
         alt: 'Tratamiento de radiofrecuencia',
         prompt: `IMAGE PROMPT — RADIOFRECUENCIA CORPORAL PROCESS: ${commonImagePrompt} ${'Professional device generating gentle warmth on skin, calm aesthetics, 4:3 ratio.'}`
       }
@@ -833,7 +833,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Evaluación',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/rf_cta/1920/1080',
+        src: '/assets/treatments/radiofrecuencia-corporal/cta.jpg',
         alt: 'Final CTA Radiofrecuencia',
         prompt: `IMAGE PROMPT — RADIOFRECUENCIA CORPORAL CTA: ${commonImagePrompt} ${'Warm abstract clinical scene, soft light, ivory towels, 16:9 horizontal.'}`
       }
@@ -862,7 +862,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/dren_hero/1920/1080',
+      src: '/assets/treatments/drenaje-linfatico-corporal/hero.jpg',
       alt: 'Drenaje linfático en DERMA.M',
       position: 'center'
     },
@@ -884,7 +884,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'El arte del toque suave',
       body: 'A diferencia de los masajes reductores intensos, el drenaje linfático utiliza maniobras extremadamente suaves y lentas. El objetivo es estimular los ganglios y conductos linfáticos para facilitar el transporte de líquidos y desechos del cuerpo hacia su eliminación natural.',
       media: {
-        src: 'https://picsum.photos/seed/dren_exp/1200/900',
+        src: '/assets/treatments/drenaje-linfatico-corporal/explanation.jpg',
         alt: 'Técnica de drenaje',
         prompt: `IMAGE PROMPT — DRENAJE LINFATICO PROCESS: ${commonImagePrompt} ${'Gentle hands performing Rhythmic massage over white linens, 4:3 ratio.'}`
       }
@@ -914,7 +914,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     safety: {
       title: 'Importante',
       items: [
-        'Si es post-cirugía, Nancy te evaluará específicamente',
+        'Si es post-cirugía, Nancy Nieto te evaluará específicamente',
         'Aumenta la necesidad de orinar post-tratamiento',
         'No doloroso, es altamente relajante'
       ],
@@ -933,7 +933,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Ahora',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/dren_cta/1920/1080',
+        src: '/assets/treatments/drenaje-linfatico-corporal/cta.jpg',
         alt: 'Final CTA Drenaje',
         prompt: `IMAGE PROMPT — DRENAJE LINFATICO CTA: ${commonImagePrompt} ${'Calm water ripples still-life, pearl gray background, 16:9 horizontal.'}`
       }
@@ -962,7 +962,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: 'https://picsum.photos/seed/rf_face_hero/1920/1080',
+      src: '/assets/treatments/radiofrecuencia-facial/hero.jpg',
       alt: 'Radiofrecuencia facial en DERMA.M',
       position: 'center'
     },
@@ -984,7 +984,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'Estimulación térmica profunda',
       body: 'La radiofrecuencia utiliza ondas que elevan la temperatura de las capas más profundas de la dermis de forma segura. Este calor controlado provoca la contracción inmediata de las fibras de colágeno y activa a los fibroblastos para producir colágeno nuevo en los meses siguientes.',
       media: {
-        src: 'https://picsum.photos/seed/rf_face_exp/1200/900',
+        src: '/assets/treatments/radiofrecuencia-facial/explanation.jpg',
         alt: 'Sesión de radiofrecuencia facial',
         prompt: `IMAGE PROMPT — RADIOFRECUENCIA FACIAL PROCESS: ${commonImagePrompt} ${'Professional device gently applied to jawline, calm patient, 4:3 ratio.'}`
       }
@@ -1032,7 +1032,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Cita',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: 'https://picsum.photos/seed/rf_face_cta/1920/1080',
+        src: '/assets/treatments/radiofrecuencia-facial/cta.jpg',
         alt: 'Final CTA Radiofrecuencia Facial',
         prompt: `IMAGE PROMPT — RADIOFRECUENCIA FACIAL CTA: ${commonImagePrompt} ${'Soft warm clinical abstract image, ivory and sage palette, 16:9 horizontal.'}`
       }

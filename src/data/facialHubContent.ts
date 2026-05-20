@@ -18,7 +18,7 @@ export const facialHubContent: HubPageContent = {
     ctaLabel: 'Evalúa tu piel — gratis',
     trustLine: '⭐ 4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
     image: {
-      src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?q=80&w=2070&auto=format&fit=crop',
+      src: '/assets/images/laser-treatment.jpg',
       alt: 'Tratamiento facial en DERMA.M',
       prompt: 'Bright premium medical aesthetics facial treatment hero image, calm woman receiving a gentle facial treatment in a clean ivory treatment room, white headband, luminous realistic skin, soft sage and pearl gray accents, warm natural light, botanical minimal decor, professional DERMA.M-style medspa environment, clinical but welcoming, no redness, no harsh tools, no aggressive procedure, no dark background, 16:9 horizontal.'
     }
@@ -56,7 +56,7 @@ export const facialHubContent: HubPageContent = {
         href: '/es/plasma-rico-en-plaquetas-west-palm-beach',
         badge: 'Más solicitado',
         image: {
-          src: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/facial-massage.jpg',
           alt: 'Tratamiento PRF',
           prompt: 'Premium clinical aesthetics editorial photo, gloved hands holding a small PRP/PRF vial with golden plasma layer, clean ivory clinical surface, soft natural light, blurred centrifuge in background, elegant medical precision, no visible blood spill, no aggressive needle, no patient face, pastel ivory and soft sage environment, luxury skincare clinic photography, realistic, calm, professional, 4:3 ratio.'
         }
@@ -69,7 +69,7 @@ export const facialHubContent: HubPageContent = {
         href: '/es/limpieza-facial-profunda',
         badge: 'Ideal para empezar',
         image: {
-          src: 'https://images.unsplash.com/photo-1570172619669-df427613e200?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/booking-hero.jpg',
           alt: 'Limpieza Facial Profunda',
           prompt: 'Premium deep facial cleansing treatment editorial photo, woman lying down with white headband receiving a gentle cleansing or hydrating treatment, luminous natural skin, soft white treatment room, pastel sage accents, no pore extraction, no redness, no harsh tools, calm luxury skincare photography, 4:3 ratio.'
         }
@@ -81,7 +81,7 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver tratamiento →',
         href: '/es/microneedling',
         image: {
-          src: 'https://images.unsplash.com/photo-1629299443270-e67c9d96fb57?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/facial-mask.jpg',
           alt: 'Tratamiento Microneedling',
           prompt: 'Premium microneedling facial treatment editorial image, professional hands using a modern dermapen device near client’s cheek, client calm with white headband, clean ivory clinical room, soft sage accents, no blood, no redness, no pain expression, high-end medspa photography, 4:3 ratio.'
         }
@@ -98,7 +98,7 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/limpieza-facial-profunda',
         image: {
-          src: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2020&auto=format&fit=crop',
+          src: '/assets/images/body-stretching.jpg',
           alt: 'Limpieza Facial',
           prompt: 'High-end facial cleansing icon-style photo, water splashes, clear skin, ivory background.'
         }
@@ -110,7 +110,7 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/hidrofacial',
         image: {
-          src: 'https://images.unsplash.com/photo-1512290903422-d122bb416e78?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/laser-machine.jpg',
           alt: 'Hidrofacial',
           prompt: 'Premium hydrofacial skincare treatment image, soft hydrating facial device gently used on client’s cheek, white headband, luminous skin, clean ivory room, watery blue-green and sage accents, luxury medspa photography, no redness, no harsh suction close-up, 4:3 ratio.'
         }
@@ -120,9 +120,9 @@ export const facialHubContent: HubPageContent = {
         title: 'Peel Coreano',
         category: 'Exfoliación',
         ctaLabel: 'Ver más →',
-        href: '/es/reservar',
+        href: '/es/peel-coreano',
         image: {
-          src: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1974&auto=format&fit=crop',
+          src: '/assets/treatments/peel-treatment.jpg',
           alt: 'Peel Coreano',
           prompt: 'Premium Korean peel skincare image, aesthetic specialist applying a gentle transparent peel solution with soft brush, client calm, luminous skin, clean white linens, pastel sage and ivory room, no peeling skin, no irritation, elegant clinical spa photography, 4:3 ratio.'
         }
@@ -132,9 +132,9 @@ export const facialHubContent: HubPageContent = {
         title: 'Oxigenoterapia Facial',
         category: 'Vitalidad',
         ctaLabel: 'Ver más →',
-        href: '/es/reservar',
+        href: '/es/oxigenoterapia-facial',
         image: {
-          src: 'https://images.unsplash.com/photo-1512290746422-3c02fc33a822?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/facial-scrub.jpg',
           alt: 'Oxigenoterapia',
           prompt: 'Premium oxygen facial therapy image, soft oxygen infusion device near client’s face, clean ivory treatment room, white headband, gentle light, pastel sage accents, calm professional medspa atmosphere, no hospital equipment feeling, 4:3 ratio.'
         }
@@ -144,9 +144,9 @@ export const facialHubContent: HubPageContent = {
         title: 'Radiofrecuencia Facial',
         category: 'Firmeza',
         ctaLabel: 'Ver más →',
-        href: '/es/reservar',
+        href: '/es/radiofrecuencia-facial',
         image: {
-          src: 'https://images.unsplash.com/photo-1522335789203-aa9fb3922df2?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/consultation-room.jpg',
           alt: 'Radiofrecuencia',
           prompt: 'Premium radiofrequency facial treatment image, aesthetic device gently applied to jawline or cheek, client calm, clean ivory medspa room, warm natural light, soft sage accents, no redness, no pain, no aggressive machine look, 4:3 ratio.'
         }
@@ -158,7 +158,7 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         image: {
-          src: 'https://images.unsplash.com/photo-1505944270255-bd2b896e3ad3?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/facial-care.jpg',
           alt: 'Tratamiento Acné',
           prompt: 'Premium acne care facial consultation image, aesthetic specialist examining skin gently under soft clinical light, calm patient with natural skin texture, no graphic acne close-up, no inflamed skin dramatization, clean ivory and sage clinic environment, professional and reassuring, 4:3 ratio.'
         }
@@ -170,7 +170,7 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         image: {
-          src: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop',
+          src: '/assets/images/skin-therapy.jpg',
           alt: 'Tratamiento Manchas',
           prompt: 'Premium facial pigmentation treatment consultation image, aesthetic specialist reviewing skin tone with client using mirror or tablet, warm ivory room, sage accents, natural skin texture, no harsh before-after, no dramatic pigmentation close-up, professional skincare clinic atmosphere, 4:3 ratio.'
         }
@@ -182,7 +182,7 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         image: {
-          src: 'https://images.unsplash.com/photo-1498842812179-c81beecf902c?q=80&w=1974&auto=format&fit=crop',
+          src: '/assets/images/skincare-products.jpg',
           alt: 'Rejuvenecimiento',
           prompt: 'Elegant woman with luminous skin, ivory medspa background, soft focus.'
         }
@@ -257,7 +257,7 @@ export const facialHubContent: HubPageContent = {
     primaryCTA: 'Evalúa tu piel — gratis',
     secondaryCTA: 'Escríbenos por WhatsApp',
     image: {
-      src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?q=80&w=2070&auto=format&fit=crop',
+      src: '/assets/images/laser-treatment.jpg',
       alt: 'Cuidado facial DERMA.M',
       prompt: 'Soft premium facial skincare still-life, serum bottle, white towel, ceramic tray, sage leaves, watery blue-green accent, warm pearl-gray background, calm clean skin wellness mood, lots of negative space for CTA text, no people, no dark background, 16:9 horizontal.'
     },

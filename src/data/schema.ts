@@ -3,12 +3,17 @@ import { siteConfig } from './siteConfig';
 export const getSiteSchema = () => {
   return {
     "@context": "https://schema.org",
-    "@type": ["HealthAndBeautyBusiness", "LocalBusiness"],
-    "@id": "https://dermamskinhealth.com/#business",
-    "name": siteConfig.businessName,
+    "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+    "@id": `${siteConfig.baseUrl}/#business`,
+    "name": "DERMA.M Skin Health",
     "image": `${siteConfig.baseUrl}/og/dermam-home.jpg`,
-    "telephone": siteConfig.phoneRaw,
+    "telephone": siteConfig.whatsappNumber,
     "url": siteConfig.baseUrl,
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "Nancy Nieto"
+    },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": siteConfig.address,

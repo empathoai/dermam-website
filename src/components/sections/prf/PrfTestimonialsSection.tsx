@@ -18,8 +18,8 @@ export default function PrfTestimonialsSection() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {prfTestimonials.map((testimonial) => (
-            <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center bg-white shadow-subtle">
-              <div className="flex gap-1 mb-6 text-prf">
+            <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center shadow-subtle hover:-translate-y-2 transition-transform duration-300">
+              <div className="flex gap-1 mb-6 text-text-primary">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill={i < testimonial.rating ? 'currentColor' : 'none'} />
                 ))}

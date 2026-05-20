@@ -1,5 +1,4 @@
 import PageShell from '../layout/PageShell';
-import SEO from '../layout/SEO';
 import { HubPageContent } from '../../types/hub';
 import HubHeroSection from '../sections/hubs/HubHeroSection';
 import HubIntroSection from '../sections/hubs/HubIntroSection';
@@ -15,12 +14,12 @@ interface HubPageTemplateProps {
 
 export default function HubPageTemplate({ content }: HubPageTemplateProps) {
   return (
-    <PageShell>
-      <SEO 
-        {...content.seo} 
-        ogType="website"
-        hreflangDefault={content.seo.canonical} 
-      />
+    <PageShell
+      title={content.seo.title}
+      description={content.seo.description}
+      ogImage={content.seo.ogImage}
+      ogType="website"
+    >
       
       <HubHeroSection content={content.hero} />
       <HubIntroSection content={content.intro} />

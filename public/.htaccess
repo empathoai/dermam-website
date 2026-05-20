@@ -1,0 +1,27 @@
+# Redirects 301 — URLs antiguas a nuevas
+Redirect 301 /plasma-rico-en-plaquetas/ /es/plasma-rico-en-plaquetas-west-palm-beach
+Redirect 301 /plasma-rico-en-plaquetas-2/ /es/plasma-rico-en-plaquetas-west-palm-beach
+Redirect 301 /drenaje-linfatico-corporal/ /es/postoperatorio-west-palm-beach
+Redirect 301 /tratamientos-faciales/ /es/tratamientos-faciales
+Redirect 301 /tratamientos-faciales-2/ /es/tratamientos-corporales
+Redirect 301 /acerca-de/ /es/sobre-nosotros
+Redirect 301 /contacto/ /es/contacto
+Redirect 301 /microneedling/ /es/microneedling
+Redirect 301 /cavitacion/ /es/cavitacion
+Redirect 301 /radiofrecuencia-2/ /es/radiofrecuencia-corporal
+Redirect 301 /radiofrecuencia-3/ /es/radiofrecuencia-facial
+Redirect 301 /drenaje-linfatico-facial/ /es/tratamientos-faciales
+Redirect 301 /mesoterapia/ /es/tratamientos-faciales
+Redirect 301 /galeria/ /es
+Redirect 301 /tratamiento-para-el-acne/ /es/tratamientos-faciales
+Redirect 301 /tratamiento-para-las-manchas/ /es/tratamientos-faciales
+
+# SPA Fallback — necesario para React Router en Apache
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

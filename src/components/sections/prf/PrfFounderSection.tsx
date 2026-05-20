@@ -26,19 +26,19 @@ export default function PrfFounderSection() {
              />
           </div>
           <div className="lg:w-3/5 p-10 lg:p-16 flex flex-col justify-center">
-            <span className="text-xs font-bold text-prf uppercase tracking-widest mb-4 inline-block">
+            <span className="text-xs font-bold text-text-primary uppercase tracking-widest mb-4 inline-block">
                 {founder.eyebrow}
             </span>
             <h2 className="text-4xl mb-2">{founder.name}</h2>
-            <p className="text-prf font-medium mb-8 text-sm uppercase tracking-tighter">{founder.title}</p>
+            <p className="text-text-secondary font-medium mb-8 text-sm uppercase tracking-tighter">{founder.title}</p>
             
-            <div className="border-l-4 border-prf pl-6 py-2 mb-10">
+            <div className="border-l-4 border-base-900 pl-6 py-2 mb-10">
                 <p className="text-xl font-serif text-text-primary italic">
                 {founder.quote}
             </p>
             </div>
 
-            <Button className="bg-prf hover:bg-prf-deep text-white w-full sm:w-auto">
+            <Button className="w-full sm:w-auto">
               {founder.cta}
             </Button>
           </div>

@@ -47,11 +47,11 @@ export default function PrfHeroSection() {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate={mediaLoaded || shouldReduceMotion ? "visible" : "hidden"}
+          animate="visible"
           className="max-w-3xl"
         >
           <motion.div variants={itemVariants} className="mb-6">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/60 backdrop-blur-sm border border-prf-soft text-[10px] md:text-xs font-semibold uppercase tracking-widest text-prf">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/60 backdrop-blur-sm border border-border-soft text-[10px] md:text-xs font-semibold uppercase tracking-widest text-text-secondary">
               {hero.eyebrow}
             </span>
           </motion.div>
@@ -71,7 +71,7 @@ export default function PrfHeroSection() {
           </motion.p>
           
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button className="bg-prf hover:bg-prf-deep text-white shadow-lg shadow-prf/20 px-10 py-4">
+            <Button className="px-10 py-4 shadow-lg">
               {hero.cta}
             </Button>
           </motion.div>

@@ -1,4 +1,5 @@
 import { ReactNode, ButtonHTMLAttributes } from 'react';
+import { Link } from 'react-router-dom';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
@@ -8,6 +9,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   type?: 'button' | 'submit' | 'reset';
   onClick?: (e: any) => void;
   disabled?: boolean;
+  to?: string;
+  href?: string;
+  target?: string;
+  rel?: string;
 }
 
 export default function Button({
@@ -15,22 +20,56 @@ export default function Button({
   variant = 'primary',
   className = '',
   isLoading = false,
+  to,
+  href,
+  target,
+  rel,
   ...props
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center px-8 py-3 rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-text-primary text-sm relative';
+  const baseStyles = 'inline-flex items-center justify-center px-8 py-3 rounded-md font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 text-sm relative';
   
   const variants = {
-    primary: 'bg-sage text-white hover:bg-opacity-90 shadow-subtle',
-    secondary: 'bg-linen text-text-primary hover:bg-opacity-90',
-    outline: 'border border-text-primary text-text-primary hover:bg-text-primary hover:text-white',
-    ghost: 'bg-transparent text-text-primary hover:bg-surface-soft'
+    primary: 'bg-base-900 text-base-100 hover:bg-base-800 shadow-subtle',
+    secondary: 'border-[1.5px] border-base-900 bg-transparent text-base-900 hover:bg-base-200',
+    outline: 'border-[1.5px] border-base-900 bg-transparent text-base-900 hover:bg-base-200',
+    ghost: 'bg-transparent text-base-900 hover:bg-base-200'
   };
+
+  const fullClassName = `${baseStyles} ${variants[variant]} ${className} ${isLoading ? 'text-transparent cursor-not-allowed select-none' : ''}`;
+
+  if (to) {
+    return (
+      <Link 
+        to={to} 
+        className={fullClassName}
+        onClick={props.onClick as any}
+      >
+        {children}
+      </Link>
+    );
+  }
+
+  if (href) {
+    return (
+      <a 
+        href={href} 
+        target={target}
+        rel={rel}
+        className={fullClassName}
+        onClick={props.onClick as any}
+      >
+        {children}
+      </a>
+    );
+  }
 
   return (
     <button
-      className={`${baseStyles} ${variants[variant]} ${className} ${isLoading ? 'text-transparent cursor-not-allowed select-none' : ''}`}
+      className={fullClassName}
       disabled={isLoading || props.disabled}
-      {...props}
+      type={props.type || 'button'}
+      onClick={props.onClick}
+      {...(props as any)}
     >
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center">

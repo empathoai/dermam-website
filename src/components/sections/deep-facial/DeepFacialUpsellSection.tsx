@@ -7,10 +7,6 @@ import ResponsiveImage from '../../ui/ResponsiveImage';
 export default function DeepFacialUpsellSection() {
   const { upsell } = deepFacialContent;
 
-  const handleBookingClick = () => {
-    window.open('https://squareup.com/appointments/book/dermam', '_blank');
-  };
-
   return (
     <section className="py-24 bg-canvas">
       <Container>
@@ -22,7 +18,7 @@ export default function DeepFacialUpsellSection() {
                 <ul className="space-y-4 mb-12">
                     {upsell.keyPoints.map((point, idx) => (
                         <li key={idx} className="flex items-center gap-3 text-sm font-medium text-text-primary">
-                            <div className="w-5 h-5 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <div className="w-5 h-5 rounded-full bg-base-900/10 flex items-center justify-center text-base-900">
                                 <Check size={12} />
                             </div>
                             {point}
@@ -31,15 +27,16 @@ export default function DeepFacialUpsellSection() {
                 </ul>
 
                 <Button 
-                    onClick={handleBookingClick}
-                    className="bg-sage hover:bg-sage-deep text-white w-full sm:w-auto px-10"
+                    variant="primary"
+                    to="/es/reservar"
+                    className="w-full sm:w-auto px-10"
                 >
                     {upsell.cta}
                 </Button>
             </div>
             <div className="lg:w-1/2 aspect-[4/3] lg:aspect-auto">
                 <ResponsiveImage 
-                    src="https://picsum.photos/seed/deepfacial_upsell/1000/1000" 
+                    src="/assets/treatments/deepfacial-upsell.jpg" 
                     alt="Consulta personalizada de piel"
                     className="w-full h-full object-cover"
                 />

@@ -4,6 +4,7 @@ import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import HeroMedia from '../../ui/HeroMedia';
 import { motion, useReducedMotion, Variants } from 'motion/react';
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   const { hero } = homeContent;
@@ -41,8 +42,9 @@ export default function HeroSection() {
       {/* Background Media - Always takes priority */}
       <div className="absolute inset-0 z-0">
         <HeroMedia
-          type="image" // Can be switched to 'video' if data supports it
-          src={hero.image.src}
+          type={hero.video?.src ? 'video' : 'image'}
+          src={hero.video?.src || hero.image.src}
+          poster={hero.video?.poster || hero.image.src}
           alt={hero.image.alt}
           onLoaded={() => setMediaLoaded(true)}
         />
@@ -52,7 +54,7 @@ export default function HeroSection() {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate={mediaLoaded || shouldReduceMotion ? "visible" : "hidden"}
+          animate="visible"
           className="max-w-2xl pt-20 lg:pt-0"
         >
           {/* Eyebrow */}
@@ -68,7 +70,7 @@ export default function HeroSection() {
             className="text-5xl md:text-6xl lg:text-8xl mb-8 leading-[1] text-text-primary"
           >
             {hero.headlinePrefix}
-            <span className="script-accent inline-block italic font-serif text-sage ml-2">
+            <span className="script-accent inline-block italic font-serif text-base-900 ml-2">
               {hero.headlineAccent}
             </span>
             {hero.headlineSuffix}
@@ -84,10 +86,10 @@ export default function HeroSection() {
           
           {/* CTAs */}
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-20">
-            <Button variant="primary" className="px-10 py-4 shadow-lg hover:shadow-xl transition-shadow">
+            <Button variant="primary" to="/es/reservar" className="px-10 py-4 shadow-lg hover:shadow-xl transition-shadow w-full sm:w-auto">
               {hero.primaryCTA}
             </Button>
-            <Button variant="outline" className="px-10 py-4 bg-white/20 backdrop-blur-sm">
+            <Button variant="outline" href="#treatments" className="px-10 py-4 w-full sm:w-auto">
               {hero.secondaryCTA}
             </Button>
           </motion.div>
@@ -99,7 +101,7 @@ export default function HeroSection() {
           >
             {hero.trustItems.map((item, idx) => (
               <div key={idx} className="flex items-center gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-sage" />
+                <div className="w-1.5 h-1.5 rounded-full bg-base-900" />
                 <span className="text-sm font-medium text-text-secondary">
                   {item}
                 </span>
@@ -116,7 +118,7 @@ export default function HeroSection() {
         transition={{ delay: 2, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:block"
       >
-        <div className="w-px h-16 bg-gradient-to-b from-sage to-transparent" />
+        <div className="w-px h-16 bg-gradient-to-b from-base-900 to-transparent" />
       </motion.div>
     </section>
   );

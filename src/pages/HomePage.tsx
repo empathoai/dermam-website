@@ -1,5 +1,4 @@
 import PageShell from '../components/layout/PageShell';
-import SEO from '../components/layout/SEO';
 import HeroSection from '../components/sections/home/HeroSection';
 import TrustBar from '../components/sections/home/TrustBar';
 import TreatmentsSection from '../components/sections/home/TreatmentsSection';
@@ -9,20 +8,13 @@ import TestimonialsSection from '../components/sections/home/TestimonialsSection
 import FinalCTA from '../components/sections/home/FinalCTA';
 
 export default function HomePage() {
-  const seoProps = {
-    title: 'DERMA.M Skin Health | Estética Profesional en WPB',
-    description: 'Tratamientos médico-estéticos personalizados en West Palm Beach. Agenda tu evaluación en DERMA.M Skin Health y cuida tu piel con confianza.',
-    canonical: 'https://dermamskinhealth.com/es/',
-    hreflangEs: 'https://dermamskinhealth.com/es/',
-    hreflangEn: 'https://dermamskinhealth.com/en/',
-    hreflangDefault: 'https://dermamskinhealth.com/es/',
-    ogImage: 'https://dermamskinhealth.com/og/dermam-home.jpg',
-    ogType: 'website'
-  };
-
   return (
-    <PageShell>
-      <SEO {...seoProps} />
+    <PageShell
+      title="DERMA.M Skin Health | Estética Profesional en WPB"
+      description="Tratamientos médico-estéticos personalizados en West Palm Beach. Agenda tu evaluación en DERMA.M Skin Health y cuida tu piel con confianza."
+      ogImage="https://dermamskinhealth.com/og/dermam-home.jpg"
+      ogType="website"
+    >
       <HeroSection />
       <TrustBar />
       <TreatmentsSection />
@@ -33,3 +25,18 @@ export default function HomePage() {
     </PageShell>
   );
 }
+
+export const ssgOptions = {
+  slug: 'es/index',
+  routeUrl: '/es',
+  context: async (children: any) => {
+    const React = await import('react');
+    const { MemoryRouter } = await import('react-router-dom');
+    const { HelmetProvider } = await import('react-helmet-async');
+    return React.createElement(
+      HelmetProvider,
+      null,
+      React.createElement(MemoryRouter, { initialEntries: ['/es'] }, children)
+    );
+  }
+};

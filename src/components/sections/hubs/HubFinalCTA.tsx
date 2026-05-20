@@ -25,21 +25,18 @@ export default function HubFinalCTA({ content }: HubFinalCTAProps) {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Link to="/es/reservar" className="flex-1">
-                <Button className="w-full bg-sage text-white hover:bg-sage-deep">
-                  {content.primaryCTA}
-                </Button>
-              </Link>
-              <a 
+              <Button to="/es/reservar" className="flex-1 w-full">
+                {content.primaryCTA}
+              </Button>
+              <Button 
+                variant="outline" 
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1"
+                className="flex-1 w-full"
               >
-                <Button variant="outline" className="w-full border-sage text-sage hover:bg-sage hover:text-white">
-                  {content.secondaryCTA}
-                </Button>
-              </a>
+                {content.secondaryCTA}
+              </Button>
             </div>
 
             <div className="pt-8 border-t border-border-soft flex flex-wrap items-center gap-6">
@@ -49,7 +46,7 @@ export default function HubFinalCTA({ content }: HubFinalCTAProps) {
                 <div className="text-xs font-medium text-text-primary">
                     DERMA.M · {siteConfig.address} · WPB, FL
                 </div>
-                <div className="text-xs font-bold text-sage">
+                <div className="text-xs font-bold text-base-900">
                     {siteConfig.phone}
                 </div>
             </div>
@@ -62,7 +59,7 @@ export default function HubFinalCTA({ content }: HubFinalCTAProps) {
               alt={content.image.alt}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-sage/10 mix-blend-multiply" aria-hidden="true" />
+            <div className="absolute inset-0 bg-base-900/5 mix-blend-multiply" aria-hidden="true" />
           </div>
         </div>
       </Container>

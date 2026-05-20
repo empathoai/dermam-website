@@ -29,10 +29,10 @@ export default function SectionMedia({
 
   const overlays = {
     none: '',
-    soft: 'bg-canvas/40',
-    ivory: 'bg-[rgba(247,245,242,0.76)]',
-    sage: 'bg-[rgba(221,232,214,0.55)]',
-    gradient: 'bg-gradient-to-r from-[rgba(247,245,242,0.94)] via-[rgba(247,245,242,0.70)] to-[rgba(247,245,242,0.35)]',
+    soft: 'bg-canvas/45',
+    ivory: 'bg-[rgba(242,240,241,0.75)]',
+    sage: 'bg-[rgba(204,202,202,0.35)]',
+    gradient: 'bg-gradient-to-r from-[rgba(242,240,241,0.95)] via-[rgba(242,240,241,0.75)] to-[rgba(242,240,241,0.35)]',
   };
 
   const positions = {

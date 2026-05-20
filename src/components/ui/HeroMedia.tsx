@@ -9,6 +9,7 @@ interface HeroMediaProps {
   alt?: string;
   className?: string;
   overlay?: boolean;
+  overlayType?: 'light' | 'dark';
   position?: 'center' | 'left' | 'right' | 'top' | 'bottom';
   onLoaded: () => void;
 }
@@ -20,6 +21,7 @@ export default function HeroMedia({
   alt = '',
   className = '',
   overlay = true,
+  overlayType = 'light',
   position = 'center',
   onLoaded
 }: HeroMediaProps) {
@@ -37,6 +39,11 @@ export default function HeroMedia({
     right: 'object-right',
     top: 'object-top',
     bottom: 'object-bottom',
+  };
+
+  const overlayClasses = {
+    light: 'bg-gradient-to-r from-[rgba(242,240,241,0.95)] via-[rgba(242,240,241,0.75)] to-[rgba(242,240,241,0.30)]',
+    dark: 'bg-gradient-to-b from-black/60 via-transparent to-black/40'
   };
 
   return (
@@ -64,13 +71,13 @@ export default function HeroMedia({
         />
       )}
 
-      {/* Overlay */}
+      {/* Protective Overlay */}
       {overlay && (
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: isReady ? 1 : 0 }}
           transition={{ duration: 1 }}
-          className="absolute inset-0 bg-gradient-to-r from-[rgba(247,245,242,0.94)] via-[rgba(247,245,242,0.70)] to-[rgba(247,245,242,0.35)] z-[1]"
+          className={`absolute inset-0 z-[1] ${overlayClasses[overlayType]}`}
         />
       )}
     </div>

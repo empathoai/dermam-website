@@ -10,7 +10,7 @@ import Tier3SafetySection from '../sections/tier3/Tier3SafetySection';
 import Tier3FAQSection from '../sections/tier3/Tier3FAQSection';
 import Tier3RelatedTreatments from '../sections/tier3/Tier3RelatedTreatments';
 import Tier3FinalCTA from '../sections/tier3/Tier3FinalCTA';
-import WhatsAppFAB from '../ui/WhatsAppFAB';
+import PageShell from '../layout/PageShell';
 import { tier3Treatments } from '../../data/tier3Treatments';
 
 interface Tier3TreatmentTemplateProps {
@@ -25,26 +25,31 @@ export default function Tier3TreatmentTemplate({ treatment }: Tier3TreatmentTemp
   };
 
   return (
-    <main className="bg-white">
-      <Helmet>
-        <title>{treatment.seoTitle}</title>
-        <meta name="description" content={treatment.metaDescription} />
-        <link rel="canonical" href={treatment.canonicalEs} />
-        
-        {/* Hreflang */}
-        {treatment.slugEn && (
-            <link rel="alternate" hrefLang="en" href={`https://dermamskinhealth.com/en/${treatment.slugEn}/`} />
-        )}
-        <link rel="alternate" hrefLang="es" href={treatment.canonicalEs} />
-        <link rel="alternate" hrefLang="x-default" href={treatment.canonicalEs} />
-
-        {/* Open Graph */}
-        <meta property="og:title" content={treatment.seoTitle} />
-        <meta property="og:description" content={treatment.metaDescription} />
-        <meta property="og:image" content={treatment.heroMedia.src} />
-        <meta property="og:url" content={treatment.canonicalEs} />
-        <meta property="og:type" content="website" />
-      </Helmet>
+    <PageShell
+      title={treatment.seoTitle}
+      description={treatment.metaDescription}
+      ogImage={treatment.heroMedia.src}
+      ogType="website"
+    >
+      {treatment.faqs && treatment.faqs.length > 0 && (
+        <Helmet>
+          {/* FAQ Schema */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": treatment.faqs.map(faq => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.answer
+                }
+              }))
+            })}
+          </script>
+        </Helmet>
+      )}
 
       {/* 01 Hero */}
       <Tier3HeroSection
@@ -107,12 +112,6 @@ export default function Tier3TreatmentTemplate({ treatment }: Tier3TreatmentTemp
             image={treatment.finalCta.image}
         />
       </div>
-
-      {/* 12 WhatsApp FAB */}
-      <WhatsAppFAB 
-        phoneNumber="15615663762"
-        message={treatment.whatsappMessage}
-      />
-    </main>
+    </PageShell>
   );
 }

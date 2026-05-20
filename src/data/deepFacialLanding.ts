@@ -8,7 +8,7 @@ export const deepFacialContent = {
     primaryCTA: 'Reserva tu cita',
     trustLine: 'Evaluación incluida · ⭐ 4.9 Google · WPB, FL',
     image: {
-      src: 'https://picsum.photos/seed/dermam_cleansing_hero/1920/1080',
+      src: '/assets/images/hero-deep-facial.jpg',
       alt: 'Limpieza Facial Profunda en DERMA.M',
       prompt: 'Bright premium skincare clinic editorial image for deep facial cleansing, woman lying calmly with white headband receiving a gentle hydrating facial treatment, luminous natural skin texture, soft white treatment room, warm ivory light, pastel sage and watery blue-green accents, clean clinical spa environment, folded towels and skincare serum nearby, calm and approachable luxury medspa photography, no redness, no pore extraction, no harsh tools, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -31,7 +31,7 @@ export const deepFacialContent = {
         title: 'Análisis de piel', 
         description: 'Evaluamos tu tipo de piel y sus necesidades específicas.',
         image: {
-            src: 'https://picsum.photos/seed/deepfacial_step1/800/600',
+            src: '/assets/treatments/deepfacial-step-1.jpg',
             alt: 'Análisis de piel',
             prompt: 'Premium clinical skin analysis scene, aesthetic specialist gently examining client’s skin with soft magnifying light or tablet consultation, client calm and comfortable, white and ivory treatment room, sage accents, professional but approachable, no harsh medical device, no anxiety, no skin problems shown dramatically, 4:3 ratio.'
         }
@@ -40,7 +40,7 @@ export const deepFacialContent = {
         title: 'Limpieza profunda', 
         description: 'Limpieza clínica adaptada a tu tipo de piel.',
         image: {
-            src: 'https://picsum.photos/seed/deepfacial_step2/800/600',
+            src: '/assets/treatments/deepfacial-step-2.jpg',
             alt: 'Limpieza clínica',
             prompt: 'Soft luxury facial cleansing treatment image, professional hands applying gentle cleanser with soft gauze or brush on client’s face, white headband, clean ivory linens, luminous skin, warm natural light, pastel sage environment, calm premium medspa photography, no extraction, no redness, no harsh tools, 4:3 ratio.'
         }
@@ -49,7 +49,7 @@ export const deepFacialContent = {
         title: 'Extracción', 
         description: 'Puntos negros y comedones con técnica especializada.',
         image: {
-            src: 'https://picsum.photos/seed/deepfacial_step3/800/600',
+            src: '/assets/treatments/deepfacial-step-3.jpg',
             alt: 'Técnica de extracción suave',
             prompt: 'Tasteful clinical facial treatment image representing deep pore cleansing without graphic extraction, professional gloved hands near client face with soft cotton pads and gentle tools, clean white treatment room, calm expression, no visible blackheads, no redness, no discomfort, premium skincare clinic aesthetic, 4:3 ratio.'
         }
@@ -58,7 +58,7 @@ export const deepFacialContent = {
         title: 'Hidratación', 
         description: 'Sello final con activos hidratantes.',
         image: {
-            src: 'https://picsum.photos/seed/deepfacial_step4/800/600',
+            src: '/assets/treatments/deepfacial-step-4.jpg',
             alt: 'Sellado de hidratación',
             prompt: 'Premium hydration facial treatment image, glass dropper applying serum to clean luminous skin, soft ivory linens, white headband, watery blue-green and sage accents, bright spa-clinical environment, calm and elegant skincare photography, no heavy makeup, realistic skin texture, 4:3 ratio.'
         }
@@ -68,7 +68,7 @@ export const deepFacialContent = {
         description: 'Tu especialista te orienta sobre los tratamientos que pueden mejorar tus resultados.',
         isKeyMoment: true,
         image: {
-            src: 'https://picsum.photos/seed/deepfacial_step5/1920/1080',
+            src: '/assets/treatments/deepfacial-step-5.jpg',
             alt: 'Consulta personalizada',
             prompt: 'Premium consultation moment after facial treatment, aesthetic specialist showing client a simple skincare plan on tablet or card, clean treatment room, white and sage palette, client relaxed and confident, professional hands visible, warm natural light, clinical wellness setting, no sales pressure, trust-building atmosphere, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
         }
@@ -81,7 +81,7 @@ export const deepFacialContent = {
       title: 'Piel visible desde la primera sesión',
       description: 'Resultados inmediatos — poros limpios, piel luminosa, textura renovada.',
       image: {
-        src: 'https://picsum.photos/seed/deepfacial_ben1/800/600',
+        src: '/assets/treatments/deepfacial-benefit-1.jpg',
         alt: 'Piel luminosa inmediata'
       }
     },
@@ -89,7 +89,7 @@ export const deepFacialContent = {
       title: 'Diagnóstico incluido',
       description: 'Saldrás con un mapa claro de lo que tu piel necesita. No suposiciones.',
       image: {
-        src: 'https://picsum.photos/seed/deepfacial_ben2/800/600',
+        src: '/assets/treatments/deepfacial-benefit-2.jpg',
         alt: 'Mapa de piel personalizado'
       }
     },
@@ -97,7 +97,7 @@ export const deepFacialContent = {
       title: 'Primer paso para tratamientos avanzados',
       description: 'Prepara tu piel para mejores resultados en protocolos como PRF, microneedling o manchas.',
       image: {
-        src: 'https://picsum.photos/seed/deepfacial_ben3/800/600',
+        src: '/assets/treatments/deepfacial-benefit-3.jpg',
         alt: 'Base para tratamientos avanzados'
       }
     }
@@ -119,20 +119,20 @@ export const deepFacialContent = {
     items: [
       {
         title: 'Luminosidad y Textura',
-        imageBefore: 'https://picsum.photos/seed/facial_res1_b/400/400',
-        imageAfter: 'https://picsum.photos/seed/facial_res1_a/400/400',
+        imageBefore: '/assets/treatments/facial-result-1-before.jpg',
+        imageAfter: '/assets/treatments/facial-result-1-after.jpg',
         sessions: '1 sesión'
       },
       {
         title: 'Limpieza de Poros',
-        imageBefore: 'https://picsum.photos/seed/facial_res2_b/400/400',
-        imageAfter: 'https://picsum.photos/seed/facial_res2_a/400/400',
+        imageBefore: '/assets/treatments/facial-result-2-before.jpg',
+        imageAfter: '/assets/treatments/facial-result-2-after.jpg',
         sessions: '1 sesión'
       },
       {
         title: 'Healthy Glow',
-        imageBefore: 'https://picsum.photos/seed/facial_res3_b/400/400',
-        imageAfter: 'https://picsum.photos/seed/facial_res3_a/400/400',
+        imageBefore: '/assets/treatments/facial-result-3-before.jpg',
+        imageAfter: '/assets/treatments/facial-result-3-after.jpg',
         sessions: '1 sesión'
       }
     ]
@@ -161,13 +161,13 @@ export const deepFacialContent = {
     }
   ],
   founder: {
-    name: 'Nancy Meléndez',
+    name: 'Nancy Nieto',
     title: 'Fundadora de DERMA.M Skin Health · 10+ años de experiencia',
     quote: '“La limpieza facial no es solo limpiar la piel. Es entender qué necesita.”',
     cta: 'Conoce mi enfoque',
     image: {
-      src: 'https://picsum.photos/seed/dermam_cleansing_nancy/600/800',
-      alt: 'Nancy Meléndez fundadora',
+      src: '/assets/avatars/nancy-nieto-founder-cleansing.jpg',
+      alt: 'Nancy Nieto fundadora',
       prompt: 'Premium editorial portrait of a Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, long dark hair styled naturally, wearing elegant white clinical uniform, seated in a bright skincare treatment room with hands visible, soft ivory, sage, and pearl gray environment, professional and approachable, not corporate, not hospital, not white coat cliché, luxury wellness clinic portrait, bright natural light, 4:5 vertical.'
     },
     backgroundMedia: undefined
@@ -212,7 +212,7 @@ export const deepFacialContent = {
     primaryCTA: 'Reserva tu cita',
     secondaryCTA: 'Escríbenos por WhatsApp',
     image: {
-        src: 'https://picsum.photos/seed/facial_cleansing_final/1920/1080',
+        src: '/assets/images/deepfacial-final-cta.jpg',
         alt: 'Final CTA Deep Facial Cleansing',
         prompt: 'Soft premium skincare still-life, glass serum bottle, white towel, ivory candle, ceramic bowl, soft sage leaves, watery blue-green accent, warm pearl-gray surface, clean hydrated skin wellness mood, lots of negative space for CTA text, calm feminine clinical spa atmosphere, no people, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -225,7 +225,7 @@ export const deepFacialContent = {
       category: 'Facial',
       href: '/es/plasma-rico-en-plaquetas-west-palm-beach',
       image: {
-        src: 'https://picsum.photos/seed/related_facial1/400/300',
+        src: '/assets/treatments/related-facial-1.jpg',
         alt: 'PRF facial'
       }
     },
@@ -236,7 +236,7 @@ export const deepFacialContent = {
       category: 'Facial',
       href: '#',
       image: {
-        src: 'https://picsum.photos/seed/related_facial2/400/300',
+        src: '/assets/treatments/related-facial-2.jpg',
         alt: 'Microneedling facial'
       }
     },
@@ -247,7 +247,7 @@ export const deepFacialContent = {
       category: 'Facial',
       href: '#',
       image: {
-        src: 'https://picsum.photos/seed/related_facial3/400/300',
+        src: '/assets/treatments/related-facial-3.jpg',
         alt: 'Hidratación profunda'
       }
     }

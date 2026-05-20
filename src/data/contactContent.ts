@@ -6,7 +6,7 @@ export const contactContent: ContactPageContent = {
     headline: 'Contáctanos',
     subheadline: 'Estamos disponibles por WhatsApp, teléfono o formulario. Respondemos en menos de 24 horas.',
     image: {
-      src: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop',
+      src: '/assets/images/contact-hero.jpg',
       alt: 'Interior de clínica DERMA.M',
       prompt: 'Bright premium medical aesthetics clinic interior, warm ivory treatment room, soft sage accents, folded white towels, calm reception or treatment area, natural light, clean professional environment, welcoming and human, botanical minimal decor, luxury clinical wellness atmosphere, no people, no hospital feeling, no dark background, no clutter, 16:9 horizontal.'
     }
@@ -78,12 +78,12 @@ export const contactContent: ContactPageContent = {
     cta: 'Ver en Google Maps',
     embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.419088517596!2d-80.0543666236966!3d26.66724397679313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d69784ed236b%3A0xb09c53c445657593!2s5707%20S%20Dixie%20Hwy%20Suite%20D%2C%20West%20Palm%20Beach%2C%20FL%2033405!5e0!3m2!1sen!2sus!4v1716145000000!5m2!1sen!2sus',
     image: {
-      src: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop',
+      src: '/assets/images/contact-office.jpg',
       alt: 'Mapa de ubicación DERMA.M',
       prompt: 'Minimal elegant map-style visual for a West Palm Beach medical aesthetics clinic, soft ivory background, sage route line, subtle location pin, premium editorial map design, no bright Google map colors, no clutter, clean and readable, 16:9 horizontal.'
     },
     clinicImage: {
-      src: 'https://images.unsplash.com/photo-1629156066221-df628841da92?q=80&w=2070&auto=format&fit=crop',
+      src: '/assets/images/contact-consultation.jpg',
       alt: 'Recepción DERMA.M',
       prompt: 'Premium DERMA.M style reception and treatment space, bright ivory and pearl gray interiors, soft sage botanical accents, clean front desk or waiting area, warm natural light, calm wellness-clinical atmosphere, elegant and approachable, no people, no hospital equipment, no clutter, 16:9 horizontal.'
     }

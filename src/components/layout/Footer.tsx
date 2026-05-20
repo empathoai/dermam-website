@@ -17,11 +17,21 @@ export default function Footer() {
               Salud profesional para tu piel. Tratamientos médico-estéticos personalizados en West Palm Beach.
             </p>
             <div className="flex gap-4">
-              <a href={siteConfig.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-sage transition-colors">
+              <a 
+                href={siteConfig.socialLinks.instagram} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-text-secondary hover:text-base-900 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md p-1"
+              >
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </a>
-              <a href={siteConfig.socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-sage transition-colors">
+              <a 
+                href={siteConfig.socialLinks.facebook} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-text-secondary hover:text-base-900 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md p-1"
+              >
                 <Facebook size={20} />
                 <span className="sr-only">Facebook</span>
               </a>
@@ -34,7 +44,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               {footerLinks.treatments.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  <a 
+                    href={link.href} 
+                    className="text-sm text-text-secondary hover:text-base-900 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md px-1 py-0.5"
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -48,7 +61,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  <a 
+                    href={link.href} 
+                    className="text-sm text-text-secondary hover:text-base-900 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md px-1 py-0.5"
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -61,15 +77,15 @@ export default function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-widest text-text-primary mb-6">Clínica</h3>
             <ul className="flex flex-col gap-5">
               <li className="flex gap-3">
-                <MapPin size={18} className="text-sage flex-shrink-0" />
+                <MapPin size={18} className="text-base-900 flex-shrink-0" />
                 <span className="text-sm text-text-secondary">{siteConfig.address}, {siteConfig.city}, {siteConfig.state} {siteConfig.zip}</span>
               </li>
               <li className="flex gap-3">
-                <Phone size={18} className="text-sage flex-shrink-0" />
+                <Phone size={18} className="text-base-900 flex-shrink-0" />
                 <span className="text-sm text-text-secondary">{siteConfig.phone}</span>
               </li>
               <li className="flex gap-3">
-                <Clock size={18} className="text-sage flex-shrink-0" />
+                <Clock size={18} className="text-base-900 flex-shrink-0" />
                 <span className="text-sm text-text-secondary">{siteConfig.hours}</span>
               </li>
             </ul>
@@ -81,8 +97,8 @@ export default function Footer() {
             © {currentYear} {siteConfig.businessName} · Todos los derechos reservados.
           </p>
           <div className="flex gap-6">
-            <button className="text-xs font-medium text-text-primary">ES</button>
-            <button className="text-xs font-medium text-text-secondary hover:text-text-primary">EN</button>
+            <button className="text-xs font-medium text-base-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md px-2 py-1">ES</button>
+            <button className="text-xs font-medium text-text-secondary hover:text-base-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md px-2 py-1">EN</button>
           </div>
         </div>
       </Container>

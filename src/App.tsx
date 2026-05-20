@@ -11,7 +11,16 @@ import BodyTreatmentsHubPage from './pages/BodyTreatmentsHubPage';
 import LaserLightHubPage from './pages/LaserLightHubPage';
 import DentalHubPage from './pages/DentalHubPage';
 import IVTherapyPage from './pages/IVTherapyPage';
-import TreatmentPage from './pages/TreatmentPage';
+import HidrofacialPage from './pages/es/HidrofacialPage';
+import MicroneedlingPage from './pages/es/MicroneedlingPage';
+import BlanqueamientoDentalPage from './pages/es/BlanqueamientoDentalPage';
+import LimpiezaDentalPage from './pages/es/LimpiezaDentalPage';
+import PeelCoreanoPage from './pages/es/PeelCoreanoPage';
+import OxigenoterapiaFacialPage from './pages/es/OxigenoterapiaFacialPage';
+import CavitacionPage from './pages/es/CavitacionPage';
+import RadiofrecuenciaCorporalPage from './pages/es/RadiofrecuenciaCorporalPage';
+import DrenajeLinfaticoCorporalPage from './pages/es/DrenajeLinfaticoCorporalPage';
+import RadiofrecuenciaFacialPage from './pages/es/RadiofrecuenciaFacialPage';
 
 export default function App() {
   return (
@@ -30,8 +39,18 @@ export default function App() {
         <Route path="/es/laser-y-luz" element={<LaserLightHubPage />} />
         <Route path="/es/dental" element={<DentalHubPage />} />
         
-        {/* Dynamic Tier 3 Treatment Route */}
-        <Route path="/es/:treatmentSlug" element={<TreatmentPage />} />
+        {/* Static Tier 3 Treatment Routes */}
+        <Route path="/es/hidrofacial" element={<HidrofacialPage />} />
+        <Route path="/es/microneedling" element={<MicroneedlingPage />} />
+        <Route path="/es/blanqueamiento-dental" element={<BlanqueamientoDentalPage />} />
+        <Route path="/es/limpieza-dental" element={<LimpiezaDentalPage />} />
+        <Route path="/es/peel-coreano" element={<PeelCoreanoPage />} />
+        <Route path="/es/oxigenoterapia-facial" element={<OxigenoterapiaFacialPage />} />
+        <Route path="/es/cavitacion" element={<CavitacionPage />} />
+        <Route path="/es/radiofrecuencia-corporal" element={<RadiofrecuenciaCorporalPage />} />
+        <Route path="/es/drenaje-linfatico-corporal" element={<DrenajeLinfaticoCorporalPage />} />
+        <Route path="/es/radiofrecuencia-facial" element={<RadiofrecuenciaFacialPage />} />
+
         
         {/* English Route Placeholders (Building later) */}
         <Route path="/en/body-treatments" element={<BodyTreatmentsHubPage />} />

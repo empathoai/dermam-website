@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import ResponsiveImage from './ResponsiveImage';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import Button from './Button';
+import { siteConfig } from '../../data/siteConfig';
 
 interface IVKitCardProps {
   kit: IVKit;
@@ -12,10 +13,10 @@ interface IVKitCardProps {
 export default function IVKitCard({ kit }: IVKitCardProps) {
   const handleCTAClick = () => {
     if (kit.squareUrl) {
-      window.open(kit.squareUrl, '_blank', 'noreferrer');
+      window.open(kit.squareUrl, '_blank', 'noopener,noreferrer');
     } else if (kit.whatsappMessage) {
-      const url = `https://wa.me/15615663762?text=${encodeURIComponent(kit.whatsappMessage)}`;
-      window.open(url, '_blank', 'noreferrer');
+      const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(kit.whatsappMessage)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
     } else {
       window.location.href = '/es/reservar';
     }
@@ -37,7 +38,7 @@ export default function IVKitCard({ kit }: IVKitCardProps) {
         />
         {kit.badge && (
           <div className="absolute top-4 left-4">
-            <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold text-sage uppercase tracking-widest border border-sage/10">
+            <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold text-base-900 uppercase tracking-widest border border-base-900/10">
               {kit.badge}
             </span>
           </div>
@@ -55,7 +56,7 @@ export default function IVKitCard({ kit }: IVKitCardProps) {
 
         {kit.showPrice && kit.price && (
           <div className="mb-6">
-            <span className="text-2xl font-serif text-sage">${kit.price}</span>
+            <span className="text-2xl font-serif text-base-900">${kit.price}</span>
           </div>
         )}
 

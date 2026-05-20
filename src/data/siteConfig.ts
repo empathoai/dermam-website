@@ -8,6 +8,7 @@ export const siteConfig = {
   whatsappMessagePrf: 'Hola, me interesa el tratamiento de PRF en DERMA.M.',
   whatsappMessagePostOp: 'Hola, me interesa el tratamiento de Post-Operatorio en DERMA.M. Cuéntanos tu caso.',
   whatsappMessageDeepFacial: 'Hola, me interesa agendar una Limpieza Facial Profunda en DERMA.M.',
+  whatsappMessageIvTherapy: 'Hola, me interesa el tratamiento de IV Therapy en DERMA.M.',
   address: '5707 S Dixie Hwy Unit D',
   city: 'West Palm Beach',
   state: 'FL',

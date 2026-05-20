@@ -1,5 +1,4 @@
 import PageShell from '../components/layout/PageShell';
-import SEO from '../components/layout/SEO';
 import DeepFacialHeroSection from '../components/sections/deep-facial/DeepFacialHeroSection';
 import DeepFacialAudienceSection from '../components/sections/deep-facial/DeepFacialAudienceSection';
 import DeepFacialProtocolSection from '../components/sections/deep-facial/DeepFacialProtocolSection';
@@ -21,20 +20,13 @@ export default function DeepFacialCleansingLandingPage() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  const seoProps = {
-    title: 'Limpieza Facial Profunda West Palm Beach | DERMA.M',
-    description: 'Limpieza facial profunda en West Palm Beach con diagnóstico de piel incluido. Mejora poros, textura y luminosidad. Reserva tu cita en DERMA.M.',
-    canonical: `https://dermamskinhealth.com/es/limpieza-facial-profunda/`,
-    hreflangEs: 'https://dermamskinhealth.com/es/limpieza-facial-profunda/',
-    hreflangEn: 'https://dermamskinhealth.com/en/deep-facial-cleansing/',
-    hreflangDefault: 'https://dermamskinhealth.com/es/limpieza-facial-profunda/',
-    ogImage: 'https://dermamskinhealth.com/og/limpieza-facial-profunda.jpg',
-    ogType: 'article'
-  };
-
   return (
-    <PageShell>
-      <SEO {...seoProps} />
+    <PageShell
+      title="Limpieza Facial Profunda West Palm Beach | DERMA.M"
+      description="Limpieza facial profunda en West Palm Beach con diagnóstico de piel incluido. Mejora poros, textura y luminosidad. Reserva tu cita en DERMA.M."
+      ogImage="https://dermamskinhealth.com/og/limpieza-facial-profunda.jpg"
+      ogType="article"
+    >
       <DeepFacialHeroSection />
       <DeepFacialAudienceSection />
       <DeepFacialProtocolSection />
@@ -49,3 +41,18 @@ export default function DeepFacialCleansingLandingPage() {
     </PageShell>
   );
 }
+
+export const ssgOptions = {
+  slug: 'es/limpieza-facial-profunda/index',
+  routeUrl: '/es/limpieza-facial-profunda',
+  context: async (children: any) => {
+    const React = await import('react');
+    const { MemoryRouter } = await import('react-router-dom');
+    const { HelmetProvider } = await import('react-helmet-async');
+    return React.createElement(
+      HelmetProvider,
+      null,
+      React.createElement(MemoryRouter, { initialEntries: ['/es/limpieza-facial-profunda'] }, children)
+    );
+  }
+};
