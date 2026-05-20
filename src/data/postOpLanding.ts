@@ -11,7 +11,7 @@ export const postOpContent = {
     image: {
       src: 'https://picsum.photos/seed/dermam_postop_hero/1920/1080',
       alt: 'Recuperación Post-Operatorio en DERMA.M',
-      prompt: 'Premium clinical wellness editorial image for post-operative recovery care at a medical aesthetics clinic, professional hands performing gentle lymphatic drainage on a calm patient, white and ivory linens, soft sage accents, warm natural light, clean treatment room, serene recovery atmosphere, medical spa but not hospital, emotionally reassuring, no visible bruising, no scars, no surgical wounds, no blood, no dramatic bandages, no fear-based visuals, high-end post-op care photography, 16:9 horizontal.'
+      prompt: 'Premium clinical wellness editorial image for post-operative recovery care at a medical aesthetics clinic, professional hands performing gentle lymphatic drainage on a calm patient, white and ivory linens, soft sage accents, warm natural light, clean treatment room, serene recovery atmosphere, medical spa but not hospital, emotionally reassuring, no visible bruising, no scars, no surgical wounds, no blood, no dramatic bandages, no fear-based visuals, high-end post-op care photography, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   surgeryTypes: {
@@ -52,7 +52,7 @@ export const postOpContent = {
     image: {
         src: 'https://picsum.photos/seed/dermam_postop_urgency/1920/1080',
         alt: 'Planificación post-operatoria',
-        prompt: 'Elegant clinical recovery still-life, folded compression garment, white towel, small notebook with recovery plan, glass of water, soft sage leaves, warm ivory background, calm medical spa atmosphere, subtle visual metaphor for post-surgery planning, no people, no surgery tools, no blood, no alarm tone, 16:9 horizontal.'
+        prompt: 'Elegant clinical recovery still-life, folded compression garment, white towel, small notebook with recovery plan, glass of water, soft sage leaves, warm ivory background, calm medical spa atmosphere, subtle visual metaphor for post-surgery planning, no people, no surgery tools, no blood, no alarm tone, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   protocol: {
@@ -78,7 +78,7 @@ export const postOpContent = {
     image: {
         src: 'https://picsum.photos/seed/dermam_postop_protocol/1920/1080',
         alt: 'Sala de recuperación post-operatoria',
-        prompt: 'Premium editorial image of a treatment room prepared for post-operative lymphatic drainage, clean massage table with white linens, soft warm light, sage and ivory palette, folded towel, subtle botanical decor, clinically clean but warm and reassuring, no people, no surgical equipment, no hospital aesthetic, 16:9 horizontal.'
+        prompt: 'Premium editorial image of a treatment room prepared for post-operative lymphatic drainage, clean massage table with white linens, soft warm light, sage and ivory palette, folded towel, subtle botanical decor, clinically clean but warm and reassuring, no people, no surgical equipment, no hospital aesthetic, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   founder: {
@@ -90,7 +90,8 @@ export const postOpContent = {
       src: 'https://picsum.photos/seed/dermam_postop_nancy/600/800',
       alt: 'Nancy Meléndez especialista en post-operatorio',
       prompt: 'Premium editorial portrait of a Latina woman aesthetic clinic founder and post-operative recovery specialist, 35-45 years old, warm confident expression, long dark hair styled naturally, wearing elegant white clinical uniform, seated in a bright treatment room with hands visible, soft ivory and sage clinical wellness environment, professional but deeply approachable, not corporate, not hospital, not white coat cliché, luxury medspa portrait, 4:5 vertical.'
-    }
+    },
+    backgroundMedia: undefined
   },
   testimonials: [
     {
@@ -184,7 +185,7 @@ export const postOpContent = {
     image: {
         src: 'https://picsum.photos/seed/postop_final/1920/1080',
         alt: 'Final CTA Post-Op background',
-        prompt: 'Soft premium clinical recovery still-life, folded white towel, sage leaves, ivory candle, clean recovery care card, warm pearl-gray surface, calm post-operative support mood, lots of negative space for CTA text, reassuring medical spa atmosphere, no people, no surgical imagery, no blood, no dark background, 16:9 horizontal.'
+        prompt: 'Soft premium clinical recovery still-life, folded white towel, sage leaves, ivory candle, clean recovery care card, warm pearl-gray surface, calm post-operative support mood, lots of negative space for CTA text, reassuring medical spa atmosphere, no people, no surgical imagery, no blood, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   relatedTreatments: [

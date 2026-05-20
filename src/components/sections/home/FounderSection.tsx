@@ -2,24 +2,34 @@ import { homeContent } from '../../../data/homeContent';
 import Container from '../../ui/Container';
 import ResponsiveImage from '../../ui/ResponsiveImage';
 import Button from '../../ui/Button';
+import SectionMedia from '../../ui/SectionMedia';
 
 export default function FounderSection() {
   const { founder, differentiators } = homeContent;
 
   return (
-    <section className="py-24 bg-white" id="nosotros">
-      <Container>
+    <section className="relative py-24 bg-white overflow-hidden" id="nosotros">
+      {founder.backgroundMedia && (
+        <SectionMedia
+          {...founder.backgroundMedia}
+          overlay={founder.backgroundMedia.overlay || 'ivory'}
+        />
+      )}
+      
+      <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Founder Photo */}
           <div className="relative group">
             <div className="absolute -inset-4 bg-linen rounded-2xl -z-10 transition-transform duration-500 group-hover:scale-105" />
-            <ResponsiveImage
-              src={founder.image.src}
-              alt={founder.image.alt}
-              width={600}
-              height={750}
-              className="rounded-2xl shadow-xl"
-            />
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
+               <ResponsiveImage
+                src={founder.image.src}
+                alt={founder.image.alt}
+                width={600}
+                height={750}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           {/* Founder Copy */}

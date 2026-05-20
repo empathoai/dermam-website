@@ -22,25 +22,6 @@ export default function HubPageTemplate({ content }: HubPageTemplateProps) {
         hreflangDefault={content.seo.canonical} 
       />
       
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "MedicalClinic",
-          "name": "DERMA.M Skin Health",
-          "telePhone": "+15612535384",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "5707 S Dixie Hwy Suite D",
-            "addressLocality": "West Palm Beach",
-            "addressRegion": "FL",
-            "postalCode": "33405",
-            "addressCountry": "US"
-          },
-          "url": content.seo.canonical
-        })}
-      </script>
-
       <HubHeroSection content={content.hero} />
       <HubIntroSection content={content.intro} />
       <HubFeaturedTreatments content={content.featured} />

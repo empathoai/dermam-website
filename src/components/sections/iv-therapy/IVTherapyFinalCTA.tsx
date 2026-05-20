@@ -1,0 +1,63 @@
+import React from 'react';
+import { IVTherapyFinalCTAContent } from '../../../types/ivTherapy';
+import Container from '../../ui/Container';
+import SectionMedia from '../../ui/SectionMedia';
+import Button from '../../ui/Button';
+import { MessageCircle, Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+interface IVTherapyFinalCTAProps {
+  content: IVTherapyFinalCTAContent;
+}
+
+export default function IVTherapyFinalCTA({ content }: IVTherapyFinalCTAProps) {
+  const handleWhatsAppClick = () => {
+    const url = `https://wa.me/15615663762?text=${encodeURIComponent(content.secondaryCTA.whatsappMessage)}`;
+    window.open(url, '_blank', 'noreferrer');
+  };
+
+  return (
+    <section className="relative py-24 overflow-hidden bg-canvas isolation-isolate">
+      <SectionMedia
+        type="image"
+        src={content.image.src}
+        alt={content.image.alt}
+        overlay="sage"
+        opacity={0.5}
+      />
+
+      <Container className="relative z-10">
+        <div className="max-w-5xl mx-auto bg-white/95 backdrop-blur-md rounded-[40px] overflow-hidden border border-border-soft shadow-2xl flex flex-col md:flex-row items-stretch">
+          {/* Text Content */}
+          <div className="flex-1 p-10 md:p-16 border-b md:border-b-0 md:border-r border-border-soft">
+            <h2 className="text-3xl md:text-5xl font-serif text-text-primary mb-6 leading-tight">
+              {content.title}
+            </h2>
+            <p className="text-text-secondary text-lg leading-relaxed">
+              {content.copy}
+            </p>
+          </div>
+
+          {/* Actions */}
+          <div className="flex-1 p-10 md:p-16 flex flex-col justify-center gap-6 bg-canvas/30">
+            <Link to={content.primaryCTA.href} className="w-full">
+              <Button className="w-full justify-center gap-3 py-6 h-auto text-lg">
+                <Calendar size={20} />
+                {content.primaryCTA.label}
+              </Button>
+            </Link>
+
+            <Button 
+              onClick={handleWhatsAppClick}
+              variant="outline" 
+              className="w-full justify-center gap-3 py-6 h-auto text-lg border-sage/30 text-sage hover:bg-sage/5"
+            >
+              <MessageCircle size={20} />
+              {content.secondaryCTA.label}
+            </Button>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}

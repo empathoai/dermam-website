@@ -21,6 +21,7 @@ export const aboutContent: AboutContent = {
       alt: 'Nancy Meléndez Fundadora',
       prompt: 'Premium editorial portrait of Nancy Meléndez, Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, elegant white or ivory clinical uniform, hands visible, seated or standing inside a bright DERMA.M treatment room, soft sage and ivory palette, botanical minimal decor, professional but approachable, no corporate headshot, no hospital look, no white coat cliché, luxury clinical wellness portrait, 4:5 vertical.'
     },
+    backgroundMedia: undefined,
     stats: [
       { label: 'Años de Experiencia', value: '10+' },
       { label: 'Pacientes Satisfechos', value: '1K+' },

@@ -1,14 +1,22 @@
 import { deepFacialContent } from '../../../data/deepFacialLanding';
 import Container from '../../ui/Container';
 import ResponsiveImage from '../../ui/ResponsiveImage';
+import SectionMedia from '../../ui/SectionMedia';
 
 export default function DeepFacialFounderSection() {
   const { founder } = deepFacialContent;
 
   return (
-    <section className="py-24 bg-white">
-      <Container>
-        <div className="max-w-5xl mx-auto rounded-[32px] overflow-hidden border border-border-soft shadow-xl bg-canvas flex flex-col lg:flex-row">
+    <section className="relative py-24 bg-white overflow-hidden">
+      {founder.backgroundMedia && (
+        <SectionMedia
+          {...founder.backgroundMedia}
+          overlay={founder.backgroundMedia.overlay || 'ivory'}
+        />
+      )}
+      
+      <Container className="relative z-10">
+        <div className="max-w-5xl mx-auto rounded-[32px] overflow-hidden border border-border-soft shadow-xl bg-canvas flex flex-col lg:flex-row shadow-2xl">
           <div className="lg:w-2/5 aspect-[4/5] lg:aspect-auto">
              <ResponsiveImage
                 src={founder.image.src}

@@ -10,7 +10,7 @@ export const deepFacialContent = {
     image: {
       src: 'https://picsum.photos/seed/dermam_cleansing_hero/1920/1080',
       alt: 'Limpieza Facial Profunda en DERMA.M',
-      prompt: 'Bright premium skincare clinic editorial image for deep facial cleansing, woman lying calmly with white headband receiving a gentle hydrating facial treatment, luminous natural skin texture, soft white treatment room, warm ivory light, pastel sage and watery blue-green accents, clean clinical spa environment, folded towels and skincare serum nearby, calm and approachable luxury medspa photography, no redness, no pore extraction, no harsh tools, no dark background, 16:9 horizontal.'
+      prompt: 'Bright premium skincare clinic editorial image for deep facial cleansing, woman lying calmly with white headband receiving a gentle hydrating facial treatment, luminous natural skin texture, soft white treatment room, warm ivory light, pastel sage and watery blue-green accents, clean clinical spa environment, folded towels and skincare serum nearby, calm and approachable luxury medspa photography, no redness, no pore extraction, no harsh tools, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   audience: {
@@ -70,7 +70,7 @@ export const deepFacialContent = {
         image: {
             src: 'https://picsum.photos/seed/deepfacial_step5/1920/1080',
             alt: 'Consulta personalizada',
-            prompt: 'Premium consultation moment after facial treatment, aesthetic specialist showing client a simple skincare plan on tablet or card, clean treatment room, white and sage palette, client relaxed and confident, professional hands visible, warm natural light, clinical wellness setting, no sales pressure, trust-building atmosphere, 16:9 horizontal.'
+            prompt: 'Premium consultation moment after facial treatment, aesthetic specialist showing client a simple skincare plan on tablet or card, clean treatment room, white and sage palette, client relaxed and confident, professional hands visible, warm natural light, clinical wellness setting, no sales pressure, trust-building atmosphere, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
         }
       }
     ],
@@ -169,7 +169,8 @@ export const deepFacialContent = {
       src: 'https://picsum.photos/seed/dermam_cleansing_nancy/600/800',
       alt: 'Nancy Meléndez fundadora',
       prompt: 'Premium editorial portrait of a Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, long dark hair styled naturally, wearing elegant white clinical uniform, seated in a bright skincare treatment room with hands visible, soft ivory, sage, and pearl gray environment, professional and approachable, not corporate, not hospital, not white coat cliché, luxury wellness clinic portrait, bright natural light, 4:5 vertical.'
-    }
+    },
+    backgroundMedia: undefined
   },
   faqs: [
     {
@@ -213,7 +214,7 @@ export const deepFacialContent = {
     image: {
         src: 'https://picsum.photos/seed/facial_cleansing_final/1920/1080',
         alt: 'Final CTA Deep Facial Cleansing',
-        prompt: 'Soft premium skincare still-life, glass serum bottle, white towel, ivory candle, ceramic bowl, soft sage leaves, watery blue-green accent, warm pearl-gray surface, clean hydrated skin wellness mood, lots of negative space for CTA text, calm feminine clinical spa atmosphere, no people, no dark background, 16:9 horizontal.'
+        prompt: 'Soft premium skincare still-life, glass serum bottle, white towel, ivory candle, ceramic bowl, soft sage leaves, watery blue-green accent, warm pearl-gray surface, clean hydrated skin wellness mood, lots of negative space for CTA text, calm feminine clinical spa atmosphere, no people, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   relatedTreatments: [

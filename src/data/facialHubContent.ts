@@ -79,7 +79,7 @@ export const facialHubContent: HubPageContent = {
         title: 'Microneedling',
         description: 'Textura, poros y cicatrices de acné con resultados progresivos.',
         ctaLabel: 'Ver tratamiento →',
-        href: '/es/reservar',
+        href: '/es/microneedling',
         image: {
           src: 'https://images.unsplash.com/photo-1629299443270-e67c9d96fb57?q=80&w=2070&auto=format&fit=crop',
           alt: 'Tratamiento Microneedling',
@@ -108,7 +108,7 @@ export const facialHubContent: HubPageContent = {
         title: 'Hidrofacial',
         category: 'Hidratación',
         ctaLabel: 'Ver más →',
-        href: '/es/reservar',
+        href: '/es/hidrofacial',
         image: {
           src: 'https://images.unsplash.com/photo-1512290903422-d122bb416e78?q=80&w=2070&auto=format&fit=crop',
           alt: 'Hidrofacial',

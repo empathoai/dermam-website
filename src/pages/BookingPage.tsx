@@ -28,25 +28,6 @@ export default function BookingPage() {
   return (
     <PageShell>
       <SEO {...seoProps} />
-      
-      {/* Schema.org JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "MedicalClinic",
-          "name": "DERMA.M Skin Health",
-          "telePhone": "+15612535384",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "5707 S Dixie Hwy Suite D",
-            "addressLocality": "West Palm Beach",
-            "addressRegion": "FL",
-            "postalCode": "33405",
-            "addressCountry": "US"
-          },
-          "url": "https://dermamskinhealth.com/es/reservar/"
-        })}
-      </script>
 
       <BookingHeroSection />
       <BookingTreatmentSelectorSection />

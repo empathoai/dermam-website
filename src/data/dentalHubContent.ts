@@ -58,7 +58,7 @@ export const dentalHubContent: HubPageContent = {
         image: {
           src: 'https://images.unsplash.com/photo-1460676746866-99037a09d0da?q=80&w=2070&auto=format&fit=crop',
           alt: 'Evaluación Dental',
-          prompt: 'Premium dental consultation scene, dentist or specialist speaking with patient in bright ivory clinic room, tablet or mirror in hand, calm professional atmosphere, soft sage and pearl gray accents, no mouth close-up, no invasive tools, approachable dental wellness photography, 4:3 ratio.'
+          prompt: 'Premium dental consultation scene, specialist speaking with patient in bright ivory clinic room, tablet or mirror in hand, calm professional atmosphere, soft sage and pearl gray accents, no mouth close-up, no invasive tools, approachable dental wellness photography, 4:3 ratio.'
         }
       },
       {
@@ -66,8 +66,7 @@ export const dentalHubContent: HubPageContent = {
         title: 'Blanqueamiento Dental',
         description: 'Mejora estética para una sonrisa más luminosa.',
         ctaLabel: 'Ver servicio →',
-        href: '/es/reservar',
-        isPlaceholderRoute: true,
+        href: '/es/blanqueamiento-dental',
         image: {
           src: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
           alt: 'Blanqueamiento',
@@ -79,8 +78,7 @@ export const dentalHubContent: HubPageContent = {
         title: 'Limpieza Dental',
         description: 'Cuidado preventivo para mantener salud y frescura.',
         ctaLabel: 'Ver servicio →',
-        href: '/es/reservar',
-        isPlaceholderRoute: true,
+        href: '/es/limpieza-dental',
         image: {
           src: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop',
           alt: 'Limpieza Dental',
@@ -205,7 +203,7 @@ export const dentalHubContent: HubPageContent = {
         isPlaceholder: true
       },
       {
-        quote: 'Un ambiente muy tranquilo y profesional. Hacen que ir al dentista sea una experiencia agradable.',
+        quote: 'Un ambiente muy tranquilo y profesional. Hacen que la visita sea una experiencia agradable.',
         author: 'Monica F.',
         role: 'Limpieza Dental',
         isPlaceholder: true

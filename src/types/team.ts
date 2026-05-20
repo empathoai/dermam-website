@@ -41,6 +41,7 @@ export interface AboutContent {
       alt: string;
       prompt: string;
     };
+    backgroundMedia?: import('./common').MediaAsset;
     stats: Array<{ label: string; value: string }>;
   };
   values: {

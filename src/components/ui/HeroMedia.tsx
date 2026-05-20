@@ -6,9 +6,10 @@ interface HeroMediaProps {
   type: 'image' | 'video';
   src: string;
   poster?: string;
-  alt: string;
+  alt?: string;
   className?: string;
   overlay?: boolean;
+  position?: 'center' | 'left' | 'right' | 'top' | 'bottom';
   onLoaded: () => void;
 }
 
@@ -16,9 +17,10 @@ export default function HeroMedia({
   type,
   src,
   poster,
-  alt,
+  alt = '',
   className = '',
   overlay = true,
+  position = 'center',
   onLoaded
 }: HeroMediaProps) {
   const [isReady, setIsReady] = useState(false);
@@ -29,10 +31,13 @@ export default function HeroMedia({
     onLoaded();
   };
 
-  useEffect(() => {
-    // If it's an image and already cached, the onLoad might not trigger as expected in some cases 
-    // or very fast. However, ResponsiveImage is a standard img tag.
-  }, []);
+  const positions = {
+    center: 'object-center',
+    left: 'object-left',
+    right: 'object-right',
+    top: 'object-top',
+    bottom: 'object-bottom',
+  };
 
   return (
     <div className={`relative w-full h-full overflow-hidden ${className}`}>
@@ -44,7 +49,7 @@ export default function HeroMedia({
           playsInline
           poster={poster}
           onCanPlayThrough={handleMediaReady}
-          className="absolute inset-0 w-full h-full object-cover"
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${isReady ? 'opacity-100' : 'opacity-0'} ${positions[position]} max-md:object-center`}
         >
           <source src={src} type="video/mp4" />
         </video>
@@ -55,7 +60,7 @@ export default function HeroMedia({
           fetchPriority="high"
           loading="eager"
           onLoad={handleMediaReady}
-          className="absolute inset-0 w-full h-full object-cover"
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${isReady ? 'opacity-100' : 'opacity-0'} ${positions[position]} max-md:object-center`}
         />
       )}
 

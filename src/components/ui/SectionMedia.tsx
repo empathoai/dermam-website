@@ -52,7 +52,7 @@ export default function SectionMedia({
           loop
           playsInline
           poster={poster}
-          className={`w-full h-full object-cover ${positions[position]}`}
+          className={`w-full h-full object-cover ${positions[position]} max-md:object-center`}
         >
           <source src={src} type="video/mp4" />
         </video>
@@ -62,7 +62,7 @@ export default function SectionMedia({
           alt={alt}
           fetchPriority={priority ? 'high' : 'auto'}
           loading={priority ? 'eager' : 'lazy'}
-          className={`w-full h-full object-cover ${positions[position]}`}
+          className={`w-full h-full object-cover ${positions[position]} max-md:object-center`}
         />
       )}
       

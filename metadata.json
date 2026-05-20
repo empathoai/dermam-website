@@ -1,6 +1,6 @@
 {
   "name": "DERMA.M Skin Health",
-  "description": "Bilingual medical-aesthetic website for DERMA.M Skin Health, featuring soft clinical wellness aesthetic, data-driven treatment sections, and conversion-focused design.",
+  "description": "Bilingual clinical wellness website for DERMA.M Skin Health, featuring soft aesthetics, data-driven treatment sections, and conversion-focused design.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

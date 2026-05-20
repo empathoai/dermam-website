@@ -3,7 +3,8 @@ import { siteConfig } from './siteConfig';
 export const getSiteSchema = () => {
   return {
     "@context": "https://schema.org",
-    "@type": ["MedicalClinic", "LocalBusiness"],
+    "@type": ["HealthAndBeautyBusiness", "LocalBusiness"],
+    "@id": "https://dermamskinhealth.com/#business",
     "name": siteConfig.businessName,
     "image": `${siteConfig.baseUrl}/og/dermam-home.jpg`,
     "telephone": siteConfig.phoneRaw,
@@ -27,6 +28,12 @@ export const getSiteSchema = () => {
          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
          "opens": "09:00",
          "closes": "18:00"
+       },
+       {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": "Saturday",
+         "opens": "09:00",
+         "closes": "14:00"
        }
     ],
     "sameAs": [

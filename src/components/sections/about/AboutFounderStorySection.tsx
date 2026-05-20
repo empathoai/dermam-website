@@ -2,13 +2,20 @@ import { aboutContent } from '../../../data/aboutContent';
 import Container from '../../ui/Container';
 import ResponsiveImage from '../../ui/ResponsiveImage';
 import { motion } from 'motion/react';
+import SectionMedia from '../../ui/SectionMedia';
 
 export default function AboutFounderStorySection() {
   const { story } = aboutContent;
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
-      <Container>
+    <section className="relative py-24 bg-white overflow-hidden">
+      {story.backgroundMedia && (
+        <SectionMedia
+          {...story.backgroundMedia}
+          overlay={story.backgroundMedia.overlay || 'ivory'}
+        />
+      )}
+      <Container className="relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}

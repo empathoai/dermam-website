@@ -66,8 +66,7 @@ export const bodyHubContent: HubPageContent = {
         title: 'Cavitación',
         description: 'Reducción de medidas localizada.',
         ctaLabel: 'Ver tratamiento →',
-        href: '/es/reservar',
-        isPlaceholderRoute: true,
+        href: '/es/cavitacion',
         image: {
           src: 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?q=80&w=2070&auto=format&fit=crop',
           alt: 'Cavitación',
@@ -97,8 +96,7 @@ export const bodyHubContent: HubPageContent = {
         title: 'Radiofrecuencia Corporal',
         category: 'Reafirmación',
         ctaLabel: 'Ver más →',
-        href: '/es/reservar',
-        isPlaceholderRoute: true,
+        href: '/es/radiofrecuencia-corporal',
         image: { src: 'https://images.unsplash.com/photo-1522335789203-aa9fb3922df2?q=80&w=2070&auto=format&fit=crop', alt: 'RF Corporal', prompt: 'Body RF' }
       },
       {
@@ -106,8 +104,7 @@ export const bodyHubContent: HubPageContent = {
         title: 'Drenaje Linfático Corporal',
         category: 'Desinflamación',
         ctaLabel: 'Ver más →',
-        href: '/es/reservar',
-        isPlaceholderRoute: true,
+        href: '/es/drenaje-linfatico-corporal',
         image: { src: 'https://images.unsplash.com/photo-1544161515-4ae6ce6fe858?q=80&w=2070&auto=format&fit=crop', alt: 'Drenaje Corporal', prompt: 'Drainage' }
       },
       {
@@ -115,8 +112,7 @@ export const bodyHubContent: HubPageContent = {
         title: 'Cavitación',
         category: 'Reducción',
         ctaLabel: 'Ver más →',
-        href: '/es/reservar',
-        isPlaceholderRoute: true,
+        href: '/es/cavitacion',
         image: { src: 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?q=80&w=2070&auto=format&fit=crop', alt: 'Cavitación', prompt: 'Cavitation' }
       },
       {

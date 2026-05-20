@@ -17,6 +17,16 @@ export interface ImageAsset {
   prompt?: string;
 }
 
+export interface MediaAsset {
+  type: 'image' | 'video';
+  src: string;
+  poster?: string;
+  alt?: string;
+  overlay?: 'none' | 'soft' | 'sage' | 'ivory' | 'gradient';
+  position?: 'center' | 'left' | 'right' | 'top' | 'bottom';
+  opacity?: number;
+}
+
 export interface StatItem {
   value: string;
   label: string;

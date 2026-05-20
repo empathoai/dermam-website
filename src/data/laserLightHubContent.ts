@@ -125,8 +125,7 @@ export const laserLightHubContent: HubPageContent = {
         title: 'Radiofrecuencia Facial',
         category: 'Firmeza',
         ctaLabel: 'Ver más →',
-        href: '/es/reservar',
-        isPlaceholderRoute: true,
+        href: '/es/radiofrecuencia-facial',
         image: { src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?q=80&w=2070&auto=format&fit=crop', alt: 'RF Facial', prompt: 'RF' }
       },
       {
@@ -152,8 +151,7 @@ export const laserLightHubContent: HubPageContent = {
         title: 'Oxigenoterapia Facial',
         category: 'Luminosidad',
         ctaLabel: 'Ver más →',
-        href: '/es/reservar',
-        isPlaceholderRoute: true,
+        href: '/es/oxigenoterapia-facial',
         image: { src: 'https://images.unsplash.com/photo-1512290746422-3c02fc33a822?q=80&w=2070&auto=format&fit=crop', alt: 'Oxígeno', prompt: 'Oxygen' }
       },
       {

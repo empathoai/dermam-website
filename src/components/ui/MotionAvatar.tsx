@@ -57,13 +57,13 @@ export default function MotionAvatar({
           autoPlay={autoPlay}
           preload="metadata"
           onError={() => setVideoError(true)}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 object-top"
         />
       ) : (
         <img
-          src={imageFallbackSrc || posterSrc}
+          src={shouldReduceMotion ? posterSrc : (imageFallbackSrc || posterSrc)}
           alt={alt}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 object-top"
           loading="lazy"
         />
       )}

@@ -1,20 +1,21 @@
-import { useState } from 'react';
-import { HubPageContent } from '../../../types/hub';
+import React, { useState } from 'react';
+import { IVTherapyHeroContent } from '../../../types/ivTherapy';
 import Container from '../../ui/Container';
 import HeroMedia from '../../ui/HeroMedia';
 import Button from '../../ui/Button';
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
+import { ArrowDown } from 'lucide-react';
 
-interface HubHeroSectionProps {
-  content: HubPageContent['hero'];
+interface IVTherapyHeroSectionProps {
+  content: IVTherapyHeroContent;
+  onScrollToKits: () => void;
 }
 
-export default function HubHeroSection({ content }: HubHeroSectionProps) {
+export default function IVTherapyHeroSection({ content, onScrollToKits }: IVTherapyHeroSectionProps) {
   const [isMediaReady, setIsMediaReady] = useState(false);
 
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-canvas isolation-isolate">
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-canvas isolation-isolate pt-20">
       <HeroMedia
         type="image"
         src={content.image.src}
@@ -23,7 +24,7 @@ export default function HubHeroSection({ content }: HubHeroSectionProps) {
         onLoaded={() => setIsMediaReady(true)}
       />
 
-      <Container className="relative z-10 w-full mt-10 md:mt-0">
+      <Container className="relative z-10 w-full mt-12 md:mt-0">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {isMediaReady && (
             <motion.div
@@ -49,20 +50,24 @@ export default function HubHeroSection({ content }: HubHeroSectionProps) {
                 {content.subheadline}
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-                 <Link to="/es/reservar">
-                    <Button className="bg-white text-sage hover:bg-white/90 min-w-[200px]">
-                      {content.ctaLabel}
-                    </Button>
-                 </Link>
-                  <motion.div 
+              <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
+                  <Button 
+                    onClick={onScrollToKits}
+                    className="bg-white text-sage hover:bg-white/90 min-w-[220px]"
+                  >
+                    {content.ctaLabel}
+                  </Button>
+                  
+                  <motion.button
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="text-[10px] md:text-xs text-white/80 font-medium tracking-wide uppercase"
+                    transition={{ delay: 1, duration: 1 }}
+                    onClick={onScrollToKits}
+                    className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-xs uppercase tracking-widest font-bold"
                   >
-                    {content.trustLine}
-                  </motion.div>
+                    <ArrowDown size={14} className="animate-bounce" />
+                    Explorar
+                  </motion.button>
               </div>
             </motion.div>
           )}

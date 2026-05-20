@@ -10,12 +10,15 @@ import FacialTreatmentsHubPage from './pages/FacialTreatmentsHubPage';
 import BodyTreatmentsHubPage from './pages/BodyTreatmentsHubPage';
 import LaserLightHubPage from './pages/LaserLightHubPage';
 import DentalHubPage from './pages/DentalHubPage';
+import IVTherapyPage from './pages/IVTherapyPage';
+import TreatmentPage from './pages/TreatmentPage';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/es" element={<HomePage />} />
+        <Route path="/es/iv-therapy" element={<IVTherapyPage />} />
         <Route path="/es/plasma-rico-en-plaquetas-west-palm-beach" element={<PrfLandingPage />} />
         <Route path="/es/postoperatorio-west-palm-beach" element={<PostOpLandingPage />} />
         <Route path="/es/limpieza-facial-profunda" element={<DeepFacialCleansingLandingPage />} />
@@ -27,8 +30,12 @@ export default function App() {
         <Route path="/es/laser-y-luz" element={<LaserLightHubPage />} />
         <Route path="/es/dental" element={<DentalHubPage />} />
         
+        {/* Dynamic Tier 3 Treatment Route */}
+        <Route path="/es/:treatmentSlug" element={<TreatmentPage />} />
+        
         {/* English Route Placeholders (Building later) */}
         <Route path="/en/body-treatments" element={<BodyTreatmentsHubPage />} />
+        <Route path="/en/iv-therapy" element={<IVTherapyPage />} />
         <Route path="/en/laser-and-light" element={<LaserLightHubPage />} />
         <Route path="/en/dental" element={<DentalHubPage />} />
         <Route path="/en/facial-treatments" element={<FacialTreatmentsHubPage />} />

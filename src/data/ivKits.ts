@@ -1,0 +1,103 @@
+import { IVKit } from '../types/ivTherapy';
+
+export const ivKits: IVKit[] = [
+  {
+    id: 'quench',
+    name: 'Quench IV Kit',
+    badge: 'Más popular',
+    description: 'Hidratación profunda y revitalización inmediata.',
+    image: 'https://picsum.photos/seed/kit_quench/800/600',
+    alt: 'Quench IV Kit - Hidratación Profunda',
+    imagePrompt: 'Premium hydration IV kit editorial image, elegant IV bag with clear fluid, cucumber slices, water glass, folded white towel, soft sage botanical accents, cool watery blue-green highlights, bright ivory background, fresh hydration wellness mood, no people, no dark background, 4:3 ratio. Main subject must remain visible within the center 60% of the frame for mobile crop safety.',
+    showPrice: false,
+    price: 150,
+    ctaLabel: 'Reservar →',
+    trackingLabel: 'iv_kit_quench',
+    whatsappMessage: 'Hola, quiero el Quench IV Kit en DERMA.M.',
+    squareUrl: 'https://square.link/u/quench-placeholder'
+  },
+  {
+    id: 'reboot',
+    name: 'Reboot IV Kit',
+    description: 'Apoyo para recuperación, hidratación y energía.',
+    image: 'https://picsum.photos/seed/kit_reboot/800/600',
+    alt: 'Reboot IV Kit - Recuperación y Energía',
+    imagePrompt: 'Premium recovery IV kit editorial image, elegant IV bag with subtle golden fluid, citrus slices, mineral water, folded ivory towel, warm morning light, clean wellness clinic surface, fresh post-event recovery mood, no alcohol bottles, no hangover cliché, no dark background, 4:3 ratio. Main subject must remain visible within the center 60% of the frame for mobile crop safety.',
+    showPrice: false,
+    price: 175,
+    ctaLabel: 'Reservar →',
+    trackingLabel: 'iv_kit_reboot',
+    whatsappMessage: 'Hola, quiero el Reboot IV Kit en DERMA.M.',
+    squareUrl: 'https://square.link/u/reboot-placeholder'
+  },
+  {
+    id: 'alleviate',
+    name: 'Alleviate IV Kit',
+    description: 'Apoyo para esos días difíciles: bienestar, comodidad e hidratación.',
+    image: 'https://picsum.photos/seed/kit_alleviate/800/600',
+    alt: 'Alleviate IV Kit - Bienestar y Comodidad',
+    imagePrompt: 'Premium soothing wellness IV kit editorial image, elegant IV bag, soft lavender flowers, warm tea cup, folded ivory towel, pearl gray surface, calm PMS comfort mood, pastel lavender and sage accents, no medical alarm feeling, no dark background, 4:3 ratio. Main subject must remain visible within the center 60% of the frame for mobile crop safety.',
+    showPrice: false,
+    price: 160,
+    ctaLabel: 'Reservar →',
+    trackingLabel: 'iv_kit_alleviate',
+    whatsappMessage: 'Hola, quiero el Alleviate IV Kit en DERMA.M.',
+    squareUrl: 'https://square.link/u/alleviate-placeholder'
+  },
+  {
+    id: 'timeless',
+    name: 'Timeless IV Kit',
+    description: 'Apoyo celular, energía y bienestar enfocado en longevidad.',
+    image: 'https://picsum.photos/seed/kit_timeless/800/600',
+    alt: 'Timeless IV Kit - Longevidad y Antienvejecimiento',
+    imagePrompt: 'Premium longevity wellness IV kit editorial image, elegant IV bag with subtle golden fluid, glass serum-like vial, white ceramic tray, soft sage leaves, warm ivory light, refined anti-aging wellness mood, luxury clinical still-life, no pills, no dark background, 4:3 ratio. Main subject must remain visible within the center 60% of the frame for mobile crop safety.',
+    showPrice: false,
+    price: 200,
+    ctaLabel: 'Reservar →',
+    trackingLabel: 'iv_kit_timeless',
+    whatsappMessage: 'Hola, quiero el Timeless IV Kit en DERMA.M.',
+    squareUrl: 'https://square.link/u/timeless-placeholder'
+  },
+  {
+    id: 'immunity',
+    name: 'Immunity IV Kit',
+    description: 'Apoyo para defensas, bienestar e hidratación.',
+    image: 'https://picsum.photos/seed/kit_immunity/800/600',
+    alt: 'Immunity IV Kit - Apoyo Inmunológico',
+    imagePrompt: 'Premium immune support IV kit editorial image, elegant IV bag, citrus fruit, ginger, soft sage leaves, white towel, bright ivory background, clean clinical wellness surface, fresh immune support mood, no disease imagery, no dark background, 4:3 ratio. Main subject must remain visible within the center 60% of the frame for mobile crop safety.',
+    showPrice: false,
+    price: 160,
+    ctaLabel: 'Reservar →',
+    trackingLabel: 'iv_kit_immunity',
+    whatsappMessage: 'Hola, quiero el Immunity IV Kit en DERMA.M.',
+    squareUrl: 'https://square.link/u/immunity-placeholder'
+  },
+  {
+    id: 'tri-immune',
+    name: 'Tri-Immune Boost',
+    description: 'Fórmula de apoyo inmune, función celular y recuperación.',
+    image: 'https://picsum.photos/seed/kit_triimmune/800/600',
+    alt: 'Tri-Immune Boost - Máxima Inmunidad',
+    imagePrompt: 'Premium tri-immune boost IV kit editorial image, elegant IV bag, vitamin vial trio, citrus slices, botanical sage accents, folded ivory towel, bright clinical wellness room, energetic but elegant, no medical alarm tone, no dark background, 4:3 ratio. Main subject must remain visible within the center 60% of the frame for mobile crop safety.',
+    showPrice: false,
+    price: 190,
+    ctaLabel: 'Reservar →',
+    trackingLabel: 'iv_kit_tri_immune',
+    whatsappMessage: 'Hola, quiero el Tri-Immune Boost en DERMA.M.',
+    squareUrl: 'https://square.link/u/tri-immune-placeholder'
+  },
+  {
+    id: 'brainstorm',
+    name: 'Brainstorm IV Kit',
+    description: 'Apoyo para claridad mental, enfoque y rendimiento cognitivo.',
+    image: 'https://picsum.photos/seed/kit_brainstorm/800/600',
+    alt: 'Brainstorm IV Kit - Claridad Mental y Enfoque',
+    imagePrompt: 'Premium focus and mental clarity IV kit editorial image, elegant IV bag, notebook, pen, glass water, soft blue-green accent, clean ivory desk surface, sage botanical detail, bright calm cognitive wellness mood, no tech gadget clutter, no dark background, 4:3 ratio. Main subject must remain visible within the center 60% of the frame for mobile crop safety.',
+    showPrice: false,
+    price: 180,
+    ctaLabel: 'Reservar →',
+    trackingLabel: 'iv_kit_brainstorm',
+    whatsappMessage: 'Hola, quiero el Brainstorm IV Kit en DERMA.M.',
+    squareUrl: 'https://square.link/u/brainstorm-placeholder'
+  }
+];

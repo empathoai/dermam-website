@@ -1,4 +1,15 @@
-import { ImageAsset, CTA } from './common';
+import { ImageAsset, CTA, MediaAsset } from './common';
+
+export interface FounderContent {
+  eyebrow?: string;
+  name: string;
+  title: string;
+  bio?: string;
+  quote: string;
+  cta: string;
+  image: ImageAsset;
+  backgroundMedia?: MediaAsset;
+}
 
 export interface FAQItem {
   question: string;

@@ -10,7 +10,7 @@ export const prfContent = {
     image: {
       src: 'https://picsum.photos/seed/dermam_prf_hero/1920/1080',
       alt: 'Plasma Rico en Plaquetas y Fibrina en DERMA.M',
-      prompt: 'Premium clinical aesthetics editorial image for a PRF / PRP facial treatment landing page, gloved hands holding a small vial with golden plasma layer and subtle dark red lower layer, clean ivory clinical treatment room, blurred centrifuge and amber medical vials in background, soft natural light, elegant medical precision, pastel ivory and muted sage environment, sober muted rose-plasma accent, luxury medspa photography, calm and professional, no blood spill, no aggressive needle close-up, no surgery, no hospital emergency feeling, no dark background, 16:9 horizontal.'
+      prompt: 'Premium clinical aesthetics editorial image for a PRF / PRP facial treatment landing page, gloved hands holding a small vial with golden plasma layer and subtle dark red lower layer, clean ivory clinical treatment room, blurred centrifuge and amber medical vials in background, soft natural light, elegant medical precision, pastel ivory and muted sage environment, sober muted rose-plasma accent, luxury medspa photography, calm and professional, no blood spill, no aggressive needle close-up, no surgery, no hospital emergency feeling, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   audience: {
@@ -124,7 +124,7 @@ export const prfContent = {
     },
     {
       question: '¿Qué cuidados debo tener después del PRF?',
-      answer: 'Recomendamos evitar el sol directo, no realizar ejercicio intenso por 24 horas y seguir el protocolo de hidratación específica que te entregaremos en clínica.'
+      answer: 'Recomendamos evitar el sol directo, no realizar ejercicio intenso por 24 horas y seguir el protocolo de hidratación específica que te entregaremos en nuestro centro.'
     },
     {
       question: '¿El PRF sirve para cicatrices de acné?',
@@ -145,7 +145,8 @@ export const prfContent = {
       src: 'https://picsum.photos/seed/dermam_prf_nancy/600/800',
       alt: 'Nancy Meléndez especialista en PRF',
       prompt: 'Premium editorial portrait of a Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, long dark hair styled naturally, wearing elegant white clinical uniform, seated at a light treatment desk with hands visible, soft ivory and warm gray treatment room, candle and minimal DERMA.M branded object on desk, subtle botanical decor, professional but approachable, not corporate, not hospital, not white coat cliché, luxury wellness clinic portrait, bright natural light, 4:5 vertical.'
-    }
+    },
+    backgroundMedia: undefined
   },
   finalCTA: {
     headline: '¿Lista para tu evaluación?',
@@ -155,7 +156,7 @@ export const prfContent = {
     image: {
         src: 'https://picsum.photos/seed/prf_final/1920/1080',
         alt: 'Final CTA PRF background',
-        prompt: 'Soft premium clinical wellness still-life for PRF facial treatment, golden plasma vial, ivory candle, folded white towel, subtle baby’s breath flowers, ceramic tray, muted rose-plasma accent, sage botanical detail, warm pearl-gray background, lots of negative space for CTA text, elegant medical spa mood, 16:9 horizontal.'
+        prompt: 'Soft premium clinical wellness still-life for PRF facial treatment, golden plasma vial, ivory candle, folded white towel, subtle baby’s breath flowers, ceramic tray, muted rose-plasma accent, sage botanical detail, warm pearl-gray background, lots of negative space for CTA text, elegant medical spa mood, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   relatedTreatments: [

@@ -14,6 +14,7 @@ export const footerLinks = {
     { label: 'Plasma Rico en Plaquetas (PRF)', href: '/es/plasma-rico-en-plaquetas-west-palm-beach' },
     { label: 'Post-Operatorio', href: '/es/postoperatorio-west-palm-beach' },
     { label: 'Limpieza Facial Profunda', href: '/es/limpieza-facial-profunda' },
+    { label: 'IV Therapy', href: '/es/iv-therapy' },
     { label: 'Reservar Cita', href: '/es/reservar' }
   ],
   company: [
