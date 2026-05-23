@@ -21,7 +21,7 @@ export default function PostOpProtocolSection() {
         
         <div className="max-w-4xl mx-auto space-y-6 mb-16">
           {protocol.phases.map((phase) => (
-            <div key={phase.id} className="bg-white p-8 rounded-[2rem] border border-border-soft flex items-center gap-8 group hover:border-sage transition-colors duration-300">
+            <div key={phase.id} className="bg-white p-8 rounded-[2rem] border border-border-soft flex items-center gap-8 group hover:border-base-300 hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
                <span className="text-4xl font-sans text-text-primary opacity-10 group-hover:opacity-20 transition-opacity">
                 {phase.id}
               </span>
@@ -37,7 +37,7 @@ export default function PostOpProtocolSection() {
             <Button 
                 variant="outline"
                 onClick={handleConsultClick}
-                className="border-sage text-sage hover:bg-sage hover:text-white px-8 py-3"
+                className="px-8 py-3"
             >
                 {protocol.cta} →
             </Button>

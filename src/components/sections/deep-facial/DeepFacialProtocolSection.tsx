@@ -17,10 +17,10 @@ export default function DeepFacialProtocolSection() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {protocol.steps.map((step, idx) => (
-            <div key={idx} className={`relative flex flex-col h-full bg-white rounded-[2rem] border transition-all duration-300 ${step.isKeyMoment ? 'border-sage ring-4 ring-sage-soft/30' : 'border-border-soft hover:border-sage'}`}>
+            <div key={idx} className={`relative flex flex-col h-full bg-white rounded-[2rem] border transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-subtle ${step.isKeyMoment ? 'border-base-900 ring-2 ring-base-900/10' : 'border-border-soft hover:border-base-300'}`}>
               {step.isKeyMoment && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                  <span className="bg-sage text-white text-[10px] font-medium uppercase tracking-[0.15em] px-3 py-1 rounded-full shadow-lg">
+                  <span className="bg-base-900 text-base-100 text-[10px] font-medium uppercase tracking-[0.15em] px-3 py-1 rounded-full shadow-lg">
                     Momento clave
                   </span>
                 </div>

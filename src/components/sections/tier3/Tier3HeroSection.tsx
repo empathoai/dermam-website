@@ -57,7 +57,7 @@ export default function Tier3HeroSection({
                 transition={{ delay: 0.4 }}
                 className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.08] px-3 py-1 text-xs font-light tracking-normal text-base-200 backdrop-blur-sm"
               >
-                <span className="flex text-yellow-400" aria-hidden="true">
+                <span className="flex text-base-100" aria-hidden="true">
                   {[...Array(5)].map((_, i) => <Star key={i} size={10} fill="currentColor" />)}
                 </span>
                 <span>4.9 Google</span>

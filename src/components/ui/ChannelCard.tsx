@@ -13,17 +13,17 @@ interface ChannelCardProps {
 const ChannelCard: React.FC<ChannelCardProps> = ({ title, copy, cta, href, type, emphasized }) => {
   const Icon = type === 'whatsapp' ? MessageCircle : Phone;
   const colors = emphasized 
-    ? "bg-white border-sage ring-1 ring-sage-soft/30 shadow-lg shadow-sage/5" 
-    : "bg-white border-border-soft hover:border-sage-soft";
+    ? "bg-white border-base-900 ring-1 ring-base-900/10 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]" 
+    : "bg-white border-border-soft hover:border-base-300 hover:shadow-subtle hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]";
 
   return (
     <a 
       href={href}
       target={type === 'whatsapp' ? "_blank" : undefined}
       rel={type === 'whatsapp' ? "noopener noreferrer" : undefined}
-      className={`flex items-center gap-5 p-6 rounded-[2rem] border transition-all duration-300 group ${colors}`}
+      className={`flex items-center gap-5 p-6 rounded-[2rem] border group ${colors}`}
     >
-      <div className={`w-12 h-12 rounded-[1rem] flex items-center justify-center flex-shrink-0 transition-colors ${emphasized ? 'bg-sage text-white' : 'bg-canvas text-sage group-hover:bg-sage/10'}`}>
+      <div className={`w-12 h-12 rounded-[1rem] flex items-center justify-center flex-shrink-0 transition-colors ${emphasized ? 'bg-base-900 text-base-100' : 'bg-canvas text-base-900 group-hover:bg-base-900/10'}`}>
         <Icon size={24} />
       </div>
       
@@ -36,7 +36,7 @@ const ChannelCard: React.FC<ChannelCardProps> = ({ title, copy, cta, href, type,
         </p>
       </div>
 
-      <div className={`text-base font-medium normal-case tracking-normal transition-transform duration-300 group-hover:translate-x-1 ${emphasized ? 'text-sage' : 'text-text-secondary group-hover:text-sage'}`}>
+      <div className={`text-base font-medium normal-case tracking-normal transition-transform duration-300 group-hover:translate-x-1 ${emphasized ? 'text-base-900' : 'text-text-secondary group-hover:text-text-primary'}`}>
         {cta}
       </div>
     </a>

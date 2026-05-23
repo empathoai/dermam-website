@@ -8,7 +8,7 @@ interface HubIntroSectionProps {
 
 export default function HubIntroSection({ content }: HubIntroSectionProps) {
   return (
-    <section className="relative py-24 bg-white overflow-hidden">
+    <section className="relative py-24 bg-canvas overflow-hidden">
       <Container>
         <div className="flex flex-col gap-16">
           {/* Stats Row */}
@@ -20,12 +20,12 @@ export default function HubIntroSection({ content }: HubIntroSectionProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="text-center p-8 bg-canvas/30 rounded-[2.5rem] border border-border-soft"
+                className="text-center p-8 bg-white rounded-[2rem] border border-border-soft shadow-subtle hover:-translate-y-1 hover:border-base-300 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
               >
                 <div className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-2">
                   {stat.value}
                 </div>
-                <div className="text-[10px] font-bold text-sage uppercase tracking-wider">
+                <div className="text-[10px] font-bold text-text-secondary uppercase tracking-wider">
                   {stat.label}
                 </div>
               </motion.div>
@@ -42,9 +42,9 @@ export default function HubIntroSection({ content }: HubIntroSectionProps) {
                 initial={{ opacity: 0, x: idx % 2 === 0 ? -10 : 10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="flex items-start gap-6 p-6 rounded-[2rem] bg-white border border-border-soft/50 hover:border-sage-soft transition-colors group"
+                className="flex items-start gap-6 p-6 rounded-[2rem] bg-white border border-border-soft/50 hover:border-base-300 hover:shadow-subtle hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group"
               >
-                <div className="w-10 h-10 rounded-full bg-sage/10 text-sage flex items-center justify-center flex-shrink-0 group-hover:bg-sage group-hover:text-white transition-colors duration-500">
+                <div className="w-10 h-10 rounded-full bg-base-900/10 text-base-900 flex items-center justify-center flex-shrink-0 group-hover:bg-base-900 group-hover:text-base-100 transition-colors duration-500">
                   <span className="text-sm font-bold opacity-80 group-hover:opacity-100">◆</span>
                 </div>
                 <div>

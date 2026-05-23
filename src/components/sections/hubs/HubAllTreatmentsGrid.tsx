@@ -9,7 +9,7 @@ interface HubAllTreatmentsGridProps {
 
 export default function HubAllTreatmentsGrid({ content }: HubAllTreatmentsGridProps) {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-canvas">
       <Container>
         <SectionHeader 
           headline={content.headline}

@@ -19,7 +19,7 @@ export default function TeamSection() {
   }, [activeSpecialty]);
 
   return (
-    <section className="py-24 bg-canvas/30">
+    <section className="py-24 bg-canvas">
       <Container>
         <div className="max-w-4xl mb-16 text-center lg:text-left">
           <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6 font-sans leading-tight">

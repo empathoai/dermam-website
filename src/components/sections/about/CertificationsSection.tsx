@@ -10,12 +10,12 @@ export default function CertificationsSection() {
   ];
 
   return (
-    <section className="py-16 bg-white border-y border-border-soft">
+    <section className="py-16 bg-canvas border-y border-border-soft">
       <Container>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {certifications.map((cert, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center">
-                    <div className="p-4 rounded-full bg-sage/5 text-sage mb-4">
+                    <div className="p-4 rounded-full bg-base-900/5 text-base-900 mb-4">
                         {cert.icon}
                     </div>
                     <h3 className="text-sm font-medium uppercase tracking-[0.15em] text-text-primary mb-1">{cert.title}</h3>

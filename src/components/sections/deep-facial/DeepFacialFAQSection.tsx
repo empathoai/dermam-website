@@ -36,7 +36,7 @@ export default function DeepFacialFAQSection() {
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-white rounded-[1rem] border border-border-soft overflow-hidden">
+              <div key={idx} className="bg-white rounded-[2rem] border border-border-soft overflow-hidden">
                 <button
                   onClick={() => toggleFAQ(idx)}
                   className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-canvas/30 transition-colors"

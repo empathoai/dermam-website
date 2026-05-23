@@ -16,7 +16,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, idx }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: idx * 0.1, duration: 0.5 }}
-      className={`group flex flex-col items-center bg-white p-6 rounded-[2.5rem] border transition-all duration-500 hover:border-sage-soft/50 hover:shadow-2xl hover:shadow-sage-soft/10 ${member.featured ? 'border-sage-soft ring-1 ring-sage-soft/20' : 'border-border-soft'}`}
+      className={`group flex flex-col items-center bg-white p-6 rounded-[2rem] border transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-base-300 hover:-translate-y-1 hover:shadow-subtle ${member.featured ? 'border-base-900 ring-1 ring-base-900/10' : 'border-border-soft'}`}
     >
       <div className="mb-6">
         <MotionAvatar
@@ -25,7 +25,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, idx }) => {
           posterSrc={member.posterSrc}
           alt={`Foto de ${member.name}`}
           size="md"
-          className={member.featured ? 'ring-sage-soft ring-offset-4 ring-offset-white' : ''}
+          className={member.featured ? 'ring-base-200 ring-offset-4 ring-offset-white' : ''}
         />
       </div>
 
@@ -33,7 +33,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, idx }) => {
         <div>
             <h3 className="text-lg font-sans text-text-primary mb-1">{member.name}</h3>
             <div className="mb-3">
-                <span className={`inline-block text-[10px] uppercase tracking-[0.15em] font-medium px-2.5 py-1 rounded-full ${member.featured ? 'bg-sage text-white' : 'bg-canvas text-text-secondary'}`}>
+                <span className={`inline-block text-[10px] uppercase tracking-[0.15em] font-medium px-2.5 py-1 rounded-full ${member.featured ? 'bg-base-900 text-base-100' : 'bg-canvas text-text-secondary'}`}>
                 {member.role.split(' · ')[1] || member.role}
                 </span>
             </div>

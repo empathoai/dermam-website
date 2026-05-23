@@ -34,17 +34,18 @@ export default function PostOpFounderSection() {
           </div>
           <div className="lg:w-3/5 p-10 lg:p-16 flex flex-col justify-center">
             <h2 className="text-4xl mb-2">{founder.name}</h2>
-            <p className="text-sage font-medium mb-8 text-sm uppercase tracking-[0.15em]">{founder.title}</p>
+            <p className="text-text-secondary font-medium mb-8 text-sm uppercase tracking-[0.15em]">{founder.title}</p>
             
-            <div className="border-l-4 border-sage pl-6 py-2 mb-10">
+            <div className="border-l-4 border-base-900 pl-6 py-2 mb-10">
                 <p className="text-xl font-sans text-text-primary italic leading-relaxed">
                 {founder.quote}
             </p>
             </div>
 
             <Button 
+                variant="primary"
                 onClick={handleConsultClick}
-                className="bg-sage hover:bg-sage-deep text-white w-full sm:w-auto px-10"
+                className="w-full sm:w-auto px-10"
             >
               {founder.cta}
             </Button>

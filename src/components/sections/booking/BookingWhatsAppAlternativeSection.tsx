@@ -6,7 +6,7 @@ export default function BookingWhatsAppAlternativeSection() {
   const { whatsappAlternative } = bookingContent;
 
   return (
-    <section className="py-24 bg-canvas/30">
+    <section className="py-24 bg-canvas">
       <Container>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">

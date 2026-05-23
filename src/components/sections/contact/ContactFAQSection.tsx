@@ -13,7 +13,7 @@ export default function ContactFAQSection() {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-canvas">
       <Container>
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
@@ -23,7 +23,7 @@ export default function ContactFAQSection() {
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-canvas/30 rounded-[2rem] border border-border-soft overflow-hidden transition-all duration-300">
+              <div key={idx} className="bg-white rounded-[2rem] border border-border-soft overflow-hidden transition-all duration-300">
                 <button
                   onClick={() => toggleFAQ(idx)}
                   className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-canvas/50 transition-colors"
@@ -32,7 +32,7 @@ export default function ContactFAQSection() {
                 >
                   <span className="font-semibold text-text-primary">{faq.question}</span>
                   <ChevronDown 
-                    className={`text-sage transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} 
+                    className={`text-text-secondary transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} 
                     size={20} 
                   />
                 </button>

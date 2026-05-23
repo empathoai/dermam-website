@@ -9,27 +9,27 @@ export default function DeepFacialRelatedTreatments() {
   const { relatedTreatments } = deepFacialContent;
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-canvas">
       <Container>
         <h2 className="text-3xl text-center mb-16 font-sans">Tratamientos que pueden complementar tu limpieza</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {relatedTreatments.map((treatment) => (
-            <Card key={treatment.id} className="group hover:-translate-y-2 transition-transform duration-300 border-none shadow-subtle hover:shadow-lg">
+            <Card key={treatment.id} className="group bg-white border border-border-soft hover:border-base-300 hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle flex flex-col h-full overflow-hidden">
               <div className="aspect-[4/3] overflow-hidden">
                  <ResponsiveImage
                     src={treatment.image.src}
                     alt={treatment.image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-103"
                  />
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="mb-4">
-                     <span className="text-[10px] text-sage font-medium uppercase tracking-[0.15em] px-3 py-1 bg-sage-soft/30 rounded-full">{treatment.category}</span>
+                     <span className="text-[10px] text-text-secondary font-medium uppercase tracking-[0.15em] px-3 py-1 bg-base-200/50 rounded-full">{treatment.category}</span>
                 </div>
                 <h3 className="text-xl mb-3">{treatment.title}</h3>
-                <p className="text-text-secondary text-sm mb-6">{treatment.description}</p>
+                <p className="text-text-secondary text-sm mb-6 flex-grow">{treatment.description}</p>
                 <Link to={treatment.href} className="inline-flex items-center text-sm font-semibold text-text-primary group/link">
-                  Ver tratamiento <ArrowRight size={16} className="ml-2 group-hover/link:translate-x-1 transition-transform" />
+                  Ver tratamiento <ArrowRight size={16} className="ml-2 group-hover/link:translate-x-1 transition-transform duration-300" />
                 </Link>
               </div>
             </Card>

@@ -12,7 +12,7 @@ export default function BookingTreatmentSelectorSection() {
   const others = selector.treatments.filter(t => !t.featured);
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-canvas">
       <Container>
         <div className="text-center mb-16 px-4">
           <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans mb-4">{selector.headline}</h2>
@@ -28,7 +28,7 @@ export default function BookingTreatmentSelectorSection() {
             </div>
           )}
 
-          <div className="bg-white rounded-[2rem] border border-border-soft overflow-hidden shadow-xl shadow-canvas/50">
+          <div className="bg-white rounded-[2rem] border border-border-soft overflow-hidden shadow-subtle">
             {others.map((treatment) => (
               <BookingTreatmentRow key={treatment.id} treatment={treatment} />
             ))}
@@ -37,10 +37,10 @@ export default function BookingTreatmentSelectorSection() {
           <div className="mt-12 text-center">
             <Link 
               to="/es/contacto" 
-              className="inline-flex items-center gap-2 text-sm font-medium text-text-primary uppercase tracking-[0.15em] group hover:text-sage transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-medium text-text-primary uppercase tracking-[0.15em] group hover:text-base-900 transition-colors"
             >
               ¿No encuentras tu tratamiento? 
-              <span className="flex items-center gap-2 text-sage transition-transform group-hover:translate-x-1">
+              <span className="flex items-center gap-2 text-text-secondary transition-transform group-hover:translate-x-1">
                 Ver todos <ArrowRight size={16} />
               </span>
             </Link>

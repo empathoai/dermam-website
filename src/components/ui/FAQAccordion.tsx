@@ -31,7 +31,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ items }) => {
               {item.question}
             </span>
             <ChevronDown 
-              className={`text-sage transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} 
+              className={`text-text-secondary transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} 
               size={20} 
             />
           </button>

@@ -21,7 +21,7 @@ export default function PrfBenefitsSection() {
                  />
               </div>
               <div className={`${idx % 2 !== 0 ? 'lg:order-1' : ''}`}>
-                <span className="text-xs font-medium text-prf uppercase tracking-[0.15em] mb-4 block">Beneficio {idx + 1}</span>
+                <span className="text-xs font-medium text-text-secondary uppercase tracking-[0.15em] mb-4 block">Beneficio {idx + 1}</span>
                 <h3 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6">{benefit.title}</h3>
                 <p className="text-text-secondary text-lg leading-relaxed">
                   {benefit.description}

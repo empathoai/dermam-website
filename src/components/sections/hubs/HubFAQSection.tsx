@@ -9,7 +9,7 @@ interface HubFAQSectionProps {
 
 export default function HubFAQSection({ content }: HubFAQSectionProps) {
   return (
-    <section className="py-24 bg-canvas/30">
+    <section className="py-24 bg-canvas">
       <Container>
         <div className="max-w-3xl mx-auto">
           <SectionHeader 

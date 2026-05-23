@@ -11,7 +11,7 @@ export default function VCardButton({ vcardUrl, qrImage, disabled }: VCardButton
   const isPlaceholder = !vcardUrl || vcardUrl === '#';
 
   return (
-    <div className={`flex items-center gap-3 p-3 rounded-[1rem] border transition-all duration-300 ${disabled ? 'opacity-50 grayscale cursor-not-allowed' : 'bg-white border-border-soft hover:border-sage-soft shadow-sm group-hover:shadow-md'}`}>
+    <div className={`flex items-center gap-3 p-3 rounded-[1rem] border transition-all duration-300 ${disabled ? 'opacity-50 grayscale cursor-not-allowed' : 'bg-white border-border-soft hover:border-base-300 shadow-sm group-hover:shadow-md'}`}>
       <div className="w-10 h-10 rounded-lg bg-canvas border border-border-soft flex items-center justify-center flex-shrink-0">
         {qrImage ? (
           <img src={qrImage} alt="QR Contacto" className="w-8 h-8 object-contain" />
@@ -33,7 +33,7 @@ export default function VCardButton({ vcardUrl, qrImage, disabled }: VCardButton
         onClick={(e) => {
             if (disabled || isPlaceholder) e.preventDefault();
         }}
-        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${disabled || isPlaceholder ? 'bg-canvas text-text-secondary/30' : 'bg-sage/10 text-sage hover:bg-sage hover:text-white'}`}
+        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${disabled || isPlaceholder ? 'bg-canvas text-text-secondary/30' : 'bg-base-900/10 text-base-900 hover:bg-base-900 hover:text-white'}`}
         aria-label="Descargar vCard"
       >
         <Download size={14} />

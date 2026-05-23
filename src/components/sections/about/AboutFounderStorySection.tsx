@@ -40,13 +40,13 @@ export default function AboutFounderStorySection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:w-3/5"
           >
-            <span className="text-sage font-semibold text-xs uppercase tracking-[0.2em] mb-4 block">
+            <span className="text-text-secondary font-semibold text-xs uppercase tracking-[0.2em] mb-4 block">
                 {story.eyebrow}
             </span>
             <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-4 font-sans leading-tight">
                 {story.headline}
             </h2>
-            <p className="text-sage/80 font-medium mb-8 text-sm uppercase tracking-[0.15em]">
+            <p className="text-text-secondary font-medium mb-8 text-sm uppercase tracking-[0.15em]">
                 {story.subcopy}
             </p>
             
@@ -56,7 +56,7 @@ export default function AboutFounderStorySection() {
                 </p>
             </div>
 
-            <div className="border-l-4 border-sage pl-8 py-2 mb-12">
+            <div className="border-l-4 border-base-900 pl-8 py-2 mb-12">
                 <p className="text-2xl font-sans text-text-primary italic leading-relaxed">
                     {story.quote}
                 </p>

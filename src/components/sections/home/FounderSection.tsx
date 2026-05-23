@@ -20,7 +20,7 @@ export default function FounderSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Founder Photo */}
           <div className="relative group">
-            <div className="absolute -inset-4 bg-linen rounded-[2rem] -z-10 transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute -inset-4 bg-base-200 rounded-[2rem] -z-10 transition-transform duration-500 group-hover:scale-105" />
             <div className="aspect-[4/5] overflow-hidden rounded-[2rem] shadow-xl">
                <ResponsiveImage
                 src={founder.image.src}
@@ -34,7 +34,7 @@ export default function FounderSection() {
 
           {/* Founder Copy */}
           <div>
-            <span className="text-xs font-medium uppercase tracking-[0.15em] text-sage mb-4 inline-block">
+            <span className="text-xs font-medium uppercase tracking-[0.15em] text-text-secondary mb-4 inline-block">
               {founder.eyebrow}
             </span>
             <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-2 uppercase">{founder.name}</h2>
@@ -44,7 +44,7 @@ export default function FounderSection() {
               <p className="text-text-secondary leading-relaxed md:text-lg">
                 {founder.bio}
               </p>
-              <div className="border-l-4 border-sage pl-6 py-2">
+              <div className="border-l-4 border-base-900 pl-6 py-2">
                  <p className="text-xl md:text-2xl font-sans text-text-primary italic">
                   {founder.quote}
                 </p>

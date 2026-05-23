@@ -27,14 +27,14 @@ export default function IVKitCard({ kit }: IVKitCardProps) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white rounded-[1.5rem] overflow-hidden border border-border-soft shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full group"
+      className="bg-white rounded-[2rem] overflow-hidden border border-border-soft shadow-sm hover:shadow-md hover:border-base-300 hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col h-full group"
     >
       {/* Kit Image */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <ResponsiveImage
           src={kit.image}
           alt={kit.alt}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-103"
         />
         {kit.badge && (
           <div className="absolute top-4 left-4">

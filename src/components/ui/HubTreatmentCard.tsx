@@ -13,13 +13,13 @@ const HubTreatmentCard: React.FC<HubTreatmentCardProps> = ({ treatment }) => {
   return (
     <Link 
       to={treatment.href}
-      className="group bg-white border border-border-soft rounded-[2rem] overflow-hidden flex flex-col md:flex-row h-full transition-all duration-500 hover:shadow-2xl hover:shadow-sage/5 hover:-translate-y-1"
+      className="group bg-white border border-border-soft rounded-[2rem] overflow-hidden flex flex-col md:flex-row h-full transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-md hover:border-base-300 hover:-translate-y-1"
     >
       <div className="md:w-2/5 relative overflow-hidden aspect-[4/3] md:aspect-auto">
         <ResponsiveImage 
           src={treatment.image.src} 
           alt={treatment.image.alt}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-103"
         />
         {treatment.badge && (
           <div className="absolute top-4 left-4">
@@ -29,7 +29,7 @@ const HubTreatmentCard: React.FC<HubTreatmentCardProps> = ({ treatment }) => {
       </div>
       
       <div className="md:w-3/5 p-8 flex flex-col justify-center">
-        <h3 className="text-2xl font-sans text-text-primary mb-4 group-hover:text-sage transition-colors">
+        <h3 className="text-2xl font-sans text-text-primary mb-4">
           {treatment.title}
         </h3>
         <p className="text-text-secondary leading-relaxed mb-8 text-sm md:text-base">

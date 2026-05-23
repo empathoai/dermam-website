@@ -38,8 +38,8 @@ export default function DifferentiatorsSection() {
             
             <div className="flex flex-col gap-6">
               {differentiators.benefits.map((benefit, idx) => (
-                <Card key={idx} className="p-8 flex gap-6 bg-white/70 backdrop-blur-md hover:translate-x-2 transition-transform duration-300">
-                  <div className="w-12 h-12 rounded-full bg-sage-soft flex items-center justify-center text-sage flex-shrink-0">
+                <Card key={idx} className="p-8 flex gap-6 bg-white/70 backdrop-blur-md hover:-translate-y-1 hover:border-base-300 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] border border-border-soft">
+                  <div className="w-12 h-12 rounded-full bg-base-900/10 flex items-center justify-center text-base-900 flex-shrink-0">
                     <ShieldCheck size={24} />
                   </div>
                   <div>

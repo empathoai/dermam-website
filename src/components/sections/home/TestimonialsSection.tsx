@@ -16,7 +16,7 @@ export default function TestimonialsSection() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center shadow-subtle hover:-translate-y-2 transition-transform duration-300">
+            <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center bg-white border border-border-soft hover:-translate-y-1 hover:border-base-300 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle">
               <div className="flex gap-1 mb-6 text-text-primary">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill={i < testimonial.rating ? 'currentColor' : 'none'} />

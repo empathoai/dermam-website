@@ -35,7 +35,7 @@ export default function DeepFacialBenefitsSection() {
                  transition={{ duration: 0.8, delay: 0.2 }}
                  className="lg:w-1/2"
               >
-                <span className="text-sage font-semibold text-xs uppercase tracking-[0.2em] mb-4 block">Beneficio 0{idx + 1}</span>
+                <span className="text-text-secondary font-semibold text-xs uppercase tracking-[0.2em] mb-4 block">Beneficio 0{idx + 1}</span>
                 <h3 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6 font-sans">{benefit.title}</h3>
                 <p className="text-text-secondary text-lg leading-relaxed">{benefit.description}</p>
               </motion.div>

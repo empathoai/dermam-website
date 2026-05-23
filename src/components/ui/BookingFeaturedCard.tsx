@@ -32,7 +32,7 @@ export default function BookingFeaturedCard({ treatment }: BookingFeaturedCardPr
             href={treatment.squareUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 px-10 py-5 rounded-[2rem] bg-base-900 text-base-100 text-base font-medium normal-case tracking-normal transition-all duration-300 hover:bg-base-800 shadow-lg hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900"
+            className="flex items-center justify-center gap-3 px-10 py-5 rounded-[2rem] bg-base-900 text-base-100 text-base font-medium normal-case tracking-normal transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 active:translate-y-0 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900"
           >
             {treatment.ctaLabel}
             <ExternalLink size={16} />

@@ -7,7 +7,7 @@ export default function ContactChannelsSection() {
   const { channels } = contactContent;
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-canvas">
       <Container>
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
           <div className="lg:w-1/2 flex flex-col">

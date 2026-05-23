@@ -36,14 +36,14 @@ export default function PostOpFAQSection() {
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-white rounded-[1rem] border border-border-soft overflow-hidden">
+              <div key={idx} className="bg-white rounded-[2rem] border border-border-soft overflow-hidden transition-all duration-300">
                 <button
                   onClick={() => toggleFAQ(idx)}
-                  className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-canvas/30 transition-colors"
+                  className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-canvas/50 transition-colors"
                   aria-expanded={openIndex === idx}
                   aria-controls={`faq-answer-postop-${idx}`}
                 >
-                  <span className="font-medium text-text-primary">{faq.question}</span>
+                  <span className="font-semibold text-text-primary text-sm md:text-base">{faq.question}</span>
                   <ChevronDown 
                     className={`text-text-secondary transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} 
                     size={20} 
@@ -58,7 +58,7 @@ export default function PostOpFAQSection() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="px-6 pb-6 text-text-secondary leading-relaxed border-t border-border-soft/50 pt-4 text-sm">
+                      <div className="px-6 pb-6 text-text-secondary leading-relaxed border-t border-border-soft/30 pt-4 text-xs md:text-sm">
                         {faq.answer}
                       </div>
                     </motion.div>

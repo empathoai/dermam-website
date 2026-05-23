@@ -3,7 +3,6 @@ import { IVTherapyFinalCTAContent } from '../../../types/ivTherapy';
 import Container from '../../ui/Container';
 import SectionMedia from '../../ui/SectionMedia';
 import Button from '../../ui/Button';
-import { MessageCircle, Calendar } from 'lucide-react';
 import { siteConfig } from '../../../data/siteConfig';
 
 interface IVTherapyFinalCTAProps {
@@ -14,47 +13,48 @@ export default function IVTherapyFinalCTA({ content }: IVTherapyFinalCTAProps) {
   const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(content.secondaryCTA.whatsappMessage)}`;
 
   return (
-    <section className="relative py-24 overflow-hidden bg-canvas isolation-isolate">
+    <section className="py-32 relative overflow-hidden isolation-isolate">
       <SectionMedia
         type="image"
         src={content.image.src}
         alt={content.image.alt}
         overlay="soft"
-        opacity={0.5}
+        opacity={1}
       />
 
       <Container className="relative z-10">
-        <div className="max-w-5xl mx-auto bg-white/95 backdrop-blur-md rounded-[2.5rem] overflow-hidden border border-border-soft shadow-2xl flex flex-col md:flex-row items-stretch">
-          {/* Text Content */}
-          <div className="flex-1 p-10 md:p-16 border-b md:border-b-0 md:border-r border-border-soft">
-            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-6 leading-tight">
+        <div className="bg-base-900/72 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10">
+          <div className="lg:max-w-xl text-center lg:text-left">
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] uppercase lg:text-6xl mb-8 leading-tight text-base-100">
               {content.title}
             </h2>
-            <p className="text-text-secondary text-lg leading-relaxed">
+            <p className="text-lg text-base-300 leading-[1.65] font-light">
               {content.copy}
             </p>
           </div>
 
-          {/* Actions */}
-          <div className="flex-1 p-10 md:p-16 flex flex-col justify-center gap-6 bg-canvas/30">
+          <div className="flex flex-col gap-4 w-full md:w-auto min-w-[280px]">
             <Button 
+              variant="primary"
               to={content.primaryCTA.href} 
-              className="w-full justify-center gap-3 py-6 h-auto text-lg"
+              className="py-4 w-full"
             >
-              <Calendar size={20} />
               {content.primaryCTA.label}
             </Button>
 
             <Button 
+              variant="outline"
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              variant="outline" 
-              className="w-full justify-center gap-3 py-6 h-auto text-lg"
+              className="py-4 w-full !border-base-300/70 !text-base-300 hover:!bg-base-100/10 hover:!text-base-100"
             >
-              <MessageCircle size={20} />
               {content.secondaryCTA.label}
             </Button>
+            
+            <p className="text-xs text-center text-base-300 uppercase tracking-[0.15em] mt-2">
+              Evaluación gratuita · Sin compromiso
+            </p>
           </div>
         </div>
       </Container>
