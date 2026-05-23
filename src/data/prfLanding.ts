@@ -10,7 +10,7 @@ export const prfContent = {
     image: {
       src: '/assets/images/hero-prf.jpg',
       alt: 'Plasma Rico en Plaquetas y Fibrina en DERMA.M',
-      prompt: 'Premium clinical aesthetics editorial image for a PRF / PRP facial treatment landing page, gloved hands holding a small vial with golden plasma layer and subtle dark red lower layer, clean ivory clinical treatment room, blurred centrifuge and amber medical vials in background, soft natural light, elegant medical precision, pastel ivory and muted sage environment, sober muted rose-plasma accent, luxury medspa photography, calm and professional, no blood spill, no aggressive needle close-up, no surgery, no hospital emergency feeling, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
+      prompt: 'Premium clinical aesthetics editorial image for a PRF / PRP facial treatment landing page, gloved hands holding a small vial with golden plasma layer and subtle dark red lower layer, clean ivory clinical treatment room, blurred centrifuge and amber professional skincare vials in background, soft natural light, elegant professional precision, pastel ivory and muted sage environment, sober muted rose-plasma accent, luxury medspa photography, calm and professional, no blood spill, no aggressive needle close-up, no surgery, no hospital emergency feeling, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   audience: {
@@ -35,7 +35,7 @@ export const prfContent = {
     image: {
         src: '/assets/treatments/prf-process.jpg',
         alt: 'Proceso de obtención de PRF',
-        prompt: 'Close-up premium clinical PRF preparation scene, gloved hands placing a plasma vial near a centrifuge, clean white and ivory medical surface, golden plasma visible, subtle muted rose accent, soft shallow depth of field, luxury clinical wellness aesthetic, professional and calm, no blood spill, no aggressive tools, 4:3 ratio.'
+        prompt: 'Close-up premium clinical PRF preparation scene, gloved hands placing a plasma vial near a centrifuge, clean white and ivory professional treatment surface, golden plasma visible, subtle muted rose accent, soft shallow depth of field, luxury clinical wellness aesthetic, professional and calm, no blood spill, no aggressive tools, 4:3 ratio.'
     }
   },
   benefits: [
@@ -156,7 +156,7 @@ export const prfContent = {
     image: {
         src: '/assets/images/prf-final-cta.jpg',
         alt: 'Final CTA PRF background',
-        prompt: 'Soft premium clinical wellness still-life for PRF facial treatment, golden plasma vial, ivory candle, folded white towel, subtle baby’s breath flowers, ceramic tray, muted rose-plasma accent, sage botanical detail, warm pearl-gray background, lots of negative space for CTA text, elegant medical spa mood, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
+        prompt: 'Soft premium clinical wellness still-life for PRF facial treatment, golden plasma vial, ivory candle, folded white towel, subtle baby’s breath flowers, ceramic tray, muted rose-plasma accent, sage botanical detail, warm pearl-gray background, lots of negative space for CTA text, elegant aesthetic spa mood, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   relatedTreatments: [

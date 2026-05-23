@@ -20,7 +20,7 @@ export const bodyHubContent: HubPageContent = {
     image: {
       src: '/assets/images/body-massage.jpg',
       alt: 'Tratamiento corporal en DERMA.M',
-      prompt: 'Bright premium body treatment room for a medical aesthetics clinic, calm patient receiving professional body wellness treatment with modest coverage, white linens, soft sage and ivory palette, warm natural light, clinical wellness atmosphere, professional hands, no surgery visuals, no bruising, no explicit nudity, no harsh equipment, high-end medspa photography, 16:9 horizontal.'
+      prompt: 'Bright premium body treatment room for a premium aesthetics center, calm patient receiving professional body wellness treatment with modest coverage, white linens, soft sage and ivory palette, warm natural light, clinical wellness atmosphere, professional hands, no surgery visuals, no bruising, no explicit nudity, no harsh equipment, high-end medspa photography, 16:9 horizontal.'
     }
   },
   intro: {
@@ -174,7 +174,7 @@ export const bodyHubContent: HubPageContent = {
       },
       {
         question: '¿Cuándo debo empezar drenaje después de cirugía?',
-        answer: 'Generalmente se recomienda empezar 24 a 48 horas después de la cirugía, siempre bajo la autorización de tu cirujano y siguiendo nuestros protocolos clínicos.'
+        answer: 'Generalmente se recomienda empezar 24 a 48 horas después de la cirugía, siempre bajo la autorización de tu cirujano y siguiendo nuestros protocolos profesionales.'
       },
       {
         question: '¿Los tratamientos corporales duelen?',

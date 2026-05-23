@@ -4,14 +4,19 @@ export const homeContent = {
     headlinePrefix: 'Salud profesional para ',
     headlineAccent: 'tu',
     headlineSuffix: ' piel',
-    subheadline: 'Tratamientos médico-estéticos personalizados para cuidar tu piel, realzar tu belleza natural y lograr resultados visibles con un enfoque profesional.',
+    subheadline: 'Tratamientos estéticos personalizados para cuidar tu piel, realzar tu belleza natural y lograr resultados visibles con un enfoque profesional.',
     primaryCTA: 'Reserva tu evaluación',
     secondaryCTA: 'Ver tratamientos',
-    trustItems: ['Atención personalizada', 'Tecnología avanzada', 'Resultados naturales', 'Entorno seguro y profesional'],
+    trustItems: [
+      { icon: 'Shield', label: 'Protocolos certificados' },
+      { icon: 'Microscope', label: 'Productos profesionales' },
+      { icon: 'Cpu', label: 'Tecnología avanzada' },
+      { icon: 'Globe', label: 'Ambiente bilingüe' },
+    ],
     image: {
       src: '/assets/pages/home/hero-home.jpg',
       alt: 'DERMA.M Skin Health - Salud profesional para tu piel',
-      prompt: 'Bright premium spa wellness editorial scene for a medical aesthetics clinic, soft white curtains, warm ivory light, mother and daughter in white spa robes enjoying a gentle facial mask moment, cucumber slices, serene and natural expressions, luxury but approachable, pastel sage and ivory harmony, clean clinical wellness environment, soft botanical decor, candles and folded white towels on the side, airy composition, high-end skincare clinic photography, no dark background, no harsh shadows, no exaggerated beauty retouching, realistic skin texture, 16:9 horizontal, bright soft clinical wellness aesthetic. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
+      prompt: 'Bright premium spa wellness editorial scene for a premium aesthetics center, soft white curtains, warm ivory light, mother and daughter in white spa robes enjoying a gentle facial mask moment, cucumber slices, serene and natural expressions, luxury but approachable, pastel sage and ivory harmony, clean clinical wellness environment, soft botanical decor, candles and folded white towels on the side, airy composition, high-end skincare clinic photography, no dark background, no harsh shadows, no exaggerated beauty retouching, realistic skin texture, 16:9 horizontal, bright soft clinical wellness aesthetic. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     },
     video: {
       src: '', // Agregar ruta al video local (ej. '/assets/pages/home/hero-video.mp4') para activar fondo de video
@@ -21,7 +26,7 @@ export const homeContent = {
   treatmentsSection: {
     eyebrow: 'Tratamientos destacados',
     headline: 'Soluciones efectivas para cada necesidad',
-    subheadline: 'Protocolos médico-estéticos diseñados para cuidar tu piel con seguridad, precisión y resultados reales.'
+    subheadline: 'Protocolos estéticos diseñados para cuidar tu piel con seguridad, precisión y resultados reales.'
   },
   differentiators: {
     stats: [
@@ -35,7 +40,7 @@ export const homeContent = {
         description: 'Evaluamos tu piel antes de recomendar cualquier protocolo.'
       },
       {
-        title: 'Protocolos clínicos certificados',
+        title: 'Protocolos profesionales certificados',
         description: 'Cada tratamiento sigue un proceso profesional, seguro y personalizado.'
       },
       {
@@ -53,20 +58,20 @@ export const homeContent = {
     eyebrow: 'Conoce a tu especialista',
     name: 'Nancy Nieto',
     title: 'Fundadora de DERMA.M Skin Health',
-    bio: 'Con más de 10 años de experiencia en medicina estética, Nancy Nieto combina diagnóstico personalizado, protocolos seguros y criterio profesional para ayudarte a sentirte bien en tu piel.',
+    bio: 'Con más de 10 años de experiencia en estética profesional, Nancy Nieto combina diagnóstico personalizado, protocolos seguros y criterio profesional para ayudarte a sentirte bien en tu piel.',
     quote: '“Diagnóstico antes de tratamiento. Siempre.”',
     cta: 'Conoce mi enfoque',
     image: {
-      src: '/assets/avatars/nancy-nieto-founder-home.jpg',
+      src: '/assets/pages/home/nancy-nieto-founder-home.jpg',
       alt: 'Nancy Nieto - Fundadora de DERMA.M',
       prompt: 'Premium editorial portrait of a Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, long dark hair styled naturally, wearing elegant white clinical uniform, seated at a light treatment desk with hands visible, soft ivory and warm gray treatment room, candle and minimal DERMA.M branded object on desk, subtle botanical decor, professional but approachable, not corporate, not hospital, not white coat cliché, luxury wellness clinic portrait, bright natural light, 4:5 vertical.'
     },
     backgroundMedia: undefined
   },
   finalCTA: {
-    headlinePrefix: 'Tu mejor piel comienza con ',
-    headlineAccent: 'una decisión',
-    headlineSuffix: '.',
+    headlinePrefix: 'Tu mejor piel comienza con una ',
+    headlineAccent: 'decisión',
+    headlineSuffix: '',
     body: 'Agenda tu consulta y recibe una evaluación personalizada de tu piel.',
     primaryCTA: 'Reserva tu evaluación',
     secondaryCTA: 'Escríbenos por WhatsApp',

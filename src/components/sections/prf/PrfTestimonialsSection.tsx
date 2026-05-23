@@ -29,7 +29,7 @@ export default function PrfTestimonialsSection() {
               </p>
               <div>
                 <span className="block font-semibold text-sm mb-1">{testimonial.name}</span>
-                <span className="block text-xs text-text-secondary uppercase tracking-widest">{testimonial.treatment}</span>
+                <span className="block text-xs text-text-secondary uppercase tracking-[0.15em]">{testimonial.treatment}</span>
               </div>
             </Card>
           ))}

@@ -18,8 +18,8 @@ export default function CertificationsSection() {
                     <div className="p-4 rounded-full bg-sage/5 text-sage mb-4">
                         {cert.icon}
                     </div>
-                    <h3 className="text-sm font-bold uppercase tracking-widest text-text-primary mb-1">{cert.title}</h3>
-                    <p className="text-[10px] text-text-secondary uppercase tracking-widest font-semibold">{cert.subtitle}</p>
+                    <h3 className="text-sm font-medium uppercase tracking-[0.15em] text-text-primary mb-1">{cert.title}</h3>
+                    <p className="text-[10px] text-text-secondary uppercase tracking-[0.15em] font-medium">{cert.subtitle}</p>
                 </div>
             ))}
         </div>

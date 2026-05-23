@@ -23,7 +23,7 @@ export default function IVTherapyEducationSection({ content }: IVTherapyEducatio
             transition={{ duration: 0.8 }}
             className="lg:w-1/2 relative"
           >
-            <div className="relative rounded-[32px] overflow-hidden shadow-2xl aspect-[4/3]">
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3]">
               <ResponsiveImage
                 src={content.image.src}
                 alt={content.image.alt}
@@ -42,18 +42,18 @@ export default function IVTherapyEducationSection({ content }: IVTherapyEducatio
             transition={{ duration: 0.8 }}
             className="lg:w-1/2"
           >
-            <h2 className="text-3xl md:text-5xl font-serif text-text-primary mb-8 leading-tight">
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-8 leading-tight">
               {content.title}
             </h2>
 
             <div className="space-y-6 mb-12">
-              <div className="p-6 bg-canvas rounded-2xl border border-border-soft">
+              <div className="p-6 bg-canvas rounded-[2rem] border border-border-soft">
                 <p className="text-text-secondary text-sm md:text-base leading-relaxed">
                   {content.copyOral}
                 </p>
               </div>
               
-              <div className="p-6 bg-white rounded-2xl border-2 border-sage/20 shadow-sm shadow-sage/5">
+              <div className="p-6 bg-white rounded-[2rem] border-2 border-sage/20 shadow-sm shadow-sage/5">
                 <p className="text-text-primary font-medium text-sm md:text-base leading-relaxed">
                   {content.copyIV}
                 </p>

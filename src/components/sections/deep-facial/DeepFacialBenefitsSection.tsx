@@ -19,7 +19,7 @@ export default function DeepFacialBenefitsSection() {
                 transition={{ duration: 0.8 }}
                 className="lg:w-1/2"
               >
-                <div className="relative rounded-[32px] overflow-hidden shadow-2xl">
+                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
                     <ResponsiveImage
                         src={benefit.image.src}
                         alt={benefit.image.alt}
@@ -36,7 +36,7 @@ export default function DeepFacialBenefitsSection() {
                  className="lg:w-1/2"
               >
                 <span className="text-sage font-semibold text-xs uppercase tracking-[0.2em] mb-4 block">Beneficio 0{idx + 1}</span>
-                <h3 className="text-3xl md:text-4xl mb-6 font-serif">{benefit.title}</h3>
+                <h3 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6 font-sans">{benefit.title}</h3>
                 <p className="text-text-secondary text-lg leading-relaxed">{benefit.description}</p>
               </motion.div>
             </div>

@@ -11,9 +11,9 @@ const CompactTreatmentCard: React.FC<CompactTreatmentCardProps> = ({ treatment }
   return (
     <Link 
       to={treatment.href}
-      className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-border-soft transition-all duration-300 hover:border-sage-soft hover:shadow-lg hover:shadow-sage/5 group"
+      className="flex items-center gap-4 p-4 rounded-[2rem] bg-white border border-border-soft transition-all duration-300 hover:border-sage-soft hover:shadow-lg hover:shadow-sage/5 group"
     >
-      <div className="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0">
+      <div className="w-16 h-16 rounded-[1rem] overflow-hidden flex-shrink-0">
         <ResponsiveImage 
           src={treatment.image.src} 
           alt={treatment.image.alt}
@@ -29,7 +29,7 @@ const CompactTreatmentCard: React.FC<CompactTreatmentCardProps> = ({ treatment }
         <h4 className="text-sm font-bold text-text-primary group-hover:text-sage transition-colors">
           {treatment.title}
         </h4>
-        <span className="text-[10px] text-text-secondary uppercase tracking-widest font-medium opacity-70 group-hover:opacity-100 transition-opacity">
+        <span className="text-[10px] text-text-secondary uppercase tracking-[0.15em] font-medium opacity-70 group-hover:opacity-100 transition-opacity">
           {treatment.ctaLabel}
         </span>
       </div>

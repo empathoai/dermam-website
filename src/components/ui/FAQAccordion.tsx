@@ -19,7 +19,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ items }) => {
       {items.map((item, idx) => (
         <div 
           key={idx} 
-          className="bg-white rounded-2xl border border-border-soft overflow-hidden transition-all duration-300"
+          className="bg-white rounded-[2rem] border border-border-soft overflow-hidden transition-all duration-300"
         >
           <button
             onClick={() => toggle(idx)}

@@ -17,7 +17,7 @@ export default function ValuesSection() {
     <section className="py-24 bg-white overflow-hidden">
       <Container>
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-serif">{values.headline}</h2>
+          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans">{values.headline}</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -28,12 +28,12 @@ export default function ValuesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-10 rounded-3xl bg-canvas/30 border border-border-soft hover:border-sage-soft transition-colors duration-300 group"
+              className="p-10 rounded-[2.5rem] bg-canvas/30 border border-border-soft hover:border-sage-soft transition-colors duration-300 group"
             >
-              <div className="mb-6 p-4 bg-white rounded-2xl w-fit shadow-sm group-hover:shadow-md transition-shadow">
+              <div className="mb-6 p-4 bg-white rounded-[2rem] w-fit shadow-sm group-hover:shadow-md transition-shadow">
                 {icons[idx]}
               </div>
-              <h3 className="text-xl font-serif mb-4 text-text-primary">{value.title}</h3>
+              <h3 className="text-xl font-sans mb-4 text-text-primary">{value.title}</h3>
               <p className="text-text-secondary text-sm leading-relaxed">{value.description}</p>
             </motion.div>
           ))}

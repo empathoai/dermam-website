@@ -7,7 +7,7 @@ interface SectionMediaProps {
   src: string;
   poster?: string;
   alt?: string;
-  overlay?: 'none' | 'soft' | 'sage' | 'ivory' | 'gradient';
+  overlay?: 'none' | 'soft' | 'heroSoft' | 'sage' | 'ivory' | 'gradient';
   position?: 'center' | 'left' | 'right' | 'top' | 'bottom';
   opacity?: number;
   className?: string;
@@ -29,10 +29,11 @@ export default function SectionMedia({
 
   const overlays = {
     none: '',
-    soft: 'bg-canvas/45',
-    ivory: 'bg-[rgba(242,240,241,0.75)]',
-    sage: 'bg-[rgba(204,202,202,0.35)]',
-    gradient: 'bg-gradient-to-r from-[rgba(242,240,241,0.95)] via-[rgba(242,240,241,0.75)] to-[rgba(242,240,241,0.35)]',
+    soft: 'bg-canvas/25',
+    heroSoft: 'bg-gradient-to-r from-base-900/95 via-base-900/70 to-base-900/15',
+    ivory: 'bg-[rgba(242,240,241,0.52)]',
+    sage: 'bg-[rgba(204,202,202,0.24)]',
+    gradient: 'bg-gradient-to-r from-base-900/95 via-base-900/70 to-base-900/15',
   };
 
   const positions = {

@@ -11,7 +11,7 @@ export default function DeepFacialRelatedTreatments() {
   return (
     <section className="py-24 bg-white">
       <Container>
-        <h2 className="text-3xl text-center mb-16 font-serif">Tratamientos que pueden complementar tu limpieza</h2>
+        <h2 className="text-3xl text-center mb-16 font-sans">Tratamientos que pueden complementar tu limpieza</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {relatedTreatments.map((treatment) => (
             <Card key={treatment.id} className="group hover:-translate-y-2 transition-transform duration-300 border-none shadow-subtle hover:shadow-lg">
@@ -24,7 +24,7 @@ export default function DeepFacialRelatedTreatments() {
               </div>
               <div className="p-8">
                 <div className="mb-4">
-                     <span className="text-[10px] text-sage font-bold uppercase tracking-widest px-3 py-1 bg-sage-soft/30 rounded-full">{treatment.category}</span>
+                     <span className="text-[10px] text-sage font-medium uppercase tracking-[0.15em] px-3 py-1 bg-sage-soft/30 rounded-full">{treatment.category}</span>
                 </div>
                 <h3 className="text-xl mb-3">{treatment.title}</h3>
                 <p className="text-text-secondary text-sm mb-6">{treatment.description}</p>

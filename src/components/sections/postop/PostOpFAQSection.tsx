@@ -32,11 +32,11 @@ export default function PostOpFAQSection() {
 
       <Container>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl text-center mb-16">Preguntas frecuentes sobre post-operatorio</h2>
+          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase text-center mb-16">Preguntas frecuentes sobre post-operatorio</h2>
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-white rounded-xl border border-border-soft overflow-hidden">
+              <div key={idx} className="bg-white rounded-[1rem] border border-border-soft overflow-hidden">
                 <button
                   onClick={() => toggleFAQ(idx)}
                   className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-canvas/30 transition-colors"

@@ -22,7 +22,7 @@ export default function PostOpUrgencySection() {
     <section className="py-24 bg-white overflow-hidden">
       <Container>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-center mb-16 leading-tight">
+          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase text-center mb-16 leading-tight">
             {urgency.headline}
           </h2>
           
@@ -34,7 +34,7 @@ export default function PostOpUrgencySection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className={`p-8 rounded-2xl border border-border-soft flex items-start gap-6 ${bgStyles[block.type as keyof typeof bgStyles]}`}
+                className={`p-8 rounded-[2rem] border border-border-soft flex items-start gap-6 ${bgStyles[block.type as keyof typeof bgStyles]}`}
               >
                 <div className="flex-shrink-0 mt-1">
                   {icons[block.type as keyof typeof icons]}

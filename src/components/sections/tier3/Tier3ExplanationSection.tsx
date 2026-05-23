@@ -24,7 +24,7 @@ export default function Tier3ExplanationSection({ title, body, media }: Tier3Exp
               transition={{ duration: 0.8 }}
               className="lg:w-1/2 relative"
             >
-              <div className="relative rounded-[32px] overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-border-soft">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-border-soft">
                 <ResponsiveImage
                   src={media.src}
                   alt={media.alt}
@@ -44,11 +44,11 @@ export default function Tier3ExplanationSection({ title, body, media }: Tier3Exp
             transition={{ duration: 0.8 }}
             className={media ? "lg:w-1/2" : "w-full text-center max-w-3xl mx-auto"}
           >
-            <h2 className="text-3xl md:text-5xl font-serif text-text-primary mb-8 leading-tight">
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-8 leading-tight">
               {title}
             </h2>
             <div className="space-y-6">
-              <p className="text-text-secondary text-lg leading-relaxed first-letter:text-5xl first-letter:font-serif first-letter:text-sage first-letter:mr-3 first-letter:float-left">
+              <p className="text-text-secondary text-lg leading-relaxed first-letter:text-5xl first-letter:font-sans first-letter:text-sage first-letter:mr-3 first-letter:float-left">
                 {body}
               </p>
             </div>

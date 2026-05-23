@@ -16,7 +16,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, idx }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: idx * 0.1, duration: 0.5 }}
-      className={`group flex flex-col items-center bg-white p-6 rounded-3xl border transition-all duration-500 hover:border-sage-soft/50 hover:shadow-2xl hover:shadow-sage-soft/10 ${member.featured ? 'border-sage-soft ring-1 ring-sage-soft/20' : 'border-border-soft'}`}
+      className={`group flex flex-col items-center bg-white p-6 rounded-[2.5rem] border transition-all duration-500 hover:border-sage-soft/50 hover:shadow-2xl hover:shadow-sage-soft/10 ${member.featured ? 'border-sage-soft ring-1 ring-sage-soft/20' : 'border-border-soft'}`}
     >
       <div className="mb-6">
         <MotionAvatar
@@ -31,9 +31,9 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, idx }) => {
 
       <div className="text-center mb-6 flex-grow flex flex-col justify-between">
         <div>
-            <h3 className="text-lg font-serif text-text-primary mb-1">{member.name}</h3>
+            <h3 className="text-lg font-sans text-text-primary mb-1">{member.name}</h3>
             <div className="mb-3">
-                <span className={`inline-block text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-full ${member.featured ? 'bg-sage text-white' : 'bg-canvas text-text-secondary'}`}>
+                <span className={`inline-block text-[10px] uppercase tracking-[0.15em] font-medium px-2.5 py-1 rounded-full ${member.featured ? 'bg-sage text-white' : 'bg-canvas text-text-secondary'}`}>
                 {member.role.split(' · ')[1] || member.role}
                 </span>
             </div>

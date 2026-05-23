@@ -17,13 +17,13 @@ export default function ContactFAQSection() {
       <Container>
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif mb-4">Preguntas frecuentes</h2>
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans mb-4">Preguntas frecuentes</h2>
             <p className="text-text-secondary">Dudas logísticas comunes al contactarnos.</p>
           </div>
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-canvas/30 rounded-2xl border border-border-soft overflow-hidden transition-all duration-300">
+              <div key={idx} className="bg-canvas/30 rounded-[2rem] border border-border-soft overflow-hidden transition-all duration-300">
                 <button
                   onClick={() => toggleFAQ(idx)}
                   className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-canvas/50 transition-colors"

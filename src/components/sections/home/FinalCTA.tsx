@@ -20,14 +20,14 @@ export default function FinalCTA() {
       />
 
       <Container className="relative z-10">
-        <div className="bg-linen/80 backdrop-blur-md rounded-[40px] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-subtle border border-white/50">
+        <div className="bg-base-900/72 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10">
           <div className="lg:max-w-xl text-center lg:text-left">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 leading-tight">
-              {finalCTA.headlinePrefix}
-              <span className="script-accent italic block lg:inline-block">{finalCTA.headlineAccent}</span>
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] lg:text-6xl mb-8 leading-tight text-base-100">
+              <span className="uppercase">{finalCTA.headlinePrefix}</span>
+              <span className="block lg:inline script-accent normal-case text-[1.56em]">{finalCTA.headlineAccent}</span>
               {finalCTA.headlineSuffix}
             </h2>
-            <p className="text-lg text-text-secondary leading-relaxed">
+            <p className="text-lg text-base-300 leading-[1.65] font-light">
               {finalCTA.body}
             </p>
           </div>
@@ -41,11 +41,11 @@ export default function FinalCTA() {
               href={whatsappUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="py-4 w-full"
+              className="py-4 w-full !border-base-300/70 !text-base-300 hover:!bg-base-100/10 hover:!text-base-100"
             >
               {finalCTA.secondaryCTA}
             </Button>
-            <p className="text-[10px] text-center text-text-secondary uppercase tracking-widest mt-2">
+            <p className="text-xs text-center text-base-300 uppercase tracking-[0.15em] mt-2">
               Evaluación gratuita · Sin compromiso
             </p>
           </div>

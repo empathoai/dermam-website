@@ -236,7 +236,7 @@ export const laserLightHubContent: HubPageContent = {
     image: {
       src: '/assets/images/laser-device.jpg',
       alt: 'Tecnología DERMA.M',
-      prompt: 'Clean medical technology scene, ivory and pearl gray, soft lighting.'
+      prompt: 'Clean aesthetic technology scene, ivory and pearl gray, soft lighting.'
     }
   }
 };

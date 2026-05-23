@@ -14,13 +14,13 @@ export const facialHubContent: HubPageContent = {
   hero: {
     eyebrow: 'West Palm Beach · MedSpa Certificado',
     headline: 'Tratamientos Faciales en DERMA.M',
-    subheadline: 'Protocolos clínicos para cada tipo de piel. Diagnóstico personalizado antes de cualquier tratamiento.',
+    subheadline: 'Protocolos profesionales para cada tipo de piel. Diagnóstico personalizado antes de cualquier tratamiento.',
     ctaLabel: 'Evalúa tu piel — gratis',
     trustLine: '⭐ 4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
     image: {
       src: '/assets/images/laser-treatment.jpg',
       alt: 'Tratamiento facial en DERMA.M',
-      prompt: 'Bright premium medical aesthetics facial treatment hero image, calm woman receiving a gentle facial treatment in a clean ivory treatment room, white headband, luminous realistic skin, soft sage and pearl gray accents, warm natural light, botanical minimal decor, professional DERMA.M-style medspa environment, clinical but welcoming, no redness, no harsh tools, no aggressive procedure, no dark background, 16:9 horizontal.'
+      prompt: 'Bright premium aesthetics facial treatment hero image, calm woman receiving a gentle facial treatment in a clean ivory treatment room, white headband, luminous realistic skin, soft sage and pearl gray accents, warm natural light, botanical minimal decor, professional DERMA.M-style medspa environment, clinical but welcoming, no redness, no harsh tools, no aggressive procedure, no dark background, 16:9 horizontal.'
     }
   },
   intro: {
@@ -35,8 +35,8 @@ export const facialHubContent: HubPageContent = {
         description: 'Evaluamos tu piel antes de recomendar cualquier protocolo. Sin suposiciones.'
       },
       {
-        title: 'Protocolos clínicos certificados',
-        description: 'Cada tratamiento sigue un protocolo médico-estético validado. No improvisamos.'
+        title: 'Protocolos profesionales certificados',
+        description: 'Cada tratamiento sigue un protocolo estético validado. No improvisamos.'
       },
       {
         title: 'Resultados documentados',
@@ -58,7 +58,7 @@ export const facialHubContent: HubPageContent = {
         image: {
           src: '/assets/images/facial-massage.jpg',
           alt: 'Tratamiento PRF',
-          prompt: 'Premium clinical aesthetics editorial photo, gloved hands holding a small PRP/PRF vial with golden plasma layer, clean ivory clinical surface, soft natural light, blurred centrifuge in background, elegant medical precision, no visible blood spill, no aggressive needle, no patient face, pastel ivory and soft sage environment, luxury skincare clinic photography, realistic, calm, professional, 4:3 ratio.'
+          prompt: 'Premium clinical aesthetics editorial photo, gloved hands holding a small PRP/PRF vial with golden plasma layer, clean ivory clinical surface, soft natural light, blurred centrifuge in background, elegant professional precision, no visible blood spill, no aggressive needle, no patient face, pastel ivory and soft sage environment, luxury skincare clinic photography, realistic, calm, professional, 4:3 ratio.'
         }
       },
       {
@@ -94,7 +94,7 @@ export const facialHubContent: HubPageContent = {
       {
         id: 'limpieza-grid',
         title: 'Limpieza Facial Profunda',
-        category: 'Limpieza clínica',
+        category: 'Limpieza centro',
         ctaLabel: 'Ver más →',
         href: '/es/limpieza-facial-profunda',
         image: {
@@ -198,7 +198,7 @@ export const facialHubContent: HubPageContent = {
       },
       {
         question: '¿Cuál es el mejor tratamiento para empezar?',
-        answer: 'Recomendamos la Limpieza Facial Profunda como punto de partida. Permite limpiar impurezas y realizar un análisis real de tu piel bajo condiciones clínicas.'
+        answer: 'Recomendamos la Limpieza Facial Profunda como punto de partida. Permite limpiar impurezas y realizar un análisis real de tu piel bajo condiciones centros.'
       },
       {
         question: '¿Puedo combinar varios tratamientos faciales?',
@@ -214,7 +214,7 @@ export const facialHubContent: HubPageContent = {
       },
       {
         question: '¿Qué tratamiento ayuda con acné?',
-        answer: 'Desde limpiezas clínicas profundas hasta carboxiterapia y luz pulsada, diseñamos planes para controlar brotes activos y tratar secuelas cicatriciales.'
+        answer: 'Desde limpiezas centros profundas hasta carboxiterapia y luz pulsada, diseñamos planes para controlar brotes activos y tratar secuelas cicatriciales.'
       },
       {
         question: '¿Los tratamientos faciales tienen tiempo de recuperación?',

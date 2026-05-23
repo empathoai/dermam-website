@@ -17,12 +17,12 @@ export default function PrfBenefitsSection() {
                     alt={benefit.image.alt}
                     width={800}
                     height={500}
-                    className="rounded-2xl shadow-lg w-full aspect-[16/9]"
+                    className="rounded-[2rem] shadow-lg w-full aspect-[16/9]"
                  />
               </div>
               <div className={`${idx % 2 !== 0 ? 'lg:order-1' : ''}`}>
-                <span className="text-xs font-bold text-prf uppercase tracking-widest mb-4 block">Beneficio {idx + 1}</span>
-                <h3 className="text-3xl md:text-4xl mb-6">{benefit.title}</h3>
+                <span className="text-xs font-medium text-prf uppercase tracking-[0.15em] mb-4 block">Beneficio {idx + 1}</span>
+                <h3 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6">{benefit.title}</h3>
                 <p className="text-text-secondary text-lg leading-relaxed">
                   {benefit.description}
                 </p>

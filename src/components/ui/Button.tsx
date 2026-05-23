@@ -26,7 +26,7 @@ export default function Button({
   rel,
   ...props
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center px-8 py-3 rounded-md font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 text-sm relative';
+  const baseStyles = 'inline-flex items-center justify-center px-8 py-3 rounded-[1rem] font-medium leading-none tracking-normal normal-case transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 text-base relative';
   
   const variants = {
     primary: 'bg-base-900 text-base-100 hover:bg-base-800 shadow-subtle',

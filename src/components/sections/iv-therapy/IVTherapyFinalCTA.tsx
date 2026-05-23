@@ -24,10 +24,10 @@ export default function IVTherapyFinalCTA({ content }: IVTherapyFinalCTAProps) {
       />
 
       <Container className="relative z-10">
-        <div className="max-w-5xl mx-auto bg-white/95 backdrop-blur-md rounded-[40px] overflow-hidden border border-border-soft shadow-2xl flex flex-col md:flex-row items-stretch">
+        <div className="max-w-5xl mx-auto bg-white/95 backdrop-blur-md rounded-[2.5rem] overflow-hidden border border-border-soft shadow-2xl flex flex-col md:flex-row items-stretch">
           {/* Text Content */}
           <div className="flex-1 p-10 md:p-16 border-b md:border-b-0 md:border-r border-border-soft">
-            <h2 className="text-3xl md:text-5xl font-serif text-text-primary mb-6 leading-tight">
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-6 leading-tight">
               {content.title}
             </h2>
             <p className="text-text-secondary text-lg leading-relaxed">

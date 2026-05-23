@@ -25,7 +25,7 @@ export default function HubAllTreatmentsGrid({ content }: HubAllTreatmentsGridPr
 
         <div className="mt-16 text-center">
             <p className="text-text-secondary text-sm max-w-2xl mx-auto">
-                ¿No encuentras lo que buscas? Contamos con más protocolos específicos en clínica. Escríbenos para una recomendación personalizada.
+                ¿No encuentras lo que buscas? Contamos con más protocolos específicos en centro. Escríbenos para una recomendación personalizada.
             </p>
         </div>
       </Container>

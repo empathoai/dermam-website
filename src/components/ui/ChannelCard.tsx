@@ -21,14 +21,14 @@ const ChannelCard: React.FC<ChannelCardProps> = ({ title, copy, cta, href, type,
       href={href}
       target={type === 'whatsapp' ? "_blank" : undefined}
       rel={type === 'whatsapp' ? "noopener noreferrer" : undefined}
-      className={`flex items-center gap-5 p-6 rounded-2xl border transition-all duration-300 group ${colors}`}
+      className={`flex items-center gap-5 p-6 rounded-[2rem] border transition-all duration-300 group ${colors}`}
     >
-      <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors ${emphasized ? 'bg-sage text-white' : 'bg-canvas text-sage group-hover:bg-sage/10'}`}>
+      <div className={`w-12 h-12 rounded-[1rem] flex items-center justify-center flex-shrink-0 transition-colors ${emphasized ? 'bg-sage text-white' : 'bg-canvas text-sage group-hover:bg-sage/10'}`}>
         <Icon size={24} />
       </div>
       
       <div className="flex-grow">
-        <h3 className="text-sm font-bold text-text-primary uppercase tracking-wider mb-1">
+        <h3 className="text-sm font-medium text-text-primary uppercase tracking-[0.15em] mb-1">
             {title}
         </h3>
         <p className="text-sm text-text-secondary mb-1">
@@ -36,7 +36,7 @@ const ChannelCard: React.FC<ChannelCardProps> = ({ title, copy, cta, href, type,
         </p>
       </div>
 
-      <div className={`text-xs font-bold uppercase tracking-widest transition-transform duration-300 group-hover:translate-x-1 ${emphasized ? 'text-sage' : 'text-text-secondary group-hover:text-sage'}`}>
+      <div className={`text-base font-medium normal-case tracking-normal transition-transform duration-300 group-hover:translate-x-1 ${emphasized ? 'text-sage' : 'text-text-secondary group-hover:text-sage'}`}>
         {cta}
       </div>
     </a>

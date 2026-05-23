@@ -10,11 +10,11 @@ export const featuredTreatments: Treatment[] = [
     href: '/es/plasma-rico-en-plaquetas-west-palm-beach',
     featured: true,
     image: {
-      src: '/assets/treatments/prp-card.jpg',
+      src: '/assets/pages/home/prp-card.jpg',
       alt: 'Plasma Rico en Plaquetas en DERMA.M',
       width: 800,
       height: 600,
-      prompt: 'Premium clinical aesthetics editorial photo, gloved hands holding a small PRP/PRF vial with golden plasma layer, clean ivory clinical surface, soft natural light, blurred centrifuge in background, elegant medical precision, no visible blood spill, no aggressive needle, no patient face, pastel ivory and soft sage environment, luxury skincare clinic photography, realistic, calm, professional, 4:3 ratio.'
+      prompt: 'Premium clinical aesthetics editorial photo, gloved hands holding a small PRP/PRF vial with golden plasma layer, clean ivory clinical surface, soft natural light, blurred centrifuge in background, elegant professional precision, no visible blood spill, no aggressive needle, no patient face, pastel ivory and soft sage environment, luxury skincare clinic photography, realistic, calm, professional, 4:3 ratio.'
     }
   },
   {
@@ -25,7 +25,7 @@ export const featuredTreatments: Treatment[] = [
     href: '/es/postoperatorio-west-palm-beach',
     featured: true,
     image: {
-      src: '/assets/treatments/postop-card.jpg',
+      src: '/assets/pages/home/postop-card.jpg',
       alt: 'Cuidado Post-Operatorio en DERMA.M',
       width: 800,
       height: 600,
@@ -40,7 +40,7 @@ export const featuredTreatments: Treatment[] = [
     href: '/es/limpieza-facial-profunda',
     featured: true,
     image: {
-      src: '/assets/treatments/facial-card.jpg',
+      src: '/assets/pages/home/facial-card.jpg',
       alt: 'Limpieza Facial Profunda en DERMA.M',
       width: 800,
       height: 600,

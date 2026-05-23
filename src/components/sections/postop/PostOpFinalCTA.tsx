@@ -19,9 +19,9 @@ export default function PostOpFinalCTA() {
       />
 
       <Container className="relative z-10">
-        <div className="bg-white/80 backdrop-blur-md rounded-[40px] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-border-soft">
+        <div className="bg-white/80 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-border-soft">
           <div className="lg:max-w-xl text-center lg:text-left">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 leading-tight">
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase lg:text-6xl mb-8 leading-tight">
               {finalCTA.headline}
             </h2>
             <p className="text-lg text-text-secondary leading-relaxed mb-8">
@@ -56,7 +56,7 @@ export default function PostOpFinalCTA() {
             >
               {finalCTA.secondaryCTA}
             </Button>
-            <p className="text-[10px] text-center text-text-secondary uppercase tracking-widest mt-2">
+            <p className="text-[10px] text-center text-text-secondary uppercase tracking-[0.15em] mt-2">
               Orientamos tu recuperación paso a paso
             </p>
           </div>

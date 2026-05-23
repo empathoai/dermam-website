@@ -29,7 +29,7 @@ export default function AboutHeroSection() {
   };
 
   return (
-    <section className="relative h-[60vh] lg:h-[80vh] flex items-center overflow-hidden bg-canvas isolation-isolate">
+    <section className="relative h-[60vh] lg:h-[80vh] flex items-center overflow-hidden bg-base-900 isolation-isolate">
       <div className="absolute inset-0 z-0">
         <HeroMedia
           type="image"
@@ -41,23 +41,23 @@ export default function AboutHeroSection() {
         />
       </div>
 
-      <Container className="relative z-10 w-full text-center lg:text-left">
+      <Container className="relative z-10 w-full">
         <motion.div
            variants={containerVariants}
            initial="hidden"
            animate="visible"
-           className="max-w-3xl"
+           className="max-w-[48rem] pt-20 lg:pt-0"
         >
           <motion.h1 
             variants={itemVariants}
-            className="text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight text-white drop-shadow-sm font-serif"
+            className="text-[clamp(2.65rem,5.8vw,4.8rem)] font-extrabold leading-[0.96] tracking-[-0.04em] uppercase text-white drop-shadow-sm mb-6"
           >
             {hero.headline}
           </motion.h1>
           
           <motion.p 
             variants={itemVariants}
-            className="text-white/90 text-lg md:text-xl mb-10 max-w-xl leading-relaxed drop-shadow-sm"
+            className="text-base-300 text-lg mb-10 max-w-lg font-light leading-[1.65] tracking-normal drop-shadow-sm"
           >
             {hero.subheadline}
           </motion.p>

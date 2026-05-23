@@ -166,7 +166,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     explanation: {
       title: '¿Cómo funciona?',
-      body: 'Utilizamos tecnología Dermapen 3 para crear micro-canales controlados en la piel. Esto estimula la respuesta natural de curación del cuerpo, produciendo nuevo colágeno y elastina, mientras permite que sueros de grado médico penetren profundamente.',
+      body: 'Utilizamos tecnología Dermapen 3 para crear micro-canales controlados en la piel. Esto estimula la respuesta natural de curación del cuerpo, produciendo nuevo colágeno y elastina, mientras permite que sueros de grado profesional penetren profundamente.',
       media: {
         src: '/assets/treatments/microneedling/explanation.jpg',
         alt: 'Dispositivo Dermapen 3',
@@ -225,7 +225,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       image: {
         src: '/assets/treatments/microneedling/cta.jpg',
         alt: 'Final CTA Microneedling',
-        prompt: `IMAGE PROMPT — MICRONEEDLING CTA: ${commonImagePrompt} ${'Still-life with medical vials and sage botanical leaves, 16:9 horizontal.'}`
+        prompt: `IMAGE PROMPT — MICRONEEDLING CTA: ${commonImagePrompt} ${'Still-life with professional skincare vials and sage botanical leaves, 16:9 horizontal.'}`
       }
     },
     showPrice: false,
@@ -750,7 +750,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     title: 'Radiofrecuencia Corporal',
     shortTitle: 'Radiofrecuencia',
     seoTitle: 'Radiofrecuencia Corporal West Palm Beach | DERMA.M',
-    metaDescription: 'Reafirma tu piel y mejora el contorno corporal con Radiofrecuencia en West Palm Beach. Tecnología clínica para la flacidez en DERMA.M.',
+    metaDescription: 'Reafirma tu piel y mejora el contorno corporal con Radiofrecuencia en West Palm Beach. Tecnología centro para la flacidez en DERMA.M.',
     canonicalEs: 'https://dermamskinhealth.com/es/radiofrecuencia-corporal/',
     eyebrow: 'Firmeza y Tensión',
     h1: 'Radiofrecuencia Corporal en West Palm Beach',

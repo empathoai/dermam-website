@@ -18,7 +18,7 @@ export default function Tier3SafetySection({ title, items, disclaimer }: Tier3Sa
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="bg-canvas border border-border-soft rounded-[40px] p-10 md:p-16 relative overflow-hidden"
+            className="bg-canvas border border-border-soft rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden"
           >
             {/* Background Icon */}
             <div className="absolute -top-12 -right-12 text-sage/5 opacity-50 pointer-events-none">
@@ -30,7 +30,7 @@ export default function Tier3SafetySection({ title, items, disclaimer }: Tier3Sa
                     <div className="w-12 h-12 bg-sage/10 rounded-full flex items-center justify-center text-sage">
                         <ShieldCheck size={24} />
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-serif text-text-primary">
+                    <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary">
                         {title}
                     </h2>
                 </div>
@@ -47,7 +47,7 @@ export default function Tier3SafetySection({ title, items, disclaimer }: Tier3Sa
                 </div>
 
                 {disclaimer && (
-                    <div className="flex gap-4 p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-border-soft">
+                    <div className="flex gap-4 p-6 bg-white/60 backdrop-blur-sm rounded-[2rem] border border-border-soft">
                         <Info size={18} className="text-sage flex-shrink-0 mt-0.5" />
                         <p className="text-text-secondary text-xs italic opacity-80 leading-relaxed">
                             {disclaimer}

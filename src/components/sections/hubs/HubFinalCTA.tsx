@@ -15,9 +15,9 @@ export default function HubFinalCTA({ content }: HubFinalCTAProps) {
   return (
     <section className="py-24 bg-canvas overflow-hidden">
       <Container>
-        <div className="bg-white rounded-[40px] border border-border-soft overflow-hidden shadow-2xl flex flex-col lg:flex-row max-w-6xl mx-auto">
+        <div className="bg-white rounded-[2.5rem] border border-border-soft overflow-hidden shadow-2xl flex flex-col lg:flex-row max-w-6xl mx-auto">
           <div className="lg:w-1/2 p-10 md:p-16 flex flex-col justify-center">
-            <h2 className="text-3xl md:text-5xl font-serif text-text-primary mb-6 leading-tight">
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-6 leading-tight">
               {content.headline}
             </h2>
             <p className="text-text-secondary text-lg leading-relaxed mb-10">

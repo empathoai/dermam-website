@@ -26,55 +26,63 @@ export default function Tier3HeroSection({
   const [isMediaReady, setIsMediaReady] = useState(false);
 
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-canvas isolation-isolate pt-20">
-      <HeroMedia
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-base-900 isolation-isolate pt-20">
+      <div className="absolute inset-0 z-0">
+        <HeroMedia
         {...media}
         overlay={true}
         onLoaded={() => setIsMediaReady(true)}
-      />
+        />
+      </div>
 
       <Container className="relative z-10 w-full mt-12 md:mt-0">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
           <motion.div
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.8, ease: "easeOut" }}
-             className="max-w-2xl text-center lg:text-left"
+             className="max-w-[48rem] pt-20 lg:pt-0"
           >
-            <motion.span 
-               initial={{ opacity: 0 }}
-               animate={{ opacity: 1 }}
-               transition={{ delay: 0.3 }}
-               className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-[10px] md:text-xs text-white font-bold tracking-widest uppercase mb-6"
-            >
-                {eyebrow}
-            </motion.span>
+            <div className="mb-6 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+              <motion.span
+                 initial={{ opacity: 0 }}
+                 animate={{ opacity: 1 }}
+                 transition={{ delay: 0.3 }}
+                 className="inline-block px-3 py-1 bg-white/[0.08] backdrop-blur-sm rounded-full border border-white/10 text-xs text-base-200 font-light tracking-normal normal-case"
+              >
+                  {eyebrow}
+              </motion.span>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4 }}
+                className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.08] px-3 py-1 text-xs font-light tracking-normal text-base-200 backdrop-blur-sm"
+              >
+                <span className="flex text-yellow-400" aria-hidden="true">
+                  {[...Array(5)].map((_, i) => <Star key={i} size={10} fill="currentColor" />)}
+                </span>
+                <span>4.9 Google</span>
+              </motion.div>
+            </div>
             
-            <h1 className="text-4xl md:text-6xl mb-6 leading-tight text-white drop-shadow-md font-serif">
+            <h1 className="text-[clamp(2.65rem,5.8vw,4.8rem)] font-extrabold leading-[0.96] tracking-[-0.04em] uppercase text-white drop-shadow-md mb-6">
               {h1}
             </h1>
             
-            <p className="text-white/90 text-lg md:text-xl mb-10 leading-relaxed drop-shadow-md">
+            <p className="text-base-300 text-lg mb-10 max-w-lg font-light leading-[1.65] tracking-normal drop-shadow-md">
               {subheadline}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-8 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   onClick={onScrollToContent}
-                  className="bg-white text-sage hover:bg-white/90 min-w-[220px]"
+                  className="bg-white text-base-900 hover:bg-base-100 min-w-[220px] w-full sm:w-auto"
                 >
                   {ctaLabel}
                 </Button>
                 
-                <div className="flex items-center gap-4 text-white/90 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10 text-[10px] uppercase tracking-widest font-bold">
-                  <div className="flex text-yellow-400">
-                      {[...Array(5)].map((_, i) => <Star key={i} size={10} fill="currentColor" />)}
-                  </div>
-                  <span>4.9 Google</span>
-                </div>
+
             </div>
           </motion.div>
-        </div>
       </Container>
       
       {/* Scroll Indicator */}

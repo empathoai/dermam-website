@@ -27,7 +27,7 @@ export default function IVKitCard({ kit }: IVKitCardProps) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white rounded-[24px] overflow-hidden border border-border-soft shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full group"
+      className="bg-white rounded-[1.5rem] overflow-hidden border border-border-soft shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full group"
     >
       {/* Kit Image */}
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -38,7 +38,7 @@ export default function IVKitCard({ kit }: IVKitCardProps) {
         />
         {kit.badge && (
           <div className="absolute top-4 left-4">
-            <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold text-base-900 uppercase tracking-widest border border-base-900/10">
+            <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-medium text-base-900 uppercase tracking-[0.15em] border border-base-900/10">
               {kit.badge}
             </span>
           </div>
@@ -47,7 +47,7 @@ export default function IVKitCard({ kit }: IVKitCardProps) {
 
       {/* Kit Content */}
       <div className="p-6 md:p-8 flex flex-col flex-1">
-        <h3 className="text-xl md:text-2xl font-serif text-text-primary mb-3">
+        <h3 className="text-xl md:text-2xl font-sans text-text-primary mb-3">
           {kit.name}
         </h3>
         <p className="text-text-secondary text-sm md:text-base leading-relaxed mb-6 flex-1">
@@ -56,7 +56,7 @@ export default function IVKitCard({ kit }: IVKitCardProps) {
 
         {kit.showPrice && kit.price && (
           <div className="mb-6">
-            <span className="text-2xl font-serif text-base-900">${kit.price}</span>
+            <span className="text-2xl font-sans text-base-900">${kit.price}</span>
           </div>
         )}
 

@@ -6,3 +6,8 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# IDE/Agent generated files
+.agents/
+.codex/
+skills-lock.json

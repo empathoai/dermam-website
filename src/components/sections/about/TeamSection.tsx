@@ -22,11 +22,11 @@ export default function TeamSection() {
     <section className="py-24 bg-canvas/30">
       <Container>
         <div className="max-w-4xl mb-16 text-center lg:text-left">
-          <h2 className="text-4xl md:text-5xl mb-6 font-serif leading-tight">
+          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6 font-sans leading-tight">
             Nuestros especialistas
           </h2>
           <p className="text-text-secondary text-lg leading-relaxed max-w-2xl">
-            Cada miembro del equipo tiene su área de especialización. Todos comparten la misma filosofía clínica: diagnóstico, seguridad y resultados.
+            Cada miembro del equipo tiene su área de especialización. Todos comparten la misma filosofía centro: diagnóstico, seguridad y resultados.
           </p>
         </div>
 

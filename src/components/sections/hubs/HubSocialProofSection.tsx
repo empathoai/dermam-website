@@ -19,8 +19,8 @@ export default function HubSocialProofSection({ content }: HubSocialProofSection
 
         <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto items-center">
           {/* Rating Summary */}
-          <div className="lg:w-1/3 bg-canvas/50 rounded-[32px] p-10 text-center flex flex-col items-center justify-center border border-border-soft border-dashed">
-            <div className="text-5xl md:text-6xl font-serif text-text-primary mb-4">
+          <div className="lg:w-1/3 bg-canvas/50 rounded-[2rem] p-10 text-center flex flex-col items-center justify-center border border-border-soft border-dashed">
+            <div className="text-5xl md:text-6xl font-sans text-text-primary mb-4">
               {content.googleRating}
             </div>
             <div className="flex gap-1 mb-6">
@@ -46,7 +46,7 @@ export default function HubSocialProofSection({ content }: HubSocialProofSection
             {content.items.map((review, idx) => (
               <div 
                 key={idx} 
-                className="bg-white border border-border-soft rounded-3xl p-8 shadow-sm transition-all duration-300 hover:shadow-md hover:border-sage-soft"
+                className="bg-white border border-border-soft rounded-[2.5rem] p-8 shadow-sm transition-all duration-300 hover:shadow-md hover:border-sage-soft"
               >
                 <p className="text-lg text-text-primary italic mb-6 leading-relaxed">
                   "{review.quote}"
@@ -59,7 +59,7 @@ export default function HubSocialProofSection({ content }: HubSocialProofSection
                     <div className="text-sm font-bold text-text-primary">
                         {review.author}
                     </div>
-                    <div className="text-[10px] font-bold text-text-secondary uppercase tracking-widest">
+                    <div className="text-[10px] font-medium text-text-secondary uppercase tracking-[0.15em]">
                         {review.role}
                     </div>
                   </div>

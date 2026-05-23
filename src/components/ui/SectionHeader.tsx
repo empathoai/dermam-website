@@ -16,13 +16,13 @@ export default function SectionHeader({
   return (
     <div className={`${align === 'center' ? 'text-center' : 'text-left'} ${className}`}>
       {eyebrow && (
-        <span className="inline-block text-xs font-semibold uppercase tracking-widest text-text-secondary mb-4">
+        <span className="inline-block text-xs font-medium uppercase tracking-[0.15em] text-text-secondary mb-4">
           {eyebrow}
         </span>
       )}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">{headline}</h2>
+      <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6">{headline}</h2>
       {subheadline && (
-        <p className={`text-text-secondary text-base md:text-lg max-w-2xl leading-relaxed ${align === 'center' ? 'mx-auto' : ''}`}>
+        <p className={`text-text-secondary text-base md:text-lg max-w-2xl leading-[1.65] font-light tracking-normal ${align === 'center' ? 'mx-auto' : ''}`}>
           {subheadline}
         </p>
       )}

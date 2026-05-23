@@ -33,15 +33,15 @@ export const deepFacialContent = {
         image: {
             src: '/assets/treatments/deepfacial-step-1.jpg',
             alt: 'Análisis de piel',
-            prompt: 'Premium clinical skin analysis scene, aesthetic specialist gently examining client’s skin with soft magnifying light or tablet consultation, client calm and comfortable, white and ivory treatment room, sage accents, professional but approachable, no harsh medical device, no anxiety, no skin problems shown dramatically, 4:3 ratio.'
+            prompt: 'Premium clinical skin analysis scene, aesthetic specialist gently examining client’s skin with soft magnifying light or tablet consultation, client calm and comfortable, white and ivory treatment room, sage accents, professional but approachable, no harsh clinical-looking device, no anxiety, no skin problems shown dramatically, 4:3 ratio.'
         }
       },
       { 
         title: 'Limpieza profunda', 
-        description: 'Limpieza clínica adaptada a tu tipo de piel.',
+        description: 'Limpieza centro adaptada a tu tipo de piel.',
         image: {
             src: '/assets/treatments/deepfacial-step-2.jpg',
-            alt: 'Limpieza clínica',
+            alt: 'Limpieza centro',
             prompt: 'Soft luxury facial cleansing treatment image, professional hands applying gentle cleanser with soft gauze or brush on client’s face, white headband, clean ivory linens, luminous skin, warm natural light, pastel sage environment, calm premium medspa photography, no extraction, no redness, no harsh tools, 4:3 ratio.'
         }
       },

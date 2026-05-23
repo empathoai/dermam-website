@@ -7,8 +7,8 @@ export const contactContent: ContactPageContent = {
     subheadline: 'Estamos disponibles por WhatsApp, teléfono o formulario. Respondemos en menos de 24 horas.',
     image: {
       src: '/assets/images/contact-hero.jpg',
-      alt: 'Interior de clínica DERMA.M',
-      prompt: 'Bright premium medical aesthetics clinic interior, warm ivory treatment room, soft sage accents, folded white towels, calm reception or treatment area, natural light, clean professional environment, welcoming and human, botanical minimal decor, luxury clinical wellness atmosphere, no people, no hospital feeling, no dark background, no clutter, 16:9 horizontal.'
+      alt: 'Interior de centro DERMA.M',
+      prompt: 'Bright premium aesthetics center interior, warm ivory treatment room, soft sage accents, folded white towels, calm reception or treatment area, natural light, clean professional environment, welcoming and human, botanical minimal decor, luxury clinical wellness atmosphere, no people, no hospital feeling, no dark background, no clutter, 16:9 horizontal.'
     }
   },
   channels: {
@@ -80,7 +80,7 @@ export const contactContent: ContactPageContent = {
     image: {
       src: '/assets/images/contact-office.jpg',
       alt: 'Mapa de ubicación DERMA.M',
-      prompt: 'Minimal elegant map-style visual for a West Palm Beach medical aesthetics clinic, soft ivory background, sage route line, subtle location pin, premium editorial map design, no bright Google map colors, no clutter, clean and readable, 16:9 horizontal.'
+      prompt: 'Minimal elegant map-style visual for a West Palm Beach premium aesthetics center, soft ivory background, sage route line, subtle location pin, premium editorial map design, no bright Google map colors, no clutter, clean and readable, 16:9 horizontal.'
     },
     clinicImage: {
       src: '/assets/images/contact-consultation.jpg',

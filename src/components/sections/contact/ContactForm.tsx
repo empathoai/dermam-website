@@ -68,12 +68,12 @@ ${formData.message ? `Mensaje: ${formData.message}` : ''}`;
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="bg-white p-12 rounded-[32px] border border-border-soft text-center shadow-xl shadow-canvas/50"
+        className="bg-white p-12 rounded-[2rem] border border-border-soft text-center shadow-xl shadow-canvas/50"
       >
         <div className="w-16 h-16 bg-base-900/10 text-base-900 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle2 size={32} />
         </div>
-        <h3 className="text-2xl font-serif mb-4">¡Gracias por escribirnos!</h3>
+        <h3 className="text-2xl font-sans mb-4">¡Gracias por escribirnos!</h3>
         <p className="text-text-secondary leading-relaxed mb-8 px-4">
           Hemos recibido tu consulta y abierto una conversación en WhatsApp. Te responderemos de inmediato.
         </p>
@@ -89,9 +89,9 @@ ${formData.message ? `Mensaje: ${formData.message}` : ''}`;
   }
 
   return (
-    <div className="bg-white p-8 md:p-12 rounded-[32px] border border-border-soft shadow-xl shadow-canvas/50">
+    <div className="bg-white p-8 md:p-12 rounded-[2rem] border border-border-soft shadow-xl shadow-canvas/50">
       <div className="mb-10">
-        <h3 className="text-2xl font-serif mb-2">{form.headline}</h3>
+        <h3 className="text-2xl font-sans mb-2">{form.headline}</h3>
         <p className="text-text-secondary text-sm">{form.subheadline}</p>
       </div>
 

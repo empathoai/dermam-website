@@ -17,7 +17,7 @@ export default function ContactMapSection() {
     <section id="mapa" className="py-24 bg-canvas/30">
       <Container>
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
-          <div className="lg:w-3/5 rounded-[32px] overflow-hidden shadow-2xl bg-white border border-border-soft aspect-[16/10] lg:aspect-auto">
+          <div className="lg:w-3/5 rounded-[2rem] overflow-hidden shadow-2xl bg-white border border-border-soft aspect-[16/10] lg:aspect-auto">
             {map.embedUrl ? (
               <iframe
                 title="Google Maps"
@@ -41,21 +41,21 @@ export default function ContactMapSection() {
 
           <div className="lg:w-2/5 flex flex-col justify-center">
             <div className="mb-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-sage/10 text-sage rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-sage/10 text-sage rounded-full text-[10px] font-medium uppercase tracking-[0.15em] mb-4">
                 <MapPin size={12} />
                 Ubicación
               </div>
-              <h2 className="text-3xl font-serif mb-6 leading-tight">{map.address}</h2>
+              <h2 className="text-3xl font-sans mb-6 leading-tight">{map.address}</h2>
               <div className="flex items-center gap-2 text-text-secondary text-sm">
                 <ParkingCircle size={16} className="text-sage" />
                 <span>{map.logistics}</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border border-border-soft shadow-lg mb-10">
+            <div className="bg-white p-8 rounded-[2.5rem] border border-border-soft shadow-lg mb-10">
               <div className="flex items-center gap-3 mb-6">
                 <Clock size={20} className="text-sage" />
-                <h3 className="text-sm font-bold uppercase tracking-wider">Horarios de atención</h3>
+                <h3 className="text-sm font-medium uppercase tracking-[0.15em]">Horarios de atención</h3>
               </div>
               
               <div className="space-y-4">

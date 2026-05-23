@@ -11,7 +11,7 @@ export const postOpContent = {
     image: {
       src: '/assets/images/hero-postop.jpg',
       alt: 'Recuperación Post-Operatorio en DERMA.M',
-      prompt: 'Premium clinical wellness editorial image for post-operative recovery care at a medical aesthetics clinic, professional hands performing gentle lymphatic drainage on a calm patient, white and ivory linens, soft sage accents, warm natural light, clean treatment room, serene recovery atmosphere, medical spa but not hospital, emotionally reassuring, no visible bruising, no scars, no surgical wounds, no blood, no dramatic bandages, no fear-based visuals, high-end post-op care photography, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
+      prompt: 'Premium clinical wellness editorial image for post-operative recovery care at a premium aesthetics center, professional hands performing gentle lymphatic drainage on a calm patient, white and ivory linens, soft sage accents, warm natural light, clean treatment room, serene recovery atmosphere, aesthetic spa but not hospital, emotionally reassuring, no visible bruising, no scars, no surgical wounds, no blood, no dramatic bandages, no fear-based visuals, high-end post-op care photography, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   surgeryTypes: {
@@ -27,7 +27,7 @@ export const postOpContent = {
     image: {
       src: '/assets/treatments/postop-care.jpg',
       alt: 'Drenaje linfático post-operatorio',
-      prompt: 'Soft clinical post-operative lymphatic drainage image, professional hands applying gentle pressure on torso or arm over clean white clinical linens, patient calm and covered appropriately, warm ivory treatment room, sage botanical detail, recovery-focused and safe, no exposed wounds, no bruising, no scars, no medical alarm feeling, premium medspa photography, 4:3 ratio.'
+      prompt: 'Soft clinical post-operative lymphatic drainage image, professional hands applying gentle pressure on torso or arm over clean white clinical linens, patient calm and covered appropriately, warm ivory treatment room, sage botanical detail, recovery-focused and safe, no exposed wounds, no bruising, no scars, no clinical alarm feeling, premium medspa photography, 4:3 ratio.'
     }
   },
   urgency: {
@@ -52,7 +52,7 @@ export const postOpContent = {
     image: {
         src: '/assets/treatments/postop-urgency.jpg',
         alt: 'Planificación post-operatoria',
-        prompt: 'Elegant clinical recovery still-life, folded compression garment, white towel, small notebook with recovery plan, glass of water, soft sage leaves, warm ivory background, calm medical spa atmosphere, subtle visual metaphor for post-surgery planning, no people, no surgery tools, no blood, no alarm tone, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
+        prompt: 'Elegant clinical recovery still-life, folded compression garment, white towel, small notebook with recovery plan, glass of water, soft sage leaves, warm ivory background, calm aesthetic spa atmosphere, subtle visual metaphor for post-surgery planning, no people, no surgery tools, no blood, no alarm tone, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   protocol: {
@@ -125,7 +125,7 @@ export const postOpContent = {
         imageBefore: '/assets/treatments/postop-result-1-before.jpg',
         imageAfter: '/assets/treatments/postop-result-1-after.jpg',
         sessions: '8 sesiones',
-        prompt: 'Tasteful clinical before-and-after style post-liposuction recovery documentation image, same patient torso area shown in two adjacent panels, modest and non-graphic framing, improved inflammation and contour shown subtly, clean ivory background, no exposed wounds, no bruising, no scars, no explicit nudity, premium medical aesthetic documentation style, realistic, professional, 4:3 ratio.'
+        prompt: 'Tasteful clinical before-and-after style post-liposuction recovery documentation image, same patient torso area shown in two adjacent panels, modest and non-graphic framing, improved inflammation and contour shown subtly, clean ivory background, no exposed wounds, no bruising, no scars, no explicit nudity, premium premium aesthetic documentation style, realistic, professional, 4:3 ratio.'
       },
       {
         title: 'Post-Abdominoplastia',
@@ -185,7 +185,7 @@ export const postOpContent = {
     image: {
         src: '/assets/images/postop-final-cta.jpg',
         alt: 'Final CTA Post-Op background',
-        prompt: 'Soft premium clinical recovery still-life, folded white towel, sage leaves, ivory candle, clean recovery care card, warm pearl-gray surface, calm post-operative support mood, lots of negative space for CTA text, reassuring medical spa atmosphere, no people, no surgical imagery, no blood, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
+        prompt: 'Soft premium clinical recovery still-life, folded white towel, sage leaves, ivory candle, clean recovery care card, warm pearl-gray surface, calm post-operative support mood, lots of negative space for CTA text, reassuring aesthetic spa atmosphere, no people, no surgical imagery, no blood, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
   relatedTreatments: [

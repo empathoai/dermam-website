@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
     <section className="py-24 bg-canvas">
       <Container>
         <SectionHeader
-          headline="Lo que dicen nuestras pacientes"
+          headline="LO QUE DICEN NUESTRAS PACIENTES"
           align="center"
           className="mb-16"
         />
@@ -27,7 +27,7 @@ export default function TestimonialsSection() {
               </p>
               <div>
                 <span className="block font-semibold text-sm mb-1">{testimonial.name}</span>
-                <span className="block text-xs text-text-secondary uppercase tracking-widest">{testimonial.treatment}</span>
+                <span className="block text-xs text-text-secondary uppercase tracking-[0.15em]">{testimonial.treatment}</span>
               </div>
             </Card>
           ))}

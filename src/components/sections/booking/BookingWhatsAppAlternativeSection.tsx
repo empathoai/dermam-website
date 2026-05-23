@@ -10,7 +10,7 @@ export default function BookingWhatsAppAlternativeSection() {
       <Container>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif mb-4">{whatsappAlternative.headline}</h2>
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans mb-4">{whatsappAlternative.headline}</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

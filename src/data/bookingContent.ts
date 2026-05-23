@@ -9,7 +9,7 @@ export const bookingContent: BookingPageContent = {
     image: {
       src: '/assets/images/booking-hero.jpg',
       alt: 'Preparación de tratamiento en DERMA.M',
-      prompt: 'Bright premium medical aesthetics clinic booking scene, warm ivory treatment room, professional hands preparing a treatment tray with folded white towels and skincare tools, soft sage accents, calm clinical wellness environment, subtle DERMA.M style, natural light, no people faces, no surgery tools, no blood, no hospital feeling, no dark background, premium medspa photography, 16:9 horizontal.'
+      prompt: 'Bright premium aesthetics center booking scene, warm ivory treatment room, professional hands preparing a treatment tray with folded white towels and skincare tools, soft sage accents, calm clinical wellness environment, subtle DERMA.M style, natural light, no people faces, no surgery tools, no blood, no hospital feeling, no dark background, premium medspa photography, 16:9 horizontal.'
     }
   },
   selector: {
@@ -38,7 +38,7 @@ export const bookingContent: BookingPageContent = {
       {
         id: 'deep-facial',
         title: 'Limpieza Facial Profunda',
-        description: 'Análisis + limpieza clínica',
+        description: 'Análisis + limpieza centro',
         bookingType: 'square',
         squareUrl: 'https://squareup.com/appointments/book/dermam/limpieza',
         ctaLabel: 'Reservar',

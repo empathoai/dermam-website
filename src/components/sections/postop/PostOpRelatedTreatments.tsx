@@ -11,7 +11,7 @@ export default function PostOpRelatedTreatments() {
   return (
     <section className="py-24 bg-white">
       <Container>
-        <h2 className="text-3xl text-center mb-16 font-serif">Otros servicios corporales en DERMA.M</h2>
+        <h2 className="text-3xl text-center mb-16 font-sans">Otros servicios corporales en DERMA.M</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {relatedTreatments.map((treatment) => (
             <Card key={treatment.id} className="group hover:-translate-y-2 transition-transform duration-300 border-none shadow-subtle hover:shadow-lg">

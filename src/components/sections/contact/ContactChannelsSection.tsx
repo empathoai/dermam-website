@@ -12,7 +12,7 @@ export default function ContactChannelsSection() {
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
           <div className="lg:w-1/2 flex flex-col">
             <div className="mb-12 text-center lg:text-left">
-              <h2 className="text-3xl md:text-4xl font-serif mb-4">{channels.headline}</h2>
+              <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans mb-4">{channels.headline}</h2>
               <p className="text-text-secondary text-lg leading-relaxed">{channels.subheadline}</p>
             </div>
             

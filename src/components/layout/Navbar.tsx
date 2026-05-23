@@ -31,9 +31,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link 
             to="/es" 
-            className="text-xl font-serif font-semibold tracking-tighter text-text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md px-1"
+            className="inline-flex items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md px-1"
+            aria-label="DERMA.M inicio"
           >
-            DERMA.M
+            <img
+              src="/assets/logos/logo_dermam_nav.svg"
+              alt="DERMA.M"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}

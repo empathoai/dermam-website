@@ -41,7 +41,7 @@ export default function Tier3RelatedTreatments({ currentTreatmentId, relatedIds,
             >
               <Link 
                 to={`/es/${treatment.slugEs}`}
-                className="group block bg-white rounded-[32px] overflow-hidden border border-border-soft shadow-sm hover:shadow-xl transition-all duration-500"
+                className="group block bg-white rounded-[2rem] overflow-hidden border border-border-soft shadow-sm hover:shadow-xl transition-all duration-500"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <ResponsiveImage
@@ -52,10 +52,10 @@ export default function Tier3RelatedTreatments({ currentTreatmentId, relatedIds,
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
                 <div className="p-8">
-                  <span className="text-[10px] font-bold text-sage uppercase tracking-widest mb-3 block">
+                  <span className="text-[10px] font-medium text-sage uppercase tracking-[0.15em] mb-3 block">
                     {treatment.category}
                   </span>
-                  <h3 className="text-xl font-serif text-text-primary mb-4 group-hover:text-sage transition-colors">
+                  <h3 className="text-xl font-sans text-text-primary mb-4 group-hover:text-sage transition-colors">
                     {treatment.shortTitle}
                   </h3>
                   <div className="flex items-center gap-2 text-sage text-sm font-bold group-hover:gap-3 transition-all">

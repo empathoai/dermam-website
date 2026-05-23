@@ -20,8 +20,8 @@ export default function FounderSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Founder Photo */}
           <div className="relative group">
-            <div className="absolute -inset-4 bg-linen rounded-2xl -z-10 transition-transform duration-500 group-hover:scale-105" />
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
+            <div className="absolute -inset-4 bg-linen rounded-[2rem] -z-10 transition-transform duration-500 group-hover:scale-105" />
+            <div className="aspect-[4/5] overflow-hidden rounded-[2rem] shadow-xl">
                <ResponsiveImage
                 src={founder.image.src}
                 alt={founder.image.alt}
@@ -34,10 +34,10 @@ export default function FounderSection() {
 
           {/* Founder Copy */}
           <div>
-            <span className="text-xs font-semibold uppercase tracking-widest text-sage mb-4 inline-block">
+            <span className="text-xs font-medium uppercase tracking-[0.15em] text-sage mb-4 inline-block">
               {founder.eyebrow}
             </span>
-            <h2 className="text-4xl md:text-5xl mb-2">{founder.name}</h2>
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-2 uppercase">{founder.name}</h2>
             <p className="text-text-secondary font-medium mb-8 italic">{founder.title}</p>
             
             <div className="space-y-6 mb-12">
@@ -45,7 +45,7 @@ export default function FounderSection() {
                 {founder.bio}
               </p>
               <div className="border-l-4 border-sage pl-6 py-2">
-                 <p className="text-xl md:text-2xl font-serif text-text-primary italic">
+                 <p className="text-xl md:text-2xl font-sans text-text-primary italic">
                   {founder.quote}
                 </p>
               </div>
@@ -54,8 +54,8 @@ export default function FounderSection() {
             {/* Micro Stats */}
             <div className="grid grid-cols-3 gap-6 mb-12">
               {differentiators.stats.map((stat, idx) => (
-                <div key={idx} className="flex flex-col p-4 bg-canvas rounded-xl">
-                  <span className="text-xl font-serif text-text-primary mb-1">{stat.value}</span>
+                <div key={idx} className="flex flex-col p-4 bg-canvas rounded-[1rem]">
+                  <span className="text-xl font-sans text-text-primary mb-1">{stat.value}</span>
                   <span className="text-[10px] uppercase tracking-wider text-text-secondary">{stat.label.split(' ')[0]}</span>
                 </div>
               ))}

@@ -14,9 +14,9 @@ export default function DifferentiatorsSection() {
         type="image"
         src={differentiators.bgImage.src}
         alt={differentiators.bgImage.alt}
-        overlay="ivory"
+        overlay="soft"
         position="right"
-        opacity={0.9}
+        opacity={1}
       />
 
       <Container className="relative z-10">
@@ -30,9 +30,9 @@ export default function DifferentiatorsSection() {
         <div className="border-t border-border-soft pt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div>
-              <h2 className="text-3xl md:text-4xl mb-8">Por qué DERMA.M</h2>
-              <p className="text-text-secondary text-base leading-relaxed mb-12">
-                Nos enfocamos en un enfoque médico-estético integral, donde la salud de tu piel es lo primero. Nuestro compromiso es ofrecer resultados naturales a través de diagnósticos precisos y protocolos personalizados.
+              <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-8 text-base-200">Por qué DERMA.M</h2>
+              <p className="text-base-300 text-base leading-relaxed mb-12">
+                Nos enfocamos en un enfoque estético integral, donde la salud de tu piel es lo primero. Nuestro compromiso es ofrecer resultados naturales a través de diagnósticos precisos y protocolos personalizados.
               </p>
             </div>
             

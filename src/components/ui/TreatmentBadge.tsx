@@ -13,7 +13,7 @@ const TreatmentBadge: React.FC<TreatmentBadgeProps> = ({ children, variant = 'pr
   };
 
   return (
-    <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${variants[variant]}`}>
+    <span className={`px-3 py-1 rounded-full text-xs font-medium uppercase tracking-[0.15em] ${variants[variant]}`}>
       {children}
     </span>
   );

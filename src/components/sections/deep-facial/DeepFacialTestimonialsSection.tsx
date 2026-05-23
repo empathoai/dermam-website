@@ -10,7 +10,7 @@ export default function DeepFacialTestimonialsSection() {
     <section className="py-24 bg-canvas">
       <Container>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif">Voces DERMA.M</h2>
+          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans">Voces DERMA.M</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -26,7 +26,7 @@ export default function DeepFacialTestimonialsSection() {
               </p>
               <div>
                 <span className="block font-semibold text-sm mb-1">{testimonial.name}</span>
-                <span className="block text-[10px] text-text-secondary uppercase tracking-widest bg-base-200 px-3 py-1 rounded-full">{testimonial.treatment}</span>
+                <span className="block text-[10px] text-text-secondary uppercase tracking-[0.15em] bg-base-200 px-3 py-1 rounded-full">{testimonial.treatment}</span>
               </div>
             </Card>
           ))}

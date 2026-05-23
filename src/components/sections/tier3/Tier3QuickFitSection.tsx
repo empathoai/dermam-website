@@ -29,14 +29,14 @@ export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3Quic
         </div>
 
         {/* Is this for you? */}
-        <div className="max-w-4xl mx-auto bg-canvas rounded-[40px] p-10 md:p-16 border border-border-soft shadow-sm">
+        <div className="max-w-4xl mx-auto bg-canvas rounded-[2.5rem] p-10 md:p-16 border border-border-soft shadow-sm">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-text-primary mb-4">
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-4">
               {quickFit.title}
             </h2>
           </motion.div>

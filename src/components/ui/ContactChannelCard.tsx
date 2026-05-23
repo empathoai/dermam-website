@@ -23,25 +23,25 @@ const ContactChannelCard: React.FC<ContactChannelCardProps> = ({ channel }) => {
       href={channel.href}
       target={channel.type === 'phone' || channel.href.startsWith('#') ? undefined : "_blank"}
       rel={channel.type === 'phone' || channel.href.startsWith('#') ? undefined : "noopener noreferrer"}
-      className={`flex items-center gap-5 p-6 rounded-2xl border transition-all duration-300 group ${colors}`}
+      className={`flex items-center gap-5 p-6 rounded-[2rem] border transition-all duration-300 group ${colors}`}
     >
-      <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors ${channel.emphasized ? 'bg-sage text-white' : 'bg-canvas text-sage group-hover:bg-sage/10'}`}>
+      <div className={`w-12 h-12 rounded-[1rem] flex items-center justify-center flex-shrink-0 transition-colors ${channel.emphasized ? 'bg-sage text-white' : 'bg-canvas text-sage group-hover:bg-sage/10'}`}>
         <Icon size={24} />
       </div>
       
       <div className="flex-grow">
-        <h3 className="text-sm font-bold text-text-primary uppercase tracking-wider mb-1">
+        <h3 className="text-sm font-medium text-text-primary uppercase tracking-[0.15em] mb-1">
             {channel.title}
         </h3>
         <p className="text-base text-text-primary font-medium mb-1">
             {channel.value}
         </p>
-        <span className="text-[11px] text-text-secondary uppercase tracking-widest font-semibold opacity-70">
+        <span className="text-[11px] text-text-secondary uppercase tracking-[0.15em] font-medium opacity-70">
             {channel.helper}
         </span>
       </div>
 
-      <div className={`text-xs font-bold uppercase tracking-widest transition-transform duration-300 group-hover:translate-x-1 ${channel.emphasized ? 'text-sage' : 'text-text-secondary group-hover:text-sage'}`}>
+      <div className={`text-base font-medium normal-case tracking-normal transition-transform duration-300 group-hover:translate-x-1 ${channel.emphasized ? 'text-sage' : 'text-text-secondary group-hover:text-sage'}`}>
         {channel.cta}
       </div>
     </a>

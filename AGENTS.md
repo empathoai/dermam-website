@@ -14,6 +14,7 @@ This project is a React/TypeScript front-end with UI organized primarily under `
 - **DO NOT CHANGE FOLDER STRUCTURE:** Do not rename, move, delete, or reorganize existing folders or files as part of UI/UX work.
 - **DO NOT CHANGE CORE CONTENT STRATEGY:** Do not change CTA routing logic, page intent, clinical funnel strategy, team authority references, treatment data structure, or content semantics unless the user specifically asks for copy/content review.
 - **NO UNREQUESTED BUILDS:** Do not run production builds after changes unless the user explicitly asks for one.
+- **PRESERVE UTF-8 TEXT ENCODING:** All repository text files must be read and written as UTF-8. Never save Spanish copy through Windows-1252/ANSI or any tool flow that produces mojibake. Before and after editing user-facing copy, search the touched files for corrupted accent/apostrophe sequences and correct them immediately if found.
 
 ## 🎨 Operational Guidelines
 

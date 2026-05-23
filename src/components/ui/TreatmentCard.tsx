@@ -10,6 +10,8 @@ interface TreatmentCardProps {
 }
 
 const TreatmentCard: React.FC<TreatmentCardProps> = ({ treatment }) => {
+  const imagePositionClass = treatment.id === 'post-op' ? 'object-[50%_72%]' : 'object-center';
+
   return (
     <Card className="flex flex-col h-full group hover:shadow-subtle transition-shadow duration-300">
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -18,22 +20,22 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({ treatment }) => {
           alt={treatment.image.alt}
           width={treatment.image.width}
           height={treatment.image.height}
-          className="group-hover:scale-105 transition-transform duration-500"
+          className={`h-full w-full ${imagePositionClass} group-hover:scale-105 transition-transform duration-500`}
         />
-        <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
-          <span className="text-[10px] font-medium uppercase tracking-wider text-text-secondary">
+        <div className="absolute bottom-4 left-4 bg-white/85 backdrop-blur-sm px-3 py-1 rounded-full border border-white/30">
+          <span className="text-xs font-light normal-case tracking-normal text-text-secondary">
             {treatment.category}
           </span>
         </div>
       </div>
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl mb-3">{treatment.title}</h3>
-        <p className="text-text-secondary text-sm leading-relaxed mb-6 flex-grow">
+        <h3 className="text-[clamp(1.125rem,2vw,1.375rem)] font-semibold leading-[1.35] tracking-[-0.01em] normal-case mb-3">{treatment.title}</h3>
+        <p className="text-text-secondary text-base leading-[1.6] font-normal tracking-normal mb-6 flex-grow">
           {treatment.description}
         </p>
         <Link
           to={treatment.href}
-          className="inline-flex items-center text-sm font-medium text-text-primary hover:text-sage transition-colors duration-300"
+          className="inline-flex items-center text-base font-medium leading-[1.2] tracking-normal normal-case text-text-primary hover:text-base-600 transition-colors duration-300"
         >
           Ver tratamiento <ArrowRight size={16} className="ml-2" />
         </Link>

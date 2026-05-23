@@ -16,13 +16,13 @@ export default function PostOpProtocolSection() {
     <section className="py-24 bg-canvas overflow-hidden">
       <Container>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">{protocol.headline}</h2>
+          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6">{protocol.headline}</h2>
         </div>
         
         <div className="max-w-4xl mx-auto space-y-6 mb-16">
           {protocol.phases.map((phase) => (
-            <div key={phase.id} className="bg-white p-8 rounded-2xl border border-border-soft flex items-center gap-8 group hover:border-sage transition-colors duration-300">
-               <span className="text-4xl font-serif text-text-primary opacity-10 group-hover:opacity-20 transition-opacity">
+            <div key={phase.id} className="bg-white p-8 rounded-[2rem] border border-border-soft flex items-center gap-8 group hover:border-sage transition-colors duration-300">
+               <span className="text-4xl font-sans text-text-primary opacity-10 group-hover:opacity-20 transition-opacity">
                 {phase.id}
               </span>
               <div>

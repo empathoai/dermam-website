@@ -7,7 +7,7 @@ export const aboutContent: AboutContent = {
     image: {
       src: '/assets/images/hero-team.jpg',
       alt: 'Equipo DERMA.M Skin Health',
-      prompt: 'Premium editorial group portrait of a medical aesthetics clinic team in a bright treatment room, Latina founder and diverse team of specialists, elegant white or soft neutral clinical uniforms, warm confident expressions, soft ivory and sage environment, professional but approachable, clean medspa setting, botanical minimal decor, natural light, no hospital feeling, no corporate stiffness, luxury wellness clinic team photography, 16:9 horizontal.'
+      prompt: 'Premium editorial group portrait of a premium aesthetics center team in a bright treatment room, Latina founder and diverse team of specialists, elegant white or soft neutral clinical uniforms, warm confident expressions, soft ivory and sage environment, professional but approachable, clean medspa setting, botanical minimal decor, natural light, no hospital feeling, no corporate stiffness, luxury wellness clinic team photography, 16:9 horizontal.'
     }
   },
   story: {
@@ -29,7 +29,7 @@ export const aboutContent: AboutContent = {
     ]
   },
   values: {
-    headline: 'Nuestra filosofía clínica',
+    headline: 'Nuestra filosofía centro',
     items: [
       {
         title: 'Diagnóstico antes de tratamiento',

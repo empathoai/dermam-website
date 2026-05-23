@@ -24,7 +24,7 @@ export default function AboutFounderStorySection() {
             transition={{ duration: 0.8 }}
             className="lg:w-2/5"
           >
-            <div className="relative rounded-[40px] overflow-hidden shadow-2xl ring-1 ring-black/5">
+            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl ring-1 ring-black/5">
                 <ResponsiveImage
                     src={story.image.src}
                     alt={story.image.alt}
@@ -43,10 +43,10 @@ export default function AboutFounderStorySection() {
             <span className="text-sage font-semibold text-xs uppercase tracking-[0.2em] mb-4 block">
                 {story.eyebrow}
             </span>
-            <h2 className="text-4xl md:text-5xl mb-4 font-serif leading-tight">
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-4 font-sans leading-tight">
                 {story.headline}
             </h2>
-            <p className="text-sage/80 font-medium mb-8 text-sm uppercase tracking-widest">
+            <p className="text-sage/80 font-medium mb-8 text-sm uppercase tracking-[0.15em]">
                 {story.subcopy}
             </p>
             
@@ -57,7 +57,7 @@ export default function AboutFounderStorySection() {
             </div>
 
             <div className="border-l-4 border-sage pl-8 py-2 mb-12">
-                <p className="text-2xl font-serif text-text-primary italic leading-relaxed">
+                <p className="text-2xl font-sans text-text-primary italic leading-relaxed">
                     {story.quote}
                 </p>
             </div>
@@ -65,7 +65,7 @@ export default function AboutFounderStorySection() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-border-soft">
                 {story.stats.map((stat, idx) => (
                     <div key={idx} className="text-center sm:text-left">
-                        <div className="text-3xl font-serif text-text-primary mb-1">{stat.value}</div>
+                        <div className="text-3xl font-sans text-text-primary mb-1">{stat.value}</div>
                         <div className="text-[10px] text-text-secondary uppercase tracking-[0.1em] font-semibold">{stat.label}</div>
                     </div>
                 ))}

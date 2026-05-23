@@ -3,8 +3,9 @@ import { homeContent } from '../../../data/homeContent';
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import HeroMedia from '../../ui/HeroMedia';
+import TrustItem from '../../ui/TrustItem';
 import { motion, useReducedMotion, Variants } from 'motion/react';
-import { Link } from 'react-router-dom';
+import { Star } from 'lucide-react';
 
 export default function HeroSection() {
   const { hero } = homeContent;
@@ -38,7 +39,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-[90vh] lg:h-screen flex items-center overflow-hidden bg-canvas isolation-isolate">
+    <section className="relative min-h-[86vh] flex items-center overflow-hidden bg-base-900 py-20 lg:py-24 isolation-isolate">
       {/* Background Media - Always takes priority */}
       <div className="absolute inset-0 z-0">
         <HeroMedia
@@ -55,31 +56,38 @@ export default function HeroSection() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="max-w-2xl pt-20 lg:pt-0"
+          className="max-w-[48rem] pt-20 lg:pt-0"
         >
           {/* Eyebrow */}
           <motion.div variants={itemVariants} className="mb-8">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-border-soft text-[10px] md:text-xs font-semibold uppercase tracking-widest text-text-secondary">
-              {hero.eyebrow}
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.08] px-4 py-1.5 text-xs font-light tracking-normal text-base-200 backdrop-blur-sm">
+              <span className="flex text-yellow-400" aria-hidden="true">
+                {[...Array(5)].map((_, i) => <Star key={i} size={10} fill="currentColor" />)}
+              </span>
+              <span>{hero.eyebrow}</span>
             </span>
           </motion.div>
           
           {/* Headline */}
           <motion.h1 
             variants={itemVariants}
-            className="text-5xl md:text-6xl lg:text-8xl mb-8 leading-[1] text-text-primary"
+            className="text-[clamp(3.25rem,7.8vw,6.25rem)] font-extrabold leading-[0.96] tracking-[-0.045em] uppercase mb-8 text-base-300"
           >
-            {hero.headlinePrefix}
-            <span className="script-accent inline-block italic font-serif text-base-900 ml-2">
+            <span className="font-extrabold text-base-300">
+              {hero.headlinePrefix}
+            </span>
+            <span className="script-accent inline-block normal-case text-base-300 ml-2 text-[1.42em] align-[-0.08em]">
               {hero.headlineAccent}
             </span>
-            {hero.headlineSuffix}
+            <span className="font-extrabold text-base-300">
+              {hero.headlineSuffix}
+            </span>
           </motion.h1>
           
           {/* Subheadline */}
           <motion.p 
             variants={itemVariants}
-            className="text-text-secondary text-lg md:text-xl mb-12 max-w-lg leading-relaxed"
+            className="text-base-300 text-lg mb-12 max-w-lg font-light leading-[1.65] tracking-normal"
           >
             {hero.subheadline}
           </motion.p>
@@ -89,7 +97,7 @@ export default function HeroSection() {
             <Button variant="primary" to="/es/reservar" className="px-10 py-4 shadow-lg hover:shadow-xl transition-shadow w-full sm:w-auto">
               {hero.primaryCTA}
             </Button>
-            <Button variant="outline" href="#treatments" className="px-10 py-4 w-full sm:w-auto">
+            <Button variant="outline" href="#treatments" className="!border-white/10 !bg-white/[0.08] px-10 py-4 !text-base-100 hover:!bg-white/[0.12] w-full sm:w-auto">
               {hero.secondaryCTA}
             </Button>
           </motion.div>
@@ -97,29 +105,17 @@ export default function HeroSection() {
           {/* Trust Items */}
           <motion.div 
             variants={itemVariants}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-12 pt-8 border-t border-border-soft"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-3 pt-4"
           >
             {hero.trustItems.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-base-900" />
-                <span className="text-sm font-medium text-text-secondary">
-                  {item}
-                </span>
+              <div key={idx}>
+                <TrustItem item={item} />
               </div>
             ))}
           </motion.div>
         </motion.div>
       </Container>
 
-      {/* Decorative botanical element or scroll indicator could go here */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: mediaLoaded ? 1 : 0 }}
-        transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:block"
-      >
-        <div className="w-px h-16 bg-gradient-to-b from-base-900 to-transparent" />
-      </motion.div>
     </section>
   );
 }

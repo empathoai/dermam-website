@@ -9,7 +9,7 @@ export const ivTherapyContent: IVTherapyPageContent = {
     image: {
       src: '/assets/images/hero-iv-therapy.jpg',
       alt: 'IV Therapy en DERMA.M West Palm Beach',
-      prompt: 'Bright premium IV therapy wellness editorial image for a medical aesthetics clinic, elegant IV bag on a clean stand with soft colorful vitamin-infused fluid, fresh citrus fruit, berries, cucumber water, folded white towels, warm ivory treatment room, pastel sage and pearl gray accents, clean clinical wellness atmosphere, vibrant colors only from fruits and IV fluid, premium medspa photography, no hospital feeling, no sick patient, no aggressive needle close-up, no blood, no dark background, 16:9 horizontal, main subject centered for mobile crop safety.'
+      prompt: 'Bright premium IV therapy wellness editorial image for a premium aesthetics center, elegant IV bag on a clean stand with soft colorful vitamin-infused fluid, fresh citrus fruit, berries, cucumber water, folded white towels, warm ivory treatment room, pastel sage and pearl gray accents, clean clinical wellness atmosphere, vibrant colors only from fruits and IV fluid, premium medspa photography, no hospital feeling, no sick patient, no aggressive needle close-up, no blood, no dark background, 16:9 horizontal, main subject centered for mobile crop safety.'
     }
   },
   education: {
@@ -58,7 +58,7 @@ export const ivTherapyContent: IVTherapyPageContent = {
     },
     {
       question: '¿Puedo combinar IV Therapy con otros tratamientos?',
-      answer: '¡Absolutamente! Es común recibir IV Therapy mientras realizas un tratamiento facial o corporal, maximizando tu tiempo en la clínica.'
+      answer: '¡Absolutamente! Es común recibir IV Therapy mientras realizas un tratamiento facial o corporal, maximizando tu tiempo en la centro.'
     },
     {
       question: '¿Qué debo hacer antes de mi sesión?',

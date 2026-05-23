@@ -13,7 +13,7 @@ export default function SpecialtyFilter({ activeSpecialty, onSpecialtyChange, sp
         <button
           key={specialty}
           onClick={() => onSpecialtyChange(specialty)}
-          className={`px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-widest transition-all duration-300 border ${
+          className={`px-5 py-2 rounded-full text-base font-medium normal-case tracking-normal transition-all duration-300 border ${
             activeSpecialty === specialty
               ? 'bg-sage border-sage text-white shadow-lg shadow-sage/20'
               : 'bg-white border-border-soft text-text-secondary hover:border-sage-soft hover:text-sage'
