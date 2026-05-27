@@ -165,7 +165,7 @@ export const prfContent = {
       title: 'Microneedling',
       description: 'Complemento natural del PRF',
       category: 'Facial',
-      href: '#',
+      href: '/es/microneedling',
       image: {
         src: '/assets/treatments/related-microneedling.jpg',
         alt: 'Microneedling treatment',
@@ -177,7 +177,7 @@ export const prfContent = {
       title: 'Limpieza Facial Profunda',
       description: 'El primer paso para tu piel',
       category: 'Facial',
-      href: '#',
+      href: '/es/limpieza-facial-profunda',
       image: {
         src: '/assets/treatments/related-facial-cleansing.jpg',
         alt: 'Limpieza facial',
@@ -189,7 +189,7 @@ export const prfContent = {
       title: 'Hidratación Profunda',
       description: 'Potencia los resultados del PRF',
       category: 'Facial',
-      href: '#',
+      href: '/es/hidrofacial',
       image: {
         src: '/assets/treatments/related-hydration.jpg',
         alt: 'Hidratación facial',
