@@ -31,7 +31,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link 
             to="/es" 
-            className="inline-flex items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md px-1"
+            className="inline-flex items-center px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-base-900 focus-visible:rounded-md"
             aria-label="DERMA.M inicio"
           >
             <img

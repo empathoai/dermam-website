@@ -26,7 +26,7 @@ export default function PostOpUrgencySection() {
             {urgency.headline}
           </h2>
           
-          <div className="flex flex-col gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {urgency.blocks.map((block: any, idx: number) => (
               <motion.div
                 key={idx}
@@ -34,9 +34,9 @@ export default function PostOpUrgencySection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className={`p-8 rounded-[2rem] border flex items-start gap-6 transition-all duration-300 hover:shadow-subtle hover:border-base-300 ${borderStyles[block.type as keyof typeof borderStyles]}`}
+                className={`p-8 rounded-[2rem] border flex h-full flex-col gap-6 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-subtle hover:border-base-300 ${borderStyles[block.type as keyof typeof borderStyles]}`}
               >
-                <div className="flex-shrink-0 mt-1">
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-canvas">
                   {icons[block.type as keyof typeof icons]}
                 </div>
                 <div>

@@ -19,14 +19,14 @@ export default function PostOpProtocolSection() {
           <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6">{protocol.headline}</h2>
         </div>
         
-        <div className="max-w-4xl mx-auto space-y-6 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {protocol.phases.map((phase) => (
-            <div key={phase.id} className="bg-white p-8 rounded-[2rem] border border-border-soft flex items-center gap-8 group hover:border-base-300 hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
-               <span className="text-4xl font-sans text-text-primary opacity-10 group-hover:opacity-20 transition-opacity">
+            <div key={phase.id} className="bg-white p-8 rounded-[2rem] border border-border-soft relative group hover:-translate-y-1 hover:border-base-300 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+               <span className="absolute top-4 right-6 text-6xl font-sans text-text-primary opacity-5 group-hover:opacity-10 transition-opacity">
                 {phase.id}
               </span>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">{phase.title}</h3>
+              <div className="relative z-10">
+                <h3 className="text-lg font-semibold mb-3">{phase.title}</h3>
                 <p className="text-text-secondary text-sm">{phase.description}</p>
               </div>
             </div>

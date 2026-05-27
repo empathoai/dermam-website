@@ -27,5 +27,32 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     source: 'Google',
     isPlaceholder: true
+  },
+  {
+    id: '4',
+    quote: '“Noté mi piel más luminosa y con mejor textura después del protocolo PRF.”',
+    name: 'Mariana L.',
+    treatment: 'PRF',
+    rating: 5,
+    source: 'Google',
+    isPlaceholder: true
+  },
+  {
+    id: '5',
+    quote: '“Me explicaron cada paso del PRF y me sentí acompañada durante todo el proceso.”',
+    name: 'Sofía G.',
+    treatment: 'PRF',
+    rating: 5,
+    source: 'Google',
+    isPlaceholder: true
+  },
+  {
+    id: '6',
+    quote: '“Buscaba algo natural para mejorar mi piel y el PRF fue justo lo que necesitaba.”',
+    name: 'Natalia P.',
+    treatment: 'PRF',
+    rating: 5,
+    source: 'Google',
+    isPlaceholder: true
   }
 ];

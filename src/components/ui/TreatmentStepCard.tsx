@@ -13,17 +13,15 @@ export default function TreatmentStepCard({ number, title, description }: Treatm
       initial={{ opacity: 0, y: 15 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="p-8 bg-canvas rounded-[2.5rem] border border-border-soft relative group hover:border-sage/20 transition-colors"
+      className="relative flex h-full min-h-[9.5rem] flex-col bg-white p-8 rounded-[2rem] border border-border-soft group hover:-translate-y-1 hover:border-base-300 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
     >
-      <div className="absolute -top-4 -left-4 w-10 h-10 bg-white border border-border-soft rounded-full flex items-center justify-center text-sage font-bold shadow-sm">
+      <span className="absolute top-4 right-6 text-6xl font-sans text-text-primary opacity-5 group-hover:opacity-10 transition-opacity">
         {number}
+      </span>
+      <div className="relative z-10">
+        <h3 className="text-lg font-semibold mb-3">{title}</h3>
+        <p className="text-text-secondary text-sm leading-relaxed">{description}</p>
       </div>
-      <h3 className="text-xl font-sans text-text-primary mb-4 group-hover:text-sage transition-colors">
-        {title}
-      </h3>
-      <p className="text-text-secondary text-sm md:text-base leading-relaxed">
-        {description}
-      </p>
     </motion.div>
   );
 }

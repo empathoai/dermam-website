@@ -9,8 +9,10 @@ interface Tier3SessionStepsSectionProps {
 }
 
 export default function Tier3SessionStepsSection({ steps }: Tier3SessionStepsSectionProps) {
+  const desktopColumns = steps.length >= 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3';
+
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-canvas">
       <Container>
         <SectionHeader
           headline="Tu experiencia paso a paso"
@@ -19,9 +21,9 @@ export default function Tier3SessionStepsSection({ steps }: Tier3SessionStepsSec
           className="mb-16"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className={`grid grid-cols-1 md:grid-cols-2 ${desktopColumns} gap-8`}>
           {steps.map((step, idx) => (
-            <div key={idx}>
+            <div key={idx} className="h-full">
               <TreatmentStepCard
                 number={idx + 1}
                 title={step.title}

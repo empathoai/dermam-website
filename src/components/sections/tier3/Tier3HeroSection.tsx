@@ -5,7 +5,6 @@ import HeroMedia from '../../ui/HeroMedia';
 import Button from '../../ui/Button';
 import HeroTrustPill from '../../ui/HeroTrustPill';
 import { motion } from 'motion/react';
-import { ArrowDown } from 'lucide-react';
 
 interface Tier3HeroSectionProps {
   eyebrow: string;
@@ -81,18 +80,6 @@ export default function Tier3HeroSection({
             </div>
           </motion.div>
       </Container>
-      
-      {/* Scroll Indicator */}
-      <motion.button
-         initial={{ opacity: 0 }}
-         animate={{ opacity: 0.6 }}
-         transition={{ delay: 1.5, duration: 1 }}
-        onClick={onScrollToContent}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white z-20 flex flex-col items-center gap-2"
-      >
-        <span className="text-[10px] uppercase tracking-[0.2em] font-bold opacity-60">Explorar</span>
-        <ArrowDown size={16} className="animate-bounce" />
-      </motion.button>
     </section>
   );
 }

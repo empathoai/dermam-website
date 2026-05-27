@@ -11,10 +11,10 @@ interface Tier3QuickFitSectionProps {
 
 export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3QuickFitSectionProps) {
   return (
-    <section className="bg-white py-12 relative z-20">
+    <section className="bg-canvas py-12 relative z-20">
       <Container>
         {/* Quick Facts Strip */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 border-b border-border-soft mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-20">
           {quickFacts.map((fact, idx) => (
             <motion.div
               key={idx}
@@ -22,6 +22,7 @@ export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3Quic
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
+              className="h-full"
             >
               <StatItem stat={fact} />
             </motion.div>
@@ -29,7 +30,7 @@ export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3Quic
         </div>
 
         {/* Is this for you? */}
-        <div className="max-w-4xl mx-auto bg-canvas rounded-[2.5rem] p-10 md:p-16 border border-border-soft shadow-sm">
+        <div className="max-w-4xl mx-auto bg-white rounded-[2.5rem] p-10 md:p-16 border border-border-soft shadow-sm">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

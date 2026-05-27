@@ -5,7 +5,7 @@ import Card from '../../ui/Card';
 import { Star } from 'lucide-react';
 
 export default function PrfTestimonialsSection() {
-  const prfTestimonials = testimonials.filter(t => t.treatment === 'PRF' || t.treatment === 'Facial');
+  const prfTestimonials = testimonials.filter(t => t.treatment === 'PRF').slice(0, 3);
 
   return (
     <section className="py-24 bg-canvas">
@@ -19,7 +19,7 @@ export default function PrfTestimonialsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {prfTestimonials.map((testimonial) => (
             <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center bg-white border border-border-soft hover:-translate-y-1 hover:border-base-300 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle rounded-[2rem]">
-              <div className="flex gap-1 mb-6 text-text-primary">
+              <div className="flex gap-1 mb-6 text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill={i < testimonial.rating ? 'currentColor' : 'none'} />
                 ))}

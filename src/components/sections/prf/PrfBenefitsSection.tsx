@@ -8,6 +8,12 @@ export default function PrfBenefitsSection() {
   return (
     <section className="py-24 bg-white">
       <Container>
+        <div className="max-w-4xl mx-auto text-center mb-20">
+          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase">
+            Beneficios del plasma rico en plaquetas y fibrina
+          </h2>
+        </div>
+
         <div className="space-y-24">
           {benefits.map((benefit, idx) => (
             <div key={idx} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>

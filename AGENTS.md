@@ -75,3 +75,12 @@ Before modifying UI files:
 ## 🧭 Behavioral Boundary
 
 When in doubt, stay in the consulting/auditing lane. This repository does not need architectural creativity from AI agents by default. It needs disciplined visual judgment, design-system enforcement, accessibility awareness, and respect for the existing application structure.
+
+## Skills (Auto-load based on context)
+
+When you detect any of these contexts, IMMEDIATELY load the corresponding skill BEFORE executing the workflow.
+
+| Context | Skill to load |
+| ------- | ------------- |
+| User asks to commit, hacer commit, commitear, push after commit, or leave Git aligned | dermam-fast-commit |
+

@@ -16,7 +16,7 @@ export default function PostOpTestimonialsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center shadow-subtle hover:shadow-lg transition-shadow">
-              <div className="flex gap-1 mb-6 text-text-primary">
+              <div className="flex gap-1 mb-6 text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill="currentColor" />
                 ))}

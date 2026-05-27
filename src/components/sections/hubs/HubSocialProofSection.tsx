@@ -23,7 +23,7 @@ export default function HubSocialProofSection({ content }: HubSocialProofSection
             <div className="text-5xl md:text-6xl font-sans text-text-primary mb-4">
               {content.googleRating}
             </div>
-            <div className="flex gap-1 mb-6 text-text-primary">
+            <div className="flex gap-1 mb-6 text-yellow-400">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={24} fill="currentColor" />
               ))}
