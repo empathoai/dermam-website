@@ -6,7 +6,7 @@ export const prfContent = {
     headline: 'Plasma Rico en Plaquetas y Fibrina en West Palm Beach',
     subheadline: 'Protocolo clínico avanzado para regeneración facial. Resultados desde la primera sesión.',
     cta: 'Agenda tu evaluación gratuita',
-    trustBar: '⭐ 4.9 Google · MedSpa Certificado · WPB, FL',
+    trustBar: '4.9 Google · MedSpa Certificado · WPB, FL',
     image: {
       src: '/assets/images/hero-prf.jpg',
       alt: 'Plasma Rico en Plaquetas y Fibrina en DERMA.M',
@@ -28,12 +28,12 @@ export const prfContent = {
     headline: 'Qué es el Plasma Rico en Plaquetas y Fibrina',
     copy: 'PRF es la evolución del PRP convencional. Utilizamos tu propia sangre, procesada con baja aceleración en un sistema cerrado sin anticoagulantes. Esto nos permite obtener una fibrina rica en factores de crecimiento que regeneran, reparan y rejuvenecen tu piel de manera natural.',
     comparison: [
-      { label: 'Release', prp: 'Único', prf: 'Sostenido' },
-      { label: 'Ingredientes', prp: 'Anticoagulantes', prf: '100% natural' },
-      { label: 'Resultados', prp: 'Corto plazo', prf: 'Largo plazo' }
+      { label: 'Liberación de factores', prp: 'Release único', prf: 'Release sostenido' },
+      { label: 'Composición', prp: 'Puede usar anticoagulantes', prf: '100% natural' },
+      { label: 'Duración del estímulo', prp: 'Resultado más corto', prf: 'Resultado más largo' }
     ] as ComparisonItem[],
     image: {
-        src: '/assets/treatments/prf-process.jpg',
+        src: '/assets/treatments/prf/prf-process.jpg',
         alt: 'Proceso de obtención de PRF',
         prompt: 'Close-up premium clinical PRF preparation scene, gloved hands placing a plasma vial near a centrifuge, clean white and ivory professional treatment surface, golden plasma visible, subtle muted rose accent, soft shallow depth of field, luxury clinical wellness aesthetic, professional and calm, no blood spill, no aggressive tools, 4:3 ratio.'
     }
@@ -43,7 +43,7 @@ export const prfContent = {
       title: 'Regeneración desde adentro',
       description: 'Tu propio plasma estimula colágeno y elastina de forma natural.',
       image: {
-        src: '/assets/treatments/prf-benefit-1.jpg',
+        src: '/assets/treatments/prf/prf-benefit-1.jpg',
         alt: 'Beneficio de regeneración natural',
         prompt: 'Soft clinical facial rejuvenation treatment image, patient lying calmly with white headband, professional hands performing gentle PRF facial application, luminous realistic skin texture, warm ivory treatment room, pastel sage and muted rose accents, calm premium medspa photography, no redness, no bruising, no aggressive needle, 16:9 horizontal.'
       }
@@ -52,7 +52,7 @@ export const prfContent = {
       title: 'Sin tiempo de recuperación',
       description: 'Protocolo clínico de 60–90 min. Vuelves a tu rutina el mismo día.',
       image: {
-        src: '/assets/treatments/prf-benefit-2.jpg',
+        src: '/assets/treatments/prf/prf-benefit-2.jpg',
         alt: 'Rápida recuperación post-PRF',
         prompt: 'Elegant wellness-clinical image showing calm patient after facial treatment, soft towel, hydrated skin, professional hands gently applying soothing serum, ivory linens, soft natural light, clean medspa room, pastel sage atmosphere, no irritation, no redness, no procedure intensity, 16:9 horizontal.'
       }
@@ -61,7 +61,7 @@ export const prfContent = {
       title: 'Resultados progresivos y duraderos',
       description: 'La fibrina libera factores de crecimiento durante 7–10 días.',
       image: {
-        src: '/assets/treatments/prf-benefit-3.jpg',
+        src: '/assets/treatments/prf/prf-benefit-3.jpg',
         alt: 'Resultados duraderos de PRF',
         prompt: 'Premium skincare editorial still-life with golden plasma vial, soft serum texture, glass dropper, ivory ceramic tray, folded towel, muted rose and sage botanical accent, calm clinical wellness style, lots of negative space, 16:9 horizontal.'
       }
@@ -83,20 +83,20 @@ export const prfContent = {
     items: [
       {
         title: 'Luminosidad y Textura',
-        imageBefore: '/assets/treatments/prf-result-1-before.jpg',
-        imageAfter: '/assets/treatments/prf-result-1-after.jpg',
+        imageBefore: '/assets/treatments/prf/prf-result-1-before.jpg',
+        imageAfter: '/assets/treatments/prf/prf-result-1-after.jpg',
         sessions: '3 sesiones'
       },
       {
         title: 'Tono y Cicatrices',
-        imageBefore: '/assets/treatments/prf-result-2-before.jpg',
-        imageAfter: '/assets/treatments/prf-result-2-after.jpg',
+        imageBefore: '/assets/treatments/prf/prf-result-2-before.jpg',
+        imageAfter: '/assets/treatments/prf/prf-result-2-after.jpg',
         sessions: '4 sesiones'
       },
       {
         title: 'Firmeza y Glow',
-        imageBefore: '/assets/treatments/prf-result-3-before.jpg',
-        imageAfter: '/assets/treatments/prf-result-3-after.jpg',
+        imageBefore: '/assets/treatments/prf/prf-result-3-before.jpg',
+        imageAfter: '/assets/treatments/prf/prf-result-3-after.jpg',
         sessions: '3 sesiones'
       }
     ] as ResultItem[]
@@ -142,7 +142,7 @@ export const prfContent = {
     quote: '“Diagnóstico antes de tratamiento. Siempre.”',
     cta: 'Agenda tu evaluación gratuita',
     image: {
-      src: '/assets/avatars/nancy-nieto-founder-prf.jpg',
+      src: '/assets/pages/home/nancy-nieto-founder-home.jpg',
       alt: 'Nancy Nieto especialista en PRF',
       prompt: 'Premium editorial portrait of a Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, long dark hair styled naturally, wearing elegant white clinical uniform, seated at a light treatment desk with hands visible, soft ivory and warm gray treatment room, candle and minimal DERMA.M branded object on desk, subtle botanical decor, professional but approachable, not corporate, not hospital, not white coat cliché, luxury wellness clinic portrait, bright natural light, 4:5 vertical.'
     },
@@ -154,7 +154,7 @@ export const prfContent = {
     primaryCTA: 'Agenda tu evaluación gratuita',
     secondaryCTA: 'Escríbenos por WhatsApp',
     image: {
-        src: '/assets/images/prf-final-cta.jpg',
+        src: '/assets/treatments/prf/prf-final-cta.jpg',
         alt: 'Final CTA PRF background',
         prompt: 'Soft premium clinical wellness still-life for PRF facial treatment, golden plasma vial, ivory candle, folded white towel, subtle baby’s breath flowers, ceramic tray, muted rose-plasma accent, sage botanical detail, warm pearl-gray background, lots of negative space for CTA text, elegant aesthetic spa mood, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }

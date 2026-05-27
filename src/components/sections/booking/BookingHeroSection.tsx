@@ -1,6 +1,7 @@
 import { bookingContent } from '../../../data/bookingContent';
 import Container from '../../ui/Container';
 import SectionMedia from '../../ui/SectionMedia';
+import HeroTrustPill from '../../ui/HeroTrustPill';
 import { motion } from 'motion/react';
 
 export default function BookingHeroSection() {
@@ -30,9 +31,7 @@ export default function BookingHeroSection() {
             {hero.subheadline}
           </p>
 
-          <div className="inline-block px-4 py-2 bg-white/[0.08] backdrop-blur-sm rounded-full border border-white/10 text-xs text-base-200 font-light tracking-normal normal-case">
-            {hero.trustLine}
-          </div>
+          <HeroTrustPill>{hero.trustLine}</HeroTrustPill>
         </motion.div>
       </Container>
     </section>

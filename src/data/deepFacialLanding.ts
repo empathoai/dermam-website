@@ -6,7 +6,7 @@ export const deepFacialContent = {
     headline: 'Limpieza Facial Profunda en West Palm Beach',
     subheadline: 'El primer paso para entender qué necesita tu piel. Resultados visibles desde la primera sesión.',
     primaryCTA: 'Reserva tu cita',
-    trustLine: 'Evaluación incluida · ⭐ 4.9 Google · WPB, FL',
+    trustLine: 'Evaluación incluida · 4.9 Google · WPB, FL',
     image: {
       src: '/assets/images/hero-deep-facial.jpg',
       alt: 'Limpieza Facial Profunda en DERMA.M',
@@ -166,7 +166,7 @@ export const deepFacialContent = {
     quote: '“La limpieza facial no es solo limpiar la piel. Es entender qué necesita.”',
     cta: 'Conoce mi enfoque',
     image: {
-      src: '/assets/avatars/nancy-nieto-founder-cleansing.jpg',
+      src: '/assets/pages/home/nancy-nieto-founder-home.jpg',
       alt: 'Nancy Nieto fundadora',
       prompt: 'Premium editorial portrait of a Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, long dark hair styled naturally, wearing elegant white clinical uniform, seated in a bright skincare treatment room with hands visible, soft ivory, sage, and pearl gray environment, professional and approachable, not corporate, not hospital, not white coat cliché, luxury wellness clinic portrait, bright natural light, 4:5 vertical.'
     },

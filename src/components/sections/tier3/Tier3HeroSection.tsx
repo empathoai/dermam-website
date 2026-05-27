@@ -3,8 +3,9 @@ import { MediaAsset } from '../../../types/common';
 import Container from '../../ui/Container';
 import HeroMedia from '../../ui/HeroMedia';
 import Button from '../../ui/Button';
+import HeroTrustPill from '../../ui/HeroTrustPill';
 import { motion } from 'motion/react';
-import { ArrowDown, Star } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 interface Tier3HeroSectionProps {
   eyebrow: string;
@@ -55,12 +56,8 @@ export default function Tier3HeroSection({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.08] px-3 py-1 text-xs font-light tracking-normal text-base-200 backdrop-blur-sm"
               >
-                <span className="flex text-base-100" aria-hidden="true">
-                  {[...Array(5)].map((_, i) => <Star key={i} size={10} fill="currentColor" />)}
-                </span>
-                <span>4.9 Google</span>
+                <HeroTrustPill>4.9 Google · Atención profesional</HeroTrustPill>
               </motion.div>
             </div>
             

@@ -16,7 +16,7 @@ export const dentalHubContent: HubPageContent = {
     headline: 'Dental en DERMA.M',
     subheadline: 'Cuidado dental estético en un entorno profesional, cómodo y personalizado.',
     ctaLabel: 'Agenda una evaluación',
-    trustLine: 'Atención profesional · Ambiente bilingüe · WPB, FL',
+    trustLine: '4.9 Google · Servicios dentales estéticos · WPB, FL',
     image: {
       src: '/assets/images/dental-office.jpg',
       alt: 'Servicio dental en DERMA.M',

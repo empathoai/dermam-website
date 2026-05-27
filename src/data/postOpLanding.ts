@@ -7,7 +7,7 @@ export const postOpContent = {
     subheadline: 'Protocolos especializados para acompañar tu recuperación con seguridad y resultados óptimos.',
     primaryCTA: 'Consulta tu caso',
     secondaryCTA: 'Escríbenos por WhatsApp',
-    trustLine: 'MedSpa Certificado · Especialistas en Post-Op · WPB, FL',
+    trustLine: '4.9 Google · Especialistas en Post-Op · WPB, FL',
     image: {
       src: '/assets/images/hero-postop.jpg',
       alt: 'Recuperación Post-Operatorio en DERMA.M',
@@ -87,7 +87,7 @@ export const postOpContent = {
     quote: '“Cada recuperación es distinta. Por eso evaluamos tu caso antes de recomendar un protocolo.”',
     cta: 'Consulta tu caso',
     image: {
-      src: '/assets/avatars/nancy-nieto-founder-postop.jpg',
+      src: '/assets/pages/home/nancy-nieto-founder-home.jpg',
       alt: 'Nancy Nieto especialista en post-operatorio',
       prompt: 'Premium editorial portrait of a Latina woman aesthetic clinic founder and post-operative recovery specialist, 35-45 years old, warm confident expression, long dark hair styled naturally, wearing elegant white clinical uniform, seated in a bright treatment room with hands visible, soft ivory and sage clinical wellness environment, professional but deeply approachable, not corporate, not hospital, not white coat cliché, luxury medspa portrait, 4:5 vertical.'
     },

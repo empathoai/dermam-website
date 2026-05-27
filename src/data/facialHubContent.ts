@@ -16,7 +16,7 @@ export const facialHubContent: HubPageContent = {
     headline: 'Tratamientos Faciales en DERMA.M',
     subheadline: 'Protocolos profesionales para cada tipo de piel. Diagnóstico personalizado antes de cualquier tratamiento.',
     ctaLabel: 'Evalúa tu piel — gratis',
-    trustLine: '⭐ 4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
+    trustLine: '4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
     image: {
       src: '/assets/images/laser-treatment.jpg',
       alt: 'Tratamiento facial en DERMA.M',

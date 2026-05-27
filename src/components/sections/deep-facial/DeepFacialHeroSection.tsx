@@ -2,9 +2,9 @@ import { deepFacialContent } from '../../../data/deepFacialLanding';
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import HeroMedia from '../../ui/HeroMedia';
+import HeroTrustPill from '../../ui/HeroTrustPill';
 import { motion, useReducedMotion, Variants } from 'motion/react';
 import { useState } from 'react';
-import { Star } from 'lucide-react';
 
 export default function DeepFacialHeroSection() {
   const { hero } = deepFacialContent;
@@ -58,12 +58,7 @@ export default function DeepFacialHeroSection() {
             <span className="inline-block rounded-full border border-white/10 bg-white/[0.08] px-4 py-1.5 text-xs font-light tracking-normal normal-case text-base-200 backdrop-blur-sm">
               {hero.eyebrow}
             </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.08] px-4 py-1.5 text-xs font-light tracking-normal text-base-200 backdrop-blur-sm">
-              <span className="flex text-yellow-400" aria-hidden="true">
-                {[...Array(5)].map((_, i) => <Star key={i} size={10} fill="currentColor" />)}
-              </span>
-              <span>Evaluación incluida &middot; 4.9 Google &middot; WPB, FL</span>
-            </span>
+            <HeroTrustPill>{hero.trustLine}</HeroTrustPill>
           </motion.div>
           
           <motion.h1 

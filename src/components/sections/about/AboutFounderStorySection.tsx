@@ -1,7 +1,6 @@
 import { aboutContent } from '../../../data/aboutContent';
 import Container from '../../ui/Container';
 import ResponsiveImage from '../../ui/ResponsiveImage';
-import { motion } from 'motion/react';
 import SectionMedia from '../../ui/SectionMedia';
 
 export default function AboutFounderStorySection() {
@@ -16,30 +15,21 @@ export default function AboutFounderStorySection() {
         />
       )}
       <Container className="relative z-10">
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
-          <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="lg:w-2/5"
-          >
-            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl ring-1 ring-black/5">
-                <ResponsiveImage
-                    src={story.image.src}
-                    alt={story.image.alt}
-                    className="w-full aspect-[4/5] object-cover"
-                />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-base-200 rounded-[2rem] -z-10 transition-transform duration-500 group-hover:scale-105" />
+            <div className="aspect-[4/5] overflow-hidden rounded-[2rem] shadow-xl">
+              <ResponsiveImage
+                src={story.image.src}
+                alt={story.image.alt}
+                width={600}
+                height={750}
+                className="w-full h-full object-cover"
+              />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:w-3/5"
-          >
+          <div>
             <span className="text-text-secondary font-semibold text-xs uppercase tracking-[0.2em] mb-4 block">
                 {story.eyebrow}
             </span>
@@ -70,7 +60,7 @@ export default function AboutFounderStorySection() {
                     </div>
                 ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </Container>
     </section>

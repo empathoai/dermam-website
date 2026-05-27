@@ -2,9 +2,9 @@ import { prfContent } from '../../../data/prfLanding';
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import HeroMedia from '../../ui/HeroMedia';
+import HeroTrustPill from '../../ui/HeroTrustPill';
 import { motion, useReducedMotion, Variants } from 'motion/react';
 import { useState } from 'react';
-import { Star } from 'lucide-react';
 
 export default function PrfHeroSection() {
   const { hero } = prfContent;
@@ -54,12 +54,7 @@ export default function PrfHeroSection() {
             <span className="inline-block rounded-full border border-white/10 bg-white/[0.08] px-4 py-1.5 text-xs font-light tracking-normal normal-case text-base-200 backdrop-blur-sm">
               {hero.eyebrow}
             </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.08] px-4 py-1.5 text-xs font-light tracking-normal text-base-200 backdrop-blur-sm">
-              <span className="flex text-yellow-400" aria-hidden="true">
-                {[...Array(5)].map((_, i) => <Star key={i} size={10} fill="currentColor" />)}
-              </span>
-              <span>4.9 Google &middot; MedSpa Certificado &middot; WPB, FL</span>
-            </span>
+            <HeroTrustPill>{hero.trustBar}</HeroTrustPill>
           </motion.div>
           
           <motion.h1 

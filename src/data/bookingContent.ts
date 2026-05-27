@@ -5,7 +5,7 @@ export const bookingContent: BookingPageContent = {
   hero: {
     headline: 'Agenda tu cita',
     subheadline: 'Evaluación gratuita de piel o reserva directa de tu tratamiento. Sin compromiso.',
-    trustLine: '⭐ 4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
+    trustLine: '4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
     image: {
       src: '/assets/images/booking-hero.jpg',
       alt: 'Preparación de tratamiento en DERMA.M',

@@ -16,7 +16,7 @@ export const bodyHubContent: HubPageContent = {
     headline: 'Tratamientos Corporales en DERMA.M',
     subheadline: 'Protocolos corporales clínicos. Desde post-operatorio hasta remodelación corporal.',
     ctaLabel: 'Evalúa tu caso — gratis',
-    trustLine: '⭐ 4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
+    trustLine: '4.9 Google · Protocolos corporales · Bilingüe ES/EN',
     image: {
       src: '/assets/images/body-massage.jpg',
       alt: 'Tratamiento corporal en DERMA.M',

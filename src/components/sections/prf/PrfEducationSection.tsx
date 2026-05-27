@@ -1,6 +1,7 @@
 import { prfContent } from '../../../data/prfLanding';
 import Container from '../../ui/Container';
 import ResponsiveImage from '../../ui/ResponsiveImage';
+import { CheckCircle2 } from 'lucide-react';
 
 export default function PrfEducationSection() {
   const { education } = prfContent;
@@ -30,25 +31,70 @@ export default function PrfEducationSection() {
               {education.copy}
             </p>
             
-            <div className="bg-white rounded-[2rem] border border-border-soft overflow-hidden shadow-subtle">
-                <div className="bg-prf text-white px-6 py-4">
-                    <h3 className="text-sm font-medium uppercase tracking-[0.15em] text-center">Evolución de la regeneración estética</h3>
+            <div className="rounded-[2rem] overflow-hidden bg-base-900 text-base-100 border border-white/10 shadow-xl">
+              <div className="px-6 py-5 border-b border-white/10">
+                <h3 className="text-sm md:text-base font-semibold uppercase tracking-[0.15em] text-center">
+                  PRP convencional vs PRF DERMA.M
+                </h3>
+              </div>
+
+              <div className="hidden md:grid grid-cols-[1fr_1.15fr_1.15fr]">
+                <div className="px-5 py-4 text-[0.68rem] uppercase tracking-[0.16em] text-base-300 border-b border-white/10">
+                  Criterio
                 </div>
-                <div className="divide-y divide-border-soft">
-                    {education.comparison.map((item, idx) => (
-                        <div key={idx} className="grid grid-cols-3 text-center">
-                            <div className="p-4 bg-canvas/50 border-r border-border-soft text-xs font-medium uppercase tracking-[0.15em] text-text-secondary flex items-center justify-center">
-                                {item.label}
-                            </div>
-                            <div className="p-4 text-xs text-text-secondary line-through opacity-50 flex items-center justify-center">
-                                {item.prp}
-                            </div>
-                            <div className="p-4 text-xs font-semibold text-text-primary bg-prf-soft/10 flex items-center justify-center">
-                                {item.prf}
-                            </div>
-                        </div>
+                <div className="px-5 py-4 text-[0.68rem] uppercase tracking-[0.16em] text-base-300 border-b border-l border-white/10">
+                  PRP convencional
+                </div>
+                <div className="px-5 py-4 text-[0.68rem] uppercase tracking-[0.16em] text-base-100 border-b border-l border-white/10 flex items-center gap-2">
+                  <CheckCircle2 size={16} className="text-base-100" />
+                  PRF — DERMA.M
+                </div>
+
+                {education.comparison.map((item) => (
+                  <div key={item.label} className="contents">
+                    <div className="px-5 py-4 text-sm font-medium text-base-200 border-b border-white/10 last:border-b-0">
+                      {item.label}
+                    </div>
+                    <div className="px-5 py-4 text-sm text-base-300 border-b border-l border-white/10">
+                      {item.prp}
+                    </div>
+                    <div className="px-5 py-4 text-sm font-semibold text-base-100 border-b border-l border-white/10 bg-white/[0.06]">
+                      {item.prf}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="grid gap-4 p-5 md:hidden">
+                <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5">
+                  <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-base-100 mb-4">
+                    PRP convencional
+                  </h4>
+                  <ul className="space-y-3 text-sm text-base-300">
+                    {education.comparison.map((item) => (
+                      <li key={`${item.label}-mobile-prp`} className="flex flex-col gap-1">
+                        <span className="text-[0.65rem] uppercase tracking-[0.15em] text-base-300/70">{item.label}</span>
+                        <span>{item.prp}</span>
+                      </li>
                     ))}
+                  </ul>
                 </div>
+
+                <div className="rounded-[1.5rem] border border-white/15 bg-white/[0.08] p-5">
+                  <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-base-100 mb-4 flex items-center gap-2">
+                    <CheckCircle2 size={16} />
+                    PRF — DERMA.M
+                  </h4>
+                  <ul className="space-y-3 text-sm text-base-100">
+                    {education.comparison.map((item) => (
+                      <li key={`${item.label}-mobile-prf`} className="flex flex-col gap-1">
+                        <span className="text-[0.65rem] uppercase tracking-[0.15em] text-base-300/70">{item.label}</span>
+                        <span className="font-semibold">{item.prf}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

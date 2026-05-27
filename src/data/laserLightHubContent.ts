@@ -16,7 +16,7 @@ export const laserLightHubContent: HubPageContent = {
     headline: 'Tratamientos Láser y Luz en DERMA.M',
     subheadline: 'Tecnología estética para manchas, textura, luminosidad y rejuvenecimiento de la piel.',
     ctaLabel: 'Evalúa tu piel — gratis',
-    trustLine: 'Tecnología avanzada · Diagnóstico personalizado · WPB, FL',
+    trustLine: '4.9 Google · Tecnología avanzada · WPB, FL',
     image: {
       src: '/assets/images/laser-device.jpg',
       alt: 'Láser y luz en DERMA.M',

@@ -3,6 +3,7 @@ import { HubPageContent } from '../../../types/hub';
 import Container from '../../ui/Container';
 import HeroMedia from '../../ui/HeroMedia';
 import Button from '../../ui/Button';
+import HeroTrustPill from '../../ui/HeroTrustPill';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 
@@ -60,9 +61,8 @@ export default function HubHeroSection({ content }: HubHeroSectionProps) {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5 }}
-                  className="text-[10px] md:text-xs text-white/80 font-medium tracking-wide uppercase"
                 >
-                  {content.trustLine}
+                  <HeroTrustPill>{content.trustLine}</HeroTrustPill>
                 </motion.div>
             </div>
           </motion.div>
