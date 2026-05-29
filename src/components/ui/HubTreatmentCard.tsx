@@ -13,7 +13,7 @@ const HubTreatmentCard: React.FC<HubTreatmentCardProps> = ({ treatment }) => {
   return (
     <Link 
       to={treatment.href}
-      className="group bg-white border border-border-soft rounded-[2rem] overflow-hidden flex flex-col md:flex-row h-full transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-md hover:border-base-300 hover:-translate-y-1"
+      className="group bg-white border border-border-card rounded-[2rem] overflow-hidden flex flex-col md:flex-row h-full transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-md hover:border-base-900 hover:-translate-y-1"
     >
       <div className="md:w-2/5 relative overflow-hidden aspect-[4/3] md:aspect-auto">
         <ResponsiveImage 

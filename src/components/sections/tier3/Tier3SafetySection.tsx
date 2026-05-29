@@ -18,7 +18,7 @@ export default function Tier3SafetySection({ title, items, disclaimer }: Tier3Sa
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="bg-canvas border border-border-soft rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden"
+            className="bg-canvas border border-border-card rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden"
           >
             {/* Background Icon */}
             <div className="absolute -top-12 -right-12 text-sage/5 opacity-50 pointer-events-none">
@@ -47,7 +47,7 @@ export default function Tier3SafetySection({ title, items, disclaimer }: Tier3Sa
                 </div>
 
                 {disclaimer && (
-                    <div className="flex gap-4 p-6 bg-white/60 backdrop-blur-sm rounded-[2rem] border border-border-soft">
+                    <div className="flex gap-4 p-6 bg-white/60 backdrop-blur-sm rounded-[2rem] border border-border-card">
                         <Info size={18} className="text-sage flex-shrink-0 mt-0.5" />
                         <p className="text-text-secondary text-xs italic opacity-80 leading-relaxed">
                             {disclaimer}

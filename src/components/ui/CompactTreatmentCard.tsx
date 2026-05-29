@@ -11,7 +11,7 @@ const CompactTreatmentCard: React.FC<CompactTreatmentCardProps> = ({ treatment }
   return (
     <Link 
       to={treatment.href}
-      className="flex items-center gap-4 p-4 rounded-[2rem] bg-white border border-border-soft hover:-translate-y-1 hover:border-base-300 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group"
+      className="flex items-center gap-4 p-4 rounded-[2rem] bg-white border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group"
     >
       <div className="w-16 h-16 rounded-[1rem] overflow-hidden flex-shrink-0">
         <ResponsiveImage 

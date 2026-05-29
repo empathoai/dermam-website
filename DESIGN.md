@@ -2,7 +2,7 @@
 
 name: "DERMA.M Skin Health Design System" version: "1.0.0" description: "Premium image-led monochromatic design system for DERMA.M Skin Health: editorial full-bleed heroes, restrained grayscale UI, Poppins hierarchy, Hamilton accent, rounded luxury components, and photography-driven warmth."
 
-colors: primary: "#141313" secondary: "#191818" background: "#f2f0f1" surface: "#ffffff" surface-soft: "#e6e4e4" surface-dark: "#141313" surface-dark-soft: "#191818" text-primary: "#141313" text-secondary: "#4e4d4d" text-muted: "#666666" text-inverse: "#f2f0f1" text-inverse-secondary: "#cccaca" border: "#e6e4e4" border-strong: "#cccaca" border-dark: "rgba(255,255,255,0.10)" overlay-dark-start: "rgba(20,19,19,0.94)" overlay-dark-mid: "rgba(20,19,19,0.72)" overlay-dark-end: "rgba(20,19,19,0.16)" grayscale-950: "#141313" grayscale-900: "#191818" grayscale-800: "#333232" grayscale-600: "#4e4d4d" grayscale-500: "#666666" grayscale-300: "#b3b2b2" grayscale-200: "#cccaca" grayscale-100: "#e6e4e4" grayscale-50: "#f2f0f1"
+colors: primary: "#141313" secondary: "#191818" background: "#f2f0f1" surface: "#ffffff" surface-soft: "#e6e4e4" surface-dark: "#141313" surface-dark-soft: "#191818" text-primary: "#141313" text-secondary: "#4e4d4d" text-muted: "#666666" text-inverse: "#f2f0f1" text-inverse-secondary: "#cccaca" border: "#e6e4e4" border-strong: "#cccaca" border-card: "rgba(20,19,19,0.70)" border-dark: "rgba(255,255,255,0.10)" overlay-dark-start: "rgba(20,19,19,0.94)" overlay-dark-mid: "rgba(20,19,19,0.72)" overlay-dark-end: "rgba(20,19,19,0.16)" grayscale-950: "#141313" grayscale-900: "#191818" grayscale-800: "#333232" grayscale-600: "#4e4d4d" grayscale-500: "#666666" grayscale-300: "#b3b2b2" grayscale-200: "#cccaca" grayscale-100: "#e6e4e4" grayscale-50: "#f2f0f1"
 
 fonts: sans: "'Poppins', ui-sans-serif, system-ui, sans-serif" script: "'Hamilton', cursive" mono: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
 
@@ -61,8 +61,9 @@ Light mode contrast:
 - Primary text uses `text-primary` / `#141313`.
 - Secondary copy uses `text-secondary` / `#4e4d4d`.
 - Muted copy, captions, and metadata use `text-muted` / `#666666`.
-- Borders use `border` / `#e6e4e4` or `border-strong` / `#cccaca`.
-- Cards use `surface` / `#ffffff`.
+- Borders use `border` / `#e6e4e4` or `border-strong` / `#cccaca` for separators and utility panels.
+- White cards use `surface` / `#ffffff` with `border-card` / `rgba(20,19,19,0.70)` for the thin dark editorial outline.
+- Do not use `border-card` for nav dropdowns, pills, form inputs, or large section dividers unless they are intentionally presented as cards.
 
 Dark mode contrast:
 
@@ -261,7 +262,7 @@ Token mapping:
 - Section title: `heading-section`.
 - Supporting copy: `body-lg` or `body-md`.
 - Card background: `surface`.
-- Card border: `border`.
+- Card border: `border-card` for white cards; `border` only for soft utility panels.
 - Card radius: `rounded.card`.
 - Card title: `title-card`.
 - Card body: `body-md`.
@@ -350,14 +351,14 @@ Internal hierarchy:
 Token mapping:
 
 - Card background: `surface`.
-- Border: `border`.
+- Border: `border-card` for white treatment/grid cards.
 - Radius: `rounded.card`.
 - Image radius: `rounded.image`.
 - Title: `title-card`.
 - Copy: `body-sm`.
 - Link: `link-editorial`.
 
-Use 4 columns on desktop. Use image-led cards, not gray placeholders. Hub and treatment grid cards must share the same DERMA.M surface logic as Homepage cards: white surface, soft monochrome border, generous radius, subtle shadow, readable body copy, editorial link treatment, and image crops that feel intentional on mobile.
+Use 4 columns on desktop. Use image-led cards, not gray placeholders. Hub and treatment grid cards must share the same DERMA.M surface logic as Homepage cards: white surface, thin dark editorial border, generous radius, subtle shadow, readable body copy, editorial link treatment, and image crops that feel intentional on mobile.
 
 ### Team / About Components
 

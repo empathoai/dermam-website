@@ -13,7 +13,7 @@ export default function PrfProtocolSection() {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {protocol.steps.map((step, idx) => (
-            <div key={idx} className="bg-white p-8 rounded-[2rem] border border-border-soft relative group hover:-translate-y-1 hover:border-base-300 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+            <div key={idx} className="bg-white p-8 rounded-[2rem] border border-border-card relative group hover:-translate-y-1 hover:border-base-900 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
                <span className="absolute top-4 right-6 text-6xl font-sans text-text-primary opacity-5 group-hover:opacity-10 transition-opacity">
                 {idx + 1}
               </span>
@@ -25,7 +25,7 @@ export default function PrfProtocolSection() {
           ))}
         </div>
 
-        <div className="max-w-2xl mx-auto p-4 bg-white/50 backdrop-blur-sm rounded-full border border-border-soft text-center">
+        <div className="max-w-2xl mx-auto p-4 bg-white/50 backdrop-blur-sm rounded-full border border-border-card text-center">
           <p className="text-xs md:text-sm font-medium text-text-secondary uppercase tracking-[0.15em]">
             {protocol.info}
           </p>

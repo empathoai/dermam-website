@@ -47,7 +47,7 @@ export default function IVTherapyEducationSection({ content }: IVTherapyEducatio
             </h2>
 
             <div className="space-y-6 mb-12">
-              <div className="p-6 bg-white rounded-[2rem] border border-border-soft hover:-translate-y-1 hover:border-base-300 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              <div className="p-6 bg-white rounded-[2rem] border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
                 <p className="text-text-secondary text-sm md:text-base leading-relaxed">
                   {content.copyOral}
                 </p>
@@ -67,7 +67,7 @@ export default function IVTherapyEducationSection({ content }: IVTherapyEducatio
         </div>
 
         {/* Stats Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-border-soft">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-border-card">
           {content.stats.map((stat, idx) => (
             <motion.div
               key={idx}

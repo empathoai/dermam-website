@@ -13,7 +13,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({ treatment }) => {
   const imagePositionClass = treatment.id === 'post-op' ? 'object-[50%_72%]' : 'object-center';
 
   return (
-    <Card className="flex flex-col h-full group hover:-translate-y-1 hover:border-base-300 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] border border-border-soft">
+    <Card className="flex flex-col h-full group hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] border border-border-card">
       <div className="relative aspect-[4/3] overflow-hidden">
         <ResponsiveImage
           src={treatment.image.src}

@@ -28,7 +28,7 @@ export default function ValuesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-10 rounded-[2rem] bg-white border border-border-soft hover:border-base-300 hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group"
+              className="p-10 rounded-[2rem] bg-white border border-border-card hover:border-base-900 hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group"
             >
               <div className="mb-6 p-4 bg-canvas rounded-[2rem] w-fit shadow-sm group-hover:shadow-md transition-shadow">
                 {icons[idx]}

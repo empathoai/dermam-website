@@ -18,7 +18,7 @@ export default function BookingInfoSection() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {info.cards.map((card, idx) => (
-              <div key={idx} className="flex gap-6 bg-white p-8 rounded-[2rem] border border-border-soft hover:-translate-y-1 hover:border-base-300 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              <div key={idx} className="flex gap-6 bg-white p-8 rounded-[2rem] border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
                 <div className="flex-shrink-0 w-12 h-12 bg-base-900/10 rounded-[2rem] flex items-center justify-center">
                   {trustIcons[idx]}
                 </div>

@@ -19,7 +19,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ items }) => {
       {items.map((item, idx) => (
         <div 
           key={idx} 
-          className="bg-white rounded-[2rem] border border-border-soft overflow-hidden transition-all duration-300"
+          className="bg-white rounded-[2rem] border border-border-card overflow-hidden transition-all duration-300"
         >
           <button
             onClick={() => toggle(idx)}
@@ -44,7 +44,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ items }) => {
                 exit={{ height: 0, opacity: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="px-6 pb-6 text-text-secondary leading-relaxed border-t border-border-soft/30 pt-4 text-xs md:text-sm">
+                <div className="px-6 pb-6 text-text-secondary leading-relaxed border-t border-border-soft pt-4 text-xs md:text-sm">
                   {item.answer}
                 </div>
               </motion.div>

@@ -11,7 +11,7 @@ export default function VCardButton({ vcardUrl, qrImage, disabled }: VCardButton
   const isPlaceholder = !vcardUrl || vcardUrl === '#';
 
   return (
-    <div className={`flex items-center gap-3 p-3 rounded-[1rem] border transition-all duration-300 ${disabled ? 'opacity-50 grayscale cursor-not-allowed' : 'bg-white border-border-soft hover:border-base-300 shadow-sm group-hover:shadow-md'}`}>
+    <div className={`flex items-center gap-3 p-3 rounded-[1rem] border transition-all duration-300 ${disabled ? 'opacity-50 grayscale cursor-not-allowed' : 'bg-white border-border-card hover:border-base-900 shadow-sm group-hover:shadow-md'}`}>
       <div className="w-10 h-10 rounded-lg bg-canvas border border-border-soft flex items-center justify-center flex-shrink-0">
         {qrImage ? (
           <img src={qrImage} alt="QR Contacto" className="w-8 h-8 object-contain" />

@@ -7,7 +7,7 @@ export default function DeepFacialAudienceSection() {
   const { audience } = deepFacialContent;
 
   return (
-    <section className="py-24 bg-canvas">
+    <section className="py-24 bg-white">
       <Container>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -22,10 +22,10 @@ export default function DeepFacialAudienceSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="flex items-start gap-4 p-5 rounded-[2rem] bg-white border border-border-soft hover:border-base-300 hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                className="flex h-[5.625rem] items-center gap-4 p-5 rounded-[2rem] bg-base-600 border border-border-dark hover:border-base-300 hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
               >
-                <CheckCircle2 className="text-base-900 flex-shrink-0 mt-0.5" size={20} />
-                <span className="text-base text-text-primary font-medium">{check}</span>
+                <CheckCircle2 className="text-base-100 flex-shrink-0" size={20} />
+                <span className="text-base text-base-100 font-medium">{check}</span>
               </motion.div>
             ))}
           </div>

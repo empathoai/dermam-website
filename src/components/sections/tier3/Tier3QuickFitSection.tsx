@@ -30,7 +30,7 @@ export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3Quic
         </div>
 
         {/* Is this for you? */}
-        <div className="max-w-4xl mx-auto bg-white rounded-[2.5rem] p-10 md:p-16 border border-border-soft shadow-sm">
+        <div className="max-w-4xl mx-auto bg-white rounded-[2.5rem] p-10 md:p-16 border border-border-card shadow-sm">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

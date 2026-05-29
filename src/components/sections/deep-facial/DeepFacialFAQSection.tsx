@@ -36,7 +36,7 @@ export default function DeepFacialFAQSection() {
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-white rounded-[2rem] border border-border-soft overflow-hidden">
+              <div key={idx} className="bg-white rounded-[2rem] border border-border-card overflow-hidden">
                 <button
                   onClick={() => toggleFAQ(idx)}
                   className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-canvas/30 transition-colors"
@@ -58,7 +58,7 @@ export default function DeepFacialFAQSection() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="px-6 pb-6 text-text-secondary leading-relaxed border-t border-border-soft/50 pt-4 text-sm">
+                      <div className="px-6 pb-6 text-text-secondary leading-relaxed border-t border-border-card/50 pt-4 text-sm">
                         {faq.answer}
                       </div>
                     </motion.div>

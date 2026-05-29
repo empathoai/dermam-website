@@ -14,7 +14,7 @@ const ChannelCard: React.FC<ChannelCardProps> = ({ title, copy, cta, href, type,
   const Icon = type === 'whatsapp' ? MessageCircle : Phone;
   const colors = emphasized 
     ? "bg-white border-base-900 ring-1 ring-base-900/10 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]" 
-    : "bg-white border-border-soft hover:border-base-300 hover:shadow-subtle hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]";
+    : "bg-white border-border-card hover:border-base-900 hover:shadow-subtle hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]";
 
   return (
     <a 

@@ -13,9 +13,9 @@ export default function PostOpUrgencySection() {
   };
 
   const borderStyles = {
-    warning: 'border-border-soft bg-white',
+    warning: 'border-border-card bg-white',
     success: 'border-base-900/40 bg-white shadow-subtle ring-1 ring-base-900/5',
-    info: 'border-border-soft bg-white',
+    info: 'border-border-card bg-white',
   };
 
   return (

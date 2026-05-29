@@ -41,7 +41,7 @@ export default function Tier3RelatedTreatments({ currentTreatmentId, relatedIds,
             >
               <Link 
                 to={`/es/${treatment.slugEs}`}
-                className="group block bg-white rounded-[2rem] overflow-hidden border border-border-soft shadow-sm hover:shadow-xl transition-all duration-500"
+                className="group block bg-white rounded-[2rem] overflow-hidden border border-border-card shadow-sm hover:shadow-xl transition-all duration-500"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <ResponsiveImage

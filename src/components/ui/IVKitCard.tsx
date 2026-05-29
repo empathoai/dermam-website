@@ -27,7 +27,7 @@ export default function IVKitCard({ kit }: IVKitCardProps) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white rounded-[2rem] overflow-hidden border border-border-soft shadow-sm hover:shadow-md hover:border-base-300 hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col h-full group"
+      className="bg-white rounded-[2rem] overflow-hidden border border-border-card shadow-sm hover:shadow-md hover:border-base-900 hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col h-full group"
     >
       {/* Kit Image */}
       <div className="relative aspect-[4/3] overflow-hidden">

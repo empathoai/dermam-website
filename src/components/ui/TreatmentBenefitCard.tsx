@@ -26,7 +26,7 @@ export default function TreatmentBenefitCard({ title, description, icon }: Treat
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      className="p-8 bg-white rounded-[2.5rem] border border-border-soft shadow-sm hover:shadow-md transition-all duration-300"
+      className="p-8 bg-white rounded-[2.5rem] border border-border-card shadow-sm hover:shadow-md transition-all duration-300"
     >
       <div className="w-12 h-12 bg-sage/10 rounded-[2rem] flex items-center justify-center text-sage mb-6">
         <Icon size={24} />

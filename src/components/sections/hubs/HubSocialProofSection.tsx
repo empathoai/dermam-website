@@ -19,7 +19,7 @@ export default function HubSocialProofSection({ content }: HubSocialProofSection
 
         <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto items-center">
           {/* Rating Summary */}
-          <div className="lg:w-1/3 bg-white rounded-[2rem] p-10 text-center flex flex-col items-center justify-center border border-border-soft border-dashed">
+          <div className="lg:w-1/3 bg-white rounded-[2rem] p-10 text-center flex flex-col items-center justify-center border border-border-card border-dashed">
             <div className="text-5xl md:text-6xl font-sans text-text-primary mb-4">
               {content.googleRating}
             </div>
@@ -46,7 +46,7 @@ export default function HubSocialProofSection({ content }: HubSocialProofSection
             {content.items.map((review, idx) => (
               <div 
                 key={idx} 
-                className="bg-white border border-border-soft rounded-[2.5rem] p-8 shadow-sm transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-md hover:border-base-300"
+                className="bg-white border border-border-card rounded-[2.5rem] p-8 shadow-sm transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-md hover:border-base-900"
               >
                 <p className="text-lg text-text-primary italic mb-6 leading-relaxed">
                   "{review.quote}"

@@ -28,7 +28,7 @@ export default function BookingTreatmentSelectorSection() {
             </div>
           )}
 
-          <div className="bg-white rounded-[2rem] border border-border-soft overflow-hidden shadow-subtle">
+          <div className="bg-white rounded-[2rem] border border-border-card overflow-hidden shadow-subtle">
             {others.map((treatment) => (
               <BookingTreatmentRow key={treatment.id} treatment={treatment} />
             ))}
