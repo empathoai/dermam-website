@@ -82,6 +82,12 @@ export default function GoogleReviews({ filter = 'featured', maxItems = 3, showM
       <Container>
         {showMeta && (
           <div className="mb-16 text-center">
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-text-secondary mb-4">
+              Reseñas reales de pacientes
+            </p>
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-8">
+              Lo que dicen de DERMA.M
+            </h2>
             <div className="text-5xl md:text-6xl font-sans text-text-primary mb-4">
               {reviewsData.meta.rating}
             </div>
@@ -90,9 +96,6 @@ export default function GoogleReviews({ filter = 'featured', maxItems = 3, showM
                 <Star key={i} size={22} fill={i < Math.round(reviewsData.meta.rating) ? 'currentColor' : 'none'} />
               ))}
             </div>
-            <p className="text-xs font-bold text-text-secondary uppercase tracking-[0.2em]">
-              {reviewsData.meta.total_reviews} reseñas en Google
-            </p>
           </div>
         )}
 

@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass-nav py-3' : 'bg-transparent py-5'
+        scrolled ? 'bg-base-900 py-3 shadow-card-soft' : 'bg-base-900 py-5'
       }`}
     >
       <Container>
@@ -35,9 +35,9 @@ export default function Navbar() {
             aria-label="DERMA.M inicio"
           >
             <img
-              src="/assets/logos/logo_dermam_nav.svg"
+              src="/assets/logos/logo_dermam_footer.svg"
               alt="DERMA.M"
-              className="h-12 w-auto object-contain"
+              className="h-20 w-auto object-contain -my-3"
             />
           </Link>
 
@@ -54,13 +54,13 @@ export default function Navbar() {
                         to={link.href}
                         className={`text-sm font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md px-2 py-1 ${
                           location.pathname === link.href || link.submenu!.some(s => location.pathname === s.href)
-                            ? 'text-text-primary font-bold'
-                            : 'text-text-secondary hover:text-text-primary'
+                            ? 'text-base-100 font-bold'
+                            : 'text-base-100/75 hover:text-base-100'
                         }`}
                       >
                         {link.label}
                       </Link>
-                      <ChevronDown className="w-3.5 h-3.5 text-text-secondary transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
+                      <ChevronDown className="w-3.5 h-3.5 text-base-100/75 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
                     </div>
                     
                     <div className="absolute top-full left-0 mt-1 bg-white shadow-xl rounded-lg border border-border-soft py-3 min-w-[280px] flex flex-col z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
@@ -85,7 +85,7 @@ export default function Navbar() {
                   key={link.label}
                   to={link.href}
                   className={`text-sm font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md px-2 py-1 ${
-                    location.pathname === link.href ? 'text-text-primary font-bold' : 'text-text-secondary hover:text-text-primary'
+                    location.pathname === link.href ? 'text-base-100 font-bold' : 'text-base-100/75 hover:text-base-100'
                   }`}
                 >
                   {link.label}
@@ -95,14 +95,14 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:block">
-            <Button variant="primary" to="/es/reservar" className="px-6 py-2">
+            <Button variant="primary" to="/es/reservar" className="px-6 py-2 !bg-base-100 !text-base-900 hover:!bg-white">
               Reservar
             </Button>
           </div>
 
           {/* Mobile Menu Toggle */}
           <button 
-            className="lg:hidden text-text-primary p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 focus:rounded-md"
+            className="lg:hidden text-base-100 p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-100 focus:rounded-md"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={isOpen}

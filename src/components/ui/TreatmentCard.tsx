@@ -28,7 +28,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({ treatment }) => {
           </span>
         </div>
       </div>
-      <div className="p-6 flex flex-col flex-grow">
+      <div className="p-8 flex flex-col flex-grow">
         <h3 className="text-[clamp(1.125rem,2vw,1.375rem)] font-semibold leading-[1.35] tracking-[-0.01em] normal-case mb-3">{treatment.title}</h3>
         <p className="text-text-secondary text-base leading-[1.6] font-normal tracking-normal mb-6 flex-grow">
           {treatment.description}

@@ -15,6 +15,23 @@ interface Tier3FinalCTAProps {
  image: ImageAsset;
 }
 
+function renderEditorialHeadline(headline: string) {
+ const words = headline.trim().split(/\s+/);
+ const accent = words.pop();
+ const prefix = words.join(' ');
+
+ return (
+ <>
+ <span className="uppercase">{prefix}</span>{' '}
+ {accent && (
+ <span className="block lg:inline script-accent normal-case text-[1.56em]">
+ {accent}
+ </span>
+ )}
+ </>
+ );
+}
+
 export default function Tier3FinalCTA({ 
  title, 
  copy, 
@@ -37,10 +54,10 @@ export default function Tier3FinalCTA({
  />
 
  <Container className="relative z-10">
- <div className="bg-base-900/72 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10">
+ <div className="bg-base-900/85 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10">
  <div className="lg:max-w-xl text-center lg:text-left">
- <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] uppercase lg:text-6xl mb-8 leading-tight text-base-100">
- {title}
+ <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] lg:text-6xl mb-8 leading-tight text-base-100">
+ {renderEditorialHeadline(title)}
  </h2>
  <p className="text-lg text-base-300 leading-[1.65] font-light">
  {copy}
@@ -51,7 +68,7 @@ export default function Tier3FinalCTA({
  <Button 
  variant="primary"
  to={primaryHref} 
- className="py-4 w-full"
+ className="py-4 w-full !bg-white !text-base-900 hover:!bg-base-100"
  >
  {primaryLabel}
  </Button>

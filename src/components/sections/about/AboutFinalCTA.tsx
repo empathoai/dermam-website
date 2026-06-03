@@ -19,10 +19,11 @@ export default function AboutFinalCTA() {
       />
 
       <Container className="relative z-10">
-        <div className="bg-base-900/72 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10 text-center lg:text-left">
+        <div className="bg-base-900/85 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10 text-center lg:text-left">
           <div className="lg:max-w-xl">
-            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] lg:text-6xl mb-8 leading-tight text-base-100 uppercase">
-              ¿Listo para conocer tu piel?
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] lg:text-6xl mb-8 leading-tight text-base-100">
+              <span className="uppercase">¿Listo para conocer tu</span>{' '}
+              <span className="block lg:inline script-accent normal-case text-[1.56em]">piel?</span>
             </h2>
             <p className="text-lg text-base-300 leading-[1.65] font-light mb-8">
               Agenda una evaluación y recibe orientación profesional según las necesidades reales de tu piel.
@@ -43,7 +44,7 @@ export default function AboutFinalCTA() {
             <Button 
               variant="primary"
               to="/es/reservar"
-              className="py-4 w-full"
+              className="py-4 w-full !bg-white !text-base-900 hover:!bg-base-100"
             >
               Reserva tu evaluación
             </Button>

@@ -71,7 +71,7 @@ export default function HeroSection() {
             <span className="font-extrabold text-base-300">
               {hero.headlinePrefix}
             </span>
-            <span className="script-accent inline-block normal-case text-base-300 ml-2 text-[1.42em] align-[-0.08em]">
+            <span className="script-accent inline-block normal-case text-base-300 ml-2 text-[1.55em] align-[-0.08em]">
               {hero.headlineAccent}
             </span>
             <span className="font-extrabold text-base-300">
@@ -92,7 +92,7 @@ export default function HeroSection() {
             <Button
               variant="primary"
               to="/es/reservar"
-              className="!bg-base-100 px-10 py-4 !text-base-900 shadow-lg hover:!bg-white hover:shadow-xl transition-shadow w-full sm:w-auto"
+              className="!bg-white px-10 py-4 !text-base-900 shadow-lg hover:!bg-base-100 hover:shadow-xl transition-shadow w-full sm:w-auto"
             >
               {hero.primaryCTA}
             </Button>

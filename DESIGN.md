@@ -554,6 +554,11 @@ large rounded section geometry, two-column desktop composition, dominant upperca
 primary CTA plus optional secondary CTA, and a small trust/location microcopy line below the buttons. Do not use
 split white image cards, isolated flat dark boxes, or one-off CTA layouts for final conversion sections.
 
+Every FinalCTA heading must include one intentional Hamilton keyword accent, selected semantically for the page
+intent, while the surrounding words remain uppercase Poppins. This is the approved global FinalCTA exception to the
+general Hamilton restriction. Do not add multiple script words, decorative script phrases, or Hamilton inside buttons,
+cards, body copy, FAQ, nav, stats, or footer.
+
 When a FinalCTA uses an image background, prioritize local contrast inside the content panel. The approved Home FinalCTA uses a dark charcoal glass panel with `text-inverse` heading treatment and `text-inverse-secondary` supporting copy. Do not make the panel so light that text loses contrast. Do not globally over-darken or over-lighten the image if the readability problem can be solved by the panel.
 
 

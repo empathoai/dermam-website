@@ -29,11 +29,11 @@ export default function SectionMedia({
 
  const overlays = {
  none: '',
- soft: 'bg-canvas/25',
- heroSoft: 'bg-gradient-to-r from-base-900/95 via-base-900/70 to-base-900/15',
- ivory: 'bg-[rgba(242,240,241,0.52)]',
- sage: 'bg-[rgba(204,202,202,0.24)]',
- gradient: 'bg-gradient-to-r from-base-900/95 via-base-900/70 to-base-900/15',
+ soft: 'bg-canvas/10',
+ heroSoft: 'bg-gradient-to-r from-base-900/90 via-base-900/60 to-base-900/10',
+ ivory: 'bg-base-100/35',
+ sage: 'bg-base-200/15',
+ gradient: 'bg-gradient-to-r from-base-900/90 via-base-900/60 to-base-900/10',
  };
 
  const positions = {

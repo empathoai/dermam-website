@@ -5,7 +5,7 @@ import Button from '../../ui/Button';
 import SectionMedia from '../../ui/SectionMedia';
 
 export default function FounderSection() {
-  const { founder, differentiators } = homeContent;
+  const { founder } = homeContent;
 
   return (
     <section className="relative py-24 bg-white overflow-hidden" id="nosotros">
@@ -49,16 +49,6 @@ export default function FounderSection() {
                   {founder.quote}
                 </p>
               </div>
-            </div>
-
-            {/* Micro Stats */}
-            <div className="grid grid-cols-3 gap-6 mb-12">
-              {differentiators.stats.map((stat, idx) => (
-                <div key={idx} className="flex flex-col p-4 bg-canvas rounded-[1rem]">
-                  <span className="text-xl font-sans text-text-primary mb-1">{stat.value}</span>
-                  <span className="text-label-xs uppercase tracking-wider text-text-secondary">{stat.label.split(' ')[0]}</span>
-                </div>
-              ))}
             </div>
 
             <Button variant="primary">

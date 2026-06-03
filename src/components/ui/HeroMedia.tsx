@@ -42,8 +42,8 @@ export default function HeroMedia({
   };
 
   const overlayClasses = {
-    light: 'bg-gradient-to-r from-base-900/95 via-base-900/70 to-base-900/15',
-    dark: 'bg-gradient-to-r from-base-900/95 via-base-900/70 to-base-900/15'
+    light: 'bg-gradient-to-r from-base-900/94 via-base-900/68 to-base-900/14',
+    dark: 'bg-gradient-to-r from-base-900/94 via-base-900/68 to-base-900/14'
   };
 
   return (

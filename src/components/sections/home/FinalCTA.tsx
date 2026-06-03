@@ -20,7 +20,7 @@ export default function FinalCTA() {
       />
 
       <Container className="relative z-10">
-        <div className="bg-base-900/72 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10">
+        <div className="bg-base-900/85 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10">
           <div className="lg:max-w-xl text-center lg:text-left">
             <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] lg:text-6xl mb-8 leading-tight text-base-100">
               <span className="uppercase">{finalCTA.headlinePrefix}</span>
@@ -33,7 +33,7 @@ export default function FinalCTA() {
           </div>
 
           <div className="flex flex-col gap-4 w-full md:w-auto min-w-[280px]">
-            <Button variant="primary" to="/es/reservar" className="py-4 w-full">
+            <Button variant="primary" to="/es/reservar" className="py-4 w-full !bg-white !text-base-900 hover:!bg-base-100">
               {finalCTA.primaryCTA}
             </Button>
             <Button 
