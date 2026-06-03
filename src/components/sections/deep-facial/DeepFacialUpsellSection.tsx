@@ -36,7 +36,7 @@ export default function DeepFacialUpsellSection() {
             </div>
             <div className="lg:w-1/2 aspect-[4/3] lg:aspect-auto">
                 <ResponsiveImage 
-                    src="/assets/treatments/deepfacial-upsell.jpg" 
+                    src="/assets/treatments/limpieza-facial/deepfacial-upsell.jpg" 
                     alt="Consulta personalizada de piel"
                     className="w-full h-full object-cover"
                 />

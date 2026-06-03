@@ -3,7 +3,7 @@ import { FAQItem, ComparisonItem, BenefitItem, ProtocolStep, ResultItem } from '
 export const prfContent = {
   hero: {
     eyebrow: 'West Palm Beach · MedSpa Certificado',
-    headline: 'Plasma Rico en Plaquetas y Fibrina en West Palm Beach',
+    headline: 'Plasma Rico en Fibrina en West Palm Beach',
     subheadline: 'Protocolo clínico avanzado para regeneración facial. Resultados desde la primera sesión.',
     cta: 'Agenda tu evaluación gratuita',
     trustBar: '4.9 Google · MedSpa Certificado · WPB, FL',

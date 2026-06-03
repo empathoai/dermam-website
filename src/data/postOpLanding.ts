@@ -2,12 +2,12 @@ import { FAQItem, BenefitItem, ProtocolStep, ResultItem } from '../types/landing
 
 export const postOpContent = {
   hero: {
-    eyebrow: 'West Palm Beach · Especialistas en Post-Op',
+    eyebrow: 'West Palm Beach · Especialistas en Post-Operatorios',
     headline: 'Recuperación Post-Operatorio en West Palm Beach',
     subheadline: 'Protocolos especializados para acompañar tu recuperación con seguridad y resultados óptimos.',
     primaryCTA: 'Consulta tu caso',
     secondaryCTA: 'Escríbenos por WhatsApp',
-    trustLine: '4.9 Google · Especialistas en Post-Op · WPB, FL',
+    trustLine: '4.9 Google · Especialistas en Post-Operatorios · WPB, FL',
     image: {
       src: '/assets/images/hero-postop.jpg',
       alt: 'Recuperación Post-Operatorio en DERMA.M',

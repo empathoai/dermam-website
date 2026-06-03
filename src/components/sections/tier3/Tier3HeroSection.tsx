@@ -42,22 +42,22 @@ export default function Tier3HeroSection({
              transition={{ duration: 0.8, ease: "easeOut" }}
              className="max-w-[48rem] pt-20 lg:pt-0"
           >
-            <div className="mb-6 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+            <div className="mb-6 flex flex-col items-start gap-3">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+              >
+                <HeroTrustPill>4.9 Google · Atención profesional</HeroTrustPill>
+              </motion.div>
               <motion.span
                  initial={{ opacity: 0 }}
                  animate={{ opacity: 1 }}
-                 transition={{ delay: 0.3 }}
+                 transition={{ delay: 0.4 }}
                  className="inline-block px-3 py-1 bg-white/[0.08] backdrop-blur-sm rounded-full border border-white/10 text-xs text-base-200 font-light tracking-normal normal-case"
               >
                   {eyebrow}
               </motion.span>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
-              >
-                <HeroTrustPill>4.9 Google · Atención profesional</HeroTrustPill>
-              </motion.div>
             </div>
             
             <h1 className="text-[clamp(2.65rem,5.8vw,4.8rem)] font-extrabold leading-[0.96] tracking-[-0.04em] uppercase text-white drop-shadow-md mb-6">

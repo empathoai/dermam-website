@@ -54,11 +54,11 @@ export default function DeepFacialHeroSection() {
            animate="visible"
            className="max-w-[48rem] pt-20 lg:pt-0"
         >
-          <motion.div variants={itemVariants} className="mb-6 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+          <motion.div variants={itemVariants} className="mb-6 flex flex-col items-start gap-3">
+            <HeroTrustPill>{hero.trustLine}</HeroTrustPill>
             <span className="inline-block rounded-full border border-white/10 bg-white/[0.08] px-4 py-1.5 text-xs font-light tracking-normal normal-case text-base-200 backdrop-blur-sm">
               {hero.eyebrow}
             </span>
-            <HeroTrustPill>{hero.trustLine}</HeroTrustPill>
           </motion.div>
           
           <motion.h1 
