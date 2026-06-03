@@ -1,4 +1,4 @@
-import { FAQItem, BenefitItem, ProtocolStep, ResultItem } from '../types/landing';
+﻿import { FAQItem, BenefitItem, ProtocolStep, ResultItem } from '../types/landing';
 
 export const postOpContent = {
   hero: {
@@ -176,7 +176,7 @@ export const postOpContent = {
     primaryCTA: 'Consulta tu caso',
     secondaryCTA: 'Escríbenos por WhatsApp',
     image: {
-        src: '/assets/images/postop-final-cta.jpg',
+        src: '/assets/treatments/postoperatorio/cta.jpg',
         alt: 'Final CTA Post-Op background',
         prompt: 'Soft premium clinical recovery still-life, folded white towel, sage leaves, ivory candle, clean recovery care card, warm pearl-gray surface, calm post-operative support mood, lots of negative space for CTA text, reassuring aesthetic spa atmosphere, no people, no surgical imagery, no blood, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -220,3 +220,4 @@ export const postOpContent = {
     }
   ]
 };
+

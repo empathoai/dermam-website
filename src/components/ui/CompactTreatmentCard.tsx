@@ -22,14 +22,14 @@ const CompactTreatmentCard: React.FC<CompactTreatmentCardProps> = ({ treatment }
       </div>
       <div className="flex-grow">
           {treatment.category && (
-              <span className="text-[10px] font-bold text-text-secondary uppercase tracking-wider block mb-0.5">
+              <span className="text-label-xs font-bold text-text-secondary uppercase tracking-wider block mb-0.5">
                   {treatment.category}
               </span>
           )}
         <h4 className="text-sm font-bold text-text-primary group-hover:text-base-900 transition-colors">
           {treatment.title}
         </h4>
-        <span className="text-[10px] text-text-secondary uppercase tracking-[0.15em] font-medium opacity-70 group-hover:opacity-100 transition-opacity">
+        <span className="text-label-xs text-text-secondary uppercase tracking-[0.15em] font-medium opacity-70 group-hover:opacity-100 transition-opacity">
           {treatment.ctaLabel}
         </span>
       </div>

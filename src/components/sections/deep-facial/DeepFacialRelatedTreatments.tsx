@@ -24,7 +24,7 @@ export default function DeepFacialRelatedTreatments() {
               </div>
               <div className="p-8 flex flex-col flex-grow">
                 <div className="mb-4">
-                     <span className="text-[10px] text-text-secondary font-medium uppercase tracking-[0.15em] px-3 py-1 bg-base-200/50 rounded-full">{treatment.category}</span>
+                     <span className="text-label-xs text-text-secondary font-medium uppercase tracking-[0.15em] px-3 py-1 bg-base-200/50 rounded-full">{treatment.category}</span>
                 </div>
                 <h3 className="text-xl mb-3">{treatment.title}</h3>
                 <p className="text-text-secondary text-sm mb-6 flex-grow">{treatment.description}</p>

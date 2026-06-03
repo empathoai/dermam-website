@@ -14,7 +14,7 @@ export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3Quic
     <section className="bg-canvas py-12 relative z-20">
       <Container>
         {/* Quick Facts Strip */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-16">
           {quickFacts.map((fact, idx) => (
             <motion.div
               key={idx}
@@ -36,32 +36,35 @@ export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3Quic
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <p className="text-xs font-medium uppercase tracking-[0.12em] text-text-muted mb-8">
+          <h2 className="text-[clamp(1.35rem,2.4vw,1.75rem)] font-semibold leading-[1.2] tracking-[-0.015em] uppercase font-sans text-text-primary mb-10">
             {quickFit.title}
-          </p>
+          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             {quickFit.items.map((item, idx) => {
               const commaIndex = item.indexOf(',');
               const label = commaIndex >= 0 ? item.slice(0, commaIndex).trim() : item;
               const copy = commaIndex >= 0 ? item.slice(commaIndex + 1).trim() : '';
-              const isLast = idx === quickFit.items.length - 1;
+              const totalItems = quickFit.items.length;
+              const isLastRow = idx >= totalItems - (totalItems % 2 === 0 ? 2 : 1);
 
               return (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, x: -10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.05 }}
-                className={`flex items-start gap-3 py-4 ${isLast ? '' : 'border-b border-border'}`}
-              >
-                <Check size={14} strokeWidth={3} className="text-text-primary mt-1 flex-shrink-0" />
-                <p className="text-text-secondary text-sm leading-relaxed">
-                  <span className="font-medium text-text-primary">{label}</span>
-                  {copy && <span>, {copy}</span>}
-                </p>
-              </motion.div>
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.05 }}
+                  className={`flex items-start gap-4 py-5 pr-8 ${isLastRow ? '' : 'border-b border-border-strong'}`}
+                >
+                  <div className="w-5 h-5 rounded-full border border-border-strong flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check size={11} strokeWidth={3} className="text-text-primary" />
+                  </div>
+                  <p className="text-text-secondary text-base leading-relaxed">
+                    <span className="font-semibold text-text-primary">{label}</span>
+                    {copy && <span className="font-normal"> — {copy}</span>}
+                  </p>
+                </motion.div>
               );
             })}
           </div>

@@ -21,8 +21,8 @@ export default function VCardButton({ vcardUrl, qrImage, disabled }: VCardButton
       </div>
       
       <div className="flex-grow min-w-0">
-        <span className="block text-[10px] font-bold text-text-primary uppercase tracking-wider mb-0.5">vCard</span>
-        <span className="block text-[9px] text-text-secondary truncate">
+        <span className="block text-label-xs font-bold text-text-primary uppercase tracking-wider mb-0.5">vCard</span>
+        <span className="block text-label-2xs text-text-secondary truncate">
           {disabled ? 'Contacto no disponible' : 'Guardar contacto'}
         </span>
       </div>

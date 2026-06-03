@@ -56,7 +56,7 @@ export default function FounderSection() {
               {differentiators.stats.map((stat, idx) => (
                 <div key={idx} className="flex flex-col p-4 bg-canvas rounded-[1rem]">
                   <span className="text-xl font-sans text-text-primary mb-1">{stat.value}</span>
-                  <span className="text-[10px] uppercase tracking-wider text-text-secondary">{stat.label.split(' ')[0]}</span>
+                  <span className="text-label-xs uppercase tracking-wider text-text-secondary">{stat.label.split(' ')[0]}</span>
                 </div>
               ))}
             </div>

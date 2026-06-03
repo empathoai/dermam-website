@@ -168,6 +168,54 @@ Do not use large flat gray blocks as layout filler. If a section feels visually 
 
 
 Section rhythm should feel editorial and intentional. The dominant page rhythm is off-white canvas with white content cards or contained panels. Dark charcoal blocks are reserved for strategic contrast: heroes, final CTAs, footer, trust/proof, or protocol sections. Transitions between sections should be handled through spacing, surface contrast, image composition, and typographic hierarchy, not random background alternation. A visual consistency pass must harmonize sections toward the approved Homepage system without cloning the Homepage hero or redesigning approved sections.
+
+### Section Surface Rhythm — Approved Alternation System
+
+Every page must follow this surface sequence to create visual harmony across the grayscale palette. Never use two consecutive identical backgrounds.
+
+Approved surface tokens in order of weight (light → dark):
+- bg-white (#ffffff) — content surface
+- bg-canvas (#f2f0f1) — default page canvas  
+- bg-surface-soft / bg-base-200 (#e6e4e4) — mid-tone accent surface
+- bg-base-900 (#141313) — dark authority surface
+
+Rules:
+1. Never alternate only between bg-white and bg-canvas — too subtle, no rhythm.
+2. bg-base-200 must appear at least once per page as a mid-tone break.
+3. bg-base-900 is reserved for: Hero, Steps/Protocol, FinalCTA, Footer. Maximum 3 dark sections per page.
+4. bg-white is for: Explanation/editorial splits, FAQ accordion containers.
+5. bg-canvas is the default fallback for any section not listed above.
+
+Approved Tier 3 section sequence:
+- Hero → bg-base-900 ✅
+- Stats + QuickFit → bg-canvas
+- Explanation → bg-white
+- Benefits → bg-base-200
+- Steps → bg-base-900 ✅
+- Safety → bg-canvas
+- FAQ → bg-white
+- Related → bg-base-200
+- FinalCTA → bg-base-900 ✅
+
+Approved Hub page sequence:
+- Hero → bg-base-900 ✅
+- Intro/Stats → bg-canvas
+- Featured treatments → bg-white
+- Full catalog grid → bg-base-200
+- Social proof/Reviews → bg-base-900 ✅
+- FinalCTA → bg-base-900 ✅ (merged with reviews if adjacent)
+- FAQ → bg-canvas
+
+Approved Tier 1 landing sequence:
+- Hero → bg-base-900 ✅
+- Audience/QuickFit → bg-canvas
+- Education/Explanation → bg-white
+- Benefits → bg-base-200
+- Protocol/Steps → bg-base-900 ✅
+- Results/Testimonials → bg-canvas
+- Founder → bg-white
+- FAQ → bg-base-200
+- FinalCTA → bg-base-900 ✅
 ## Components
 
 ### HeroSection — Full-Bleed Editorial System

@@ -9,7 +9,7 @@ interface Tier3BenefitsSectionProps {
 
 export default function Tier3BenefitsSection({ benefits }: Tier3BenefitsSectionProps) {
   return (
-    <section className="py-24 bg-canvas">
+    <section className="py-24 bg-base-200">
       <Container>
         <SectionHeader
           headline="Beneficios clave"

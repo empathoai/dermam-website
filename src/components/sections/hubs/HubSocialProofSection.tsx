@@ -59,7 +59,7 @@ export default function HubSocialProofSection({ content }: HubSocialProofSection
                     <div className="text-sm font-bold text-text-primary">
                         {review.author}
                     </div>
-                    <div className="text-[10px] font-medium text-text-secondary uppercase tracking-[0.15em]">
+                    <div className="text-label-xs font-medium text-text-secondary uppercase tracking-[0.15em]">
                         {review.role}
                     </div>
                   </div>

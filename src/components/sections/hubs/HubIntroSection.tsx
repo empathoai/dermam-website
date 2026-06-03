@@ -25,7 +25,7 @@ export default function HubIntroSection({ content }: HubIntroSectionProps) {
                 <div className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-2">
                   {stat.value}
                 </div>
-                <div className="text-[10px] font-bold text-text-secondary uppercase tracking-wider">
+                <div className="text-label-xs font-bold text-text-secondary uppercase tracking-wider">
                   {stat.label}
                 </div>
               </motion.div>

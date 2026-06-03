@@ -15,7 +15,7 @@ export default function Tier3ExplanationSection({ eyebrow, title, body, media }:
   return (
     <section className="py-24 bg-white overflow-hidden">
       <Container>
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
           {/* Media */}
           {media && (
             <motion.div 
@@ -25,7 +25,7 @@ export default function Tier3ExplanationSection({ eyebrow, title, body, media }:
               transition={{ duration: 0.8 }}
               className="lg:w-1/2 relative"
             >
-              <div className="relative rounded-[1.5rem] overflow-hidden aspect-[4/3]">
+              <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-card-soft">
                 <ResponsiveImage
                   src={media.src}
                   alt={media.alt}
@@ -48,12 +48,12 @@ export default function Tier3ExplanationSection({ eyebrow, title, body, media }:
                 {eyebrow}
               </p>
             )}
-            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary">
+            <h2 className="text-[clamp(1.35rem,2.4vw,1.75rem)] font-semibold leading-[1.2] tracking-[-0.015em] uppercase font-sans text-text-primary">
               {title}
             </h2>
-            <hr className="border-t border-border my-6" />
+            <hr className="border-t border-border-strong my-6 w-12" />
             <div className="space-y-6">
-              <p className="text-text-secondary text-lg leading-relaxed">
+              <p className="text-text-secondary text-base leading-relaxed">
                 {body}
               </p>
             </div>

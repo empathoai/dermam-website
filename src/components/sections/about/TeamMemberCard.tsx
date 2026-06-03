@@ -33,7 +33,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, idx }) => {
         <div>
             <h3 className="text-lg font-sans text-text-primary mb-1">{member.name}</h3>
             <div className="mb-3">
-                <span className={`inline-block text-[10px] uppercase tracking-[0.15em] font-medium px-2.5 py-1 rounded-full ${member.featured ? 'bg-base-900 text-base-100' : 'bg-canvas text-text-secondary'}`}>
+                <span className={`inline-block text-label-xs uppercase tracking-[0.15em] font-medium px-2.5 py-1 rounded-full ${member.featured ? 'bg-base-900 text-base-100' : 'bg-canvas text-text-secondary'}`}>
                 {member.role.split(' · ')[1] || member.role}
                 </span>
             </div>

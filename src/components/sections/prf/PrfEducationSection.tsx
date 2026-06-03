@@ -39,13 +39,13 @@ export default function PrfEducationSection() {
               </div>
 
               <div className="hidden md:grid grid-cols-[1fr_1.15fr_1.15fr]">
-                <div className="px-5 py-4 text-[0.68rem] uppercase tracking-[0.16em] text-base-300 border-b border-white/10">
+                <div className="px-5 py-4 text-label-xs uppercase tracking-[0.16em] text-base-300 border-b border-white/10">
                   Criterio
                 </div>
-                <div className="px-5 py-4 text-[0.68rem] uppercase tracking-[0.16em] text-base-300 border-b border-l border-white/10">
+                <div className="px-5 py-4 text-label-xs uppercase tracking-[0.16em] text-base-300 border-b border-l border-white/10">
                   PRP convencional
                 </div>
-                <div className="px-5 py-4 text-[0.68rem] uppercase tracking-[0.16em] text-base-100 border-b border-l border-white/10 flex items-center gap-2">
+                <div className="px-5 py-4 text-label-xs uppercase tracking-[0.16em] text-base-100 border-b border-l border-white/10 flex items-center gap-2">
                   <Check size={16} className="text-base-100" />
                   PRF — DERMA.M
                 </div>
@@ -73,7 +73,7 @@ export default function PrfEducationSection() {
                   <ul className="space-y-3 text-sm text-base-300">
                     {education.comparison.map((item) => (
                       <li key={`${item.label}-mobile-prp`} className="flex flex-col gap-1">
-                        <span className="text-[0.65rem] uppercase tracking-[0.15em] text-base-300/70">{item.label}</span>
+                        <span className="text-label-sm uppercase tracking-[0.15em] text-base-300/70">{item.label}</span>
                         <span>{item.prp}</span>
                       </li>
                     ))}
@@ -88,7 +88,7 @@ export default function PrfEducationSection() {
                   <ul className="space-y-3 text-sm text-base-100">
                     {education.comparison.map((item) => (
                       <li key={`${item.label}-mobile-prf`} className="flex flex-col gap-1">
-                        <span className="text-[0.65rem] uppercase tracking-[0.15em] text-base-300/70">{item.label}</span>
+                        <span className="text-label-sm uppercase tracking-[0.15em] text-base-300/70">{item.label}</span>
                         <span className="font-semibold">{item.prf}</span>
                       </li>
                     ))}

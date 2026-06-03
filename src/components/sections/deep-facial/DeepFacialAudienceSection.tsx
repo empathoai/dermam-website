@@ -1,4 +1,4 @@
-﻿import { deepFacialContent } from '../../../data/deepFacialLanding';
+import { deepFacialContent } from '../../../data/deepFacialLanding';
 import Container from '../../ui/Container';
 import { Check } from '../../../design-system/icons';
 import { motion } from 'motion/react';
@@ -22,7 +22,7 @@ export default function DeepFacialAudienceSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="flex h-[5.625rem] items-center gap-4 p-5 rounded-[2rem] bg-base-600 border border-border-dark hover:border-base-300 hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                className="flex h-[5.625rem] items-center gap-4 p-5 rounded-[2rem] bg-base-900 border border-white/10 hover:border-white/30 hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
               >
                 <Check className="text-base-100 flex-shrink-0" size={20} />
                 <span className="text-base text-base-100 font-medium">{check}</span>

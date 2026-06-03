@@ -16,7 +16,7 @@ export default function BookingFeaturedCard({ treatment }: BookingFeaturedCardPr
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="text-center md:text-left">
-          <span className="text-[10px] font-bold text-base-900 uppercase tracking-[0.2em] mb-3 block">
+          <span className="text-label-xs font-bold text-base-900 uppercase tracking-[0.2em] mb-3 block">
             {treatment.description.split(' · ')[2] || 'Primera visita'}
           </span>
           <h3 className="text-2xl md:text-3xl font-sans text-text-primary mb-4">

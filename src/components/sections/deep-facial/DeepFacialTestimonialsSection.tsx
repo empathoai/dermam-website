@@ -26,7 +26,7 @@ export default function DeepFacialTestimonialsSection() {
               </p>
               <div>
                 <span className="block font-semibold text-sm mb-1">{testimonial.name}</span>
-                <span className="block text-[10px] text-text-secondary uppercase tracking-[0.15em] bg-base-200 px-3 py-1 rounded-full">{testimonial.treatment}</span>
+                <span className="block text-label-xs text-text-secondary uppercase tracking-[0.15em] bg-base-200 px-3 py-1 rounded-full">{testimonial.treatment}</span>
               </div>
             </Card>
           ))}

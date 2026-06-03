@@ -37,9 +37,9 @@ export default function BookingInfoSection() {
           <div className="mt-20 pt-16 border-t border-border-soft flex flex-wrap justify-center md:justify-between items-center gap-8 grayscale opacity-60">
              <div className="flex items-center gap-3">
                  <div className="w-10 h-10 bg-white border border-border-soft rounded-lg flex items-center justify-center font-bold text-lg">S</div>
-                 <span className="text-[10px] font-medium uppercase tracking-[0.15em]">Square Appointments</span>
+                 <span className="text-label-xs font-medium uppercase tracking-[0.15em]">Square Appointments</span>
              </div>
-             <div className="text-[10px] uppercase tracking-[0.15em] font-medium flex gap-4 text-text-secondary">
+             <div className="text-label-xs uppercase tracking-[0.15em] font-medium flex gap-4 text-text-secondary">
                  <span>MedSpa Certificado</span>
                  <span className="text-text-secondary/50">•</span>
                  <span>West Palm Beach</span>

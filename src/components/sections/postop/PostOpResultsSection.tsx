@@ -23,14 +23,14 @@ export default function PostOpResultsSection() {
                />
                <div className="text-center pb-2">
                   <h3 className="text-sm font-semibold mb-1 uppercase tracking-[0.15em]">{item.title}</h3>
-                  <span className="text-[10px] text-text-secondary uppercase tracking-[0.15em]">{item.sessions}</span>
+                  <span className="text-label-xs text-text-secondary uppercase tracking-[0.15em]">{item.sessions}</span>
                </div>
             </div>
           ))}
         </div>
 
         <div className="mt-16 p-4 border border-border-soft rounded-[1rem] text-center max-w-sm mx-auto">
-          <p className="text-[10px] italic text-text-secondary leading-relaxed">
+          <p className="text-label-xs italic text-text-secondary leading-relaxed">
             {results.disclaimer}
           </p>
         </div>

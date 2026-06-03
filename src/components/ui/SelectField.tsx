@@ -18,7 +18,7 @@ export default function SelectField({ label, options, error, id, placeholder, ..
     <div className={`flex flex-col gap-2 w-full ${className}`}>
       <label 
         htmlFor={id} 
-        className="text-[10px] font-medium uppercase tracking-[0.15em] text-text-primary ml-1"
+        className="text-label-xs font-medium uppercase tracking-[0.15em] text-text-primary ml-1"
       >
         {label} {props.required && <span className="text-base-900">*</span>}
       </label>
@@ -44,7 +44,7 @@ export default function SelectField({ label, options, error, id, placeholder, ..
         </div>
       </div>
       {error && (
-        <span id={`${id}-error`} className="text-[10px] text-red-500 font-medium ml-1">
+        <span id={`${id}-error`} className="text-label-xs text-red-500 font-medium ml-1">
           {error}
         </span>
       )}
