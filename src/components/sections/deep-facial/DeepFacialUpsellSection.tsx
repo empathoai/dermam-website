@@ -1,7 +1,7 @@
 import { deepFacialContent } from '../../../data/deepFacialLanding';
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
-import { Check } from 'lucide-react';
+import { Check } from '../../../design-system/icons';
 import ResponsiveImage from '../../ui/ResponsiveImage';
 
 export default function DeepFacialUpsellSection() {

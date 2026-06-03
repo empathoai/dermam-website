@@ -2,7 +2,6 @@ import { HubPageContent } from '../../../types/hub';
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import SectionMedia from '../../ui/SectionMedia';
-import { Link } from 'react-router-dom';
 import { siteConfig } from '../../../data/siteConfig';
 
 interface HubFinalCTAProps {
@@ -13,53 +12,42 @@ export default function HubFinalCTA({ content }: HubFinalCTAProps) {
   const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(content.whatsappMessage || 'Hola, quiero información.')}`;
 
   return (
-    <section className="py-24 bg-canvas overflow-hidden">
-      <Container>
-        <div className="bg-white rounded-[2.5rem] border border-border-card overflow-hidden shadow-2xl flex flex-col lg:flex-row max-w-6xl mx-auto">
-          <div className="lg:w-1/2 p-10 md:p-16 flex flex-col justify-center">
-            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-6 leading-tight">
+    <section className="relative isolate overflow-hidden py-32">
+      <SectionMedia
+        type="image"
+        src={content.image.src}
+        alt={content.image.alt}
+        overlay="soft"
+        opacity={1}
+      />
+
+      <Container className="relative z-10">
+        <div className="bg-base-900/72 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10">
+          <div className="lg:max-w-xl text-center lg:text-left">
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] uppercase lg:text-6xl mb-8 leading-tight text-base-100">
               {content.headline}
             </h2>
-            <p className="text-text-secondary text-lg leading-relaxed mb-10">
+            <p className="text-lg text-base-300 leading-[1.65] font-light">
               {content.description}
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Button to="/es/reservar" className="flex-1 w-full">
-                {content.primaryCTA}
-              </Button>
-              <Button 
-                variant="outline" 
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 w-full"
-              >
-                {content.secondaryCTA}
-              </Button>
-            </div>
-
-            <div className="pt-8 border-t border-border-soft flex flex-wrap items-center gap-6">
-                <div className="text-[10px] font-bold text-text-secondary uppercase tracking-[0.2em]">
-                    Ubicación
-                </div>
-                <div className="text-xs font-medium text-text-primary">
-                    DERMA.M · {siteConfig.address} · WPB, FL
-                </div>
-                <div className="text-xs font-bold text-base-900">
-                    {siteConfig.phone}
-                </div>
-            </div>
           </div>
 
-          <div className="lg:w-1/2 relative min-h-[300px] lg:min-h-auto">
-            <SectionMedia 
-              type="image" 
-              src={content.image.src} 
-              alt={content.image.alt}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-base-900/5 mix-blend-multiply" aria-hidden="true" />
+          <div className="flex flex-col gap-4 w-full md:w-auto min-w-[280px]">
+            <Button to="/es/reservar" className="py-4 w-full">
+              {content.primaryCTA}
+            </Button>
+            <Button
+              variant="outline"
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-4 w-full !border-base-300/70 !text-base-300 hover:!bg-base-100/10 hover:!text-base-100"
+            >
+              {content.secondaryCTA}
+            </Button>
+            <p className="text-xs text-center text-base-300 uppercase tracking-[0.15em] mt-2">
+              DERMA.M · WPB, FL
+            </p>
           </div>
         </div>
       </Container>

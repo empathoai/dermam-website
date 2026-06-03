@@ -1,4 +1,4 @@
-import { QrCode, Download } from 'lucide-react';
+import { QrCode, Download } from '../../design-system/icons';
 
 interface VCardButtonProps {
   memberId: string;

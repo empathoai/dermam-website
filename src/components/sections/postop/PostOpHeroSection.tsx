@@ -17,8 +17,8 @@ export default function PostOpHeroSection() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
+        staggerChildren: 0.15,
+        delayChildren: 0.3,
       },
     },
   };
@@ -39,7 +39,7 @@ export default function PostOpHeroSection() {
   };
 
   return (
-    <section className="relative min-h-[85vh] lg:h-[90vh] flex items-center overflow-hidden bg-base-900 isolation-isolate">
+    <section className="relative min-h-[86vh] lg:min-h-[90vh] flex items-center overflow-hidden bg-base-900 py-20 lg:py-24 isolation-isolate">
       <div className="absolute inset-0 z-0">
         <HeroMedia
           type="image"
@@ -66,14 +66,14 @@ export default function PostOpHeroSection() {
           
           <motion.h1 
             variants={itemVariants}
-            className="text-[clamp(2.65rem,5.8vw,4.8rem)] font-extrabold leading-[0.96] tracking-[-0.04em] uppercase text-base-100 mb-6"
+            className="text-[clamp(3rem,6.6vw,5.35rem)] font-extrabold leading-[0.96] tracking-[-0.045em] uppercase text-base-300 mb-8"
           >
             {hero.headline}
           </motion.h1>
           
           <motion.p 
             variants={itemVariants}
-            className="text-base-300 text-lg mb-10 max-w-lg font-light leading-[1.65] tracking-normal"
+            className="text-base-300 text-lg mb-12 max-w-lg font-light leading-[1.65] tracking-normal"
           >
             {hero.subheadline}
           </motion.p>
@@ -81,7 +81,7 @@ export default function PostOpHeroSection() {
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button 
                 onClick={handleConsultClick}
-                className="px-10 py-4 shadow-lg w-full sm:w-auto"
+                className="!bg-base-100 px-10 py-4 !text-base-900 shadow-lg hover:!bg-white hover:shadow-xl transition-shadow w-full sm:w-auto"
             >
               {hero.primaryCTA}
             </Button>

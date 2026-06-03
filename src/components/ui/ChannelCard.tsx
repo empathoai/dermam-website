@@ -1,4 +1,4 @@
-import { MessageCircle, Phone } from 'lucide-react';
+import { MessageCircle, Phone } from '../../design-system/icons';
 import React from 'react';
 
 interface ChannelCardProps {

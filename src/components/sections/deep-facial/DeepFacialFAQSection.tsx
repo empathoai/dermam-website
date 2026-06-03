@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { deepFacialContent } from '../../../data/deepFacialLanding';
 import Container from '../../ui/Container';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown } from '../../../design-system/icons';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function DeepFacialFAQSection() {

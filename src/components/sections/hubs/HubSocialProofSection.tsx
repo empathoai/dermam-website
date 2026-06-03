@@ -1,7 +1,7 @@
 import { HubPageContent } from '../../../types/hub';
 import Container from '../../ui/Container';
 import SectionHeader from '../../ui/SectionHeader';
-import { Star } from 'lucide-react';
+import { Star } from '../../../design-system/icons';
 
 interface HubSocialProofSectionProps {
   content: HubPageContent['socialProof'];

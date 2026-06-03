@@ -1,5 +1,5 @@
 import { ContactChannel } from '../../types/contact';
-import { MessageCircle, Phone, Instagram, MapPin } from 'lucide-react';
+import { MessageCircle, Phone, Instagram, MapPin } from '../../design-system/icons';
 import React from 'react';
 
 interface ContactChannelCardProps {

@@ -1,14 +1,26 @@
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
+import SectionMedia from '../../ui/SectionMedia';
+import { homeContent } from '../../../data/homeContent';
 import { siteConfig } from '../../../data/siteConfig';
-import { MapPin, Phone } from 'lucide-react';
+import { MapPin, Phone } from '../../../design-system/icons';
 
 export default function AboutFinalCTA() {
+  const { finalCTA } = homeContent;
+
   return (
-    <section className="py-24 lg:py-32 bg-canvas overflow-hidden">
-      <Container>
-        <div className="bg-base-900 px-8 py-20 md:p-20 rounded-[2.5rem] border border-white/10 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 text-center lg:text-left">
-          <div className="relative z-10 lg:max-w-xl">
+    <section className="relative isolate overflow-hidden py-32">
+      <SectionMedia
+        type="image"
+        src={finalCTA.bgImage.src}
+        alt={finalCTA.bgImage.alt}
+        overlay="soft"
+        opacity={1}
+      />
+
+      <Container className="relative z-10">
+        <div className="bg-base-900/72 backdrop-blur-md rounded-[2.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-2xl border border-white/10 text-center lg:text-left">
+          <div className="lg:max-w-xl">
             <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] lg:text-6xl mb-8 leading-tight text-base-100 uppercase">
               ¿Listo para conocer tu piel?
             </h2>
@@ -27,7 +39,7 @@ export default function AboutFinalCTA() {
             </div>
           </div>
 
-          <div className="relative z-10 flex flex-col gap-4 w-full md:w-auto min-w-[280px]">
+          <div className="flex flex-col gap-4 w-full md:w-auto min-w-[280px]">
             <Button 
               variant="primary"
               to="/es/reservar"

@@ -89,7 +89,11 @@ export default function HeroSection() {
           
           {/* CTAs */}
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-20">
-            <Button variant="primary" to="/es/reservar" className="px-10 py-4 shadow-lg hover:shadow-xl transition-shadow w-full sm:w-auto">
+            <Button
+              variant="primary"
+              to="/es/reservar"
+              className="!bg-base-100 px-10 py-4 !text-base-900 shadow-lg hover:!bg-white hover:shadow-xl transition-shadow w-full sm:w-auto"
+            >
               {hero.primaryCTA}
             </Button>
             <Button variant="outline" href="#treatments" className="!border-white/10 !bg-white/[0.08] px-10 py-4 !text-base-100 hover:!bg-white/[0.12] w-full sm:w-auto">

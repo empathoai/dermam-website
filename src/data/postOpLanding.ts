@@ -133,13 +133,6 @@ export const postOpContent = {
         imageAfter: '/assets/treatments/postop-result-2-after.jpg',
         sessions: '10 sesiones',
         prompt: 'Tasteful clinical before-and-after style abdominoplasty recovery documentation image, same patient abdominal contour shown in two adjacent panels, modest non-graphic framing, visible improvement in swelling and contour, clean ivory clinical background, no wounds, no scars, no bruising, no explicit nudity, professional post-op recovery documentation, 4:3 ratio.'
-      },
-      {
-        title: 'Post-BBL',
-        imageBefore: '/assets/treatments/postop-result-3-before.jpg',
-        imageAfter: '/assets/treatments/postop-result-3-after.jpg',
-        sessions: '6 sesiones',
-        prompt: 'Tasteful clinical before-and-after style BBL recovery documentation image, same patient body contour shown in two adjacent panels, modest and non-graphic framing, improved swelling and contour balance, clean ivory background, no surgical wounds, no bruising, no scars, no explicit nudity, premium post-operative care documentation, professional and discreet, 4:3 ratio.'
       }
     ]
   },

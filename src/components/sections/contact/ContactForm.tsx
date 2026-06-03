@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+﻿import { useState, FormEvent } from 'react';
 import { contactContent } from '../../../data/contactContent';
 import { siteConfig } from '../../../data/siteConfig';
 import FormField from '../../ui/FormField';
@@ -6,7 +6,7 @@ import SelectField from '../../ui/SelectField';
 import TextareaField from '../../ui/TextareaField';
 import Button from '../../ui/Button';
 import { motion } from 'motion/react';
-import { CheckCircle2 } from 'lucide-react';
+import { Check } from '../../../design-system/icons';
 
 export default function ContactForm() {
   const { form } = contactContent;
@@ -71,7 +71,7 @@ ${formData.message ? `Mensaje: ${formData.message}` : ''}`;
         className="bg-white p-12 rounded-[2rem] border border-border-card text-center shadow-xl shadow-canvas/50"
       >
         <div className="w-16 h-16 bg-base-900/10 text-base-900 rounded-full flex items-center justify-center mx-auto mb-6">
-          <CheckCircle2 size={32} />
+          <Check size={32} />
         </div>
         <h3 className="text-2xl font-sans mb-4">¡Gracias por escribirnos!</h3>
         <p className="text-text-secondary leading-relaxed mb-8 px-4">

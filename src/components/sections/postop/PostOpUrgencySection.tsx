@@ -1,6 +1,6 @@
-import { postOpContent } from '../../../data/postOpLanding';
+﻿import { postOpContent } from '../../../data/postOpLanding';
 import Container from '../../ui/Container';
-import { AlertCircle, CheckCircle2, Clock } from 'lucide-react';
+import { AlertCircle, Check, Clock } from '../../../design-system/icons';
 import { motion } from 'motion/react';
 
 export default function PostOpUrgencySection() {
@@ -8,7 +8,7 @@ export default function PostOpUrgencySection() {
 
   const icons = {
     warning: <AlertCircle className="text-base-900" size={24} />,
-    success: <CheckCircle2 className="text-base-900" size={24} />,
+    success: <Check className="text-base-900" size={24} />,
     info: <Clock className="text-base-900" size={24} />,
   };
 

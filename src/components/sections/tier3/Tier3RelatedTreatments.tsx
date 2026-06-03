@@ -5,7 +5,7 @@ import { Tier3Treatment } from '../../../types/tier3Treatment';
 import { Link } from 'react-router-dom';
 import ResponsiveImage from '../../ui/ResponsiveImage';
 import { motion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from '../../../design-system/icons';
 
 interface Tier3RelatedTreatmentsProps {
   currentTreatmentId: string;

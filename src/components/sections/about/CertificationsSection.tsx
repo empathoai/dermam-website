@@ -1,5 +1,5 @@
 import Container from '../../ui/Container';
-import { Award, ShieldCheck, Star, Globe } from 'lucide-react';
+import { Award, ShieldCheck, Star, Globe } from '../../../design-system/icons';
 
 export default function CertificationsSection() {
   const certifications = [

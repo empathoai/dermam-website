@@ -5,12 +5,13 @@ import { motion } from 'motion/react';
 import { ImageAsset } from '../../../types/common';
 
 interface Tier3ExplanationSectionProps {
+  eyebrow?: string;
   title: string;
   body: string;
   media?: ImageAsset;
 }
 
-export default function Tier3ExplanationSection({ title, body, media }: Tier3ExplanationSectionProps) {
+export default function Tier3ExplanationSection({ eyebrow, title, body, media }: Tier3ExplanationSectionProps) {
   return (
     <section className="py-24 bg-white overflow-hidden">
       <Container>
@@ -24,15 +25,13 @@ export default function Tier3ExplanationSection({ title, body, media }: Tier3Exp
               transition={{ duration: 0.8 }}
               className="lg:w-1/2 relative"
             >
-              <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-border-soft">
+              <div className="relative rounded-[1.5rem] overflow-hidden aspect-[4/3]">
                 <ResponsiveImage
                   src={media.src}
                   alt={media.alt}
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Decorative element */}
-              <div className="absolute -z-10 -bottom-10 -left-10 w-48 h-48 bg-sage/5 rounded-full blur-3xl opacity-60" />
             </motion.div>
           )}
 
@@ -44,11 +43,17 @@ export default function Tier3ExplanationSection({ title, body, media }: Tier3Exp
             transition={{ duration: 0.8 }}
             className={media ? "lg:w-1/2" : "w-full text-center max-w-3xl mx-auto"}
           >
-            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-8 leading-tight">
+            {eyebrow && (
+              <p className="text-xs font-medium uppercase tracking-[0.12em] text-text-muted mb-4">
+                {eyebrow}
+              </p>
+            )}
+            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary">
               {title}
             </h2>
+            <hr className="border-t border-border my-6" />
             <div className="space-y-6">
-              <p className="text-text-secondary text-lg leading-relaxed first-letter:text-5xl first-letter:font-sans first-letter:text-sage first-letter:mr-3 first-letter:float-left">
+              <p className="text-text-secondary text-lg leading-relaxed">
                 {body}
               </p>
             </div>

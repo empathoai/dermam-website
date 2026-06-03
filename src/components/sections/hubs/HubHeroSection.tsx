@@ -4,7 +4,7 @@ import Container from '../../ui/Container';
 import HeroMedia from '../../ui/HeroMedia';
 import Button from '../../ui/Button';
 import HeroTrustPill from '../../ui/HeroTrustPill';
-import { motion } from 'motion/react';
+import { motion, useReducedMotion, Variants } from 'motion/react';
 import { Link } from 'react-router-dom';
 
 interface HubHeroSectionProps {
@@ -13,6 +13,33 @@ interface HubHeroSectionProps {
 
 export default function HubHeroSection({ content }: HubHeroSectionProps) {
   const [isMediaReady, setIsMediaReady] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
+
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: {
+      opacity: 0,
+      y: shouldReduceMotion ? 0 : 20,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
 
   return (
     <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-base-900 isolation-isolate">
@@ -29,44 +56,40 @@ export default function HubHeroSection({ content }: HubHeroSectionProps) {
 
       <Container className="relative z-10 w-full mt-10 md:mt-0">
           <motion.div
-             initial={{ opacity: 0, y: 20 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8, ease: "easeOut" }}
+             variants={containerVariants}
+             initial="hidden"
+             animate="visible"
              className="max-w-[48rem] pt-20 lg:pt-0"
           >
             <div className="mb-6 flex flex-col items-start gap-3">
               <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
+                variants={itemVariants}
               >
                 <HeroTrustPill>{content.trustLine}</HeroTrustPill>
               </motion.div>
               <motion.span 
-                 initial={{ opacity: 0 }}
-                 animate={{ opacity: 1 }}
-                 transition={{ delay: 0.4 }}
+                 variants={itemVariants}
                  className="inline-block px-3 py-1 bg-white/[0.08] backdrop-blur-sm rounded-full border border-white/10 text-xs text-base-200 font-light tracking-normal normal-case"
               >
                   {content.eyebrow}
               </motion.span>
             </div>
             
-            <h1 className="text-[clamp(2.65rem,5.8vw,4.8rem)] font-extrabold leading-[0.96] tracking-[-0.04em] uppercase text-white drop-shadow-md mb-6">
+            <motion.h1 variants={itemVariants} className="text-[clamp(3rem,6.6vw,5.35rem)] font-extrabold leading-[0.96] tracking-[-0.045em] uppercase text-base-300 drop-shadow-md mb-8">
               {content.headline}
-            </h1>
+            </motion.h1>
             
-            <p className="text-base-300 text-lg mb-10 max-w-lg font-light leading-[1.65] tracking-normal drop-shadow-md">
+            <motion.p variants={itemVariants} className="text-base-300 text-lg mb-12 max-w-lg font-light leading-[1.65] tracking-normal drop-shadow-md">
               {content.subheadline}
-            </p>
+            </motion.p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
                <Link to="/es/reservar">
-                  <Button className="bg-white text-base-900 hover:bg-base-100 min-w-[200px] w-full sm:w-auto">
+                  <Button className="!bg-base-100 px-10 py-4 !text-base-900 shadow-lg hover:!bg-white hover:shadow-xl transition-shadow w-full sm:w-auto">
                     {content.ctaLabel}
                   </Button>
                </Link>
-            </div>
+            </motion.div>
           </motion.div>
       </Container>
     </section>

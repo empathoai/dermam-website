@@ -1,7 +1,7 @@
 import { siteConfig } from '../../data/siteConfig';
 import { footerLinks } from '../../data/navigation';
 import Container from '../ui/Container';
-import { Instagram, Facebook, MapPin, Phone, Clock } from 'lucide-react';
+import { Instagram, Facebook, MapPin, Phone, Clock } from '../../design-system/icons';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

@@ -2,7 +2,7 @@ import { testimonials } from '../../../data/testimonials';
 import Container from '../../ui/Container';
 import SectionHeader from '../../ui/SectionHeader';
 import Card from '../../ui/Card';
-import { Star } from 'lucide-react';
+import { Star } from '../../../design-system/icons';
 
 export default function PrfTestimonialsSection() {
   const prfTestimonials = testimonials.filter(t => t.treatment === 'PRF').slice(0, 3);

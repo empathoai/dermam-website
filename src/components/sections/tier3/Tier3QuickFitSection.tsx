@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../../ui/Container';
 import { motion } from 'motion/react';
 import StatItem from '../../ui/StatItem';
-import { Check } from 'lucide-react';
+import { Check } from '../../../design-system/icons';
 
 interface Tier3QuickFitSectionProps {
   quickFacts: Array<{ label: string; value: string }>;
@@ -30,38 +30,42 @@ export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3Quic
         </div>
 
         {/* Is this for you? */}
-        <div className="max-w-4xl mx-auto bg-white rounded-[2.5rem] p-10 md:p-16 border border-border-card shadow-sm">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-4">
-              {quickFit.title}
-            </h2>
-          </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto"
+        >
+          <p className="text-xs font-medium uppercase tracking-[0.12em] text-text-muted mb-8">
+            {quickFit.title}
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-            {quickFit.items.map((item, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
+            {quickFit.items.map((item, idx) => {
+              const commaIndex = item.indexOf(',');
+              const label = commaIndex >= 0 ? item.slice(0, commaIndex).trim() : item;
+              const copy = commaIndex >= 0 ? item.slice(commaIndex + 1).trim() : '';
+              const isLast = idx === quickFit.items.length - 1;
+
+              return (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05 }}
-                className="flex items-start gap-4 group"
+                className={`flex items-start gap-3 py-4 ${isLast ? '' : 'border-b border-border'}`}
               >
-                <div className="w-6 h-6 rounded-full bg-sage/10 flex items-center justify-center text-sage flex-shrink-0 mt-0.5 transition-colors group-hover:bg-sage group-hover:text-white">
-                  <Check size={14} strokeWidth={3} />
-                </div>
-                <p className="text-text-secondary text-sm md:text-base leading-relaxed">
-                  {item}
+                <Check size={14} strokeWidth={3} className="text-text-primary mt-1 flex-shrink-0" />
+                <p className="text-text-secondary text-sm leading-relaxed">
+                  <span className="font-medium text-text-primary">{label}</span>
+                  {copy && <span>, {copy}</span>}
                 </p>
               </motion.div>
-            ))}
+              );
+            })}
           </div>
-        </div>
+        </motion.div>
       </Container>
     </section>
   );

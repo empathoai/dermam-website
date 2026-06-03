@@ -2,7 +2,7 @@ import React from 'react';
 import { IVKit } from '../../types/ivTherapy';
 import { motion } from 'motion/react';
 import ResponsiveImage from './ResponsiveImage';
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ExternalLink, ArrowRight } from '../../design-system/icons';
 import Button from './Button';
 import { siteConfig } from '../../data/siteConfig';
 

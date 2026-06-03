@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Star } from 'lucide-react';
+import { Star } from '../design-system/icons';
 import reviewsData from '../data/reviews.json';
 import Container from './ui/Container';
 import Card from './ui/Card';

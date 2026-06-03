@@ -1,6 +1,6 @@
 import { TrustItem as TrustItemType } from '../../types/common';
-import * as Icons from 'lucide-react';
-import { LucideProps } from 'lucide-react';
+import * as Icons from '../../design-system/icons';
+import { LucideProps } from '../../design-system/icons';
 import { ComponentType } from 'react';
 
 interface TrustItemProps {

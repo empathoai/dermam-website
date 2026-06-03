@@ -121,14 +121,6 @@ export const laserLightHubContent: HubPageContent = {
         image: { src: '/assets/images/consultation-room.jpg', alt: 'RF Fraccionada', prompt: 'RF' }
       },
       {
-        id: 'rf-facial-grid',
-        title: 'Radiofrecuencia Facial',
-        category: 'Firmeza',
-        ctaLabel: 'Ver más →',
-        href: '/es/radiofrecuencia-facial',
-        image: { src: '/assets/images/laser-treatment.jpg', alt: 'RF Facial', prompt: 'RF' }
-      },
-      {
         id: 'evefus',
         title: 'Evefus 10',
         category: 'Tecnología coreana',
@@ -145,14 +137,6 @@ export const laserLightHubContent: HubPageContent = {
         href: '/es/reservar',
         isPlaceholderRoute: true,
         image: { src: '/assets/images/facial-massage.jpg', alt: 'Plasma', prompt: 'Cold Plasma' }
-      },
-      {
-        id: 'oxigeno-grid',
-        title: 'Oxigenoterapia Facial',
-        category: 'Luminosidad',
-        ctaLabel: 'Ver más →',
-        href: '/es/oxigenoterapia-facial',
-        image: { src: '/assets/images/facial-scrub.jpg', alt: 'Oxígeno', prompt: 'Oxygen' }
       },
       {
         id: 'carbox-face',

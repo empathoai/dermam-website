@@ -5,8 +5,8 @@ import HubIntroSection from '../sections/hubs/HubIntroSection';
 import HubFeaturedTreatments from '../sections/hubs/HubFeaturedTreatments';
 import HubAllTreatmentsGrid from '../sections/hubs/HubAllTreatmentsGrid';
 import HubFAQSection from '../sections/hubs/HubFAQSection';
-import HubSocialProofSection from '../sections/hubs/HubSocialProofSection';
 import HubFinalCTA from '../sections/hubs/HubFinalCTA';
+import GoogleReviews from '../GoogleReviews';
 
 interface HubPageTemplateProps {
   content: HubPageContent;
@@ -25,9 +25,9 @@ export default function HubPageTemplate({ content }: HubPageTemplateProps) {
       <HubIntroSection content={content.intro} />
       <HubFeaturedTreatments content={content.featured} />
       <HubAllTreatmentsGrid content={content.allGrid} />
-      <HubFAQSection content={content.faqs} />
-      <HubSocialProofSection content={content.socialProof} />
+      <GoogleReviews filter="featured" maxItems={3} showMeta />
       <HubFinalCTA content={content.finalCTA} />
+      <HubFAQSection content={content.faqs} />
     </PageShell>
   );
 }

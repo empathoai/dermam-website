@@ -1,6 +1,6 @@
 import { bookingContent } from '../../../data/bookingContent';
 import Container from '../../ui/Container';
-import { ShieldCheck, Star, Clock, Languages } from 'lucide-react';
+import { ShieldCheck, Star, Clock, Languages } from '../../../design-system/icons';
 
 export default function BookingInfoSection() {
   const { info } = bookingContent;

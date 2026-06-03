@@ -9,7 +9,9 @@ export const navigationLinks: NavItem[] = [
       { label: 'Limpieza Facial Profunda', href: '/es/limpieza-facial-profunda' },
       { label: 'Hidrofacial', href: '/es/hidrofacial' },
       { label: 'Microneedling', href: '/es/microneedling' },
-      { label: 'Peel Coreano', href: '/es/peel-coreano' }
+      { label: 'Peel Coreano', href: '/es/peel-coreano' },
+      { label: 'Oxigenoterapia Facial', href: '/es/oxigenoterapia-facial' },
+      { label: 'Radiofrecuencia Facial', href: '/es/radiofrecuencia-facial' }
     ]
   },
   { 
@@ -22,14 +24,7 @@ export const navigationLinks: NavItem[] = [
       { label: 'Drenaje Linfático', href: '/es/drenaje-linfatico-corporal' }
     ]
   },
-  { 
-    label: 'Láser & Luz', 
-    href: '/es/laser-y-luz',
-    submenu: [
-      { label: 'Radiofrecuencia Facial', href: '/es/radiofrecuencia-facial' },
-      { label: 'Oxigenoterapia Facial', href: '/es/oxigenoterapia-facial' }
-    ]
-  },
+  { label: 'Láser & Luz', href: '/es/laser-y-luz' },
   { 
     label: 'Dental', 
     href: '/es/dental',

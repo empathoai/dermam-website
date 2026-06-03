@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HubFAQItem } from '../../types/hub';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown } from '../../design-system/icons';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface FAQAccordionProps {

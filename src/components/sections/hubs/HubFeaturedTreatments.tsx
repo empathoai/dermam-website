@@ -9,7 +9,7 @@ interface HubFeaturedTreatmentsProps {
 
 export default function HubFeaturedTreatments({ content }: HubFeaturedTreatmentsProps) {
   return (
-    <section className="py-24 bg-canvas/30">
+    <section className="py-24 bg-canvas">
       <Container>
         <SectionHeader 
           headline={content.headline}
@@ -18,7 +18,7 @@ export default function HubFeaturedTreatments({ content }: HubFeaturedTreatments
           className="mb-16"
         />
 
-        <div className="flex flex-col gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {content.items.map((treatment) => (
             <HubTreatmentCard key={treatment.id} treatment={treatment} />
           ))}

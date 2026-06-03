@@ -1,7 +1,7 @@
 import { deepFacialContent } from '../../../data/deepFacialLanding';
 import Container from '../../ui/Container';
 import Card from '../../ui/Card';
-import { Star } from 'lucide-react';
+import { Star } from '../../../design-system/icons';
 
 export default function DeepFacialTestimonialsSection() {
   const { testimonials } = deepFacialContent;

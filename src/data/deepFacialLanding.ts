@@ -128,12 +128,6 @@ export const deepFacialContent = {
         imageBefore: '/assets/treatments/limpieza-facial/facial-result-2-before.jpg',
         imageAfter: '/assets/treatments/limpieza-facial/facial-result-2-after.jpg',
         sessions: '1 sesión'
-      },
-      {
-        title: 'Healthy Glow',
-        imageBefore: '/assets/treatments/limpieza-facial/facial-result-3-before.jpg',
-        imageAfter: '/assets/treatments/limpieza-facial/facial-result-3-after.jpg',
-        sessions: '1 sesión'
       }
     ]
   },

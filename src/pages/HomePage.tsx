@@ -14,12 +14,14 @@ export default function HomePage() {
       ogImage="https://dermamskinhealth.com/og/dermam-home.jpg"
       ogType="website"
     >
-      <HeroSection />
-      <TreatmentsSection />
-      <DifferentiatorsSection />
-      <FounderSection />
-      <GoogleReviews filter="featured" maxItems={3} showMeta />
-      <FinalCTA />
+      <div className="[&_*]:!rounded-none">
+        <HeroSection />
+        <TreatmentsSection />
+        <DifferentiatorsSection />
+        <FounderSection />
+        <GoogleReviews filter="featured" maxItems={3} showMeta />
+        <FinalCTA />
+      </div>
     </PageShell>
   );
 }

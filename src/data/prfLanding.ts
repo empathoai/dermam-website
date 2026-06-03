@@ -92,12 +92,6 @@ export const prfContent = {
         imageBefore: '/assets/treatments/prf/prf-result-2-before.jpg',
         imageAfter: '/assets/treatments/prf/prf-result-2-after.jpg',
         sessions: '4 sesiones'
-      },
-      {
-        title: 'Firmeza y Glow',
-        imageBefore: '/assets/treatments/prf/prf-result-3-before.jpg',
-        imageAfter: '/assets/treatments/prf/prf-result-3-after.jpg',
-        sessions: '3 sesiones'
       }
     ] as ResultItem[]
   },

@@ -3,7 +3,7 @@ import { navigationLinks } from '../../data/navigation';
 import { siteConfig } from '../../data/siteConfig';
 import Button from '../ui/Button';
 import Container from '../ui/Container';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from '../../design-system/icons';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {

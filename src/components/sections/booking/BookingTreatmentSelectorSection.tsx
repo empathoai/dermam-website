@@ -4,7 +4,7 @@ import BookingFeaturedCard from '../../ui/BookingFeaturedCard';
 import BookingTreatmentRow from '../../ui/BookingTreatmentRow';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from '../../../design-system/icons';
 
 export default function BookingTreatmentSelectorSection() {
   const { selector } = bookingContent;

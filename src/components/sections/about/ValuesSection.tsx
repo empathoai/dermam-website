@@ -1,7 +1,7 @@
 import { aboutContent } from '../../../data/aboutContent';
 import Container from '../../ui/Container';
 import { motion } from 'motion/react';
-import { Target, Users, BarChart, Languages } from 'lucide-react';
+import { Target, Users, BarChart, Languages } from '../../../design-system/icons';
 
 export default function ValuesSection() {
   const { values } = aboutContent;

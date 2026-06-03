@@ -1,5 +1,5 @@
 import { siteConfig } from '../../data/siteConfig';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle } from '../../design-system/icons';
 import { useLocation } from 'react-router-dom';
 
 export default function WhatsAppFAB() {

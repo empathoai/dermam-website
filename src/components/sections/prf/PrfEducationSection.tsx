@@ -1,7 +1,7 @@
-import { prfContent } from '../../../data/prfLanding';
+﻿import { prfContent } from '../../../data/prfLanding';
 import Container from '../../ui/Container';
 import ResponsiveImage from '../../ui/ResponsiveImage';
-import { CheckCircle2 } from 'lucide-react';
+import { Check } from '../../../design-system/icons';
 
 export default function PrfEducationSection() {
   const { education } = prfContent;
@@ -46,7 +46,7 @@ export default function PrfEducationSection() {
                   PRP convencional
                 </div>
                 <div className="px-5 py-4 text-[0.68rem] uppercase tracking-[0.16em] text-base-100 border-b border-l border-white/10 flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-base-100" />
+                  <Check size={16} className="text-base-100" />
                   PRF — DERMA.M
                 </div>
 
@@ -82,7 +82,7 @@ export default function PrfEducationSection() {
 
                 <div className="rounded-[1.5rem] border border-white/15 bg-white/[0.08] p-5">
                   <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-base-100 mb-4 flex items-center gap-2">
-                    <CheckCircle2 size={16} />
+                    <Check size={16} />
                     PRF — DERMA.M
                   </h4>
                   <ul className="space-y-3 text-sm text-base-100">

@@ -13,7 +13,7 @@ interface IVKitsGridSectionProps {
 
 export default function IVKitsGridSection({ title, subtitle, kits, id }: IVKitsGridSectionProps & { id?: string }) {
   return (
-    <section className="py-24 bg-canvas" id={id}>
+    <section className="pt-16 pb-24 bg-canvas" id={id}>
       <Container>
         <SectionHeader
           headline={title}

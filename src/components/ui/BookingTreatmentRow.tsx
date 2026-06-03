@@ -1,5 +1,5 @@
 import { BookingTreatment } from '../../types/booking';
-import { ExternalLink, MessageCircle } from 'lucide-react';
+import { ExternalLink, MessageCircle } from '../../design-system/icons';
 import { siteConfig } from '../../data/siteConfig';
 import React from 'react';
 

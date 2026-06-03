@@ -205,6 +205,30 @@ The hero image must cover the full container. Never use a split hero. The subjec
 
 The approved Homepage hero is the benchmark for editorial image treatment, dark overlay behavior, premium contrast, calm luxury mood, and strong typographic hierarchy. Do not copy its exact layout into every internal section; use it as a quality reference.
 
+Hero Visual Contract:
+
+1. The Homepage Hero is the visual baseline for every hero in the site. Other heroes may adapt content, height, CTA count, and proof items, but they must preserve the same premium editorial presence.
+2. Every hero must use full-bleed media with `object-fit: cover` and a protective overlay. A hero that reads as a short banner is not acceptable for Homepage, Tier 1 landing pages, or Tier 3 treatment pages.
+3. Hero H1 typography must stay visually compatible with the Homepage scale. Homepage uses `display-hero`; internal and treatment heroes may use `display-hero-compact`, but the title must still feel dominant, not weak, compressed, or secondary to surrounding content.
+4. On dark or image-backed heroes, H1 color must use `text-base-300` / `text-inverse` or an explicitly equivalent token. Do not mix `text-white`, `text-base-100`, and `text-base-300` arbitrarily across heroes.
+5. Minimum hero height must protect editorial impact: Homepage `86vh`; Tier 1 landing pages `72–90vh`; Tier 3 treatment pages should not drop to `60vh` when doing so makes the image and title feel compressed. Use `72vh` as the recommended Tier 3 minimum unless a very specific page constraint justifies otherwise.
+6. Pills, trust signals, stats, and proof rows must share the same dark glass language: translucent background, soft border, restrained blur, rounded pill/card geometry, and monochrome text/icons.
+7. Proof rows and quick facts may vary by page, but they must feel visually connected to the hero when they are part of immediate trust-building. Do not separate proof metrics into an unrelated block if they should reinforce the hero message.
+8. Primary CTA buttons on dark or image-backed heroes must use the light-on-dark pattern: `background` / `base-100` surface, `text-primary` / `base-900` label, soft shadow, and subtle white/light hover. The secondary CTA may use dark glass. Do not place a dark primary CTA over a dark hero image.
+9. Hero animation timing should be consistent across hero families: parent fade-in with child stagger, `staggerChildren` around `0.15`, `delayChildren` around `0.3`, and item reveal `duration: 0.8` with `easeOut`. Motion may be reduced for `prefers-reduced-motion`, but the visual order should remain the same.
+10. Vertical rhythm must adapt to text length while preserving hierarchy. Longer titles may use `display-hero-compact`, but spacing between trust pill, H1, subheadline, CTA, and proof row should remain visually related to the Homepage Hero.
+
+Hero anti-patterns:
+
+1. Do not create short banner-style heroes for primary pages or treatment pages.
+2. Do not use a smaller H1 than the Homepage baseline without a clear hierarchy reason.
+3. Do not randomly switch hero title colors between raw white and base tokens.
+4. Do not detach metrics, quick facts, or trust proof from the hero if the resulting page loses immediate premium confidence.
+5. Do not add Hamilton to every hero. Hamilton remains a controlled accent, not a requirement for visual consistency.
+6. Do not use dark primary CTA buttons on dark/image heroes. If the CTA silhouette disappears into the background, the hierarchy has failed.
+7. Do not give each hero a unique animation cadence unless there is a documented interaction reason.
+8. Do not add extra animated micro-actions such as bouncing "Explore" links beside the primary CTA unless the same pattern is adopted across the hero system. One primary CTA plus one optional secondary CTA is the default.
+
 Social proof pill is optional but recommended for Homepage and Tier 1 landings. It uses Poppins Light, small text, sentence case, line icon, translucent border, glass background, and pill radius.
 
 The Hero H1 must be the dominant page element. It uses uppercase Poppins ExtraBold with compact line-height and negative tracking. Hamilton is allowed only on one inline word.
@@ -214,6 +238,30 @@ CTA Group uses two buttons maximum. Primary and secondary buttons must remain se
 Responsive behavior:
 
 On mobile, preserve the face/treatment subject in the image crop, strengthen overlay, stack CTA buttons, and keep text left-aligned. TrustBar may move below the hero content.
+
+### HubPageTemplate — Category Landing Contract
+
+Purpose: keep category pages such as Faciales, Corporales, Láser & Luz, and Dental consistent instead of becoming one-off page builds.
+
+Required order:
+
+1. Hero.
+2. Intro / proof facts.
+3. Featured treatments.
+4. Full treatment catalog.
+5. Real Google Reviews.
+6. Final CTA.
+7. FAQ.
+
+Rules:
+
+1. Hub pages must use the shared `HubPageTemplate` unless a documented exception is approved.
+2. FAQ must sit at the end of hub pages. Do not place FAQ before social proof or CTA sections.
+3. Social proof in hub pages must use real Google Reviews from the static reviews dataset. Do not render placeholder testimonial copy in production hub sections.
+4. Hub cards should use one shared animation language: subtle reveal, soft lift, no bouncy or unrelated motion.
+5. Section rhythm must alternate intentionally through surface contrast, not random background swaps. Avoid long runs of visually identical `bg-canvas` sections.
+6. Category hubs must not list treatments that belong to another category just to fill space. If a category is still incomplete, keep the catalog honest and route users to evaluation instead of misclassifying services.
+7. Featured treatment cards inside hub pages should match the Homepage treatment card structure: horizontal row/grid of vertical image-led cards, top image, bottom-left glass/category pill, white content body, title-card typography, calm body copy, and a single editorial text link with one arrow.
 
 ### TrustBar — Immediate Confidence System
 
@@ -271,6 +319,8 @@ Token mapping:
 - Editorial link: `link-editorial`.
 
 Card images use `4:3`, `object-fit: cover`, and sit at the top of the card. The image pill sits bottom-left over the image with glass effect, small Poppins Light or Regular, sentence case, and no uppercase. Treatment/service cards should remain image-led, with white content bodies, `rounded.card`, soft monochrome borders, subtle shadows, and a calm hover state that may gently lift the card or scale the inner image without bouncy motion.
+
+Card groups in the same row must read as one system, not as independent boxes. Grids must use stretch behavior (`items-stretch` plus `h-full` wrappers/cards) and cards must define a shared minimum height when copy length varies. Benefit, treatment, process, and proof cards should keep consistent dimensions within their row; if one card becomes taller due to text, siblings should stretch to match instead of leaving uneven visual baselines.
 
 The card link should not look like a button. It is a clean editorial action with a small chevron.
 
@@ -448,6 +498,13 @@ CTA must match page intent:
 - Contact: Escríbenos por WhatsApp.
 
 Dark variant is recommended by default. Light variant is allowed if the page already has too much dark contrast.
+
+The approved Homepage FinalCTA is the baseline for closing conversion sections. Internal, Hub, Tier 3, PRF, Post-op,
+Deep Facial, IV Therapy, and About FinalCTA sections should preserve the same pattern unless explicitly approved:
+full-background editorial image where available, soft overlay, centered container, local dark charcoal glass panel,
+large rounded section geometry, two-column desktop composition, dominant uppercase heading, calm supporting copy,
+primary CTA plus optional secondary CTA, and a small trust/location microcopy line below the buttons. Do not use
+split white image cards, isolated flat dark boxes, or one-off CTA layouts for final conversion sections.
 
 When a FinalCTA uses an image background, prioritize local contrast inside the content panel. The approved Home FinalCTA uses a dark charcoal glass panel with `text-inverse` heading treatment and `text-inverse-secondary` supporting copy. Do not make the panel so light that text loses contrast. Do not globally over-darken or over-lighten the image if the readability problem can be solved by the panel.
 

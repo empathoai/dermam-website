@@ -1,5 +1,5 @@
 import { BookingTreatment } from '../../types/booking';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink } from '../../design-system/icons';
 
 interface BookingFeaturedCardProps {
   treatment: BookingTreatment;

@@ -2,7 +2,7 @@ import { postOpContent } from '../../../data/postOpLanding';
 import Container from '../../ui/Container';
 import Card from '../../ui/Card';
 import ResponsiveImage from '../../ui/ResponsiveImage';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from '../../../design-system/icons';
 import { Link } from 'react-router-dom';
 
 export default function PostOpRelatedTreatments() {

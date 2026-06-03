@@ -3,7 +3,7 @@ import Container from '../../ui/Container';
 import StatItem from '../../ui/StatItem';
 import Card from '../../ui/Card';
 import SectionMedia from '../../ui/SectionMedia';
-import { ShieldCheck } from 'lucide-react';
+import { ShieldCheck } from '../../../design-system/icons';
 
 export default function DifferentiatorsSection() {
   const { differentiators } = homeContent;

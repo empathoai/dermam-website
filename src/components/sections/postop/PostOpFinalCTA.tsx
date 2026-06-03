@@ -3,7 +3,7 @@ import { siteConfig } from '../../../data/siteConfig';
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import SectionMedia from '../../ui/SectionMedia';
-import { MapPin, Phone } from 'lucide-react';
+import { MapPin, Phone } from '../../../design-system/icons';
 
 export default function PostOpFinalCTA() {
   const { finalCTA } = postOpContent;

@@ -945,7 +945,7 @@ export const tier3Treatments: Tier3Treatment[] = [
   {
     id: 'radiofrecuencia-facial',
     slugEs: 'radiofrecuencia-facial',
-    category: 'laser-light',
+    category: 'facial',
     title: 'Radiofrecuencia Facial',
     shortTitle: 'Radiofrecuencia',
     seoTitle: 'Radiofrecuencia Facial West Palm Beach | DERMA.M',

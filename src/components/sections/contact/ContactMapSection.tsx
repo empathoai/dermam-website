@@ -2,7 +2,7 @@ import { contactContent } from '../../../data/contactContent';
 import Container from '../../ui/Container';
 import ResponsiveImage from '../../ui/ResponsiveImage';
 import Button from '../../ui/Button';
-import { Clock, MapPin, ParkingCircle } from 'lucide-react';
+import { Clock, MapPin, ParkingCircle } from '../../../design-system/icons';
 
 import { siteConfig } from '../../../data/siteConfig';
 

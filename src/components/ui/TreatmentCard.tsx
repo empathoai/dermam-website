@@ -2,7 +2,7 @@ import React from 'react';
 import { Treatment } from '../../types/treatment';
 import ResponsiveImage from './ResponsiveImage';
 import Card from './Card';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from '../../design-system/icons';
 import { Link } from 'react-router-dom';
 
 interface TreatmentCardProps {

@@ -1,4 +1,4 @@
-import { ExternalLink, MessageCircle } from 'lucide-react';
+import { ExternalLink, MessageCircle } from '../../design-system/icons';
 import { ReactNode } from 'react';
 
 interface ExternalBookingButtonProps {

@@ -1,6 +1,6 @@
-import { postOpContent } from '../../../data/postOpLanding';
+﻿import { postOpContent } from '../../../data/postOpLanding';
 import Container from '../../ui/Container';
-import { CheckCircle2 } from 'lucide-react';
+import { Check } from '../../../design-system/icons';
 import { motion } from 'motion/react';
 
 export default function PostOpSurgeryTypesSection() {
@@ -24,7 +24,7 @@ export default function PostOpSurgeryTypesSection() {
                 transition={{ delay: idx * 0.1 }}
                 className="flex h-[5.625rem] items-center gap-4 p-5 rounded-[2rem] bg-base-600 border border-border-dark hover:border-base-300 hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
               >
-                <CheckCircle2 className="text-base-100 flex-shrink-0" size={20} />
+                <Check className="text-base-100 flex-shrink-0" size={20} />
                 <span className="text-base text-base-100 font-medium">{check}</span>
               </motion.div>
             ))}
