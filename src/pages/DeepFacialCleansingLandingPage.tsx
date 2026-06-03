@@ -5,7 +5,7 @@ import DeepFacialProtocolSection from '../components/sections/deep-facial/DeepFa
 import DeepFacialBenefitsSection from '../components/sections/deep-facial/DeepFacialBenefitsSection';
 import DeepFacialUpsellSection from '../components/sections/deep-facial/DeepFacialUpsellSection';
 import DeepFacialResultsSection from '../components/sections/deep-facial/DeepFacialResultsSection';
-import DeepFacialTestimonialsSection from '../components/sections/deep-facial/DeepFacialTestimonialsSection';
+import GoogleReviews from '../components/GoogleReviews';
 import DeepFacialFounderSection from '../components/sections/deep-facial/DeepFacialFounderSection';
 import DeepFacialFAQSection from '../components/sections/deep-facial/DeepFacialFAQSection';
 import DeepFacialFinalCTA from '../components/sections/deep-facial/DeepFacialFinalCTA';
@@ -33,7 +33,7 @@ export default function DeepFacialCleansingLandingPage() {
       <DeepFacialBenefitsSection />
       <DeepFacialUpsellSection />
       <DeepFacialResultsSection />
-      <DeepFacialTestimonialsSection />
+      <GoogleReviews filter="limpieza_facial" maxItems={3} />
       <DeepFacialFounderSection />
       <DeepFacialFAQSection />
       <DeepFacialFinalCTA />

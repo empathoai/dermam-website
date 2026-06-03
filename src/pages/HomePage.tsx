@@ -3,7 +3,7 @@ import HeroSection from '../components/sections/home/HeroSection';
 import TreatmentsSection from '../components/sections/home/TreatmentsSection';
 import DifferentiatorsSection from '../components/sections/home/DifferentiatorsSection';
 import FounderSection from '../components/sections/home/FounderSection';
-import TestimonialsSection from '../components/sections/home/TestimonialsSection';
+import GoogleReviews from '../components/GoogleReviews';
 import FinalCTA from '../components/sections/home/FinalCTA';
 
 export default function HomePage() {
@@ -18,7 +18,7 @@ export default function HomePage() {
       <TreatmentsSection />
       <DifferentiatorsSection />
       <FounderSection />
-      <TestimonialsSection />
+      <GoogleReviews filter="featured" maxItems={3} showMeta />
       <FinalCTA />
     </PageShell>
   );

@@ -78,6 +78,8 @@ Non-hero image background sections should use softer overlays than heroes so the
 
 Never introduce saturated accent colors unless approved. Avoid medical blue, green, pink, gold, neon, or gradient accent systems. IV Therapy imagery may include fruit and wellness colors inside photography, but the UI surrounding it must remain monochromatic.
 
+Approved exception: Google rating stars may use yellow (`text-yellow-400`) inside testimonial, review, and social-proof components only. This is a trust-recognition cue tied specifically to Google Reviews, not a general accent color. Do not reuse yellow for CTAs, icons, links, badges, section decoration, hover states, or treatment/category emphasis.
+
 Interactive states must remain subtle. On hover, cards may slightly darken borders, gently scale images, or move chevrons. Buttons may invert or shift background slightly. Do not use colored hover states.
 
 ## Typography
@@ -478,6 +480,7 @@ The approved dark footer is part of the Homepage baseline and should not be reve
 10. Don't uppercase card titles, buttons, body copy, FAQ questions, or links.
 11. Do use large radius consistently: `2rem` for cards and `2.5rem` for large sections.
 12. Don't use sharp cards, heavy shadows, neon glows, or colorful UI accents.
+12a. Do allow yellow stars only for Google rating/review components; don't extend yellow to any other UI element.
 13. Do keep treatment cards image-led with clean white bodies.
 14. Don't use gray placeholders in final UI.
 15. Do prioritize WhatsApp in contact flows and Square in direct booking flows.

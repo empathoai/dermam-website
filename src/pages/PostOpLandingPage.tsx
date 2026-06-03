@@ -4,7 +4,7 @@ import PostOpSurgeryTypesSection from '../components/sections/postop/PostOpSurge
 import PostOpUrgencySection from '../components/sections/postop/PostOpUrgencySection';
 import PostOpProtocolSection from '../components/sections/postop/PostOpProtocolSection';
 import PostOpFounderSection from '../components/sections/postop/PostOpFounderSection';
-import PostOpTestimonialsSection from '../components/sections/postop/PostOpTestimonialsSection';
+import GoogleReviews from '../components/GoogleReviews';
 import PostOpResultsSection from '../components/sections/postop/PostOpResultsSection';
 import PostOpFAQSection from '../components/sections/postop/PostOpFAQSection';
 import PostOpFinalCTA from '../components/sections/postop/PostOpFinalCTA';
@@ -31,7 +31,7 @@ export default function PostOpLandingPage() {
       <PostOpUrgencySection />
       <PostOpProtocolSection />
       <PostOpFounderSection />
-      <PostOpTestimonialsSection />
+      <GoogleReviews filter="postoperatorio" maxItems={3} />
       <PostOpResultsSection />
       <PostOpFAQSection />
       <PostOpFinalCTA />

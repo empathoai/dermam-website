@@ -5,7 +5,7 @@ import PrfEducationSection from '../components/sections/prf/PrfEducationSection'
 import PrfBenefitsSection from '../components/sections/prf/PrfBenefitsSection';
 import PrfProtocolSection from '../components/sections/prf/PrfProtocolSection';
 import PrfResultsSection from '../components/sections/prf/PrfResultsSection';
-import PrfTestimonialsSection from '../components/sections/prf/PrfTestimonialsSection';
+import GoogleReviews from '../components/GoogleReviews';
 import PrfFounderSection from '../components/sections/prf/PrfFounderSection';
 import PrfFAQSection from '../components/sections/prf/PrfFAQSection';
 import PrfFinalCTA from '../components/sections/prf/PrfFinalCTA';
@@ -33,7 +33,7 @@ export default function PrfLandingPage() {
       <PrfBenefitsSection />
       <PrfProtocolSection />
       <PrfResultsSection />
-      <PrfTestimonialsSection />
+      <GoogleReviews filter="prf" maxItems={3} />
       <PrfFounderSection />
       <PrfFAQSection />
       <PrfFinalCTA />
