@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { navigationLinks } from '../../data/navigation';
 import { siteConfig } from '../../data/siteConfig';
-import Button from '../ui/Button';
 import Container from '../ui/Container';
 import { Menu, X, ChevronDown } from '../../design-system/icons';
 import { Link, useLocation } from 'react-router-dom';
@@ -21,7 +20,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'bg-base-900 py-3 shadow-card-soft' : 'bg-base-900 py-5'
       }`}
@@ -29,8 +28,8 @@ export default function Navbar() {
       <Container>
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link 
-            to="/es" 
+          <Link
+            to="/es"
             className="inline-flex items-center px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-base-900 focus-visible:rounded-md"
             aria-label="DERMA.M inicio"
           >
@@ -45,7 +44,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-6">
             {navigationLinks.map((link) => {
               const hasSubmenu = !!link.submenu;
-              
+
               if (hasSubmenu) {
                 return (
                   <div key={link.label} className="relative group py-2">
@@ -62,7 +61,7 @@ export default function Navbar() {
                       </Link>
                       <ChevronDown className="w-3.5 h-3.5 text-base-100/75 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
                     </div>
-                    
+
                     <div className="absolute top-full left-0 mt-1 bg-white shadow-xl rounded-lg border border-border-soft py-3 min-w-[280px] flex flex-col z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
                       {link.submenu!.map((subItem) => (
                         <Link
@@ -94,14 +93,8 @@ export default function Navbar() {
             })}
           </div>
 
-          <div className="hidden lg:block">
-            <Button variant="primary" to="/es/reservar" className="px-6 py-2 !bg-base-100 !text-base-900 hover:!bg-white">
-              Reservar
-            </Button>
-          </div>
-
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             className="lg:hidden text-base-100 p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-100 focus:rounded-md"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
@@ -114,7 +107,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div 
+        <div
           className="lg:hidden fixed inset-0 top-[70px] bg-white z-40 flex flex-col p-8 gap-4 overflow-y-auto animate-in fade-in slide-in-from-top-4 duration-300"
           role="dialog"
           aria-modal="true"
@@ -173,9 +166,7 @@ export default function Navbar() {
               </div>
             );
           })}
-          <Button variant="primary" to="/es/reservar" className="w-full mt-4" onClick={() => { setIsOpen(false); setMobileActiveSubmenu(null); }}>
-            Reservar
-          </Button>
+
         </div>
       )}
     </header>

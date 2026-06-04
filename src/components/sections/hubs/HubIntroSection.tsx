@@ -8,7 +8,7 @@ interface HubIntroSectionProps {
 
 export default function HubIntroSection({ content }: HubIntroSectionProps) {
   return (
-    <section className="relative py-24 bg-canvas overflow-hidden">
+    <section className="relative py-24 bg-white overflow-hidden">
       <Container>
         <div className="flex flex-col gap-16">
           {/* Stats Row */}

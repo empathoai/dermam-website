@@ -6,6 +6,7 @@ export const navigationLinks: NavItem[] = [
   { label: 'Limpieza Facial', href: '/es/limpieza-facial-profunda' },
   { label: 'Corporales', href: '/es/tratamientos-corporales' },
   { label: 'Post-Operatorio', href: '/es/postoperatorio-west-palm-beach' },
+  { label: 'Láser & Luz', href: '/es/laser-y-luz' },
   { label: 'Dental', href: '/es/dental' },
   { label: 'IV Therapy', href: '/es/iv-therapy' },
   { label: 'Nosotros', href: '/es/sobre-nosotros' },

@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import PrfLandingPage from './pages/PrfLandingPage';
 import PostOpLandingPage from './pages/PostOpLandingPage';
@@ -22,9 +23,21 @@ import RadiofrecuenciaCorporalPage from './pages/es/RadiofrecuenciaCorporalPage'
 import DrenajeLinfaticoCorporalPage from './pages/es/DrenajeLinfaticoCorporalPage';
 import RadiofrecuenciaFacialPage from './pages/es/RadiofrecuenciaFacialPage';
 
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [pathname]);
+
+  return null;
+}
+
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/es" element={<HomePage />} />
         <Route path="/es/iv-therapy" element={<IVTherapyPage />} />

@@ -9,12 +9,12 @@ interface HubSocialProofSectionProps {
 
 export default function HubSocialProofSection({ content }: HubSocialProofSectionProps) {
   return (
-    <section className="py-24 bg-canvas">
+    <section className="py-24 bg-base-900">
       <Container>
         <SectionHeader 
           headline={content.headline}
           align="center"
-          className="mb-20"
+          className="mb-20 text-base-100"
         />
 
         <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto items-center">

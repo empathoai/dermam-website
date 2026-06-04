@@ -199,7 +199,7 @@ Approved Tier 3 section sequence:
 
 Approved Hub page sequence:
 - Hero → bg-base-900 ✅
-- Intro/Stats → bg-canvas
+- Intro/Stats → bg-white
 - Featured treatments → bg-white
 - Full catalog grid → bg-base-200
 - Social proof/Reviews → bg-base-900 ✅

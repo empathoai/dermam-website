@@ -29,7 +29,7 @@ export default function HubFinalCTA({ content }: HubFinalCTAProps) {
  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(content.whatsappMessage || 'Hola, quiero información.')}`;
 
  return (
- <section className="relative isolate overflow-hidden py-32">
+ <section className="relative isolate overflow-hidden py-32 bg-base-900">
  <SectionMedia
  type="image"
  src={content.image.src}
