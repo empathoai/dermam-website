@@ -1,4 +1,4 @@
-﻿import { FAQItem, BenefitItem, ProtocolStep, ResultItem } from '../types/landing';
+import { FAQItem, BenefitItem, ProtocolStep, ResultItem } from '../types/landing';
 
 export const postOpContent = {
   hero: {
@@ -9,7 +9,7 @@ export const postOpContent = {
     secondaryCTA: 'Escríbenos por WhatsApp',
     trustLine: '4.9 Google · West Palm Beach, FL',
     image: {
-      src: '/assets/images/hero-postop.jpg',
+      src: '/assets/treatments/postoperatorio/hero.jpg',
       alt: 'Recuperación Post-Operatorio en DERMA.M',
       prompt: 'Premium clinical wellness editorial image for post-operative recovery care at a premium aesthetics center, professional hands performing gentle lymphatic drainage on a calm patient, white and ivory linens, soft sage accents, warm natural light, clean treatment room, serene recovery atmosphere, aesthetic spa but not hospital, emotionally reassuring, no visible bruising, no scars, no surgical wounds, no blood, no dramatic bandages, no fear-based visuals, high-end post-op care photography, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }

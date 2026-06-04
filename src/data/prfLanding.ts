@@ -8,7 +8,7 @@ export const prfContent = {
     cta: 'Agenda tu evaluación gratuita',
     trustBar: '4.9 Google · West Palm Beach · Miami, FL',
     image: {
-      src: '/assets/images/hero-prf.jpg',
+      src: '/assets/treatments/prf/hero.jpg',
       alt: 'Plasma Rico en Plaquetas y Fibrina en DERMA.M',
       prompt: 'Premium clinical aesthetics editorial image for a PRF / PRP facial treatment landing page, gloved hands holding a small vial with golden plasma layer and subtle dark red lower layer, clean ivory clinical treatment room, blurred centrifuge and amber professional skincare vials in background, soft natural light, elegant professional precision, pastel ivory and muted sage environment, sober muted rose-plasma accent, luxury medspa photography, calm and professional, no blood spill, no aggressive needle close-up, no surgery, no hospital emergency feeling, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -148,7 +148,7 @@ export const prfContent = {
     primaryCTA: 'Agenda tu evaluación gratuita',
     secondaryCTA: 'Escríbenos por WhatsApp',
     image: {
-        src: '/assets/treatments/prf/prf-final-cta.jpg',
+        src: '/assets/treatments/prf/cta.jpg',
         alt: 'Final CTA PRF background',
         prompt: 'Soft premium clinical wellness still-life for PRF facial treatment, golden plasma vial, ivory candle, folded white towel, subtle baby’s breath flowers, ceramic tray, muted rose-plasma accent, sage botanical detail, warm pearl-gray background, lots of negative space for CTA text, elegant aesthetic spa mood, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }

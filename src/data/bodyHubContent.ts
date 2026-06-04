@@ -58,7 +58,7 @@ export const bodyHubContent: HubPageContent = {
         href: '/es/postoperatorio-west-palm-beach',
         badge: 'Más solicitado',
         image: {
-          src: '/assets/images/hero-postop.jpg',
+          src: '/assets/treatments/postoperatorio/hero.jpg',
           alt: 'Post-Operatorio'
         }
       },
@@ -122,7 +122,7 @@ export const bodyHubContent: HubPageContent = {
         category: 'Recuperación',
         ctaLabel: 'Ver más →',
         href: '/es/postoperatorio-west-palm-beach',
-        image: { src: '/assets/images/hero-postop.jpg', alt: 'Post-Operatorio' }
+        image: { src: '/assets/treatments/postoperatorio/hero.jpg', alt: 'Post-Operatorio' }
       },
       {
         id: 'estrias-grid',

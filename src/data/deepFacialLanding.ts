@@ -8,7 +8,7 @@ export const deepFacialContent = {
     primaryCTA: 'Reserva tu cita',
     trustLine: '4.9 Google · West Palm Beach · Miami, FL',
     image: {
-      src: '/assets/treatments/limpieza-facial/hero-deep-facial.jpg',
+      src: '/assets/treatments/limpieza-facial/hero.jpg',
       alt: 'Limpieza Facial Profunda en DERMA.M',
       prompt: 'Bright premium skincare clinic editorial image for deep facial cleansing, woman lying calmly with white headband receiving a gentle hydrating facial treatment, luminous natural skin texture, soft white treatment room, warm ivory light, pastel sage and watery blue-green accents, clean clinical spa environment, folded towels and skincare serum nearby, calm and approachable luxury medspa photography, no redness, no pore extraction, no harsh tools, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -206,7 +206,7 @@ export const deepFacialContent = {
     primaryCTA: 'Reserva tu cita',
     secondaryCTA: 'Escríbenos por WhatsApp',
     image: {
-        src: '/assets/treatments/limpieza-facial/deepfacial-final-cta.jpg',
+        src: '/assets/treatments/limpieza-facial/cta.jpg',
         alt: 'Final CTA Deep Facial Cleansing',
         prompt: 'Soft premium skincare still-life, glass serum bottle, white towel, ivory candle, ceramic bowl, soft sage leaves, watery blue-green accent, warm pearl-gray surface, clean hydrated skin wellness mood, lots of negative space for CTA text, calm feminine clinical spa atmosphere, no people, no dark background, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }

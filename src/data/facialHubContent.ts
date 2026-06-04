@@ -58,7 +58,7 @@ export const facialHubContent: HubPageContent = {
         href: '/es/plasma-rico-en-plaquetas-west-palm-beach',
         badge: 'Más solicitado',
         image: {
-          src: '/assets/images/hero-prf.jpg',
+          src: '/assets/treatments/prf/hero.jpg',
           alt: 'Tratamiento PRF'
         }
       },
@@ -70,7 +70,7 @@ export const facialHubContent: HubPageContent = {
         href: '/es/limpieza-facial-profunda',
         badge: 'Ideal para empezar',
         image: {
-          src: '/assets/treatments/limpieza-facial/hero-deep-facial.jpg',
+          src: '/assets/treatments/limpieza-facial/hero.jpg',
           alt: 'Limpieza Facial Profunda'
         }
       },
@@ -97,7 +97,7 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/limpieza-facial-profunda',
         image: {
-          src: '/assets/treatments/limpieza-facial/hero-deep-facial.jpg',
+          src: '/assets/treatments/limpieza-facial/hero.jpg',
           alt: 'Limpieza Facial'
         }
       },
