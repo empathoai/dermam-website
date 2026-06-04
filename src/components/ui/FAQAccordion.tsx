@@ -15,41 +15,50 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ items }) => {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="-mx-2 space-y-2 sm:mx-0">
       {items.map((item, idx) => (
-        <div 
-          key={idx} 
-          className="bg-white rounded-[2rem] border border-border-card overflow-hidden transition-all duration-300"
-        >
-          <button
-            onClick={() => toggle(idx)}
-            className="w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-canvas/50 transition-colors"
-            aria-expanded={openIndex === idx}
-            aria-controls={`faq-answer-hub-${idx}`}
+        <div className="group" key={idx}>
+          <div
+            className={[
+              'overflow-hidden rounded-[2rem] border transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]',
+              openIndex === idx
+                ? 'border-border-card bg-white shadow-card-soft'
+                : 'border-transparent bg-transparent hover:bg-white/70',
+            ].join(' ')}
           >
-            <span className="font-semibold text-text-primary text-sm md:text-base">
-              {item.question}
-            </span>
-            <ChevronDown 
-              className={`text-text-secondary transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} 
-              size={20} 
-            />
-          </button>
-          <AnimatePresence>
-            {openIndex === idx && (
-              <motion.div
-                id={`faq-answer-hub-${idx}`}
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="px-6 pb-6 text-text-secondary leading-relaxed border-t border-border-soft pt-4 text-xs md:text-sm">
-                  {item.answer}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+            <button
+              onClick={() => toggle(idx)}
+              className="flex w-full items-center justify-between gap-5 px-6 py-5 text-left md:px-8 md:py-6"
+              aria-expanded={openIndex === idx}
+              aria-controls={`faq-answer-hub-${idx}`}
+            >
+              <span className="font-medium text-text-primary text-base leading-[1.45] normal-case">
+                {item.question}
+              </span>
+              <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full border border-border bg-white text-text-secondary transition-colors duration-300 group-hover:text-text-primary">
+                <ChevronDown
+                  className={`transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`}
+                  size={18}
+                />
+              </span>
+            </button>
+            <AnimatePresence>
+              {openIndex === idx && (
+                <motion.div
+                  id={`faq-answer-hub-${idx}`}
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.24, ease: 'easeOut' }}
+                >
+                  <div className="px-6 pb-6 pt-0 text-sm leading-[1.7] text-text-secondary md:px-8 md:pb-8 md:text-base">
+                    {item.answer}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+          <hr className="mx-6 -mb-px border-border-soft transition-opacity duration-300 group-last:hidden md:mx-8" />
         </div>
       ))}
     </div>

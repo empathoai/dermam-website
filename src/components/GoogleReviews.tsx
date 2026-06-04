@@ -58,13 +58,13 @@ function ReviewText({ text }: { text: string }) {
   const shouldShowToggle = text.length > 120;
 
   return (
-    <div className="text-text-primary italic mb-8 leading-relaxed whitespace-pre-line">
+    <div className="mb-8 flex flex-1 flex-col items-center justify-center text-center text-text-primary italic leading-relaxed whitespace-pre-line">
       <span>“{truncateText(text, expanded)}”</span>
       {shouldShowToggle && (
         <button
           type="button"
           onClick={() => setExpanded((current) => !current)}
-          className="ml-2 text-sm font-medium text-text-secondary underline underline-offset-4 hover:text-text-primary"
+          className="mt-3 text-sm font-medium not-italic text-text-secondary underline underline-offset-4 hover:text-text-primary"
         >
           {expanded ? 'Ver menos' : 'Ver más'}
         </button>
@@ -81,14 +81,15 @@ export default function GoogleReviews({ filter = 'featured', maxItems = 3, showM
   return (
     <section className="py-24 bg-canvas">
       <Container>
-        {showMeta && (
-          <div className="mb-16 text-center">
-            <p className="text-xs font-medium uppercase tracking-[0.15em] text-text-secondary mb-4">
-              Reseñas reales de pacientes
-            </p>
-            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-8">
-              Lo que dicen de DERMA.M
-            </h2>
+        <div className="mb-16 text-center">
+          <p className="text-xs font-medium uppercase tracking-[0.15em] text-text-secondary mb-4">
+            Reseñas reales de pacientes
+          </p>
+          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-8">
+            Lo que dicen de DERMA.M
+          </h2>
+          {showMeta && (
+            <>
             <div className="text-5xl md:text-6xl font-sans text-text-primary mb-4">
               {reviewsData.meta.rating}
             </div>
@@ -97,19 +98,20 @@ export default function GoogleReviews({ filter = 'featured', maxItems = 3, showM
                 <Star key={i} size={22} fill={i < Math.round(reviewsData.meta.rating) ? 'currentColor' : 'none'} />
               ))}
             </div>
-          </div>
-        )}
+            </>
+          )}
+        </div>
 
-        <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw">
+        <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw" desktopItemClassName="h-full">
           {reviews.map((review) => (
-            <Card key={review.id} className="p-10 flex flex-col items-center text-center bg-white border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle">
+            <Card key={review.id} className="flex h-full min-h-[18rem] flex-col items-center justify-between p-10 text-center bg-white border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle">
               <div className="flex gap-1 mb-6 text-yellow-400" aria-label={`${review.rating} de 5 estrellas`}>
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill={i < review.rating ? 'currentColor' : 'none'} />
                 ))}
               </div>
               <ReviewText text={review.text} />
-              <span className="block font-semibold text-sm mb-1">{review.author}</span>
+              <span className="mt-auto block font-semibold text-sm mb-1">{review.author}</span>
             </Card>
           ))}
         </ResponsiveCardGroup>
