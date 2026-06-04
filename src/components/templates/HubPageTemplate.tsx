@@ -26,8 +26,8 @@ export default function HubPageTemplate({ content }: HubPageTemplateProps) {
       <HubFeaturedTreatments content={content.featured} />
       <HubAllTreatmentsGrid content={content.allGrid} />
       <GoogleReviews filter="featured" maxItems={3} showMeta />
-      <HubFinalCTA content={content.finalCTA} />
       <HubFAQSection content={content.faqs} />
+      <HubFinalCTA content={content.finalCTA} />
     </PageShell>
   );
 }
