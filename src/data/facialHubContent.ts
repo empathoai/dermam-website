@@ -29,6 +29,8 @@ export const facialHubContent: HubPageContent = {
       { value: '1,000+', label: 'Pacientes atendidas' },
       { value: '100%', label: 'Diagnóstico personalizado' }
     ],
+    editorialLabel: 'Diagnóstico facial profesional',
+    editorialBody: 'Cada piel tiene una historia distinta. En DERMA.M evaluamos textura, luminosidad, manchas, poros y sensibilidad antes de recomendar un protocolo facial, para que tu tratamiento tenga dirección clínica y resultados medibles.',
     benefits: [
       {
         title: 'Diagnóstico antes de tratamiento',

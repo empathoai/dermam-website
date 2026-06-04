@@ -29,6 +29,8 @@ export const laserLightHubContent: HubPageContent = {
       { value: 'Protocolos', label: 'Personalizados' },
       { value: 'Evaluación', label: 'Antes de iniciar' }
     ],
+    editorialLabel: 'Tecnología guiada por evaluación',
+    editorialBody: 'La luz y la aparatología funcionan mejor cuando se aplican con criterio. Antes de iniciar, revisamos tu piel, tu historial y tu objetivo para elegir intensidad, frecuencia y cuidados adecuados.',
     benefits: [
       {
         title: 'Tecnología con criterio profesional',

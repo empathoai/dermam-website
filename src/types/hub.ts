@@ -58,6 +58,8 @@ export interface HubPageContent {
   };
   intro: {
     stats: Array<{ value: string; label: string }>;
+    editorialLabel: string;
+    editorialBody: string;
     benefits: Array<{ title: string; description: string }>;
   };
   featured: {

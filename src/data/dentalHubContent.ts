@@ -29,6 +29,8 @@ export const dentalHubContent: HubPageContent = {
       { value: 'Bilingüe', label: 'Entorno' },
       { value: 'Profesional', label: 'Cuidado' }
     ],
+    editorialLabel: 'Estética dental con acompañamiento',
+    editorialBody: 'La experiencia dental en DERMA.M se enfoca en orientación clara, cuidado profesional y confianza. Te ayudamos a entender opciones, tiempos y próximos pasos antes de decidir.',
     benefits: [
       {
         title: 'Evaluación antes de tratamiento',

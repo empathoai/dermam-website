@@ -29,6 +29,8 @@ export const bodyHubContent: HubPageContent = {
       { value: '1,000+', label: 'Pacientes atendidas' },
       { value: '100%', label: 'Diagnóstico personalizado' }
     ],
+    editorialLabel: 'Cuidado corporal con criterio',
+    editorialBody: 'Los tratamientos corporales no deberían sentirse genéricos. Revisamos tu objetivo, tu momento del proceso y la respuesta de tu cuerpo para orientar un protocolo realista, seguro y profesional.',
     benefits: [
       {
         title: 'Evaluación antes de protocolo',
