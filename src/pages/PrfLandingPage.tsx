@@ -35,9 +35,9 @@ export default function PrfLandingPage() {
       <PrfResultsSection />
       <GoogleReviews filter="prf" maxItems={3} />
       <PrfFounderSection />
+      <PrfRelatedTreatments />
       <PrfFAQSection />
       <PrfFinalCTA />
-      <PrfRelatedTreatments />
     </PageShell>
   );
 }

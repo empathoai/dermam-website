@@ -33,9 +33,9 @@ export default function PostOpLandingPage() {
       <PostOpFounderSection />
       <GoogleReviews filter="postoperatorio" maxItems={3} />
       <PostOpResultsSection />
+      <PostOpRelatedTreatments />
       <PostOpFAQSection />
       <PostOpFinalCTA />
-      <PostOpRelatedTreatments />
     </PageShell>
   );
 }

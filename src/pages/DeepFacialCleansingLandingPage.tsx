@@ -35,9 +35,9 @@ export default function DeepFacialCleansingLandingPage() {
       <DeepFacialResultsSection />
       <GoogleReviews filter="limpieza_facial" maxItems={3} />
       <DeepFacialFounderSection />
+      <DeepFacialRelatedTreatments />
       <DeepFacialFAQSection />
       <DeepFacialFinalCTA />
-      <DeepFacialRelatedTreatments />
     </PageShell>
   );
 }
