@@ -6,7 +6,7 @@ export const prfContent = {
     headline: 'Plasma Rico en Fibrina en West Palm Beach',
     subheadline: 'Protocolo clínico avanzado para regeneración facial. Resultados desde la primera sesión.',
     cta: 'Agenda tu evaluación gratuita',
-    trustBar: '4.9 Google · MedSpa Certificado · WPB, FL',
+    trustBar: '4.9 Google · West Palm Beach · Miami, FL',
     image: {
       src: '/assets/images/hero-prf.jpg',
       alt: 'Plasma Rico en Plaquetas y Fibrina en DERMA.M',

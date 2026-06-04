@@ -12,7 +12,7 @@ export const facialHubContent: HubPageContent = {
     ogImage: 'https://dermamskinhealth.com/og/tratamientos-faciales.jpg'
   },
   hero: {
-    eyebrow: 'West Palm Beach · MedSpa Certificado',
+    eyebrow: 'West Palm Beach · Miami · MedSpa Certificado',
     headline: 'Tratamientos Faciales en DERMA.M',
     subheadline: 'Protocolos profesionales para cada tipo de piel. Diagnóstico personalizado antes de cualquier tratamiento.',
     ctaLabel: 'Evalúa tu piel — gratis',
@@ -40,13 +40,13 @@ export const facialHubContent: HubPageContent = {
       },
       {
         title: 'Resultados documentados',
-        description: 'Antes y después reales de pacientes atendidas en DERMA.M West Palm Beach.'
+        description: 'Antes y después reales de pacientes atendidas en DERMA.M West Palm Beach · Miami.'
       }
     ]
   },
   featured: {
     headline: 'Nuestros tratamientos principales',
-    subheadline: 'Los protocolos más solicitados en DERMA.M West Palm Beach',
+    subheadline: 'Los protocolos más solicitados en DERMA.M West Palm Beach · Miami',
     items: [
       {
         id: 'prf',

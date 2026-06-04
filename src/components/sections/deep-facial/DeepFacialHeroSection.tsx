@@ -56,16 +56,25 @@ export default function DeepFacialHeroSection() {
         >
           <motion.div variants={itemVariants} className="mb-6 flex flex-col items-start gap-3">
             <HeroTrustPill>{hero.trustLine}</HeroTrustPill>
-            <span className="inline-block rounded-full border border-white/10 bg-white/[0.08] px-4 py-1.5 text-xs font-light tracking-normal normal-case text-base-200 backdrop-blur-sm">
-              {hero.eyebrow}
-            </span>
           </motion.div>
           
           <motion.h1 
             variants={itemVariants}
             className="text-[clamp(3rem,6.6vw,5.35rem)] font-extrabold leading-[0.96] tracking-[-0.045em] uppercase text-base-300 mb-8"
           >
-            {hero.headline}
+            {(() => {
+              const full = hero.headline;
+              const idx = full.lastIndexOf(' en ');
+              const treatment = idx >= 0 ? full.slice(0, idx) : full;
+              return (
+                <>
+                  {treatment}
+                  <span className="block text-[clamp(0.9rem,1.8vw,1.35rem)] font-medium normal-case tracking-[0.02em] text-base-300/70 mt-3 leading-[1.4]">
+                    en West Palm Beach · Miami
+                  </span>
+                </>
+              );
+            })()}
           </motion.h1>
           
           <motion.p 

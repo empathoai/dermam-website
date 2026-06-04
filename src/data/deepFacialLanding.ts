@@ -6,7 +6,7 @@ export const deepFacialContent = {
     headline: 'Limpieza Facial Profunda en West Palm Beach',
     subheadline: 'El primer paso para entender qué necesita tu piel. Resultados visibles desde la primera sesión.',
     primaryCTA: 'Reserva tu cita',
-    trustLine: 'Evaluación incluida · 4.9 Google · WPB, FL',
+    trustLine: '4.9 Google · West Palm Beach · Miami, FL',
     image: {
       src: '/assets/treatments/limpieza-facial/hero-deep-facial.jpg',
       alt: 'Limpieza Facial Profunda en DERMA.M',

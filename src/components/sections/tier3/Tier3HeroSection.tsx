@@ -73,18 +73,24 @@ export default function Tier3HeroSection({
               <motion.div
                 variants={itemVariants}
               >
-                <HeroTrustPill>4.9 Google · Atención profesional</HeroTrustPill>
+                <HeroTrustPill>4.9 Google · West Palm Beach · Miami, FL</HeroTrustPill>
               </motion.div>
-              <motion.span
-                 variants={itemVariants}
-                 className="inline-block px-3 py-1 bg-white/[0.08] backdrop-blur-sm rounded-full border border-white/10 text-xs text-base-200 font-light tracking-normal normal-case"
-              >
-                  {eyebrow}
-              </motion.span>
             </div>
             
             <motion.h1 variants={itemVariants} className="text-[clamp(3rem,6.6vw,5.35rem)] font-extrabold leading-[0.96] tracking-[-0.045em] uppercase text-base-300 drop-shadow-md mb-8">
-              {h1}
+              {(() => {
+                const full = h1;
+                const idx = full.lastIndexOf(' en ');
+                const treatment = idx >= 0 ? full.slice(0, idx) : full;
+                return (
+                  <>
+                    {treatment}
+                    <span className="block text-[clamp(0.9rem,1.8vw,1.35rem)] font-medium normal-case tracking-[0.02em] text-base-300/70 mt-3 leading-[1.4]">
+                      en West Palm Beach · Miami
+                    </span>
+                  </>
+                );
+              })()}
             </motion.h1>
             
             <motion.p variants={itemVariants} className="text-base-300 text-lg mb-12 max-w-lg font-light leading-[1.65] tracking-normal drop-shadow-md">

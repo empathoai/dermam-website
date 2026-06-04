@@ -67,11 +67,11 @@ export default function HubHeroSection({ content }: HubHeroSectionProps) {
               >
                 <HeroTrustPill>{content.trustLine}</HeroTrustPill>
               </motion.div>
-              <motion.span 
-                 variants={itemVariants}
-                 className="inline-block px-3 py-1 bg-white/[0.08] backdrop-blur-sm rounded-full border border-white/10 text-xs text-base-200 font-light tracking-normal normal-case"
+              <motion.span
+                variants={itemVariants}
+                className="inline-block px-3 py-1 bg-white/[0.08] backdrop-blur-sm rounded-full border border-white/10 text-xs text-base-200 font-light tracking-normal normal-case"
               >
-                  {content.eyebrow}
+                {content.eyebrow}
               </motion.span>
             </div>
             
