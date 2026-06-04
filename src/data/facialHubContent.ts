@@ -18,7 +18,7 @@ export const facialHubContent: HubPageContent = {
     ctaLabel: 'Evalúa tu piel — gratis',
     trustLine: '4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
     image: {
-      src: '/assets/images/laser-treatment.jpg',
+      src: '/assets/treatments/tratamientos-faciales/hero.jpg',
       alt: 'Tratamiento facial en DERMA.M',
       prompt: 'Bright premium aesthetics facial treatment hero image, calm woman receiving a gentle facial treatment in a clean ivory treatment room, white headband, luminous realistic skin, soft sage and pearl gray accents, warm natural light, botanical minimal decor, professional DERMA.M-style medspa environment, clinical but welcoming, no redness, no harsh tools, no aggressive procedure, no dark background, 16:9 horizontal.'
     }
@@ -255,7 +255,7 @@ export const facialHubContent: HubPageContent = {
     primaryCTA: 'Evalúa tu piel — gratis',
     secondaryCTA: 'Escríbenos por WhatsApp',
     image: {
-      src: '/assets/images/laser-treatment.jpg',
+      src: '/assets/treatments/tratamientos-faciales/cta.jpg',
       alt: 'Cuidado facial DERMA.M',
       prompt: 'Soft premium facial skincare still-life, serum bottle, white towel, ceramic tray, sage leaves, watery blue-green accent, warm pearl-gray background, calm clean skin wellness mood, lots of negative space for CTA text, no people, no dark background, 16:9 horizontal.'
     },

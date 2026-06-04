@@ -18,7 +18,7 @@ export const dentalHubContent: HubPageContent = {
     ctaLabel: 'Agenda una evaluación',
     trustLine: '4.9 Google · Servicios dentales estéticos · WPB, FL',
     image: {
-      src: '/assets/images/dental-office.jpg',
+      src: '/assets/treatments/dental/hero.jpg',
       alt: 'Servicio dental en DERMA.M',
       prompt: 'Premium aesthetic dental care image in a bright ivory clinical wellness room, calm patient smiling subtly in dental chair, professional dental specialist preparing consultation, pearl gray and soft sage accents, clean modern environment, not cold hospital, no tools inside mouth, no exaggerated smile, no harsh dental stock feel, premium approachable dental aesthetic photography, 16:9 horizontal.'
     }
@@ -225,7 +225,7 @@ export const dentalHubContent: HubPageContent = {
     secondaryCTA: 'Escríbenos por WhatsApp',
     whatsappMessage: 'Hola, quiero información sobre servicios dentales en DERMA.M.',
     image: {
-      src: '/assets/images/dental-office.jpg',
+      src: '/assets/treatments/dental/cta.jpg',
       alt: 'Sonrisa DERMA.M',
       prompt: 'Clean bright dental wellness scene, ivory palette, minimalist.'
     }

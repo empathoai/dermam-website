@@ -14,6 +14,7 @@ This project is a React/TypeScript front-end with UI organized primarily under `
 - **DO NOT CHANGE FOLDER STRUCTURE:** Do not rename, move, delete, or reorganize existing folders or files as part of UI/UX work.
 - **DO NOT CHANGE CORE CONTENT STRATEGY:** Do not change CTA routing logic, page intent, clinical funnel strategy, team authority references, treatment data structure, or content semantics unless the user specifically asks for copy/content review.
 - **NO UNREQUESTED BUILDS:** Do not run production builds after changes unless the user explicitly asks for one.
+- **REPOSITORY BOUNDARY IS ABSOLUTE:** Only read, modify, create, delete, execute, or inspect files and tools inside `D:\Derma_Content\DermaM-WebSite`. Do not use or alter files, folders, repos, caches, temp assets, scripts, or environments outside this repository unless the user explicitly authorizes that exact external path in writing for the current task.
 - **PRESERVE UTF-8 TEXT ENCODING:** All repository text files must be read and written as UTF-8. Never save Spanish copy through Windows-1252/ANSI or any tool flow that produces mojibake. Before and after editing user-facing copy, search the touched files for corrupted accent/apostrophe sequences and correct them immediately if found.
 
 ## 🎨 Operational Guidelines
@@ -85,3 +86,6 @@ When you detect any of these contexts, IMMEDIATELY load the corresponding skill 
 | User asks to commit, hacer commit, commitear, push after commit, or leave Git aligned | dermam-fast-commit |
 | User writes `$engram`, asks to register/save status, or wants a next-session continuation prompt | engram |
 
+## Session-start token rule
+
+At the start of every new session in this repository, activate `[$caveman](D:\Derma_Content\DermaM-WebSite\.agents\skills\caveman\SKILL.md)` first by default unless the user explicitly says `stop caveman` or `normal mode`.

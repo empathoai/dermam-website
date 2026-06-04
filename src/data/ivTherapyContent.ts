@@ -7,7 +7,7 @@ export const ivTherapyContent: IVTherapyPageContent = {
     subheadline: 'Vitaminas y nutrientes directamente en tu torrente sanguíneo. Apoyo rápido para hidratación, energía y bienestar.',
     ctaLabel: 'Ver los kits disponibles',
     image: {
-      src: '/assets/images/hero-iv-therapy.jpg',
+      src: '/assets/treatments/iv-therapy/hero.jpg',
       alt: 'IV Therapy en DERMA.M West Palm Beach',
       prompt: 'Bright premium IV therapy wellness editorial image for a premium aesthetics center, elegant IV bag on a clean stand with soft colorful vitamin-infused fluid, fresh citrus fruit, berries, cucumber water, folded white towels, warm ivory treatment room, pastel sage and pearl gray accents, clean clinical wellness atmosphere, vibrant colors only from fruits and IV fluid, premium medspa photography, no hospital feeling, no sick patient, no aggressive needle close-up, no blood, no dark background, 16:9 horizontal, main subject centered for mobile crop safety.'
     }
@@ -78,7 +78,7 @@ export const ivTherapyContent: IVTherapyPageContent = {
       whatsappMessage: 'Hola, quiero orientación sobre IV Therapy en DERMA.M.'
     },
     image: {
-      src: '/assets/images/iv-final-cta.jpg',
+      src: '/assets/treatments/iv-therapy/cta.jpg',
       alt: 'Reserva tu sesión de IV Therapy',
       prompt: 'Premium IV therapy wellness still-life, elegant IV bag, folded white towel, fresh citrus, cucumber water, soft sage leaves, warm ivory background, lots of negative space for CTA text, bright clinical wellness atmosphere, no people, no needles close-up, no hospital look, 16:9 horizontal, main visual elements centered for mobile crop safety.'
     }

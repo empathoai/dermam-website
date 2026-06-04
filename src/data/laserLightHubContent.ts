@@ -18,7 +18,7 @@ export const laserLightHubContent: HubPageContent = {
     ctaLabel: 'Evalúa tu piel — gratis',
     trustLine: '4.9 Google · Tecnología avanzada · WPB, FL',
     image: {
-      src: '/assets/images/laser-device.jpg',
+      src: '/assets/treatments/laser-luz/hero.jpg',
       alt: 'Láser y luz en DERMA.M',
       prompt: 'Premium aesthetic laser and light treatment room, modern skin technology device in bright ivory clinical wellness space, soft pearl gray and sage accents, professional aesthetic specialist preparing treatment, calm patient with protective eyewear, no bright neon beams, no harsh hospital feeling, no dramatic sci-fi light, high-end medspa photography, clean and precise, 16:9 horizontal.'
     }
@@ -220,7 +220,7 @@ export const laserLightHubContent: HubPageContent = {
     secondaryCTA: 'Escríbenos por WhatsApp',
     whatsappMessage: 'Hola, quiero información sobre tratamientos de láser y luz en DERMA.M.',
     image: {
-      src: '/assets/images/laser-device.jpg',
+      src: '/assets/treatments/laser-luz/cta.jpg',
       alt: 'Tecnología DERMA.M',
       prompt: 'Clean aesthetic technology scene, ivory and pearl gray, soft lighting.'
     }
