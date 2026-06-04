@@ -58,9 +58,8 @@ export const facialHubContent: HubPageContent = {
         href: '/es/plasma-rico-en-plaquetas-west-palm-beach',
         badge: 'Más solicitado',
         image: {
-          src: '/assets/images/facial-massage.jpg',
-          alt: 'Tratamiento PRF',
-          prompt: 'Premium clinical aesthetics editorial photo, gloved hands holding a small PRP/PRF vial with golden plasma layer, clean ivory clinical surface, soft natural light, blurred centrifuge in background, elegant professional precision, no visible blood spill, no aggressive needle, no patient face, pastel ivory and soft sage environment, luxury skincare clinic photography, realistic, calm, professional, 4:3 ratio.'
+          src: '/assets/images/hero-prf.jpg',
+          alt: 'Tratamiento PRF'
         }
       },
       {
@@ -71,9 +70,8 @@ export const facialHubContent: HubPageContent = {
         href: '/es/limpieza-facial-profunda',
         badge: 'Ideal para empezar',
         image: {
-          src: '/assets/images/booking-hero.jpg',
-          alt: 'Limpieza Facial Profunda',
-          prompt: 'Premium deep facial cleansing treatment editorial photo, woman lying down with white headband receiving a gentle cleansing or hydrating treatment, luminous natural skin, soft white treatment room, pastel sage accents, no pore extraction, no redness, no harsh tools, calm luxury skincare photography, 4:3 ratio.'
+          src: '/assets/treatments/limpieza-facial/hero-deep-facial.jpg',
+          alt: 'Limpieza Facial Profunda'
         }
       },
       {
@@ -83,9 +81,8 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver tratamiento →',
         href: '/es/microneedling',
         image: {
-          src: '/assets/images/facial-mask.jpg',
-          alt: 'Tratamiento Microneedling',
-          prompt: 'Premium microneedling facial treatment editorial image, professional hands using a modern dermapen device near client’s cheek, client calm with white headband, clean ivory clinical room, soft sage accents, no blood, no redness, no pain expression, high-end medspa photography, 4:3 ratio.'
+          src: '/assets/treatments/microneedling/hero.jpg',
+          alt: 'Tratamiento Microneedling'
         }
       }
     ]
@@ -100,9 +97,8 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/limpieza-facial-profunda',
         image: {
-          src: '/assets/images/body-stretching.jpg',
-          alt: 'Limpieza Facial',
-          prompt: 'High-end facial cleansing icon-style photo, water splashes, clear skin, ivory background.'
+          src: '/assets/treatments/limpieza-facial/hero-deep-facial.jpg',
+          alt: 'Limpieza Facial'
         }
       },
       {

@@ -58,9 +58,8 @@ export const bodyHubContent: HubPageContent = {
         href: '/es/postoperatorio-west-palm-beach',
         badge: 'Más solicitado',
         image: {
-          src: '/assets/treatments/peel-treatment.jpg',
-          alt: 'Post-Operatorio',
-          prompt: 'Premium post-operative lymphatic drainage image, professional hands performing gentle body drainage over white linens, patient modestly covered, warm ivory treatment room, sage accents, calm recovery atmosphere, no bruising, no scars, no surgery, no hospital look, high-end clinical wellness photography, 4:3 ratio.'
+          src: '/assets/images/hero-postop.jpg',
+          alt: 'Post-Operatorio'
         }
       },
       {
@@ -123,7 +122,7 @@ export const bodyHubContent: HubPageContent = {
         category: 'Recuperación',
         ctaLabel: 'Ver más →',
         href: '/es/postoperatorio-west-palm-beach',
-        image: { src: '/assets/treatments/peel-treatment.jpg', alt: 'Post-Operatorio', prompt: 'Post-Op' }
+        image: { src: '/assets/images/hero-postop.jpg', alt: 'Post-Operatorio' }
       },
       {
         id: 'estrias-grid',
