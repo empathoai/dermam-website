@@ -83,4 +83,5 @@ When you detect any of these contexts, IMMEDIATELY load the corresponding skill 
 | Context | Skill to load |
 | ------- | ------------- |
 | User asks to commit, hacer commit, commitear, push after commit, or leave Git aligned | dermam-fast-commit |
+| User writes `$engram`, asks to register/save status, or wants a next-session continuation prompt | engram |
 
