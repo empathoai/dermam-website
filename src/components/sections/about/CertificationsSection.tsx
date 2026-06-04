@@ -1,5 +1,6 @@
 import Container from '../../ui/Container';
 import { Award, ShieldCheck, Star, Globe } from '../../../design-system/icons';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function CertificationsSection() {
   const certifications = [
@@ -12,7 +13,7 @@ export default function CertificationsSection() {
   return (
     <section className="py-16 bg-canvas border-y border-border-soft">
       <Container>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <ResponsiveCardGroup desktopColumns={4} desktopClassName="lg:gap-12" mobileCardWidth="78vw">
             {certifications.map((cert, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center">
                     <div className="p-4 rounded-full bg-base-900/5 text-base-900 mb-4">
@@ -22,7 +23,7 @@ export default function CertificationsSection() {
                     <p className="text-label-xs text-text-secondary uppercase tracking-[0.15em] font-medium">{cert.subtitle}</p>
                 </div>
             ))}
-        </div>
+        </ResponsiveCardGroup>
       </Container>
     </section>
   );

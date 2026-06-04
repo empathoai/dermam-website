@@ -1,7 +1,7 @@
 import { HubPageContent } from '../../../types/hub';
 import Container from '../../ui/Container';
-import HubTreatmentCard from '../../ui/HubTreatmentCard';
 import SectionHeader from '../../ui/SectionHeader';
+import TreatmentCardRail from '../../ui/TreatmentCardRail';
 
 interface HubFeaturedTreatmentsProps {
   content: HubPageContent['featured'];
@@ -9,21 +9,18 @@ interface HubFeaturedTreatmentsProps {
 
 export default function HubFeaturedTreatments({ content }: HubFeaturedTreatmentsProps) {
   return (
-    <section className="py-24 bg-canvas">
+    // DESIGN.md Hub sequence: Featured → bg-white (content surface over canvas)
+    <section className="py-24 bg-white">
       <Container>
-        <SectionHeader 
+        <SectionHeader
           headline={content.headline}
           subheadline={content.subheadline}
           align="center"
-          className="mb-16"
+          className="mb-14"
         />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {content.items.map((treatment) => (
-            <HubTreatmentCard key={treatment.id} treatment={treatment} />
-          ))}
-        </div>
       </Container>
+
+      <TreatmentCardRail items={content.items} />
     </section>
   );
 }

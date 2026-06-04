@@ -2,6 +2,7 @@ import { HubPageContent } from '../../../types/hub';
 import Container from '../../ui/Container';
 import SectionHeader from '../../ui/SectionHeader';
 import { Star } from '../../../design-system/icons';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 interface HubSocialProofSectionProps {
   content: HubPageContent['socialProof'];
@@ -42,7 +43,13 @@ export default function HubSocialProofSection({ content }: HubSocialProofSection
           </div>
 
           {/* Review Cards */}
-          <div className="lg:w-2/3 flex flex-col gap-6">
+          <ResponsiveCardGroup
+            className="lg:w-2/3"
+            desktopColumns={1}
+            desktopClassName="gap-6"
+            mobileCardWidth="84vw"
+            indicatorTone="light"
+          >
             {content.items.map((review, idx) => (
               <div 
                 key={idx} 
@@ -66,7 +73,7 @@ export default function HubSocialProofSection({ content }: HubSocialProofSection
                 </div>
               </div>
             ))}
-          </div>
+          </ResponsiveCardGroup>
         </div>
       </Container>
     </section>

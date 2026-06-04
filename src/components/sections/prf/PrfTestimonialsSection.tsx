@@ -2,6 +2,7 @@ import { testimonials } from '../../../data/testimonials';
 import Container from '../../ui/Container';
 import SectionHeader from '../../ui/SectionHeader';
 import Card from '../../ui/Card';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 import { Star } from '../../../design-system/icons';
 
 export default function PrfTestimonialsSection() {
@@ -16,7 +17,7 @@ export default function PrfTestimonialsSection() {
           className="mb-16"
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw">
           {prfTestimonials.map((testimonial) => (
             <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center bg-white border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle rounded-[2rem]">
               <div className="flex gap-1 mb-6 text-yellow-400">
@@ -33,7 +34,7 @@ export default function PrfTestimonialsSection() {
               </div>
             </Card>
           ))}
-        </div>
+        </ResponsiveCardGroup>
       </Container>
     </section>
   );

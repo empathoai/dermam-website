@@ -2,6 +2,7 @@ import { postOpContent } from '../../../data/postOpLanding';
 import Container from '../../ui/Container';
 import { Check } from '../../../design-system/icons';
 import { motion } from 'motion/react';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function PostOpSurgeryTypesSection() {
   const { surgeryTypes } = postOpContent;
@@ -14,7 +15,7 @@ export default function PostOpSurgeryTypesSection() {
             <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase">{surgeryTypes.headline}</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          <ResponsiveCardGroup desktopColumns={2} desktopClassName="gap-x-12 gap-y-6" mobileCardWidth="84vw">
             {surgeryTypes.checks.map((check, idx) => (
               <motion.div 
                 key={idx}
@@ -28,7 +29,7 @@ export default function PostOpSurgeryTypesSection() {
                 <span className="text-base text-base-100 font-medium">{check}</span>
               </motion.div>
             ))}
-          </div>
+          </ResponsiveCardGroup>
         </div>
       </Container>
     </section>

@@ -1,6 +1,7 @@
 import { bookingContent } from '../../../data/bookingContent';
 import Container from '../../ui/Container';
 import ChannelCard from '../../ui/ChannelCard';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function BookingWhatsAppAlternativeSection() {
   const { whatsappAlternative } = bookingContent;
@@ -13,7 +14,7 @@ export default function BookingWhatsAppAlternativeSection() {
             <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans mb-4">{whatsappAlternative.headline}</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ResponsiveCardGroup desktopColumns={2} desktopClassName="gap-6" mobileCardWidth="84vw">
             {whatsappAlternative.cards.map((card, idx) => (
               <ChannelCard 
                 key={idx}
@@ -25,7 +26,7 @@ export default function BookingWhatsAppAlternativeSection() {
                 emphasized={card.emphasized}
               />
             ))}
-          </div>
+          </ResponsiveCardGroup>
         </div>
       </Container>
     </section>

@@ -5,6 +5,7 @@ import Button from '../../ui/Button';
 import HeroMedia from '../../ui/HeroMedia';
 import TrustItem from '../../ui/TrustItem';
 import HeroTrustPill from '../../ui/HeroTrustPill';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 import { motion, useReducedMotion, Variants } from 'motion/react';
 
 export default function HeroSection() {
@@ -104,13 +105,20 @@ export default function HeroSection() {
           {/* Trust Items */}
           <motion.div 
             variants={itemVariants}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-3 pt-4"
+            className="pt-4"
           >
-            {hero.trustItems.map((item, idx) => (
-              <div key={idx}>
-                <TrustItem item={item} />
-              </div>
-            ))}
+            <ResponsiveCardGroup
+              desktopColumns={4}
+              desktopClassName="gap-3 max-w-none"
+              mobileCardWidth="78vw"
+              indicatorTone="light"
+            >
+              {hero.trustItems.map((item, idx) => (
+                <div key={idx}>
+                  <TrustItem item={item} />
+                </div>
+              ))}
+            </ResponsiveCardGroup>
           </motion.div>
         </motion.div>
       </Container>

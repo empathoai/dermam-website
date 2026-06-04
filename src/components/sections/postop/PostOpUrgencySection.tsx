@@ -2,6 +2,7 @@
 import Container from '../../ui/Container';
 import { AlertCircle, Check, Clock } from '../../../design-system/icons';
 import { motion } from 'motion/react';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function PostOpUrgencySection() {
   const { urgency } = postOpContent;
@@ -26,7 +27,7 @@ export default function PostOpUrgencySection() {
             {urgency.headline}
           </h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw">
             {urgency.blocks.map((block: any, idx: number) => (
               <motion.div
                 key={idx}
@@ -45,7 +46,7 @@ export default function PostOpUrgencySection() {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </ResponsiveCardGroup>
         </div>
       </Container>
     </section>

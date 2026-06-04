@@ -2,6 +2,7 @@ import { contactContent } from '../../../data/contactContent';
 import Container from '../../ui/Container';
 import ContactChannelCard from '../../ui/ContactChannelCard';
 import ContactForm from './ContactForm';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function ContactChannelsSection() {
   const { channels } = contactContent;
@@ -16,11 +17,11 @@ export default function ContactChannelsSection() {
               <p className="text-text-secondary text-lg leading-relaxed">{channels.subheadline}</p>
             </div>
             
-            <div className="space-y-4">
+            <ResponsiveCardGroup desktopColumns={1} desktopClassName="gap-4" mobileCardWidth="84vw">
               {channels.items.map((channel, idx) => (
                 <ContactChannelCard key={idx} channel={channel} />
               ))}
-            </div>
+            </ResponsiveCardGroup>
           </div>
 
           <div className="lg:w-1/12 hidden lg:block border-r border-border-soft/50 my-10"></div>

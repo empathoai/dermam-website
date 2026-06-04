@@ -2,6 +2,7 @@ import { aboutContent } from '../../../data/aboutContent';
 import Container from '../../ui/Container';
 import ResponsiveImage from '../../ui/ResponsiveImage';
 import SectionMedia from '../../ui/SectionMedia';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function AboutFounderStorySection() {
  const { story } = aboutContent;
@@ -52,14 +53,14 @@ export default function AboutFounderStorySection() {
  </p>
  </div>
 
- <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-border-soft">
+ <ResponsiveCardGroup desktopColumns={3} className="pt-8 border-t border-border-soft" mobileCardWidth="78vw">
  {story.stats.map((stat, idx) => (
  <div key={idx} className="text-center sm:text-left">
  <div className="text-3xl font-sans text-text-primary mb-1">{stat.value}</div>
  <div className="text-label-xs text-text-secondary uppercase tracking-[0.1em] font-semibold">{stat.label}</div>
  </div>
  ))}
- </div>
+ </ResponsiveCardGroup>
  </div>
  </div>
  </Container>

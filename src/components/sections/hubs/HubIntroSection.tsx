@@ -1,6 +1,7 @@
 import { HubPageContent } from '../../../types/hub';
 import Container from '../../ui/Container';
 import { motion } from 'motion/react';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 interface HubIntroSectionProps {
   content: HubPageContent['intro'];
@@ -12,7 +13,7 @@ export default function HubIntroSection({ content }: HubIntroSectionProps) {
       <Container>
         <div className="flex flex-col gap-16">
           {/* Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="82vw">
             {content.stats.map((stat, idx) => (
               <motion.div 
                 key={idx}
@@ -30,7 +31,7 @@ export default function HubIntroSection({ content }: HubIntroSectionProps) {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </ResponsiveCardGroup>
 
           <div className="max-w-3xl mx-auto mt-16">
             <p className="text-label-xs font-medium uppercase tracking-[0.12em] text-text-muted mb-6 text-center">
@@ -39,7 +40,7 @@ export default function HubIntroSection({ content }: HubIntroSectionProps) {
             <p className="text-text-secondary text-lg leading-relaxed text-center mb-12">
               {content.editorialBody}
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="82vw">
               {content.benefits.map((benefit, idx) => (
                 <motion.div
                   key={idx}
@@ -58,7 +59,7 @@ export default function HubIntroSection({ content }: HubIntroSectionProps) {
                   </p>
                 </motion.div>
               ))}
-            </div>
+            </ResponsiveCardGroup>
           </div>
         </div>
       </Container>

@@ -10,7 +10,7 @@ export interface HubTreatment {
   image: {
     src: string;
     alt: string;
-    prompt: string;
+    prompt?: string;
   };
   badge?: string;
   category?: string;

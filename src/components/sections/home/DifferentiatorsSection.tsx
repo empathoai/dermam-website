@@ -2,6 +2,7 @@ import { homeContent } from '../../../data/homeContent';
 import Container from '../../ui/Container';
 import Card from '../../ui/Card';
 import SectionMedia from '../../ui/SectionMedia';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 import { Award, BadgeCheck, BarChart, Microscope, ShieldCheck, Users } from '../../../design-system/icons';
 
 export default function DifferentiatorsSection() {
@@ -22,7 +23,7 @@ export default function DifferentiatorsSection() {
 
       <Container className="relative z-10">
         {/* Stats Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-8 mb-20">
+        <ResponsiveCardGroup desktopColumns={3} desktopClassName="gap-5 lg:gap-8" className="mb-20" mobileCardWidth="82vw">
           {differentiators.stats.map((stat, idx) => {
             const Icon = statIcons[idx] || ShieldCheck;
 
@@ -43,7 +44,7 @@ export default function DifferentiatorsSection() {
               </div>
             );
           })}
-        </div>
+        </ResponsiveCardGroup>
 
         <div className="border-t border-border-soft pt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
@@ -54,7 +55,7 @@ export default function DifferentiatorsSection() {
               </p>
             </div>
             
-            <div className="flex flex-col gap-6">
+            <ResponsiveCardGroup desktopColumns={1} desktopClassName="gap-6" mobileCardWidth="84vw">
               {differentiators.benefits.map((benefit, idx) => {
                 const Icon = benefitIcons[idx] || ShieldCheck;
 
@@ -73,7 +74,7 @@ export default function DifferentiatorsSection() {
                 </Card>
                 );
               })}
-            </div>
+            </ResponsiveCardGroup>
           </div>
         </div>
       </Container>

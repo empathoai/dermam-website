@@ -1,6 +1,7 @@
 import { deepFacialContent } from '../../../data/deepFacialLanding';
 import Container from '../../ui/Container';
 import Card from '../../ui/Card';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 import { Star } from '../../../design-system/icons';
 
 export default function DeepFacialTestimonialsSection() {
@@ -13,7 +14,7 @@ export default function DeepFacialTestimonialsSection() {
           <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans">Voces DERMA.M</h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw">
           {testimonials.map((testimonial: any) => (
             <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center shadow-subtle hover:shadow-lg transition-shadow">
               <div className="flex gap-1 mb-6 text-yellow-400">
@@ -30,7 +31,7 @@ export default function DeepFacialTestimonialsSection() {
               </div>
             </Card>
           ))}
-        </div>
+        </ResponsiveCardGroup>
       </Container>
     </section>
   );

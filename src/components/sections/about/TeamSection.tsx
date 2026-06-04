@@ -3,8 +3,8 @@ import { teamMembers } from '../../../data/teamMembers';
 import Container from '../../ui/Container';
 import SpecialtyFilter from '../../ui/SpecialtyFilter';
 import TeamMemberCard from './TeamMemberCard';
-import { motion, AnimatePresence } from 'motion/react';
 import { TeamSpecialty } from '../../../types/team';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function TeamSection() {
   const [activeSpecialty, setActiveSpecialty] = useState('Todos');
@@ -38,16 +38,11 @@ export default function TeamSection() {
             />
         </div>
 
-        <motion.div 
-            layout
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"
-        >
-          <AnimatePresence mode="popLayout">
-            {filteredMembers.map((member, idx) => (
-              <TeamMemberCard key={member.id} member={member} idx={idx} />
-            ))}
-          </AnimatePresence>
-        </motion.div>
+        <ResponsiveCardGroup desktopColumns={4} desktopClassName="gap-6 lg:gap-8" mobileCardWidth="84vw">
+          {filteredMembers.map((member, idx) => (
+            <TeamMemberCard key={member.id} member={member} idx={idx} />
+          ))}
+        </ResponsiveCardGroup>
       </Container>
     </section>
   );

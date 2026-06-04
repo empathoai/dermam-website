@@ -3,6 +3,7 @@ import { Star } from '../design-system/icons';
 import reviewsData from '../data/reviews.json';
 import Container from './ui/Container';
 import Card from './ui/Card';
+import ResponsiveCardGroup from './ui/ResponsiveCardGroup';
 
 type ReviewTag = 'limpieza_facial' | 'prf' | 'postoperatorio' | 'general';
 type ReviewFilter = ReviewTag | 'featured';
@@ -99,7 +100,7 @@ export default function GoogleReviews({ filter = 'featured', maxItems = 3, showM
           </div>
         )}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw">
           {reviews.map((review) => (
             <Card key={review.id} className="p-10 flex flex-col items-center text-center bg-white border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle">
               <div className="flex gap-1 mb-6 text-yellow-400" aria-label={`${review.rating} de 5 estrellas`}>
@@ -111,7 +112,7 @@ export default function GoogleReviews({ filter = 'featured', maxItems = 3, showM
               <span className="block font-semibold text-sm mb-1">{review.author}</span>
             </Card>
           ))}
-        </div>
+        </ResponsiveCardGroup>
 
         <div className="mt-16 text-center">
           <a

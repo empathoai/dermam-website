@@ -3,6 +3,7 @@ import Container from '../../ui/Container';
 import { motion } from 'motion/react';
 import StatItem from '../../ui/StatItem';
 import { Check } from '../../../design-system/icons';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 interface Tier3QuickFitSectionProps {
   quickFacts: Array<{ label: string; value: string }>;
@@ -14,7 +15,7 @@ export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3Quic
     <section className="bg-canvas py-12 relative z-20">
       <Container>
         {/* Quick Facts Strip */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-16">
+        <ResponsiveCardGroup desktopColumns={3} desktopClassName="gap-4 md:gap-6" className="mb-16" mobileCardWidth="78vw">
           {quickFacts.map((fact, idx) => (
             <motion.div
               key={idx}
@@ -27,7 +28,7 @@ export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3Quic
               <StatItem stat={fact} />
             </motion.div>
           ))}
-        </div>
+        </ResponsiveCardGroup>
 
         {/* Is this for you? */}
         <motion.div

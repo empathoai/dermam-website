@@ -1,6 +1,7 @@
 import { deepFacialContent } from '../../../data/deepFacialLanding';
 import Container from '../../ui/Container';
 import ResponsiveImage from '../../ui/ResponsiveImage';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function DeepFacialProtocolSection() {
   const { protocol } = deepFacialContent;
@@ -15,7 +16,7 @@ export default function DeepFacialProtocolSection() {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <ResponsiveCardGroup desktopColumns={5} desktopClassName="gap-4" mobileCardWidth="84vw">
           {protocol.steps.map((step, idx) => (
             <div key={idx} className="relative flex flex-col h-full bg-white rounded-[2rem] border border-border-card transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-subtle hover:border-base-900">
               <div className="aspect-[4/3] overflow-hidden rounded-t-2xl">
@@ -35,7 +36,7 @@ export default function DeepFacialProtocolSection() {
               </div>
             </div>
           ))}
-        </div>
+        </ResponsiveCardGroup>
       </Container>
     </section>
   );

@@ -2,6 +2,7 @@ import { aboutContent } from '../../../data/aboutContent';
 import Container from '../../ui/Container';
 import { motion } from 'motion/react';
 import { Target, Users, BarChart, Languages } from '../../../design-system/icons';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function ValuesSection() {
   const { values } = aboutContent;
@@ -20,7 +21,7 @@ export default function ValuesSection() {
           <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans">{values.headline}</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <ResponsiveCardGroup desktopColumns={4} mobileCardWidth="82vw">
           {values.items.map((value, idx) => (
             <motion.div
               key={idx}
@@ -37,7 +38,7 @@ export default function ValuesSection() {
               <p className="text-text-secondary text-sm leading-relaxed">{value.description}</p>
             </motion.div>
           ))}
-        </div>
+        </ResponsiveCardGroup>
       </Container>
     </section>
   );

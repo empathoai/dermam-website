@@ -52,6 +52,15 @@
   .isolation-isolate {
     isolation: isolate;
   }
+
+  /* Horizontal scroll rails — hides scrollbar visually, keeps touch/mouse scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

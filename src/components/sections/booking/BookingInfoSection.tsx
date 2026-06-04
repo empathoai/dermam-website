@@ -1,6 +1,7 @@
 import { bookingContent } from '../../../data/bookingContent';
 import Container from '../../ui/Container';
 import { ShieldCheck, Star, Clock, Languages } from '../../../design-system/icons';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function BookingInfoSection() {
   const { info } = bookingContent;
@@ -16,7 +17,7 @@ export default function BookingInfoSection() {
     <section className="py-24 bg-canvas overflow-hidden">
       <Container>
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ResponsiveCardGroup desktopColumns={2} mobileCardWidth="84vw">
             {info.cards.map((card, idx) => (
               <div key={idx} className="flex gap-6 bg-white p-8 rounded-[2rem] border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
                 <div className="flex-shrink-0 w-12 h-12 bg-base-900/10 rounded-[2rem] flex items-center justify-center">
@@ -32,7 +33,7 @@ export default function BookingInfoSection() {
                 </div>
               </div>
             ))}
-          </div>
+          </ResponsiveCardGroup>
 
           <div className="mt-20 pt-16 border-t border-border-soft flex flex-wrap justify-center md:justify-between items-center gap-8 grayscale opacity-60">
              <div className="flex items-center gap-3">

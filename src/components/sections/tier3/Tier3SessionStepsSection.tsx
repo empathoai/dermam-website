@@ -1,14 +1,13 @@
 import React from 'react';
 import Container from '../../ui/Container';
 import { motion } from 'motion/react';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 interface Tier3SessionStepsSectionProps {
   steps: Array<{ title: string; description: string }>;
 }
 
 export default function Tier3SessionStepsSection({ steps }: Tier3SessionStepsSectionProps) {
-  const desktopColumns = steps.length >= 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3';
-
   return (
     <section className="py-24 bg-base-900 text-base-100">
       <Container>
@@ -21,7 +20,11 @@ export default function Tier3SessionStepsSection({ steps }: Tier3SessionStepsSec
           </p>
         </div>
 
-        <div className={`grid grid-cols-1 md:grid-cols-2 ${desktopColumns} gap-8`}>
+        <ResponsiveCardGroup
+          desktopColumns={steps.length >= 4 ? 4 : 3}
+          mobileCardWidth="84vw"
+          indicatorTone="light"
+        >
           {steps.map((step, idx) => (
             <div key={idx} className="h-full">
               <motion.div
@@ -38,7 +41,7 @@ export default function Tier3SessionStepsSection({ steps }: Tier3SessionStepsSec
               </motion.div>
             </div>
           ))}
-        </div>
+        </ResponsiveCardGroup>
       </Container>
     </section>
   );

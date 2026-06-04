@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import ResponsiveImage from '../../ui/ResponsiveImage';
 import { motion } from 'motion/react';
 import { ArrowRight } from '../../../design-system/icons';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 interface Tier3RelatedTreatmentsProps {
  currentTreatmentId: string;
@@ -30,7 +31,7 @@ export default function Tier3RelatedTreatments({ currentTreatmentId, relatedIds,
  className="mb-16"
  />
 
- <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+ <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw">
  {relatedTreatments.map((treatment, idx) => (
  <motion.div
  key={treatment.id}
@@ -66,7 +67,7 @@ export default function Tier3RelatedTreatments({ currentTreatmentId, relatedIds,
  </Link>
  </motion.div>
  ))}
- </div>
+ </ResponsiveCardGroup>
  </Container>
  </section>
  );

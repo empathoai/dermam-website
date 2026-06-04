@@ -3,6 +3,7 @@ import { featuredTreatments } from '../../../data/treatments';
 import Container from '../../ui/Container';
 import SectionHeader from '../../ui/SectionHeader';
 import TreatmentCard from '../../ui/TreatmentCard';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function TreatmentsSection() {
   const { treatmentsSection } = homeContent;
@@ -17,11 +18,11 @@ export default function TreatmentsSection() {
           className="mb-16"
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <ResponsiveCardGroup desktopColumns={3} desktopClassName="gap-5" mobileCardWidth="84vw">
           {featuredTreatments.map((treatment) => (
             <TreatmentCard key={treatment.id} treatment={treatment} />
           ))}
-        </div>
+        </ResponsiveCardGroup>
       </Container>
     </section>
   );

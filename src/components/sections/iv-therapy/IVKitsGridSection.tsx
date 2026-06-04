@@ -3,6 +3,7 @@ import { IVKit } from '../../../types/ivTherapy';
 import Container from '../../ui/Container';
 import IVKitCard from '../../ui/IVKitCard';
 import SectionHeader from '../../ui/SectionHeader';
+import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 import { motion } from 'motion/react';
 
 interface IVKitsGridSectionProps {
@@ -22,7 +23,7 @@ export default function IVKitsGridSection({ title, subtitle, kits, id }: IVKitsG
           className="mb-16"
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <ResponsiveCardGroup desktopColumns={3} desktopClassName="lg:gap-12" mobileCardWidth="84vw">
           {kits.map((kit, idx) => (
             <motion.div
               key={kit.id}
@@ -34,7 +35,7 @@ export default function IVKitsGridSection({ title, subtitle, kits, id }: IVKitsG
               <IVKitCard kit={kit} />
             </motion.div>
           ))}
-        </div>
+        </ResponsiveCardGroup>
       </Container>
     </section>
   );
