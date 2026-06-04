@@ -13,7 +13,7 @@ export default function Tier3FAQSection({ faqs, category }: Tier3FAQSectionProps
   return (
     <section className="py-24 bg-white">
       <Container>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <SectionHeader
             headline="Preguntas Frecuentes"
             subheadline="Todo lo que necesitas saber antes de tu cita."

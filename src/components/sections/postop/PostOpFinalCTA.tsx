@@ -3,7 +3,6 @@ import { siteConfig } from '../../../data/siteConfig';
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import SectionMedia from '../../ui/SectionMedia';
-import { MapPin, Phone } from '../../../design-system/icons';
 
 export default function PostOpFinalCTA() {
  const { finalCTA } = postOpContent;
@@ -30,16 +29,6 @@ export default function PostOpFinalCTA() {
  <p className="text-lg text-base-300 leading-[1.65] font-light mb-8">
  {finalCTA.body}
  </p>
- <div className="flex flex-col gap-4 items-center lg:items-start text-xs text-base-300">
- <div className="flex items-center gap-2">
- <MapPin size={14} className="text-base-300" />
- <span>{siteConfig.address}, {siteConfig.city}, {siteConfig.state}</span>
- </div>
- <div className="flex items-center gap-2">
- <Phone size={14} className="text-base-300" />
- <span>{siteConfig.phone}</span>
- </div>
- </div>
  </div>
 
  <div className="flex flex-col gap-4 w-full md:w-auto min-w-[280px]">
@@ -60,7 +49,7 @@ export default function PostOpFinalCTA() {
  {finalCTA.secondaryCTA}
  </Button>
  <p className="text-xs text-center text-base-300 uppercase tracking-[0.15em] mt-2">
- Orientamos tu recuperación paso a paso
+ Evaluación gratuita · Sin compromiso
  </p>
  </div>
  </div>

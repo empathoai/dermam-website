@@ -53,7 +53,7 @@ export default function Tier3HeroSection({
   };
 
   return (
-    <section className="relative min-h-[72vh] flex items-center overflow-hidden bg-base-900 py-20 lg:py-24 isolation-isolate">
+    <section className="relative min-h-[86vh] lg:min-h-[90vh] flex items-center overflow-hidden bg-base-900 py-20 lg:py-24 isolation-isolate">
       <div className="absolute inset-0 z-0">
         <HeroMedia
         {...media}

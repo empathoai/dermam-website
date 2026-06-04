@@ -67,7 +67,7 @@ export default function IVTherapyHeroSection({ content, onScrollToKits }: IVTher
             <motion.h1 variants={itemVariants} className="text-[clamp(3rem,6.6vw,5.35rem)] font-extrabold leading-[0.96] tracking-[-0.045em] uppercase text-base-300 drop-shadow-md mb-8">
               {content.headline}
               <span className="block text-[clamp(0.9rem,1.8vw,1.35rem)] font-medium normal-case tracking-[0.02em] text-base-300/70 mt-3 leading-[1.4]">
-                en DERMA.M · West Palm Beach · Miami
+                en West Palm Beach
               </span>
             </motion.h1>
             

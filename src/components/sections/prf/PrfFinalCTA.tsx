@@ -3,7 +3,6 @@ import { siteConfig } from '../../../data/siteConfig';
 import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import SectionMedia from '../../ui/SectionMedia';
-import { MapPin, Phone } from '../../../design-system/icons';
 
 export default function PrfFinalCTA() {
  const { finalCTA } = prfContent;
@@ -32,16 +31,6 @@ export default function PrfFinalCTA() {
  <p className="text-lg text-base-300 leading-[1.65] font-light mb-8">
  {finalCTA.body}
  </p>
- <div className="flex flex-col gap-4 items-center lg:items-start text-xs text-base-300">
- <div className="flex items-center gap-2">
- <MapPin size={14} className="text-base-300" />
- <span>{siteConfig.address}, {siteConfig.city}, {siteConfig.state}</span>
- </div>
- <div className="flex items-center gap-2">
- <Phone size={14} className="text-base-300" />
- <span>{siteConfig.phone}</span>
- </div>
- </div>
  </div>
 
  <div className="flex flex-col gap-4 w-full md:w-auto min-w-[280px]">
@@ -62,7 +51,7 @@ export default function PrfFinalCTA() {
  {finalCTA.secondaryCTA}
  </Button>
  <p className="text-xs text-center text-base-300 uppercase tracking-[0.15em] mt-2">
- Agenda tu consulta hoy
+ Evaluación gratuita · Sin compromiso
  </p>
  </div>
  </div>

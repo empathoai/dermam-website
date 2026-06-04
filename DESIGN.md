@@ -604,3 +604,73 @@ The approved dark footer is part of the Homepage baseline and should not be reve
 23. Don't use images of text for real website content.
 24. Do use `HealthAndBeautyBusiness`, `LocalBusiness`, `FAQPage`, `BreadcrumbList`, `WebSite`, and `Organization` schema where appropriate.
 25. Don't use `MedicalClinic` schema unless legally and strategically approved.
+
+---
+
+## Global Component Standards
+
+These rules apply to every page on the site without exception.
+Any component that violates these standards must be corrected.
+
+### HERO ? All pages
+- Section: min-h-[86vh] lg:min-h-[90vh], bg-base-900, py-20 lg:py-24
+- Background: full-bleed image via HeroMedia, overlay left-to-right gradient
+- Trust signal: HeroTrustPill with stars ? ONE pill only, no eyebrow span
+- H1: text-[clamp(3rem,6.6vw,5.35rem)] font-extrabold uppercase text-base-300
+- City line: block span below H1 ? normal-case, text-[clamp(0.9rem,1.8vw,1.35rem)], text-base-300/70
+  - Facial treatments: "en West Palm Beach ? Miami"
+  - Non-facial treatments: "en West Palm Beach"
+  - Hubs: "en DERMA.M ? West Palm Beach ? Miami"
+- Subheadline: text-lg font-light text-base-300, max-w-lg
+- CTA: single Button, !bg-base-100 !text-base-900, hover:!bg-white
+- NO address, NO phone number, NO second eyebrow pill
+
+### FINAL CTA ? All pages
+- Section: py-32 relative overflow-hidden, full-bleed background image
+- Panel: bg-base-900/85 backdrop-blur-md rounded-[2.5rem] border border-white/10
+- Layout: flex-col lg:flex-row, items-center justify-between
+- H2: font-bold uppercase text-base-100, Hamilton script accent on ONE emotional keyword
+- Copy: text-lg text-base-300 font-light
+- Primary CTA: !bg-white !text-base-900 hover:!bg-base-100
+- Secondary CTA: WhatsApp link, outline style, !border-base-300/70 !text-base-300
+- Microcopy: text-xs uppercase tracking-[0.15em] text-base-300 ? "Evaluaci?n gratuita ? Sin compromiso"
+- NO address, NO phone number in this section ? those belong in Footer only
+
+### FAQ ? All pages
+- Section: bg-white py-24
+- H2: heading-section scale, uppercase, text-center
+- Items: FAQAccordion component, ChevronDown icon
+- Max-width: max-w-3xl mx-auto
+- NO decorative elements, NO icons per item
+
+### FOOTER ? All pages
+- Background: bg-base-900
+- Address: 5707 S Dixie Hwy Unit D, West Palm Beach, FL 33405
+- Phone: (561) 253-5384
+- Hours: Mon?Sat 8am?8pm, Sun 10am?4pm
+- Social: Instagram @dermamskinhealth, Facebook: https://www.facebook.com/DermaMskinhealth 
+- Address and phone appear ONLY in Footer and Contact page ? never in Hero or CTA sections
+
+### Section Order ? Tier 1 Landing Pages (PRF, Limpieza Facial, Post-Op)
+1. Hero
+2. Audience / QuickFit
+3. Education / Explanation
+4. Benefits
+5. Protocol / Steps
+6. Results
+7. Testimonials
+8. Founder
+9. FAQ
+10. Final CTA
+11. Related Treatments
+
+### Section Order ? Hub Pages (Faciales, Corporales, L?ser, Dental)
+1. Hero
+2. Intro / Stats
+3. Featured Treatments
+4. All Treatments Grid
+5. Social Proof / Reviews
+6. FAQ
+7. Final CTA
+
+

@@ -63,7 +63,7 @@ export default function HubFinalCTA({ content }: HubFinalCTAProps) {
  {content.secondaryCTA}
  </Button>
  <p className="text-xs text-center text-base-300 uppercase tracking-[0.15em] mt-2">
- DERMA.M · WPB, FL
+ Evaluación gratuita · Sin compromiso
  </p>
  </div>
  </div>

@@ -11,9 +11,9 @@ interface IVTherapyFAQSectionProps {
 
 export default function IVTherapyFAQSection({ items }: IVTherapyFAQSectionProps) {
   return (
-    <section className="py-24 bg-canvas">
+    <section className="py-24 bg-white">
       <Container>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <SectionHeader
             headline="Preguntas frecuentes sobre IV Therapy"
             align="center"

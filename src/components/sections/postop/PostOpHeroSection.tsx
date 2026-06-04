@@ -94,13 +94,6 @@ export default function PostOpHeroSection() {
  >
  {hero.primaryCTA}
  </Button>
- <Button 
- variant="outline"
- onClick={handleConsultClick}
- className="!border-white/10 !bg-white/[0.08] px-10 py-4 !text-base-100 hover:!bg-white/[0.12] w-full sm:w-auto"
- >
- {hero.secondaryCTA}
- </Button>
  </motion.div>
 
  </motion.div>
