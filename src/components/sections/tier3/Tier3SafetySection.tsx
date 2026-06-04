@@ -40,7 +40,7 @@ export default function Tier3SafetySection({ title, items, disclaimer }: Tier3Sa
                 </div>
 
                 {disclaimer && (
-                    <div className="flex gap-4 bg-white border border-border rounded-[1.5rem] p-6 mt-4">
+                    <div className="flex gap-4 bg-white border border-border rounded-[0.875rem] p-6 mt-4">
                         <Info size={18} className="text-text-muted flex-shrink-0 mt-0.5" />
                         <p className="text-text-secondary text-xs italic opacity-80 leading-relaxed">
                             {disclaimer}

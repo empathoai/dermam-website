@@ -18,7 +18,7 @@ export default function DeepFacialProtocolSection() {
         
         <ResponsiveCardGroup desktopColumns={5} desktopClassName="gap-4" mobileCardWidth="84vw">
           {protocol.steps.map((step, idx) => (
-            <div key={idx} className="relative flex flex-col h-full bg-white rounded-[2rem] border border-border-card transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-subtle hover:border-base-900">
+            <div key={idx} className="relative flex flex-col h-full bg-white rounded-[1rem] border border-border-card transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-subtle hover:border-border-card-hover">
               <div className="aspect-[4/3] overflow-hidden rounded-t-2xl">
                  <ResponsiveImage 
                     src={step.image?.src || ''} 

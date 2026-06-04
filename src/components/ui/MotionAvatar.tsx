@@ -43,7 +43,7 @@ export default function MotionAvatar({
 
  return (
  <div 
- className={`relative inline-block rounded-full overflow-hidden aspect-square ring-4 ring-white/50 border border-border-strong-soft shadow-xl group transition-all duration-500 hover:-soft/30 hover:shadow-sage-soft/20 ${sizeClasses[size]} ${className}`}
+ className={`relative inline-block rounded-full overflow-hidden aspect-square ring-4 ring-white/50 border border-border-soft shadow-subtle group transition-all duration-500 hover:ring-base-200/70 hover:shadow-subtle ${sizeClasses[size]} ${className}`}
  aria-label={`Avatar de ${name}`}
  >
  {(videoSrc && !shouldReduceMotion && !videoError) ? (

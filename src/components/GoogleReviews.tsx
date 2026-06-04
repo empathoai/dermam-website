@@ -58,7 +58,7 @@ function ReviewText({ text }: { text: string }) {
   const shouldShowToggle = text.length > 120;
 
   return (
-    <div className="mb-8 flex flex-1 flex-col items-center justify-center text-center text-text-primary italic leading-relaxed whitespace-pre-line">
+    <div className="mb-8 flex flex-1 flex-col items-center justify-center text-center text-text-secondary font-light italic leading-[1.7] whitespace-pre-line">
       <span>“{truncateText(text, expanded)}”</span>
       {shouldShowToggle && (
         <button
@@ -104,14 +104,14 @@ export default function GoogleReviews({ filter = 'featured', maxItems = 3, showM
 
         <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw" desktopItemClassName="h-full">
           {reviews.map((review) => (
-            <Card key={review.id} className="flex h-full min-h-[18rem] flex-col items-center justify-between p-10 text-center bg-white border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle">
+            <Card key={review.id} className="flex h-full min-h-[18rem] flex-col items-center justify-between p-10 text-center bg-white border border-border-card hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle">
               <div className="flex gap-1 mb-6 text-yellow-400" aria-label={`${review.rating} de 5 estrellas`}>
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill={i < review.rating ? 'currentColor' : 'none'} />
                 ))}
               </div>
               <ReviewText text={review.text} />
-              <span className="mt-auto block font-semibold text-sm mb-1">{review.author}</span>
+              <span className="mt-auto block font-medium text-sm mb-1">{review.author}</span>
             </Card>
           ))}
         </ResponsiveCardGroup>

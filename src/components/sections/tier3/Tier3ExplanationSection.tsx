@@ -25,7 +25,7 @@ export default function Tier3ExplanationSection({ eyebrow, title, body, media }:
               transition={{ duration: 0.8 }}
               className="lg:w-1/2 relative"
             >
-              <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-card-soft">
+              <div className="relative rounded-[1rem] overflow-hidden aspect-[4/3] shadow-card-soft">
                 <ResponsiveImage
                   src={media.src}
                   alt={media.alt}

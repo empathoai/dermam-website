@@ -13,6 +13,7 @@
 @layer base {
   body {
     @apply bg-canvas text-text-primary font-sans antialiased;
+    font-weight: 300;
   }
 
 }

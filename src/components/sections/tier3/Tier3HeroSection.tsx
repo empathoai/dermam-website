@@ -100,7 +100,7 @@ export default function Tier3HeroSection({
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   onClick={onScrollToContent}
-                  className="!bg-base-100 px-10 py-4 !text-base-900 shadow-lg hover:!bg-white hover:shadow-xl transition-shadow w-full sm:w-auto"
+                  className="!bg-base-100 px-10 py-4 !text-base-900 shadow-subtle hover:!bg-white hover:shadow-subtle transition-shadow w-full sm:w-auto"
                 >
                   {ctaLabel}
                 </Button>

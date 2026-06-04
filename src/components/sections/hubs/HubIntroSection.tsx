@@ -21,7 +21,7 @@ export default function HubIntroSection({ content }: HubIntroSectionProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="text-center p-8 bg-white rounded-[2rem] border border-border-card shadow-subtle hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                className="text-center p-8 bg-white rounded-[1rem] border border-border-card shadow-subtle hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
               >
                 <div className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-2">
                   {stat.value}
@@ -37,7 +37,7 @@ export default function HubIntroSection({ content }: HubIntroSectionProps) {
             <p className="text-label-xs font-medium uppercase tracking-[0.12em] text-text-muted mb-6 text-center">
               {content.editorialLabel}
             </p>
-            <p className="text-text-secondary text-lg leading-relaxed text-center mb-12">
+            <p className="text-text-secondary text-lg leading-relaxed font-light text-center mb-12">
               {content.editorialBody}
             </p>
             <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="82vw">

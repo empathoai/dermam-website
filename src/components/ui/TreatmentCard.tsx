@@ -13,7 +13,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({ treatment }) => {
   const imagePositionClass = treatment.id === 'post-op' ? 'object-[50%_72%]' : 'object-center';
 
   return (
-    <Card className="flex flex-col h-full group hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] border border-border-card">
+    <Card className="flex flex-col h-full group hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] border border-border-card">
       <div className="relative aspect-[4/3] overflow-hidden">
         <ResponsiveImage
           src={treatment.image.src}
@@ -30,7 +30,7 @@ const TreatmentCard: React.FC<TreatmentCardProps> = ({ treatment }) => {
       </div>
       <div className="p-8 flex flex-col flex-grow">
         <h3 className="text-[clamp(1.125rem,2vw,1.375rem)] font-semibold leading-[1.35] tracking-[-0.01em] normal-case mb-3">{treatment.title}</h3>
-        <p className="text-text-secondary text-base leading-[1.6] font-normal tracking-normal mb-6 flex-grow">
+        <p className="text-text-secondary text-base leading-[1.6] font-light tracking-normal mb-6 flex-grow">
           {treatment.description}
         </p>
         <Link

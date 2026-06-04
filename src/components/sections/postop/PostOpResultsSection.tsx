@@ -15,7 +15,7 @@ export default function PostOpResultsSection() {
         
         <ResponsiveCardGroup desktopColumns={2} desktopClassName="gap-10" mobileCardWidth="84vw">
           {results.items.map((item, idx) => (
-            <div key={idx} className="flex flex-col gap-6 rounded-[2rem] border border-border-soft bg-canvas p-4 shadow-subtle">
+            <div key={idx} className="flex flex-col gap-6 rounded-[1rem] border border-border-soft bg-canvas p-4 shadow-subtle">
                <BeforeAfterSlider
                 beforeSrc={item.imageBefore}
                 afterSrc={item.imageAfter}
@@ -30,7 +30,7 @@ export default function PostOpResultsSection() {
           ))}
         </ResponsiveCardGroup>
 
-        <div className="mt-16 p-4 border border-border-soft rounded-[1rem] text-center max-w-sm mx-auto">
+        <div className="mt-16 p-4 border border-border-soft rounded-[0.625rem] text-center max-w-sm mx-auto">
           <p className="text-label-xs italic text-text-secondary leading-relaxed">
             {results.disclaimer}
           </p>

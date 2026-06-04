@@ -12,7 +12,7 @@ export default function TrustItem({ item }: TrustItemProps) {
   const Icon = (Icons[item.icon as keyof typeof Icons] as ComponentType<LucideProps>) || Icons.Circle;
 
   return (
-    <div className="flex w-full flex-row items-center gap-2.5 rounded-[1.75rem] border border-white/10 bg-white/[0.04] px-3 py-2.5 backdrop-blur-sm">
+    <div className="flex w-full flex-row items-center gap-2.5 rounded-[1.125rem] border border-white/10 bg-white/[0.04] px-3 py-2.5 backdrop-blur-sm">
       <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-base-300">
         <Icon size={18} />
       </div>

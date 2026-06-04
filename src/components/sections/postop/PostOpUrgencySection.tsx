@@ -35,7 +35,7 @@ export default function PostOpUrgencySection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className={`p-8 rounded-[2rem] border flex h-full flex-col gap-6 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-subtle hover:border-base-300 ${borderStyles[block.type as keyof typeof borderStyles]}`}
+                className={`p-8 rounded-[1rem] border flex h-full flex-col gap-6 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-subtle hover:border-base-300 ${borderStyles[block.type as keyof typeof borderStyles]}`}
               >
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-canvas">
                   {icons[block.type as keyof typeof icons]}

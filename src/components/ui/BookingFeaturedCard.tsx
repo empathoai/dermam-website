@@ -7,7 +7,7 @@ interface BookingFeaturedCardProps {
 
 export default function BookingFeaturedCard({ treatment }: BookingFeaturedCardProps) {
   return (
-    <div className="bg-white border-[2px] border-base-900 rounded-[2rem] p-8 md:p-10 shadow-xl shadow-canvas/20 relative overflow-hidden group">
+    <div className="bg-white border border-border-featured rounded-[1rem] p-8 md:p-10 shadow-subtle relative overflow-hidden group">
       <div className="absolute top-0 right-0 p-4">
         <span className="text-xs uppercase font-medium tracking-[0.15em] text-base-100 bg-base-900 px-3 py-1 rounded-full">
             Recomendado
@@ -32,7 +32,7 @@ export default function BookingFeaturedCard({ treatment }: BookingFeaturedCardPr
             href={treatment.squareUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 px-10 py-5 rounded-[2rem] bg-base-900 text-base-100 text-base font-medium normal-case tracking-normal transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 active:translate-y-0 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900"
+            className="flex items-center justify-center gap-3 px-10 py-5 rounded-[1rem] bg-base-900 text-base-100 text-base font-medium normal-case tracking-normal transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 active:translate-y-0 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900"
           >
             {treatment.ctaLabel}
             <ExternalLink size={16} />

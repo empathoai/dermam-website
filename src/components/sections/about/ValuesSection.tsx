@@ -29,13 +29,13 @@ export default function ValuesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-10 rounded-[2rem] bg-white border border-border-card hover:border-base-900 hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group"
+              className="p-10 rounded-[1rem] bg-white border border-border-card hover:border-border-card-hover hover:-translate-y-1 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group"
             >
-              <div className="mb-6 p-4 bg-canvas rounded-[2rem] w-fit shadow-sm group-hover:shadow-md transition-shadow">
+              <div className="mb-6 p-4 bg-canvas rounded-[1rem] w-fit shadow-sm group-hover:shadow-subtle transition-shadow">
                 {icons[idx]}
               </div>
               <h3 className="text-xl font-sans mb-4 text-text-primary">{value.title}</h3>
-              <p className="text-text-secondary text-sm leading-relaxed">{value.description}</p>
+              <p className="text-text-secondary text-sm leading-relaxed font-light">{value.description}</p>
             </motion.div>
           ))}
         </ResponsiveCardGroup>

@@ -62,7 +62,7 @@ export default function Navbar() {
                       <ChevronDown className="w-3.5 h-3.5 text-base-100/75 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
                     </div>
 
-                    <div className="absolute top-full left-0 mt-1 bg-white shadow-xl rounded-lg border border-border-soft py-3 min-w-[280px] flex flex-col z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
+                    <div className="absolute top-full left-0 mt-1 bg-white shadow-subtle rounded-lg border border-border-soft py-3 min-w-[280px] flex flex-col z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
                       {link.submenu!.map((subItem) => (
                         <Link
                           key={subItem.label}

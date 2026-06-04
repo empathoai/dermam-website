@@ -17,7 +17,7 @@ export default function ContactMapSection() {
  <section id="mapa" className="py-24 bg-canvas/30">
  <Container>
  <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
- <div className="lg:w-3/5 rounded-[2rem] overflow-hidden shadow-2xl bg-white border border-border-card aspect-[16/10] lg:aspect-auto">
+ <div className="lg:w-3/5 rounded-[1rem] overflow-hidden shadow-subtle bg-white border border-border-card aspect-[16/10] lg:aspect-auto">
  {map.embedUrl ? (
  <iframe
  title="Google Maps"
@@ -52,7 +52,7 @@ export default function ContactMapSection() {
  </div>
  </div>
 
- <div className="bg-white p-8 rounded-[2.5rem] border border-border-card shadow-lg mb-10">
+ <div className="bg-white p-8 rounded-[1.5rem] border border-border-card shadow-subtle mb-10">
  <div className="flex items-center gap-3 mb-6">
  <Clock size={20} className="text-text-secondary" />
  <h3 className="text-sm font-medium uppercase tracking-[0.15em]">Horarios de atención</h3>

@@ -14,7 +14,7 @@ export default function PrfProtocolSection() {
         
         <ResponsiveCardGroup desktopColumns={4} className="mb-16" mobileCardWidth="82vw">
           {protocol.steps.map((step, idx) => (
-            <div key={idx} className="bg-white p-8 rounded-[2rem] border border-border-card relative group hover:-translate-y-1 hover:border-base-900 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+            <div key={idx} className="bg-white p-8 rounded-[1rem] border border-border-card relative group hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
                <span className="absolute top-4 right-6 text-6xl font-sans text-text-primary opacity-5 group-hover:opacity-10 transition-opacity">
                 {idx + 1}
               </span>

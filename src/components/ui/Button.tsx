@@ -26,12 +26,12 @@ export default function Button({
   rel,
   ...props
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center px-8 py-3 rounded-[1rem] font-medium leading-none tracking-normal normal-case transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 text-base relative';
+  const baseStyles = 'inline-flex items-center justify-center px-8 py-3 rounded-[0.625rem] font-medium leading-none tracking-normal normal-case transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base-900 text-base relative';
   
   const variants = {
     primary: 'bg-base-900 text-base-100 hover:bg-base-800 shadow-subtle',
-    secondary: 'border-[1.5px] border-base-900 bg-transparent text-base-900 hover:bg-base-200',
-    outline: 'border-[1.5px] border-base-900 bg-transparent text-base-900 hover:bg-base-200',
+    secondary: 'border border-border-card-hover bg-transparent text-base-900 hover:border-border-featured hover:bg-base-200',
+    outline: 'border border-border-card-hover bg-transparent text-base-900 hover:border-border-featured hover:bg-base-200',
     ghost: 'bg-transparent text-base-900 hover:bg-base-200'
   };
 

@@ -19,13 +19,13 @@ export default function PrfTestimonialsSection() {
         
         <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw">
           {prfTestimonials.map((testimonial) => (
-            <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center bg-white border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle rounded-[2rem]">
+            <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center bg-white border border-border-card hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] shadow-subtle rounded-[1rem]">
               <div className="flex gap-1 mb-6 text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill={i < testimonial.rating ? 'currentColor' : 'none'} />
                 ))}
               </div>
-              <p className="text-text-primary italic mb-8 leading-relaxed">
+              <p className="text-text-secondary font-light italic mb-8 leading-[1.7]">
                 {testimonial.quote}
               </p>
               <div>

@@ -22,7 +22,7 @@ export default function IVTherapyEducationSection({ content }: IVTherapyEducatio
             transition={{ duration: 0.8 }}
             className="lg:w-1/2 relative"
           >
-            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3]">
+            <div className="relative rounded-[1rem] overflow-hidden shadow-2xl aspect-[4/3]">
               <ResponsiveImage
                 src={content.image.src}
                 alt={content.image.alt}
@@ -46,13 +46,13 @@ export default function IVTherapyEducationSection({ content }: IVTherapyEducatio
             </h2>
 
             <div className="space-y-6 mb-12">
-              <div className="p-6 bg-canvas rounded-[2rem] border border-border-card hover:-translate-y-1 hover:border-base-900 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              <div className="p-6 bg-canvas rounded-[1rem] border border-border-card hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
                 <p className="text-text-secondary text-sm md:text-base leading-relaxed">
                   {content.copyOral}
                 </p>
               </div>
               
-              <div className="p-6 bg-base-900 rounded-[2rem] border border-base-900 shadow-md shadow-canvas/10 hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+              <div className="p-6 bg-base-900 rounded-[1rem] border border-base-900 shadow-md shadow-canvas/10 hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
                 <p className="text-base-100 font-medium text-sm md:text-base leading-relaxed">
                   {content.copyIV}
                 </p>

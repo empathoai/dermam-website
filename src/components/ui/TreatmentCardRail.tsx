@@ -29,7 +29,7 @@ function RailCard({ item }: { item: TreatmentRailItem }) {
   const ctaLabel = rawLabel.replace(/\s*→\s*$/, '');
 
   return (
-    <div className="group flex flex-col h-full rounded-[2rem] overflow-hidden bg-white border border-border-card hover:border-base-900 hover:-translate-y-1 hover:shadow-md transition-all duration-[240ms] ease-[cubic-bezier(0.22,1,0.36,1)]">
+    <div className="group flex flex-col h-full rounded-[1rem] overflow-hidden bg-white border border-border-card hover:border-border-card-hover hover:-translate-y-1 hover:shadow-subtle transition-all duration-[240ms] ease-[cubic-bezier(0.22,1,0.36,1)]">
       {/* Image: 4:3 ratio, cover */}
       <div className="relative aspect-[4/3] overflow-hidden flex-shrink-0">
         <ResponsiveImage
@@ -53,7 +53,7 @@ function RailCard({ item }: { item: TreatmentRailItem }) {
           {item.title}
         </h3>
         {item.description && (
-          <p className="text-text-secondary text-sm leading-[1.5] font-normal mb-6 flex-grow">
+          <p className="text-text-secondary text-sm leading-[1.55] font-light mb-6 flex-grow">
             {item.description}
           </p>
         )}

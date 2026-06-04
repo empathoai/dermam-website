@@ -31,7 +31,7 @@ export default function Tier3SessionStepsSection({ steps }: Tier3SessionStepsSec
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex h-full min-h-[9.5rem] flex-col bg-white/[0.06] p-8 rounded-[2rem] border border-white/10 group hover:-translate-y-1 hover:border-white/30 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                className="flex h-full min-h-[9.5rem] flex-col bg-white/[0.06] p-8 rounded-[1rem] border border-white/10 group hover:-translate-y-1 hover:border-white/15 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
               >
                 <span className="text-4xl font-bold text-base-100 opacity-20 leading-none mb-4 block group-hover:opacity-30 transition-opacity">
                   0{idx + 1}

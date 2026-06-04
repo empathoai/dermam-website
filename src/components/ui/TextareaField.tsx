@@ -23,7 +23,7 @@ export default function TextareaField({ label, error, id, ...props }: TextareaFi
       <textarea
         id={id}
         rows={4}
-        className={`w-full px-5 py-4 rounded-[1rem] bg-canvas border transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-base-900/10 text-sm resize-none ${error ? 'border-red-300' : 'border-border-soft focus:border-base-900'}`}
+        className={`w-full px-5 py-4 rounded-[0.625rem] bg-canvas border transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-base-900/10 text-sm resize-none ${error ? 'border-red-300' : 'border-border-soft focus:border-base-900'}`}
         aria-invalid={error ? 'true' : 'false'}
         aria-describedby={error ? `${id}-error` : undefined}
         {...rest}

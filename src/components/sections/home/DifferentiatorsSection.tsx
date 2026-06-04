@@ -28,7 +28,7 @@ export default function DifferentiatorsSection() {
             const Icon = statIcons[idx] || ShieldCheck;
 
             return (
-              <div key={idx} className="flex items-center gap-5 rounded-[2rem] border border-border bg-white px-8 py-6 shadow-card-soft">
+              <div key={idx} className="flex items-center gap-5 rounded-[1rem] border border-border bg-white px-8 py-6 shadow-card-soft">
                 <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full border border-border bg-surface text-text-primary">
                   <Icon size={24} strokeWidth={1.8} />
                 </div>
@@ -48,7 +48,7 @@ export default function DifferentiatorsSection() {
 
         <div className="border-t border-border-soft pt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
-            <div className="rounded-[2rem] bg-base-900/55 p-8 backdrop-blur-sm border border-white/10">
+            <div className="rounded-[1rem] bg-base-900/55 p-8 backdrop-blur-sm border border-white/10">
               <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-8 text-base-100">Por qué DERMA.M</h2>
               <p className="text-base-200 text-base leading-relaxed">
                 Nos enfocamos en un enfoque estético integral, donde la salud de tu piel es lo primero. Nuestro compromiso es ofrecer resultados naturales a través de diagnósticos precisos y protocolos personalizados.
@@ -60,7 +60,7 @@ export default function DifferentiatorsSection() {
                 const Icon = benefitIcons[idx] || ShieldCheck;
 
                 return (
-                <Card key={idx} className="p-8 flex items-center gap-7 bg-white shadow-card-soft hover:-translate-y-1 hover:border-base-900 hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] border border-border-card">
+                <Card key={idx} className="p-8 flex items-center gap-7 bg-white shadow-card-soft hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] border border-border-card">
                   <div className="w-16 h-16 rounded-full bg-base-100 border border-border flex items-center justify-center text-base-900 flex-shrink-0">
                     <Icon size={28} strokeWidth={1.8} />
                   </div>

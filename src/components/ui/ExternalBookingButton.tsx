@@ -17,7 +17,7 @@ export default function ExternalBookingButton({
  fullWidth = false 
 }: ExternalBookingButtonProps) {
  const Icon = type === 'square' ? ExternalLink : MessageCircle;
- const baseStyles = "inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[1rem] text-base font-medium normal-case tracking-normal transition-all duration-300 active:scale-[0.98]";
+ const baseStyles = "inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[0.625rem] text-base font-medium normal-case tracking-normal transition-all duration-300 active:scale-[0.98]";
  const typeStyles = type === 'square' 
  ? "bg-primary text-white hover:bg-primary-deep shadow-lg shadow-sage/10" 
  : "bg-white border-2 border-border-strong text-text-primary hover:bg-primary hover:text-text-inverse";

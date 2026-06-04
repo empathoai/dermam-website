@@ -14,7 +14,7 @@ export default function ContactChannelsSection() {
           <div className="lg:w-1/2 flex flex-col">
             <div className="mb-12 text-center lg:text-left">
               <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans mb-4">{channels.headline}</h2>
-              <p className="text-text-secondary text-lg leading-relaxed">{channels.subheadline}</p>
+              <p className="text-text-secondary text-lg leading-relaxed font-light">{channels.subheadline}</p>
             </div>
             
             <ResponsiveCardGroup desktopColumns={1} desktopClassName="gap-4" mobileCardWidth="84vw">

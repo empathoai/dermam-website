@@ -16,13 +16,13 @@ export default function PostOpTestimonialsSection() {
         
         <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="84vw">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center shadow-subtle hover:shadow-lg transition-shadow">
+            <Card key={testimonial.id} className="p-10 flex flex-col items-center text-center shadow-subtle hover:shadow-subtle transition-shadow">
               <div className="flex gap-1 mb-6 text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill="currentColor" />
                 ))}
               </div>
-              <p className="text-text-primary italic mb-8 leading-relaxed">
+              <p className="text-text-secondary font-light italic mb-8 leading-[1.7]">
                 {testimonial.quote}
               </p>
               <div>

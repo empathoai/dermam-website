@@ -25,7 +25,7 @@ export default function TeamSection() {
           <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-6 font-sans leading-tight">
             Nuestros especialistas
           </h2>
-          <p className="text-text-secondary text-lg leading-relaxed max-w-2xl">
+          <p className="text-text-secondary text-lg leading-relaxed font-light max-w-2xl">
             Cada miembro del equipo tiene su área de especialización. Todos comparten la misma filosofía centro: diagnóstico, seguridad y resultados.
           </p>
         </div>

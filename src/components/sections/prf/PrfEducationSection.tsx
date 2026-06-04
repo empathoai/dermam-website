@@ -12,13 +12,13 @@ export default function PrfEducationSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="order-2 lg:order-1">
              <div className="relative group">
-                <div className="absolute -inset-4 bg-prf-soft/30 rounded-[2rem] -z-10 group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute -inset-4 bg-prf-soft/30 rounded-[1rem] -z-10 group-hover:scale-105 transition-transform duration-500" />
                 <ResponsiveImage
                     src={education.image.src}
                     alt={education.image.alt}
                     width={800}
                     height={600}
-                    className="rounded-[2rem] shadow-xl w-full"
+                    className="rounded-[1rem] shadow-xl w-full"
                 />
              </div>
           </div>
@@ -27,11 +27,11 @@ export default function PrfEducationSection() {
             <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-8 leading-tight">
               {education.headline}
             </h2>
-            <p className="text-text-secondary text-lg leading-relaxed mb-12">
+            <p className="text-text-secondary text-lg leading-relaxed font-light mb-12">
               {education.copy}
             </p>
             
-            <div className="rounded-[2rem] overflow-hidden bg-base-900 text-base-100 border border-white/10 shadow-xl">
+            <div className="rounded-[1rem] overflow-hidden bg-base-900 text-base-100 border border-white/10 shadow-xl">
               <div className="px-6 py-5 border-b border-white/10">
                 <h3 className="text-sm md:text-base font-semibold uppercase tracking-[0.15em] text-center">
                   PRP convencional vs PRF DERMA.M
@@ -66,7 +66,7 @@ export default function PrfEducationSection() {
               </div>
 
               <div className="grid gap-4 p-5 md:hidden">
-                <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5">
+                <div className="rounded-[0.875rem] border border-white/10 bg-white/[0.04] p-5">
                   <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-base-100 mb-4">
                     PRP convencional
                   </h4>
@@ -80,7 +80,7 @@ export default function PrfEducationSection() {
                   </ul>
                 </div>
 
-                <div className="rounded-[1.5rem] border border-white/15 bg-white/[0.08] p-5">
+                <div className="rounded-[0.875rem] border border-white/15 bg-white/[0.08] p-5">
                   <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-base-100 mb-4 flex items-center gap-2">
                     <Check size={16} />
                     PRF — DERMA.M

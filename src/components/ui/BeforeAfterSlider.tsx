@@ -53,7 +53,7 @@ export default function BeforeAfterSlider({
     <div
       ref={frameRef}
       data-before-after-slider
-      className={`group relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-border-soft bg-base-900 shadow-xl touch-none select-none ${className}`}
+      className={`group relative aspect-[4/3] overflow-hidden rounded-[1rem] border border-border-soft bg-base-900 shadow-xl touch-none select-none ${className}`}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onMouseDown={(event) => updatePosition(event.clientX)}

@@ -81,7 +81,7 @@ export default function PrfHeroSection() {
           </motion.p>
           
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button className="!bg-base-100 px-10 py-4 !text-base-900 shadow-lg hover:!bg-white hover:shadow-xl transition-shadow w-full sm:w-auto">
+            <Button className="!bg-base-100 px-10 py-4 !text-base-900 shadow-subtle hover:!bg-white hover:shadow-subtle transition-shadow w-full sm:w-auto">
               {hero.cta}
             </Button>
           </motion.div>

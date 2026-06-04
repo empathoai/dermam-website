@@ -68,7 +68,7 @@ ${formData.message ? `Mensaje: ${formData.message}` : ''}`;
  <motion.div 
  initial={{ opacity: 0, scale: 0.95 }}
  animate={{ opacity: 1, scale: 1 }}
- className="bg-white p-12 rounded-[2rem] border border-border-card text-center shadow-xl shadow-canvas/50"
+ className="bg-white p-12 rounded-[1rem] border border-border-card text-center shadow-subtle"
  >
  <div className="w-16 h-16 bg-base-900/10 text-base-900 rounded-full flex items-center justify-center mx-auto mb-6">
  <Check size={32} />
@@ -89,7 +89,7 @@ ${formData.message ? `Mensaje: ${formData.message}` : ''}`;
  }
 
  return (
- <div className="bg-white p-8 md:p-12 rounded-[2rem] border border-border-card shadow-xl shadow-canvas/50">
+ <div className="bg-white p-8 md:p-12 rounded-[1rem] border border-border-card shadow-subtle">
  <div className="mb-10">
  <h3 className="text-2xl font-sans mb-2">{form.headline}</h3>
  <p className="text-text-secondary text-sm">{form.subheadline}</p>
@@ -147,7 +147,7 @@ ${formData.message ? `Mensaje: ${formData.message}` : ''}`;
  <Button 
  type="submit" 
  isLoading={isSubmitting}
- className="w-full py-4 shadow-lg"
+ className="w-full py-4 shadow-subtle"
  >
  {form.submitCTA}
  </Button>

@@ -20,7 +20,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ items }) => {
         <div className="group" key={idx}>
           <div
             className={[
-              'overflow-hidden rounded-[2rem] border transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]',
+              'overflow-hidden rounded-[1rem] border transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]',
               openIndex === idx
                 ? 'border-border-card bg-white shadow-card-soft'
                 : 'border-transparent bg-transparent hover:bg-white/70',
@@ -35,7 +35,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ items }) => {
               <span className="font-medium text-text-primary text-base leading-[1.45] normal-case">
                 {item.question}
               </span>
-              <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full border border-border bg-white text-text-secondary transition-colors duration-300 group-hover:text-text-primary">
+              <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full border border-border-soft bg-white text-text-secondary transition-colors duration-300 group-hover:text-text-primary">
                 <ChevronDown
                   className={`transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`}
                   size={18}
@@ -51,7 +51,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ items }) => {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.24, ease: 'easeOut' }}
                 >
-                  <div className="px-6 pb-6 pt-0 text-sm leading-[1.7] text-text-secondary md:px-8 md:pb-8 md:text-base">
+                  <div className="px-6 pb-6 pt-0 text-sm font-light leading-[1.75] text-text-secondary md:px-8 md:pb-8 md:text-base">
                     {item.answer}
                   </div>
                 </motion.div>

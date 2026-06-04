@@ -26,15 +26,15 @@ export default function TreatmentBenefitCard({ title, description, icon }: Treat
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      className="flex h-full min-h-[14rem] flex-col bg-white p-8 rounded-[2rem] border border-border-card shadow-sm hover:-translate-y-1 hover:border-base-900 hover:shadow-md transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+      className="flex h-full min-h-[14rem] flex-col bg-white p-8 rounded-[1rem] border border-border-card shadow-sm hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
     >
-      <div className="w-12 h-12 bg-base-100 rounded-[2rem] flex items-center justify-center text-text-secondary mb-6">
+      <div className="w-12 h-12 bg-base-100 rounded-[1rem] flex items-center justify-center text-text-secondary mb-6">
         <Icon size={24} />
       </div>
       <h3 className="text-[clamp(1.125rem,2vw,1.375rem)] font-semibold leading-[1.35] tracking-[-0.01em] text-text-primary mb-3">
         {title}
       </h3>
-      <p className="text-text-secondary text-base leading-[1.6]">
+      <p className="text-text-secondary text-base leading-[1.6] font-light">
         {description}
       </p>
     </motion.div>

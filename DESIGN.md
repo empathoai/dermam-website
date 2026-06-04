@@ -2,17 +2,17 @@
 
 name: "DERMA.M Skin Health Design System" version: "1.0.0" description: "Premium image-led monochromatic design system for DERMA.M Skin Health: editorial full-bleed heroes, restrained grayscale UI, Poppins hierarchy, Hamilton accent, rounded luxury components, and photography-driven warmth."
 
-colors: primary: "#141313" secondary: "#191818" background: "#f2f0f1" surface: "#ffffff" surface-soft: "#e6e4e4" surface-dark: "#141313" surface-dark-soft: "#191818" text-primary: "#141313" text-secondary: "#4e4d4d" text-muted: "#666666" text-inverse: "#f2f0f1" text-inverse-secondary: "#cccaca" border: "#e6e4e4" border-strong: "#cccaca" border-card: "rgba(20,19,19,0.70)" border-dark: "rgba(255,255,255,0.10)" overlay-dark-start: "rgba(20,19,19,0.94)" overlay-dark-mid: "rgba(20,19,19,0.72)" overlay-dark-end: "rgba(20,19,19,0.16)" grayscale-950: "#141313" grayscale-900: "#191818" grayscale-800: "#333232" grayscale-600: "#4e4d4d" grayscale-500: "#666666" grayscale-300: "#b3b2b2" grayscale-200: "#cccaca" grayscale-100: "#e6e4e4" grayscale-50: "#f2f0f1"
+colors: primary: "#141313" secondary: "#191818" background: "#f2f0f1" surface: "#ffffff" surface-soft: "#e6e4e4" surface-dark: "#141313" surface-dark-soft: "#191818" text-primary: "#141313" text-secondary: "#4e4d4d" text-muted: "#666666" text-inverse: "#f2f0f1" text-inverse-secondary: "#cccaca" border: "#e6e4e4" border-strong: "#cccaca" border-subtle: "rgba(20,19,19,0.12)" border-card: "rgba(20,19,19,0.18)" border-card-hover: "rgba(20,19,19,0.32)" border-featured: "rgba(20,19,19,0.70)" border-dark: "rgba(255,255,255,0.10)" overlay-dark-start: "rgba(20,19,19,0.94)" overlay-dark-mid: "rgba(20,19,19,0.72)" overlay-dark-end: "rgba(20,19,19,0.16)" grayscale-950: "#141313" grayscale-900: "#191818" grayscale-800: "#333232" grayscale-600: "#4e4d4d" grayscale-500: "#666666" grayscale-300: "#b3b2b2" grayscale-200: "#cccaca" grayscale-100: "#e6e4e4" grayscale-50: "#f2f0f1"
 
 fonts: sans: "'Poppins', ui-sans-serif, system-ui, sans-serif" script: "'Hamilton', cursive" mono: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
 
-typography: display-hero: fontFamily: "var(--font-sans)" fontSize: "clamp(3.25rem, 7.8vw, 6.25rem)" fontWeight: 800 lineHeight: "0.96" letterSpacing: "-0.045em" textTransform: "uppercase" display-hero-compact: fontFamily: "var(--font-sans)" fontSize: "clamp(2.65rem, 5.8vw, 4.8rem)" fontWeight: 800 lineHeight: "0.96" letterSpacing: "-0.04em" textTransform: "uppercase" title-page: fontFamily: "var(--font-sans)" fontSize: "clamp(2.4rem, 5vw, 4rem)" fontWeight: 800 lineHeight: "1.0" letterSpacing: "-0.04em" textTransform: "uppercase" heading-section: fontFamily: "var(--font-sans)" fontSize: "clamp(1.9rem, 3.6vw, 3rem)" fontWeight: 700 lineHeight: "1.05" letterSpacing: "-0.035em" textTransform: "uppercase" heading-section-soft: fontFamily: "var(--font-sans)" fontSize: "clamp(1.75rem, 3vw, 2.5rem)" fontWeight: 600 lineHeight: "1.15" letterSpacing: "-0.025em" textTransform: "none" heading-subsection: fontFamily: "var(--font-sans)" fontSize: "clamp(1.35rem, 2.4vw, 1.75rem)" fontWeight: 600 lineHeight: "1.2" letterSpacing: "-0.015em" textTransform: "none" title-card: fontFamily: "var(--font-sans)" fontSize: "clamp(1.125rem, 2vw, 1.375rem)" fontWeight: 600 lineHeight: "1.35" letterSpacing: "-0.01em" textTransform: "none" body-lg: fontFamily: "var(--font-sans)" fontSize: "1.125rem" fontWeight: 300 lineHeight: "1.65" letterSpacing: "0" textTransform: "none" body-md: fontFamily: "var(--font-sans)" fontSize: "1rem" fontWeight: 400 lineHeight: "1.6" letterSpacing: "0" textTransform: "none" body-sm: fontFamily: "var(--font-sans)" fontSize: "0.875rem" fontWeight: 400 lineHeight: "1.5" letterSpacing: "0" textTransform: "none" label-uppercase: fontFamily: "var(--font-sans)" fontSize: "0.75rem" fontWeight: 500 lineHeight: "1.2" letterSpacing: "0.15em" textTransform: "uppercase" button-md: fontFamily: "var(--font-sans)" fontSize: "1rem" fontWeight: 500 lineHeight: "1" letterSpacing: "0" textTransform: "none" link-editorial: fontFamily: "var(--font-sans)" fontSize: "1rem" fontWeight: 500 lineHeight: "1.2" letterSpacing: "0" textTransform: "none" stat-number: fontFamily: "var(--font-sans)" fontSize: "clamp(2.5rem, 5vw, 4rem)" fontWeight: 800 lineHeight: "1.05" letterSpacing: "-0.03em" textTransform: "none" stat-label: fontFamily: "var(--font-sans)" fontSize: "0.75rem" fontWeight: 500 lineHeight: "1.2" letterSpacing: "0.15em" textTransform: "uppercase" accent-script: fontFamily: "var(--font-script)" fontSize: "1.42em" fontWeight: 300 lineHeight: "0.72" letterSpacing: "0" textTransform: "none"
+typography: display-hero: fontFamily: "var(--font-sans)" fontSize: "clamp(3.25rem, 7.8vw, 6.25rem)" fontWeight: 800 lineHeight: "0.96" letterSpacing: "-0.045em" textTransform: "uppercase" display-hero-compact: fontFamily: "var(--font-sans)" fontSize: "clamp(2.65rem, 5.8vw, 4.8rem)" fontWeight: 800 lineHeight: "0.96" letterSpacing: "-0.04em" textTransform: "uppercase" title-page: fontFamily: "var(--font-sans)" fontSize: "clamp(2.4rem, 5vw, 4rem)" fontWeight: 800 lineHeight: "1.0" letterSpacing: "-0.04em" textTransform: "uppercase" heading-section: fontFamily: "var(--font-sans)" fontSize: "clamp(1.9rem, 3.6vw, 3rem)" fontWeight: 700 lineHeight: "1.05" letterSpacing: "-0.035em" textTransform: "uppercase" heading-section-soft: fontFamily: "var(--font-sans)" fontSize: "clamp(1.75rem, 3vw, 2.5rem)" fontWeight: 600 lineHeight: "1.15" letterSpacing: "-0.025em" textTransform: "none" heading-subsection: fontFamily: "var(--font-sans)" fontSize: "clamp(1.35rem, 2.4vw, 1.75rem)" fontWeight: 600 lineHeight: "1.2" letterSpacing: "-0.015em" textTransform: "none" title-card: fontFamily: "var(--font-sans)" fontSize: "clamp(1.125rem, 2vw, 1.375rem)" fontWeight: 600 lineHeight: "1.35" letterSpacing: "-0.01em" textTransform: "none" body-lg: fontFamily: "var(--font-sans)" fontSize: "1.125rem" fontWeight: 300 lineHeight: "1.65" letterSpacing: "0" textTransform: "none" body-md: fontFamily: "var(--font-sans)" fontSize: "1rem" fontWeight: 300 lineHeight: "1.6" letterSpacing: "0" textTransform: "none" body-sm: fontFamily: "var(--font-sans)" fontSize: "0.875rem" fontWeight: 300 lineHeight: "1.5" letterSpacing: "0" textTransform: "none" label-uppercase: fontFamily: "var(--font-sans)" fontSize: "0.75rem" fontWeight: 500 lineHeight: "1.2" letterSpacing: "0.15em" textTransform: "uppercase" button-md: fontFamily: "var(--font-sans)" fontSize: "1rem" fontWeight: 500 lineHeight: "1" letterSpacing: "0" textTransform: "none" link-editorial: fontFamily: "var(--font-sans)" fontSize: "1rem" fontWeight: 500 lineHeight: "1.2" letterSpacing: "0" textTransform: "none" stat-number: fontFamily: "var(--font-sans)" fontSize: "clamp(2.5rem, 5vw, 4rem)" fontWeight: 800 lineHeight: "1.05" letterSpacing: "-0.03em" textTransform: "none" stat-label: fontFamily: "var(--font-sans)" fontSize: "0.75rem" fontWeight: 500 lineHeight: "1.2" letterSpacing: "0.15em" textTransform: "uppercase" accent-script: fontFamily: "var(--font-script)" fontSize: "1.42em" fontWeight: 300 lineHeight: "0.72" letterSpacing: "0" textTransform: "none"
 
 spacing: base: "8px" xs: "0.5rem" sm: "0.75rem" md: "1rem" lg: "1.5rem" xl: "2rem" section-y: "6rem" section-y-mobile: "4rem" hero-y: "7rem" container-x: "clamp(1.5rem, 4vw, 2.5rem)" grid-gap: "1.25rem"
 
 layout: container: "1280px" text-narrow: "48rem" hero-content: "48rem" desktop-breakpoint: "1024px" wide-breakpoint: "1280px"
 
-rounded: small: "0.75rem" control: "1rem" image: "1.5rem" card-soft: "1.75rem" card: "2rem" section: "2.5rem" pill: "9999px" circle: "50%"
+rounded: small: "0.5rem" control: "0.625rem" image: "0.875rem" card: "1rem" card-soft: "1.125rem" panel: "1.25rem" section: "1.5rem" pill: "9999px" circle: "50%"
 
 shadows: card-soft: "0 12px 40px rgba(20,19,19,0.04)" section-soft: "0 12px 60px rgba(20,19,19,0.05)"
 
@@ -28,7 +28,7 @@ The system must support multiple page types without changing visual language: Ho
 
 The approved Homepage is the visual quality baseline for the whole site. It is not a literal template to copy everywhere. Future pages and components should extract its principles: off-white page rhythm, white content cards, controlled charcoal contrast blocks, editorial image treatment, strong typographic hierarchy, refined card/background contrast, subtle founder/team motion, a dark FinalCTA treatment, and a dark premium footer.
 
-The main design posture is luxury through restraint: generous whitespace, strong typographic hierarchy, large rounded containers, calm monochrome contrast, precise image placement, shallow shadows, subtle borders, and clear conversion paths.
+The main design posture is luxury through restraint: generous whitespace, strong typographic hierarchy, controlled editorial softness, calm monochrome contrast, precise image placement, shallow shadows, subtle borders, and clear conversion paths.
 
 DERMA.M must not look like a hospital, generic clinic, SaaS page, low-end med spa template, beauty salon catalog, or gray prototype.
 
@@ -38,7 +38,7 @@ Primary visual principles:
 2. Use Poppins for the entire interface hierarchy.
 3. Use Hamilton only as a controlled H1 accent.
 4. Use image-led cards and split sections.
-5. Use large radius as a signature shape language.
+5. Use controlled editorial softness as a signature shape language: cards stay soft, but not overly rounded or app-like.
 6. Use light editorial surfaces by default.
 7. Use dark sections only for hero, trust, protocols, final CTA, footer, or controlled proof/contrast moments.
 8. Keep conversion clear but never visually aggressive.
@@ -61,9 +61,10 @@ Light mode contrast:
 - Primary text uses `text-primary` / `#141313`.
 - Secondary copy uses `text-secondary` / `#4e4d4d`.
 - Muted copy, captions, and metadata use `text-muted` / `#666666`.
-- Borders use `border` / `#e6e4e4` or `border-strong` / `#cccaca` for separators and utility panels.
-- White cards use `surface` / `#ffffff` with `border-card` / `rgba(20,19,19,0.70)` for the thin dark editorial outline.
-- Do not use `border-card` for nav dropdowns, pills, form inputs, or large section dividers unless they are intentionally presented as cards.
+- Borders use `border` / `#e6e4e4`, `border-subtle` / `rgba(20,19,19,0.12)`, or `border-strong` / `#cccaca` for separators and utility panels.
+- Normal white cards use `surface` / `#ffffff` with `border-card` / `rgba(20,19,19,0.18)` so the outline separates without dominating.
+- Ordinary card hover states use `border-card-hover` / `rgba(20,19,19,0.32)`. Reserve `border-featured` / `rgba(20,19,19,0.70)` for featured cards, active states, primary conversion containers, or deliberate editorial emphasis.
+- Do not use `border-featured` for normal nav dropdowns, pills, form inputs, or large section dividers unless they are intentionally presented as featured cards.
 
 Dark mode contrast:
 
@@ -131,7 +132,7 @@ Hamilton rules:
 6. Vertically adjust so it integrates into the display line.
 7. Never use in cards, nav, body, FAQ, forms, treatment titles, ordinary CTAs, stats, or footer. Do not expand Hamilton usage without explicit approval.
 
-The Hero H1 uses `display-hero` on Homepage and `display-hero-compact` on internal heroes. Section headings use `heading-section`. Cards use `title-card`. Paragraphs use `body-md` or `body-lg` depending on prominence.
+The Hero H1 uses `display-hero` on Homepage and `display-hero-compact` on internal heroes. Section headings use `heading-section`. Cards use `title-card`. Paragraphs use `body-md` or `body-lg` depending on prominence. Body copy should stay light and calm; use weight 300 by default unless a label, title, button, stat, or active control requires stronger emphasis.
 
 The AI or builder must not style generic `h1`, `h2`, or `h3` globally without component context. Use semantic design roles instead: `HeroTitle`, `SectionTitle`, `CardTitle`, `Eyebrow`, `BodyCopy`, `ButtonLabel`, `StatNumber`, `StatLabel`.
 
@@ -162,7 +163,7 @@ Grid behavior:
 - Split sections use two columns on desktop and one column on mobile.
 - Booking and contact layouts use split cards on desktop and stacked cards on mobile.
 
-Large rounded section containers should use `rounded.section` / `2.5rem`. Treatment cards use `rounded.card` / `2rem`. Images inside cards usually use `rounded.image` / `1.5rem` unless the image is flush at the top of an overflow-hidden card.
+Large editorial section containers should use `rounded.section` / `1.5rem` by default. Treatment, review, benefit, FAQ, stats, team, IV kit, and related cards use `rounded.card` / `1rem`. Images inside cards usually use `rounded.image` / `0.875rem` unless the image is flush at the top of an overflow-hidden card. Use `rounded.panel` / `1.25rem` for larger content panels that need more softness than a card but less than a full editorial section.
 
 Do not use large flat gray blocks as layout filler. If a section feels visually empty, solve it with image placement, spacing, hierarchy, or card composition — not by adding a heavy gray background.
 
@@ -550,7 +551,7 @@ Dark variant is recommended by default. Light variant is allowed if the page alr
 The approved Homepage FinalCTA is the baseline for closing conversion sections. Internal, Hub, Tier 3, PRF, Post-op,
 Deep Facial, IV Therapy, and About FinalCTA sections should preserve the same pattern unless explicitly approved:
 full-background editorial image where available, soft overlay, centered container, local dark charcoal glass panel,
-large rounded section geometry, two-column desktop composition, dominant uppercase heading, calm supporting copy,
+controlled editorial section geometry, two-column desktop composition, dominant uppercase heading, calm supporting copy,
 primary CTA plus optional secondary CTA, and a small trust/location microcopy line below the buttons. Do not use
 split white image cards, isolated flat dark boxes, or one-off CTA layouts for final conversion sections.
 
@@ -588,7 +589,7 @@ The approved dark footer is part of the Homepage baseline and should not be reve
 8. Don't use Hamilton in cards, section headings, body, ordinary buttons, nav, FAQ, stats, forms, treatment titles, or footer.
 9. Do keep Hero and section-level headings uppercase when assigned to display roles.
 10. Don't uppercase card titles, buttons, body copy, FAQ questions, or links.
-11. Do use large radius consistently: `2rem` for cards and `2.5rem` for large sections.
+11. Do use controlled radius consistently: `1rem` for normal cards, `0.875rem` for card images, `1.25rem` for larger panels, and `1.5rem` maximum for large editorial CTA/section panels unless explicitly approved.
 12. Don't use sharp cards, heavy shadows, neon glows, or colorful UI accents.
 12a. Do allow yellow stars only for Google rating/review components; don't extend yellow to any other UI element.
 13. Do keep treatment cards image-led with clean white bodies.
@@ -627,7 +628,7 @@ Any component that violates these standards must be corrected.
 
 ### FINAL CTA ? All pages
 - Section: py-32 relative overflow-hidden, full-bleed background image
-- Panel: bg-base-900/85 backdrop-blur-md rounded-[2.5rem] border border-white/10
+- Panel: bg-base-900/85 backdrop-blur-md rounded-[1.5rem] border border-white/10
 - Layout: flex-col lg:flex-row, items-center justify-between
 - H2: font-bold uppercase text-base-100, Hamilton script accent on ONE emotional keyword
 - Copy: text-lg text-base-300 font-light

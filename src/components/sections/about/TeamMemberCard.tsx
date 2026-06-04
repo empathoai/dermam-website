@@ -16,7 +16,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, idx }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: idx * 0.1, duration: 0.5 }}
-      className={`group flex flex-col items-center bg-white p-6 rounded-[2rem] border transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-base-900 hover:-translate-y-1 hover:shadow-subtle ${member.featured ? 'border-base-900 ring-1 ring-base-900/10' : 'border-border-card'}`}
+      className={`group flex flex-col items-center bg-white p-6 rounded-[1rem] border transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-border-card-hover hover:-translate-y-1 hover:shadow-subtle ${member.featured ? 'border-base-900 ring-1 ring-base-900/10' : 'border-border-card'}`}
     >
       <div className="mb-6">
         <MotionAvatar

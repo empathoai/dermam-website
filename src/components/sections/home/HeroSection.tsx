@@ -93,7 +93,7 @@ export default function HeroSection() {
             <Button
               variant="primary"
               to="/es/reservar"
-              className="!bg-white px-10 py-4 !text-base-900 shadow-lg hover:!bg-base-100 hover:shadow-xl transition-shadow w-full sm:w-auto"
+              className="!bg-white px-10 py-4 !text-base-900 shadow-subtle hover:!bg-base-100 hover:shadow-subtle transition-shadow w-full sm:w-auto"
             >
               {hero.primaryCTA}
             </Button>
