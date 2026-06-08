@@ -25,6 +25,7 @@ export interface IVTherapyFAQItem {
 export interface IVTherapyHeroContent {
   eyebrow: string;
   headline: string;
+  accentWord?: string;
   subheadline: string;
   ctaLabel: string;
   image: ImageAsset;

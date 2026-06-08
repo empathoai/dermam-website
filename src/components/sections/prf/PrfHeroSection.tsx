@@ -31,6 +31,35 @@ export default function PrfHeroSection() {
     },
   };
 
+  const renderHeadline = () => {
+    const full = hero.headline;
+    const idx = full.lastIndexOf(' en ');
+    const treatment = idx >= 0 ? full.slice(0, idx) : full;
+    const accentWord = 'Fibrina';
+
+    if (!treatment.includes(accentWord)) {
+      return treatment;
+    }
+
+    const [before, after] = treatment.split(accentWord, 2);
+
+    return (
+      <>
+        <span className="block">
+          {before.trim()}
+        </span>
+        <span className="font-script normal-case font-light tracking-normal block w-full text-right text-[1.62em] md:text-[1.7em] leading-[0.78] mt-[-0.02em] pr-[0.5em] md:pr-[0.76em]">
+          fibrina
+        </span>
+        {after.trim() ? (
+          <span className="block">
+            {after.trim()}
+          </span>
+        ) : null}
+      </>
+    );
+  };
+
   return (
     <section className="relative min-h-[86vh] lg:min-h-[90vh] flex items-center overflow-hidden bg-base-900 py-20 lg:py-24 isolation-isolate">
       <div className="absolute inset-0 z-0">
@@ -58,19 +87,10 @@ export default function PrfHeroSection() {
             variants={itemVariants}
             className="text-[clamp(3rem,6.6vw,5.35rem)] font-extrabold leading-[0.96] tracking-[-0.045em] uppercase text-base-300 mb-8"
           >
-            {(() => {
-              const full = hero.headline;
-              const idx = full.lastIndexOf(' en ');
-              const treatment = idx >= 0 ? full.slice(0, idx) : full;
-              return (
-                <>
-                  {treatment}
-                  <span className="block text-[clamp(0.9rem,1.8vw,1.35rem)] font-medium normal-case tracking-[0.02em] text-base-300/70 mt-3 leading-[1.4]">
-                    en West Palm Beach · Miami
-                  </span>
-                </>
-              );
-            })()}
+            {renderHeadline()}
+            <span className="block text-[clamp(0.9rem,1.8vw,1.35rem)] font-medium normal-case tracking-[0.02em] text-base-300/70 mt-3 leading-[1.4]">
+              en West Palm Beach ? Miami
+            </span>
           </motion.h1>
           
           <motion.p 

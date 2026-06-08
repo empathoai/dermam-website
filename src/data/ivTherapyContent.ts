@@ -3,7 +3,8 @@ import { IVTherapyPageContent } from '../types/ivTherapy';
 export const ivTherapyContent: IVTherapyPageContent = {
   hero: {
     eyebrow: 'West Palm Beach · DERMA.M',
-    headline: 'IV Therapy — Nutrición intravenosa',
+    headline: 'IV Therapy nutrición intravenosa',
+    accentWord: 'intravenosa',
     subheadline: 'Vitaminas y nutrientes directamente en tu torrente sanguíneo. Apoyo rápido para hidratación, energía y bienestar.',
     ctaLabel: 'Ver los kits disponibles',
     image: {

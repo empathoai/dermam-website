@@ -28,6 +28,27 @@ export default function AboutHeroSection() {
     },
   };
 
+  const renderHeadline = () => {
+    const accentWord = 'piel';
+    if (!hero.headline.toLowerCase().includes(accentWord)) {
+      return hero.headline;
+    }
+
+    const idx = hero.headline.toLowerCase().lastIndexOf(accentWord);
+    const before = hero.headline.slice(0, idx);
+    const after = hero.headline.slice(idx + accentWord.length);
+
+    return (
+      <>
+        {before}
+        <span className="font-script normal-case font-light tracking-normal align-baseline inline-block translate-y-[0.08em] text-[1.42em] leading-[0.72] mx-[0.08em]">
+          piel
+        </span>
+        {after}
+      </>
+    );
+  };
+
   return (
     <section className="relative h-[60vh] lg:h-[80vh] flex items-center overflow-hidden bg-base-900 isolation-isolate">
       <div className="absolute inset-0 z-0">
@@ -52,7 +73,7 @@ export default function AboutHeroSection() {
             variants={itemVariants}
             className="text-[clamp(2.65rem,5.8vw,4.8rem)] font-extrabold leading-[0.96] tracking-[-0.04em] uppercase text-white drop-shadow-sm mb-6"
           >
-            {hero.headline}
+            {renderHeadline()}
           </motion.h1>
           
           <motion.p 

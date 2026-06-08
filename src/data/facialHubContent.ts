@@ -13,7 +13,8 @@ export const facialHubContent: HubPageContent = {
   },
   hero: {
     eyebrow: 'West Palm Beach · Miami · MedSpa Certificado',
-    headline: 'Tratamientos Faciales en DERMA.M',
+    headline: 'Tratamientos faciales',
+    accentWord: 'faciales',
     subheadline: 'Protocolos profesionales para cada tipo de piel. Diagnóstico personalizado antes de cualquier tratamiento.',
     ctaLabel: 'Evalúa tu piel — gratis',
     trustLine: '4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
@@ -93,7 +94,7 @@ export const facialHubContent: HubPageContent = {
       {
         id: 'limpieza-grid',
         title: 'Limpieza Facial Profunda',
-        category: 'Limpieza centro',
+        category: 'Limpieza',
         ctaLabel: 'Ver más →',
         href: '/es/limpieza-facial-profunda',
         image: {
@@ -108,8 +109,8 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/hidrofacial',
         image: {
-          src: '/assets/images/laser-machine.jpg',
-          alt: 'Hidrofacial',
+          src: '/assets/treatments/hidrofacial/hero.jpg',
+          alt: 'Hidrofacial en DERMA.M',
           prompt: 'Premium hydrofacial skincare treatment image, soft hydrating facial device gently used on client’s cheek, white headband, luminous skin, clean ivory room, watery blue-green and sage accents, luxury medspa photography, no redness, no harsh suction close-up, 4:3 ratio.'
         }
       },
@@ -120,8 +121,8 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/peel-coreano',
         image: {
-          src: '/assets/treatments/peel-treatment.jpg',
-          alt: 'Peel Coreano',
+          src: '/assets/treatments/peel-coreano/hero.jpg',
+          alt: 'Peel Coreano en DERMA.M',
           prompt: 'Premium Korean peel skincare image, aesthetic specialist applying a gentle transparent peel solution with soft brush, client calm, luminous skin, clean white linens, pastel sage and ivory room, no peeling skin, no irritation, elegant clinical spa photography, 4:3 ratio.'
         }
       },
@@ -132,8 +133,8 @@ export const facialHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/oxigenoterapia-facial',
         image: {
-          src: '/assets/images/facial-scrub.jpg',
-          alt: 'Oxigenoterapia',
+          src: '/assets/treatments/oxigenoterapia-facial/hero.jpg',
+          alt: 'Oxigenoterapia Facial en DERMA.M',
           prompt: 'Premium oxygen facial therapy image, soft oxygen infusion device near client’s face, clean ivory treatment room, white headband, gentle light, pastel sage accents, calm professional medspa atmosphere, no hospital equipment feeling, 4:3 ratio.'
         }
       },

@@ -47,6 +47,8 @@ export interface HubPageContent {
   hero: {
     eyebrow: string;
     headline: string;
+    accentWord?: string;
+    accentClassName?: string;
     subheadline: string;
     ctaLabel: string;
     trustLine: string;

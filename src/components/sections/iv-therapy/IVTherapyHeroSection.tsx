@@ -41,6 +41,30 @@ export default function IVTherapyHeroSection({ content, onScrollToKits }: IVTher
     },
   };
 
+  const renderHeadline = () => {
+    if (!content.accentWord || !content.headline.includes(content.accentWord)) {
+      return content.headline;
+    }
+
+    const [before, after] = content.headline.split(content.accentWord, 2);
+
+    return (
+      <>
+        <span className="block">
+          {before.trim()}
+        </span>
+        <span className="font-script normal-case font-light tracking-normal block w-full text-left text-[1.62em] md:text-[1.7em] leading-[0.78] mt-[-0.02em] pl-[0.78em] md:pl-[0.94em]">
+          {content.accentWord}
+        </span>
+        {after.trim() ? (
+          <span className="block">
+            {after.trim()}
+          </span>
+        ) : null}
+      </>
+    );
+  };
+
   return (
     <section className="relative min-h-[86vh] lg:min-h-[90vh] flex items-center overflow-hidden bg-base-900 py-20 lg:py-24 isolation-isolate">
       <div className="absolute inset-0 z-0">
@@ -65,7 +89,7 @@ export default function IVTherapyHeroSection({ content, onScrollToKits }: IVTher
             </motion.div>
             
             <motion.h1 variants={itemVariants} className="text-[clamp(3rem,6.6vw,5.35rem)] font-extrabold leading-[0.96] tracking-[-0.045em] uppercase text-base-300 drop-shadow-md mb-8">
-              {content.headline}
+              {renderHeadline()}
               <span className="block text-[clamp(0.9rem,1.8vw,1.35rem)] font-medium normal-case tracking-[0.02em] text-base-300/70 mt-3 leading-[1.4]">
                 en West Palm Beach
               </span>
