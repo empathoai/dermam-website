@@ -1,36 +1,53 @@
-import { prfContent } from '../../../data/prfLanding';
+import React from 'react';
 import Container from '../../ui/Container';
-import { Check } from '../../../design-system/icons';
 import { motion } from 'motion/react';
-import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 export default function PrfAudienceSection() {
-  const { audience } = prfContent;
+  const eyebrow = 'Guía rápida del tratamiento';
+  const headline = '¿Tu piel necesita regeneración?';
+  const support = 'Este protocolo está orientado a piel con pérdida de luminosidad, textura irregular, líneas finas, marcas o señales de envejecimiento.';
+  const chips = [
+    'Piel opaca',
+    'Líneas finas',
+    'Marcas de acné',
+    'Textura irregular',
+    'Pérdida de firmeza',
+    'Poros visibles'
+  ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-8 lg:py-10 bg-canvas border-b border-border-subtle">
       <Container>
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase">{audience.headline}</h2>
-          </div>
+        <motion.div 
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="max-w-3xl mx-auto text-center"
+        >
+          <span className="text-[10px] font-bold text-text-muted uppercase tracking-[0.15em] mb-2 block">
+            {eyebrow}
+          </span>
           
-          <ResponsiveCardGroup desktopColumns={2} desktopClassName="gap-x-12 gap-y-6" mobileCardWidth="84vw">
-            {audience.checks.map((check, idx) => (
-              <motion.div 
+          <h2 className="text-[clamp(1.25rem,2.2vw,1.65rem)] font-extrabold tracking-[-0.02em] uppercase font-sans text-text-primary leading-[1.2] mb-2.5">
+            {headline}
+          </h2>
+          
+          <p className="text-text-secondary text-xs md:text-sm font-light leading-relaxed max-w-xl mx-auto mb-6">
+            {support}
+          </p>
+
+          <div className="flex flex-wrap gap-2.5 justify-center">
+            {chips.map((chip, idx) => (
+              <span 
                 key={idx}
-                initial={{ opacity: 0, x: -10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="flex h-[5.625rem] items-center gap-4 p-5 rounded-[1rem] bg-base-900 border border-white/10 hover:border-white/15 hover:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                className="inline-flex items-center justify-center px-4 py-2 bg-white border border-border-card rounded-full text-[11px] font-medium text-text-primary shadow-sm hover:border-border-card-hover hover:bg-canvas transition-all duration-200"
               >
-                <Check className="text-base-100 flex-shrink-0" size={20} />
-                <span className="text-base text-base-100 font-medium">{check}</span>
-              </motion.div>
+                {chip}
+              </span>
             ))}
-          </ResponsiveCardGroup>
-        </div>
+          </div>
+        </motion.div>
       </Container>
     </section>
   );

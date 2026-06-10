@@ -34,5 +34,7 @@ All notable changes to this project will be documented in this file.
 - Replaced the IV Kit grid section on `/es/iv-therapy` with detailed Z-pattern service modules (`IVKitsCatalogSection`) matching the hub layouts.
 - Updated `ivKits.ts` to display exactly the 11 official IV kits, removing all pricing, e-commerce checkout links, and unconfirmed kits.
 - Updated types in `src/types/ivTherapy.ts` and configurations in `src/data/ivTherapyContent.ts` to support the new layout structure.
+- Replaced the heavy post-hero check card sections with compact orientation strips on PRP (`PrfAudienceSection`), Limpieza Facial (`DeepFacialAudienceSection`), and Postoperatorio (`PostOpSurgeryTypesSection`) landing pages to match the hub intro styles.
+
 
 
