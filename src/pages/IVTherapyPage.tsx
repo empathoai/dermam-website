@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 import { ivTherapyContent } from '../data/ivTherapyContent';
 import { ivKits } from '../data/ivKits';
 import IVTherapyHeroSection from '../components/sections/iv-therapy/IVTherapyHeroSection';
-import IVTherapyEducationSection from '../components/sections/iv-therapy/IVTherapyEducationSection';
-import IVKitsGridSection from '../components/sections/iv-therapy/IVKitsGridSection';
+import HubIntroSection from '../components/sections/hubs/HubIntroSection';
+import IVKitsCatalogSection from '../components/sections/iv-therapy/IVKitsCatalogSection';
 import IVTherapyFAQSection from '../components/sections/iv-therapy/IVTherapyFAQSection';
 import IVTherapyFinalCTA from '../components/sections/iv-therapy/IVTherapyFinalCTA';
 import PageShell from '../components/layout/PageShell';
@@ -29,15 +29,15 @@ export default function IVTherapyPage() {
         onScrollToKits={scrollToKits}
       />
 
-      {/* 02 Qué es IV Therapy */}
-      <IVTherapyEducationSection content={ivTherapyContent.education} />
+      {/* 02 Intro / navigation strip */}
+      {ivTherapyContent.intro && (
+        <HubIntroSection content={ivTherapyContent.intro as any} />
+      )}
 
-      {/* 03 Los 7 kits disponibles */}
+      {/* 03 Detailed IV kit modules */}
       <div ref={kitsSectionRef}>
-        <IVKitsGridSection 
+        <IVKitsCatalogSection 
           id="kits"
-          title={ivTherapyContent.kitsSection.title}
-          subtitle={ivTherapyContent.kitsSection.subtitle}
           kits={ivKits}
         />
       </div>

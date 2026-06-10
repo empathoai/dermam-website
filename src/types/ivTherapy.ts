@@ -15,6 +15,8 @@ export interface IVKit {
   ctaLabel: string;
   trackingLabel: string;
   isPlaceholderUrl?: boolean;
+  benefits?: string[];
+  iconPoints?: string[];
 }
 
 export interface IVTherapyFAQItem {
@@ -50,9 +52,18 @@ export interface IVTherapyFinalCTAContent {
   image: ImageAsset;
 }
 
+export interface IVTherapyIntroContent {
+  eyebrow?: string;
+  headline?: string;
+  body?: string;
+  chips?: Array<{ label: string; targetId: string }>;
+  stats?: Array<{ value: string; label: string }>;
+}
+
 export interface IVTherapyPageContent {
   hero: IVTherapyHeroContent;
-  education: IVEducationSectionContent;
+  education?: IVEducationSectionContent;
+  intro?: IVTherapyIntroContent;
   kitsSection: {
     title: string;
     subtitle: string;

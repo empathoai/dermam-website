@@ -39,6 +39,15 @@ const sectionImages: Record<string, string> = {
   'gluteos-contorno-corporal': '/assets/images/body-massage.jpg',
   'textura-piel-celulitis-estrias': '/assets/treatments/tratamientos-corporales/hero.jpg',
   'bienestar-corporal-tratamientos-complementarios': '/assets/pages/home/postop-card.jpg',
+
+  // Laser & Light Hub
+  'depilacion-laser-diodo': '/assets/images/laser-hair.jpg',
+  'ipl-luz-pulsada-intensa': '/assets/images/laser-device.jpg',
+  'laser-co2-fraccionado': '/assets/images/consultation-room.jpg',
+
+  // Dental Hub
+  'blanqueamiento-dental-estetico': '/assets/images/dental-office.jpg',
+  'limpieza-dental-profesional': '/assets/images/dental-mouth.jpg',
 };
 
 interface BenefitItem {
@@ -109,6 +118,35 @@ const catalogBenefits: Record<string, BenefitItem[]> = {
     { icon: Leaf, label: 'Desintoxicación' },
     { icon: Smile, label: 'Mantenimiento' },
     { icon: Sparkles, label: 'Cuidado capilar' }
+  ],
+
+  // Laser & Light Hub
+  'depilacion-laser-diodo': [
+    { icon: Zap, label: 'Tecnología diodo' },
+    { icon: Sparkles, label: 'Piel suave' },
+    { icon: Shield, label: 'Sin rasuradoras' }
+  ],
+  'ipl-luz-pulsada-intensa': [
+    { icon: Shield, label: 'Manchas solares' },
+    { icon: Layers, label: 'Tono uniforme' },
+    { icon: Sparkles, label: 'Luminosidad' }
+  ],
+  'laser-co2-fraccionado': [
+    { icon: Sparkles, label: 'Renovación profunda' },
+    { icon: Layers, label: 'Textura y poros' },
+    { icon: Zap, label: 'Colágeno' }
+  ],
+
+  // Dental Hub
+  'blanqueamiento-dental-estetico': [
+    { icon: Sparkles, label: 'Sonrisa brillante' },
+    { icon: Zap, label: 'Una sesión' },
+    { icon: Smile, label: 'Estética dental' }
+  ],
+  'limpieza-dental-profesional': [
+    { icon: Droplet, label: 'Limpieza profunda' },
+    { icon: Sparkles, label: 'Frescura' },
+    { icon: Shield, label: 'Cuidado preventivo' }
   ]
 };
 

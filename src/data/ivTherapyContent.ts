@@ -13,20 +13,20 @@ export const ivTherapyContent: IVTherapyPageContent = {
       prompt: 'Bright premium IV therapy wellness editorial image for a premium aesthetics center, elegant IV bag on a clean stand with soft colorful vitamin-infused fluid, fresh citrus fruit, berries, cucumber water, folded white towels, warm ivory treatment room, pastel sage and pearl gray accents, clean clinical wellness atmosphere, vibrant colors only from fruits and IV fluid, premium medspa photography, no hospital feeling, no sick patient, no aggressive needle close-up, no blood, no dark background, 16:9 horizontal, main subject centered for mobile crop safety.'
     }
   },
-  education: {
-    title: '¿Por qué IV y no pastillas?',
-    copyOral: 'Absorción oral: Una parte de los nutrientes se pierde durante el proceso digestivo.',
-    copyIV: 'Absorción IV: Los nutrientes entran directamente al torrente sanguíneo para mayor disponibilidad.',
-    stats: [
-      { label: 'Administración directa', value: '100%*' },
-      { label: 'Minutos por sesión', value: '30–45' },
-      { label: 'Kits disponibles', value: '7' }
-    ],
-    image: {
-      src: '/assets/treatments/iv-process.jpg',
-      alt: 'Proceso de IV Therapy en DERMA.M',
-      prompt: 'Premium clinical IV therapy process image, calm patient seated comfortably in a bright ivory wellness room receiving IV therapy, arm resting naturally, IV line visible but subtle, professional hands checking setup, soft sage accents, clean and reassuring clinical wellness environment, no pain expression, no blood, no hospital bed, no emergency feeling, high-end medspa photography, 4:3 ratio.'
-    }
+  intro: {
+    eyebrow: 'Guía de IV Therapy',
+    headline: 'Elige tu kit según tu objetivo',
+    body: 'Cada kit está diseñado para apoyar un objetivo específico de bienestar, energía, hidratación, recuperación o cuidado estético.',
+    chips: [
+      { label: 'Inmunidad', targetId: '#tri-immune-boost-formula-iv-kit' },
+      { label: 'Energía', targetId: '#get-up-and-go-iv-kit' },
+      { label: 'Hidratación', targetId: '#quench-iv-kit' },
+      { label: 'Recuperación', targetId: '#reboot-iv-kit' },
+      { label: 'Enfoque', targetId: '#brainstorm-iv-kit' },
+      { label: 'Bienestar femenino', targetId: '#alleviate-iv-kit' },
+      { label: 'Piel y antioxidantes', targetId: '#snow-bright-iv-kit' },
+      { label: 'Metabolismo', targetId: '#el-b-lean-iv-kit' }
+    ]
   },
   kitsSection: {
     title: 'Elige el kit para tu objetivo',

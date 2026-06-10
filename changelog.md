@@ -9,6 +9,8 @@ All notable changes to this project will be documented in this file.
 - Added `catalogSections` data to facial and corporate hub content files (`src/data/facialHubContent.ts` and `src/data/bodyHubContent.ts`).
 - Added type definition for `HubCatalogSection` in `src/types/hub.ts` and added optional `catalogSections` field to `HubPageContent`.
 - Created `HubCatalogSections.tsx` component ([src/components/sections/hubs/HubCatalogSections.tsx](file:///d:/Derma_Content/DermaM-WebSite/src/components/sections/hubs/HubCatalogSections.tsx)) to render alternating editorial split blocks with white content panels, custom metadata, and custom CTAs.
+- Added `catalogSections` data to laser/light and dental hub content files (`src/data/laserLightHubContent.ts` and `src/data/dentalHubContent.ts`).
+- Added image and benefit icon mappings for Laser/Light and Dental hub sections in `src/components/sections/hubs/HubCatalogSections.tsx`.
 
 ### Modified
 - Registered `changelog.md` in `AGENTS.md` as a mandatory registry for future edits.
@@ -23,3 +25,14 @@ All notable changes to this project will be documented in this file.
 - Vertically aligned all CTA buttons to the exact bottom of the card using flex layout (`flex-col justify-between h-full`).
 - Stacks all elements vertically on mobile (`[Image] [Eyebrow] [Treatment name] [Description] [Compact benefits] [Benefits list] [CTAs]`) with no horizontal scroll or image-right order.
 - Confirmed that no routes, SEO, sitemap, public assets, or Tier 3 pages were modified.
+- Migrated `/es/laser-y-luz` and `/es/dental` hubs to the updated catalog-sections Z-pattern layout structure, bypassing the old dense grid and adding objective navigation chips.
+- Centered featured treatments on desktop for Laser/Light and Dental hubs, preserving mobile scroll behavior.
+- Aligned `/es/laser-y-luz` content with the official catalog, displaying only three services: `Depilación Láser Diodo`, `IPL – Luz Pulsada Intensa`, and `Láser CO₂ Fraccionado`. Removed unconfirmed/outdated services from display.
+- Aligned `/es/dental` content with the official catalog, displaying only two services: `Blanqueamiento Dental Estético` and `Limpieza Dental Profesional`. Removed unconfirmed/outdated services from display.
+- Updated both `laserLightHubContent.ts` and `dentalHubContent.ts` data files (`catalogSections`, `featured`, `allGrid`, and `socialProof` lists) to strictly match official catalog services.
+- Updated `/es/iv-therapy` intro section to align with the objective navigation strip of the hub system, adding objective chips linking to kit anchors.
+- Replaced the IV Kit grid section on `/es/iv-therapy` with detailed Z-pattern service modules (`IVKitsCatalogSection`) matching the hub layouts.
+- Updated `ivKits.ts` to display exactly the 11 official IV kits, removing all pricing, e-commerce checkout links, and unconfirmed kits.
+- Updated types in `src/types/ivTherapy.ts` and configurations in `src/data/ivTherapyContent.ts` to support the new layout structure.
+
+

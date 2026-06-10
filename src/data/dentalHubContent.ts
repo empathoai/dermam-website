@@ -8,6 +8,55 @@ export const dentalHubContent: HubPageContent = {
 
   type: 'dental',
 
+  catalogSections: [
+    {
+      id: 'blanqueamiento-dental-estetico',
+      eyebrow: '01 · Estética',
+      title: 'Blanqueamiento Dental Estético',
+      description: 'Recupera el blanco natural de tu sonrisa con un tratamiento seguro, rápido y sin sensibilidad. Aclara varios tonos del esmalte en una sola sesión, devolviéndote una sonrisa más brillante, juvenil y segura.',
+      idealFor: [
+        'Ayuda a aclarar el tono del esmalte',
+        'Sonrisa más brillante',
+        'Tratamiento rápido',
+        'Enfoque estético profesional'
+      ],
+      treatments: [
+        'Blanqueamiento Dental Estético'
+      ],
+      primaryCta: {
+        label: 'Más información',
+        href: '/es/blanqueamiento-dental'
+      },
+      secondaryCta: {
+        label: 'Escríbenos por WhatsApp',
+        type: 'whatsapp'
+      }
+    },
+    {
+      id: 'limpieza-dental-profesional',
+      eyebrow: '02 · Higiene',
+      title: 'Limpieza Dental Profesional',
+      description: 'El primer paso hacia una sonrisa saludable y radiante. Eliminamos sarro, placa bacteriana y manchas superficiales con técnicas suaves y efectivas. Ayuda a prevenir enfermedades bucales y deja tu sonrisa visiblemente más limpia, fresca y cuidada.',
+      idealFor: [
+        'Elimina sarro y placa bacteriana',
+        'Ayuda con manchas superficiales',
+        'Sonrisa más limpia y fresca',
+        'Base para tratamientos dentales estéticos'
+      ],
+      treatments: [
+        'Limpieza Dental Profesional'
+      ],
+      primaryCta: {
+        label: 'Más información',
+        href: '/es/limpieza-dental'
+      },
+      secondaryCta: {
+        label: 'Escríbenos por WhatsApp',
+        type: 'whatsapp'
+      }
+    }
+  ],
+
   seo: {
 
     title: 'Dental West Palm Beach | DERMA.M Skin Health',
@@ -51,269 +100,65 @@ export const dentalHubContent: HubPageContent = {
   },
 
   intro: {
-
-    stats: [
-
-      { value: 'Personalizada', label: 'Atención' },
-
-      { value: 'Bilingüe', label: 'Entorno' },
-
-      { value: 'Profesional', label: 'Cuidado' }
-
-    ],
-
-    editorialLabel: 'Estética dental con acompañamiento',
-
-    editorialBody: 'La experiencia dental en DERMA.M se enfoca en orientación clara, cuidado profesional y confianza. Te ayudamos a entender opciones, tiempos y próximos pasos antes de decidir.',
-
-    benefits: [
-
-      {
-
-        title: 'Evaluación antes de tratamiento',
-
-        description: 'Revisamos tu caso antes de recomendar cualquier procedimiento.'
-
-      },
-
-      {
-
-        title: 'Cuidado estético y funcional',
-
-        description: 'Buscamos mejorar apariencia, comodidad y confianza.'
-
-      },
-
-      {
-
-        title: 'Atención clara y profesional',
-
-        description: 'Te explicamos opciones, proceso y próximos pasos.'
-
-      }
-
+    eyebrow: 'Guía dental estética',
+    headline: 'Elige según el objetivo de tu sonrisa',
+    body: 'Organizamos los servicios dentales estéticos por limpieza y blanqueamiento profesional.',
+    stats: [],
+    chips: [
+      { label: 'Blanqueamiento', targetId: '#blanqueamiento-dental-estetico' },
+      { label: 'Limpieza profesional', targetId: '#limpieza-dental-profesional' }
     ]
-
   },
 
   featured: {
-
     headline: 'Nuestros servicios principales',
-
     subheadline: 'Cuidado dental con enfoque estético en WPB',
-
     items: [
-
       {
-
-        id: 'evaluacion-dental',
-
-        title: 'Evaluación Dental',
-
-        description: 'Orientación inicial para definir el tratamiento adecuado.',
-
-        ctaLabel: 'Primer paso',
-
-        href: '/es/reservar',
-
-        badge: 'Recomendado',
-
-        image: {
-
-          src: '/assets/images/dental-teeth.jpg',
-
-          alt: 'Evaluación Dental',
-
-          prompt: 'Premium dental consultation scene, specialist speaking with patient in bright ivory clinic room, tablet or mirror in hand, calm professional atmosphere, soft sage and pearl gray accents, no mouth close-up, no invasive tools, approachable dental wellness photography, 4:3 ratio.'
-
-        }
-
-      },
-
-      {
-
-        id: 'blanqueamiento',
-
-        title: 'Blanqueamiento Dental',
-
-        description: 'Mejora estética para una sonrisa más luminosa.',
-
+        id: 'blanqueamiento-dental-estetico',
+        title: 'Blanqueamiento Dental Estético',
+        description: 'Recupera el blanco natural de tu sonrisa con un tratamiento seguro, rápido y sin sensibilidad.',
         ctaLabel: 'Ver servicio →',
-
         href: '/es/blanqueamiento-dental',
-
         image: {
-
           src: '/assets/images/dental-office.jpg',
-
-          alt: 'Blanqueamiento',
-
-          prompt: 'Premium teeth whitening aesthetic image, calm patient in bright dental wellness room with protective setup, clean ivory and pearl gray palette, subtle soft smile, no exaggerated Hollywood smile, no harsh blue light, professional and approachable, 4:3 ratio.'
-
+          alt: 'Blanqueamiento Dental Estético'
         }
-
       },
-
       {
-
-        id: 'limpieza-dental',
-
-        title: 'Limpieza Dental',
-
-        description: 'Cuidado preventivo para mantener salud y frescura.',
-
+        id: 'limpieza-dental-profesional',
+        title: 'Limpieza Dental Profesional',
+        description: 'El primer paso hacia una sonrisa saludable y radiante, eliminando sarro y placa.',
         ctaLabel: 'Ver servicio →',
-
         href: '/es/limpieza-dental',
-
         image: {
-
           src: '/assets/images/dental-mouth.jpg',
-
-          alt: 'Limpieza Dental',
-
-          prompt: 'Premium dental cleaning consultation image, professional dental specialist preparing gentle cleaning in clean bright dental room, calm patient, no invasive close-up, no visible discomfort, ivory and soft sage aesthetic, modern and welcoming, 4:3 ratio.'
-
+          alt: 'Limpieza Dental Profesional'
         }
-
       }
-
     ]
-
   },
 
   allGrid: {
-
     headline: 'Todos los servicios dentales',
-
     items: [
-
       {
-
-        id: 'eval-grid',
-
-        title: 'Evaluación Dental',
-
-        category: 'Diagnóstico',
-
-        ctaLabel: 'Ver más →',
-
-        href: '/es/reservar',
-
-        image: { src: '/assets/images/dental-teeth.jpg', alt: 'Evaluación', prompt: 'Dental eval' }
-
-      },
-
-      {
-
-        id: 'limpieza-grid',
-
-        title: 'Limpieza Dental',
-
-        category: 'Prevención',
-
-        ctaLabel: 'Ver más →',
-
-        href: '/es/reservar',
-
-        isPlaceholderRoute: true,
-
-        image: { src: '/assets/images/dental-mouth.jpg', alt: 'Limpieza', prompt: 'Dental cleaning' }
-
-      },
-
-      {
-
-        id: 'blanqueamiento-grid',
-
-        title: 'Blanqueamiento Dental',
-
+        id: 'blanqueamiento-dental-estetico-grid',
+        title: 'Blanqueamiento Dental Estético',
         category: 'Estética',
-
         ctaLabel: 'Ver más →',
-
-        href: '/es/reservar',
-
-        isPlaceholderRoute: true,
-
-        image: { src: '/assets/images/dental-office.jpg', alt: 'Blanqueamiento', prompt: 'Whitening' }
-
+        href: '/es/blanqueamiento-dental',
+        image: { src: '/assets/images/dental-office.jpg', alt: 'Blanqueamiento Dental Estético' }
       },
-
       {
-
-        id: 'sonrisa-grid',
-
-        title: 'Diseño de Sonrisa',
-
-        category: 'Transformación',
-
+        id: 'limpieza-dental-profesional-grid',
+        title: 'Limpieza Dental Profesional',
+        category: 'Higiene',
         ctaLabel: 'Ver más →',
-
-        href: '/es/reservar',
-
-        isPlaceholderRoute: true,
-
-        image: { src: '/assets/images/dental-veneers.jpg', alt: 'Diseño Sonrisa', prompt: 'Smile design' }
-
-      },
-
-      {
-
-        id: 'carillas-grid',
-
-        title: 'Carillas',
-
-        category: 'Estética avanzada',
-
-        ctaLabel: 'Ver más →',
-
-        href: '/es/reservar',
-
-        isPlaceholderRoute: true,
-
-        image: { src: '/assets/images/dental-veneers.jpg', alt: 'Carillas', prompt: 'Veneers' }
-
-      },
-
-      {
-
-        id: 'preventivo',
-
-        title: 'Cuidado Preventivo',
-
-        category: 'Salud oral',
-
-        ctaLabel: 'Ver más →',
-
-        href: '/es/reservar',
-
-        isPlaceholderRoute: true,
-
-        image: { src: '/assets/images/dental-mouth.jpg', alt: 'Cuidado', prompt: 'Oral health' }
-
-      },
-
-      {
-
-        id: 'consulta-estetica',
-
-        title: 'Consulta Estética',
-
-        category: 'Orientación',
-
-        ctaLabel: 'Ver más →',
-
-        href: '/es/reservar',
-
-        isPlaceholderRoute: true,
-
-        image: { src: '/assets/images/dental-teeth.jpg', alt: 'Consulta', prompt: 'Aesthetic consult' }
-
+        href: '/es/limpieza-dental',
+        image: { src: '/assets/images/dental-mouth.jpg', alt: 'Limpieza Dental Profesional' }
       }
-
     ]
-
   },
 
   faqs: {
@@ -391,53 +236,29 @@ export const dentalHubContent: HubPageContent = {
   },
 
   socialProof: {
-
     headline: 'Sonrisas que confían en DERMA.M',
-
     googleRating: '4.9',
-
     googleLink: siteConfig.mapsUrl,
-
     items: [
-
       {
-
         quote: 'Excelente atención. Me explicaron todo con mucha paciencia y el resultado del blanqueamiento fue genial.',
-
         author: 'Ricardo V.',
-
         role: 'Blanqueamiento Dental',
-
         isPlaceholder: true
-
       },
-
       {
-
         quote: 'Un ambiente muy tranquilo y profesional. Hacen que la visita sea una experiencia agradable.',
-
         author: 'Monica F.',
-
         role: 'Limpieza Dental',
-
         isPlaceholder: true
-
       },
-
       {
-
         quote: 'Muy detallistas y profesionales. Recomiendo DERMA.M para cualquier servicio dental.',
-
         author: 'Gabriel T.',
-
-        role: 'Evaluación Dental',
-
+        role: 'Limpieza Dental',
         isPlaceholder: true
-
       }
-
     ]
-
   },
 
   finalCTA: {
