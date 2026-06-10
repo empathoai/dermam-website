@@ -74,7 +74,7 @@ export default function TreatmentCardRail({ items, className = '' }: TreatmentCa
   return (
     <ResponsiveCardGroup
       className={className}
-      desktopColumns={items.length >= 4 ? 4 : 3}
+      desktopColumns={Math.min(items.length, 4) as 1 | 2 | 3 | 4 | 5}
       desktopItemClassName="w-full"
       mobileCardWidth="82vw"
     >

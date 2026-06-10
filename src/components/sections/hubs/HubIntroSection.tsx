@@ -1,7 +1,7 @@
+import React from 'react';
 import { HubPageContent } from '../../../types/hub';
 import Container from '../../ui/Container';
 import { motion } from 'motion/react';
-import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 interface HubIntroSectionProps {
   content: HubPageContent['intro'];
@@ -9,59 +9,48 @@ interface HubIntroSectionProps {
 
 export default function HubIntroSection({ content }: HubIntroSectionProps) {
   return (
-    <section className="relative py-24 bg-white overflow-hidden">
+    <section className="py-8 lg:py-10 bg-canvas border-b border-border-subtle">
       <Container>
-        <div className="flex flex-col gap-16">
-          {/* Stats Row */}
-          <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="82vw">
-            {content.stats.map((stat, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="text-center p-8 bg-white rounded-[1rem] border border-border-card shadow-subtle hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
-              >
-                <div className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase font-sans text-text-primary mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-label-xs font-bold text-text-secondary uppercase tracking-wider">
-                  {stat.label}
-                </div>
-              </motion.div>
-            ))}
-          </ResponsiveCardGroup>
+        <motion.div 
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="max-w-3xl mx-auto text-center"
+        >
+          {content.eyebrow && (
+            <span className="text-[10px] font-bold text-text-muted uppercase tracking-[0.15em] mb-2 block">
+              {content.eyebrow}
+            </span>
+          )}
+          
+          {content.headline && (
+            <h2 className="text-[clamp(1.25rem,2.2vw,1.65rem)] font-extrabold tracking-[-0.02em] uppercase font-sans text-text-primary leading-[1.2] mb-2.5">
+              {content.headline}
+            </h2>
+          )}
+          
+          {content.body && (
+            <p className="text-text-secondary text-xs md:text-sm font-light leading-relaxed max-w-xl mx-auto mb-6">
+              {content.body}
+            </p>
+          )}
 
-          <div className="max-w-3xl mx-auto mt-16">
-            <p className="text-label-xs font-medium uppercase tracking-[0.12em] text-text-muted mb-6 text-center">
-              {content.editorialLabel}
-            </p>
-            <p className="text-text-secondary text-lg leading-relaxed font-light text-center mb-12">
-              {content.editorialBody}
-            </p>
-            <ResponsiveCardGroup desktopColumns={3} mobileCardWidth="82vw">
-              {content.benefits.map((benefit, idx) => (
-                <motion.div
+          {/* Clickable Objective Pills */}
+          {content.chips && content.chips.length > 0 && (
+            <div className="flex flex-wrap gap-2.5 justify-center">
+              {content.chips.map((chip, idx) => (
+                <a 
                   key={idx}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                  className="flex flex-col gap-3 text-center"
+                  href={chip.targetId}
+                  className="inline-flex items-center justify-center px-4 py-2 bg-white border border-border-card rounded-full text-[11px] font-medium text-text-primary hover:border-border-card-hover hover:bg-canvas transition-all duration-200 shadow-sm hover:scale-[1.02] cursor-pointer"
                 >
-                  <div className="w-8 h-px bg-border-strong mx-auto" />
-                  <h3 className="text-base font-semibold text-text-primary uppercase tracking-[0.05em]">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-sm text-text-secondary leading-relaxed">
-                    {benefit.description}
-                  </p>
-                </motion.div>
+                  {chip.label}
+                </a>
               ))}
-            </ResponsiveCardGroup>
-          </div>
-        </div>
+            </div>
+          )}
+        </motion.div>
       </Container>
     </section>
   );

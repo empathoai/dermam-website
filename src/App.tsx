@@ -22,6 +22,17 @@ import CavitacionPage from './pages/es/CavitacionPage';
 import RadiofrecuenciaCorporalPage from './pages/es/RadiofrecuenciaCorporalPage';
 import DrenajeLinfaticoCorporalPage from './pages/es/DrenajeLinfaticoCorporalPage';
 import RadiofrecuenciaFacialPage from './pages/es/RadiofrecuenciaFacialPage';
+import UltrasonidoFacialPage from './pages/es/UltrasonidoFacialPage';
+import PlasmaOzonoPage from './pages/es/PlasmaOzonoPage';
+import PlasmaFrioPage from './pages/es/PlasmaFrioPage';
+import CarboxiterapiaFacialPage from './pages/es/CarboxiterapiaFacialPage';
+import EmsFacialEnyongPage from './pages/es/EmsFacialEnyongPage';
+import MasajesFacialesMarcacionMandibularPage from './pages/es/MasajesFacialesMarcacionMandibularPage';
+import DermabrasionFacialPage from './pages/es/DermabrasionFacialPage';
+import MasajesRelajantesFacialesPage from './pages/es/MasajesRelajantesFacialesPage';
+import MaderoterapiaFacialPage from './pages/es/MaderoterapiaFacialPage';
+import HifuFacialPage from './pages/es/HifuFacialPage';
+import Evefus10RadiofrecuenciaFraccionadaPage from './pages/es/Evefus10RadiofrecuenciaFraccionadaPage';
 
 
 function ScrollToTop() {
@@ -63,6 +74,17 @@ export default function App() {
         <Route path="/es/radiofrecuencia-corporal" element={<RadiofrecuenciaCorporalPage />} />
         <Route path="/es/drenaje-linfatico-corporal" element={<DrenajeLinfaticoCorporalPage />} />
         <Route path="/es/radiofrecuencia-facial" element={<RadiofrecuenciaFacialPage />} />
+        <Route path="/es/ultrasonido-facial" element={<UltrasonidoFacialPage />} />
+        <Route path="/es/plasma-ozono" element={<PlasmaOzonoPage />} />
+        <Route path="/es/plasma-frio" element={<PlasmaFrioPage />} />
+        <Route path="/es/carboxiterapia-facial" element={<CarboxiterapiaFacialPage />} />
+        <Route path="/es/ems-facial-enyong" element={<EmsFacialEnyongPage />} />
+        <Route path="/es/masajes-faciales-marcacion-mandibular" element={<MasajesFacialesMarcacionMandibularPage />} />
+        <Route path="/es/dermabrasion-facial" element={<DermabrasionFacialPage />} />
+        <Route path="/es/masajes-relajantes-faciales" element={<MasajesRelajantesFacialesPage />} />
+        <Route path="/es/maderoterapia-facial" element={<MaderoterapiaFacialPage />} />
+        <Route path="/es/hifu-facial" element={<HifuFacialPage />} />
+        <Route path="/es/evefus-10-radiofrecuencia-fraccionada" element={<Evefus10RadiofrecuenciaFraccionadaPage />} />
 
         
         {/* English Route Placeholders (Building later) */}

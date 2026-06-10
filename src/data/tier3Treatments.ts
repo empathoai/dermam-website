@@ -2,6 +2,94 @@ import { Tier3Treatment } from '../types/tier3Treatment';
 
 const commonImagePrompt = 'Bright premium DERMA.M clinical wellness aesthetic, warm ivory treatment room, soft sage and pearl gray accents, realistic skin texture, calm professional medspa atmosphere, no dark background, no harsh hospital look, no exaggerated retouching, main subject centered for mobile crop safety.';
 
+
+const createFacialCatalogTreatment = ({
+  id,
+  title,
+  shortTitle,
+  eyebrow,
+  subheadline,
+  explanationTitle,
+  explanationBody,
+  benefits,
+  steps,
+  candidates,
+  safetyItems,
+  relatedTreatmentIds,
+}: {
+  id: string;
+  title: string;
+  shortTitle: string;
+  eyebrow: string;
+  subheadline: string;
+  explanationTitle: string;
+  explanationBody: string;
+  benefits: Array<{ title: string; description: string; icon?: string }>;
+  steps: Array<{ title: string; description: string }>;
+  candidates: string[];
+  safetyItems: string[];
+  relatedTreatmentIds: string[];
+}): Tier3Treatment => ({
+  id,
+  slugEs: id,
+  category: 'facial',
+  title,
+  shortTitle,
+  seoTitle: title + ' West Palm Beach | DERMA.M',
+  metaDescription: title + ' en West Palm Beach en DERMA.M. Protocolo facial personalizado con evaluación profesional antes de iniciar.',
+  canonicalEs: 'https://dermamskinhealth.com/es/' + id + '/',
+  eyebrow,
+  h1: title + ' en West Palm Beach',
+  subheadline,
+  primaryCta: { label: 'Agendar Evaluación', href: '/es/reservar', mode: 'evaluation', trackingLabel: id + '_primary_cta' },
+  secondaryCta: { label: 'Consultar por WhatsApp', href: '#', mode: 'whatsapp', trackingLabel: id + '_whatsapp_cta' },
+  heroMedia: { type: 'image', src: '/assets/treatments/' + id + '/hero.jpg', alt: title + ' en DERMA.M', position: 'center' },
+  quickFacts: [
+    { label: 'Evaluación', value: 'Personalizada' },
+    { label: 'Objetivo', value: eyebrow },
+    { label: 'Plan', value: 'Según tu piel' }
+  ],
+  quickFit: { title: 'Este tratamiento puede ayudarte si...', items: candidates },
+  explanation: {
+    title: explanationTitle,
+    body: explanationBody,
+    media: { src: '/assets/treatments/' + id + '/hero.jpg', alt: title + ' en DERMA.M', prompt: 'IMAGE PROMPT — ' + title.toUpperCase() + ': ' + commonImagePrompt }
+  },
+  benefits,
+  sessionSteps: steps,
+  candidates,
+  safety: { title: 'Evaluación y seguridad', items: safetyItems, disclaimer: 'La recomendación final depende de la evaluación de tu piel y tus objetivos.' },
+  faqs: [
+    { question: '¿Necesito evaluación antes de ' + title + '?', answer: 'Sí. Evaluamos tu piel, sensibilidad, objetivos y antecedentes antes de recomendar el protocolo adecuado.' },
+    { question: '¿Se puede combinar con otros tratamientos faciales?', answer: 'Sí. En muchos casos se combina con limpieza, hidratación, oxigenoterapia, radiofrecuencia, plasma o protocolos para manchas según diagnóstico.' }
+  ],
+  relatedTreatmentIds,
+  finalCta: {
+    title: 'Evalúa si ' + shortTitle + ' es para ti',
+    copy: 'Agenda una evaluación profesional y recibe una recomendación personalizada para tu piel.',
+    primaryLabel: 'Agendar Evaluación',
+    secondaryLabel: 'Consultar por WhatsApp',
+    image: { src: '/assets/treatments/' + id + '/cta.jpg', alt: 'Final CTA ' + title, prompt: 'IMAGE PROMPT — ' + title.toUpperCase() + ' CTA: ' + commonImagePrompt }
+  },
+  showPrice: false,
+  whatsappMessage: 'Hola, quiero información sobre ' + title + ' en DERMA.M.',
+  isPublished: true
+});
+
+const facialCatalogTreatments: Tier3Treatment[] = [
+  createFacialCatalogTreatment({ id: 'ultrasonido-facial', title: 'Ultrasonido Facial', shortTitle: 'Ultrasonido Facial', eyebrow: 'Absorción y Estímulo', subheadline: 'Estimulación profunda para mejorar circulación y absorción de productos profesionales.', explanationTitle: '¿Qué es el Ultrasonido Facial?', explanationBody: 'El Ultrasonido Facial es un tratamiento complementario que estimula la piel a nivel profundo para mejorar la circulación, favorecer la absorción de activos y potenciar otros protocolos faciales.', benefits: [{ title: 'Mejor absorción', description: 'Ayuda a que los activos profesionales penetren mejor en la piel.', icon: 'droplets' }, { title: 'Estimulación suave', description: 'Favorece circulación y vitalidad sin procedimiento invasivo.', icon: 'sparkles' }], steps: [{ title: 'Evaluación', description: 'Revisamos el estado de tu piel y el objetivo del protocolo.' }, { title: 'Aplicación de activos', description: 'Seleccionamos productos según necesidad: hidratación, calma o luminosidad.' }, { title: 'Ultrasonido', description: 'Trabajamos con movimientos controlados para estimular absorción.' }], candidates: ['Piel apagada o deshidratada', 'Piel que necesita potenciar activos', 'Complemento de limpiezas o protocolos faciales'], safetyItems: ['No invasivo', 'Sin tiempo de recuperación', 'Se adapta a pieles sensibles según evaluación'], relatedTreatmentIds: ['hidrofacial', 'oxigenoterapia-facial', 'limpieza-facial-profunda'] }),
+  createFacialCatalogTreatment({ id: 'plasma-ozono', title: 'Plasma Ozono', shortTitle: 'Plasma Ozono', eyebrow: 'Oxigenación y Recuperación', subheadline: 'Oxigenación celular para calmar, revitalizar y apoyar la recuperación visible de la piel.', explanationTitle: '¿Qué es el Plasma Ozono?', explanationBody: 'El Plasma Ozono mejora la oxigenación celular, ayuda a reducir inflamación y apoya la recuperación de pieles con acné, sensibilidad, manchas o signos de envejecimiento.', benefits: [{ title: 'Oxigenación', description: 'Favorece una piel con apariencia más sana y revitalizada.', icon: 'droplets' }, { title: 'Calma visible', description: 'Puede apoyar protocolos para inflamación, acné y sensibilidad.', icon: 'sparkles' }], steps: [{ title: 'Diagnóstico', description: 'Evaluamos sensibilidad, brotes, manchas y objetivo del tratamiento.' }, { title: 'Preparación', description: 'Limpiamos y preparamos la piel antes de la aplicación.' }, { title: 'Aplicación', description: 'Aplicamos el protocolo de plasma ozono según tolerancia y objetivo.' }], candidates: ['Piel sensible o inflamada', 'Brotes de acné', 'Manchas o piel apagada'], safetyItems: ['Protocolo ajustado a sensibilidad', 'No se aplica sobre piel irritada sin evaluación', 'Puede combinarse con otros tratamientos'], relatedTreatmentIds: ['plasma-frio', 'carboxiterapia-facial', 'limpieza-facial-profunda'] }),
+  createFacialCatalogTreatment({ id: 'plasma-frio', title: 'Plasma Frío', shortTitle: 'Plasma Frío', eyebrow: 'Antibacteriano y Regenerador', subheadline: 'Tecnología no invasiva con efecto antibacteriano, regenerador y rejuvenecedor.', explanationTitle: '¿Qué es el Plasma Frío?', explanationBody: 'El Plasma Frío es una tecnología no invasiva que ayuda a mejorar oxigenación, reducir inflamación y acelerar la recuperación de la piel. Es útil como apoyo en acné, sensibilidad, manchas y envejecimiento.', benefits: [{ title: 'Efecto antibacteriano', description: 'Apoya protocolos para piel con tendencia a brotes.', icon: 'focus' }, { title: 'Regeneración', description: 'Ayuda a que la piel se vea más luminosa y revitalizada.', icon: 'sparkles' }], steps: [{ title: 'Limpieza', description: 'Preparamos la piel y retiramos impurezas superficiales.' }, { title: 'Aplicación tecnológica', description: 'Trabajamos zonas específicas con parámetros seguros.' }, { title: 'Cierre calmante', description: 'Finalizamos con activos hidratantes o calmantes.' }], candidates: ['Acné o brotes frecuentes', 'Piel sensibilizada', 'Piel apagada o con textura irregular'], safetyItems: ['No invasivo', 'Sin agujas', 'Requiere evaluación si hay irritación activa'], relatedTreatmentIds: ['plasma-ozono', 'carboxiterapia-facial', 'limpieza-facial-profunda'] }),
+  createFacialCatalogTreatment({ id: 'carboxiterapia-facial', title: 'Carboxiterapia Facial', shortTitle: 'Carboxiterapia Facial', eyebrow: 'CO₂ y Circulación', subheadline: 'Aplicación de CO₂ para oxigenar tejidos, activar circulación y estimular colágeno.', explanationTitle: '¿Qué es la Carboxiterapia Facial?', explanationBody: 'La Carboxiterapia Facial consiste en la aplicación de CO₂ para oxigenar tejidos, activar circulación y estimular colágeno. Ayuda a mejorar ojeras, arrugas, flacidez, manchas, acné y piel apagada.', benefits: [{ title: 'Oxigenación tisular', description: 'Estimula circulación y vitalidad de la piel.', icon: 'droplets' }, { title: 'Mejora progresiva', description: 'Apoya firmeza, textura y tono de forma gradual.', icon: 'sparkles' }], steps: [{ title: 'Evaluación', description: 'Definimos si es adecuada para tu piel y objetivo.' }, { title: 'Aplicación de CO₂', description: 'Trabajamos zonas específicas con protocolo controlado.' }, { title: 'Cuidados', description: 'Indicamos recomendaciones posteriores según sensibilidad.' }], candidates: ['Ojeras o piel apagada', 'Flacidez leve', 'Manchas, acné o textura irregular'], safetyItems: ['Evaluación previa obligatoria', 'Puede generar sensación temporal durante aplicación', 'Resultados progresivos'], relatedTreatmentIds: ['radiofrecuencia-facial', 'plasma-frio', 'microneedling'] }),
+  createFacialCatalogTreatment({ id: 'ems-facial-enyong', title: 'EMS Facial + Enyong', shortTitle: 'EMS Facial', eyebrow: 'Tonicidad Muscular', subheadline: 'Estimulación muscular facial para firmeza, tonicidad y definición del contorno.', explanationTitle: 'Tratamiento Muscular Facial', explanationBody: 'EMS Facial + Enyong estimula los músculos faciales en profundidad mientras activa colágeno y elastina mediante radiofrecuencia. Mejora firmeza, tonicidad y definición del rostro con efecto lifting natural.', benefits: [{ title: 'Contorno definido', description: 'Ayuda a marcar y levantar visualmente el óvalo facial.', icon: 'maximize' }, { title: 'Tonicidad', description: 'Trabaja musculatura facial y firmeza cutánea.', icon: 'sparkles' }], steps: [{ title: 'Valoración', description: 'Observamos flacidez, tono muscular y zonas prioritarias.' }, { title: 'Estimulación', description: 'Aplicamos EMS y energía controlada según tolerancia.' }, { title: 'Finalización', description: 'Cerramos con activos calmantes e hidratantes.' }], candidates: ['Flacidez facial', 'Pérdida de definición', 'Prevención del envejecimiento muscular'], safetyItems: ['No invasivo', 'Parámetros ajustados por tolerancia', 'No recomendado sin evaluación en casos con dispositivos médicos implantados'], relatedTreatmentIds: ['radiofrecuencia-facial', 'hifu-facial', 'masajes-faciales-marcacion-mandibular'] }),
+  createFacialCatalogTreatment({ id: 'masajes-faciales-marcacion-mandibular', title: 'Masajes Faciales para Marcación Mandibular', shortTitle: 'Marcación Mandibular', eyebrow: 'Contorno Facial', subheadline: 'Técnica manual para definir y realzar el contorno natural del rostro.', explanationTitle: 'Marcación mandibular sin aparatología', explanationBody: 'Técnica manual avanzada enfocada en línea mandibular y tercio inferior del rostro. Estimula circulación, mejora drenaje y tonifica la piel para una apariencia más firme, estilizada y armónica.', benefits: [{ title: 'Definición', description: 'Realza el contorno mandibular de forma natural.', icon: 'focus' }, { title: 'Drenaje', description: 'Ayuda a reducir retención y mejorar aspecto del tercio inferior.', icon: 'droplets' }], steps: [{ title: 'Evaluación facial', description: 'Observamos retención, tensión y forma del contorno.' }, { title: 'Técnica manual', description: 'Aplicamos maniobras de drenaje, tonificación y definición.' }, { title: 'Cierre relajante', description: 'Finalizamos con calma e hidratación de la piel.' }], candidates: ['Rostro con retención de líquidos', 'Contorno mandibular poco definido', 'Personas que prefieren técnicas manuales'], safetyItems: ['No invasivo', 'Sin aparatología', 'Se adapta a sensibilidad y tensión muscular'], relatedTreatmentIds: ['masajes-relajantes-faciales', 'maderoterapia-facial', 'ems-facial-enyong'] }),
+  createFacialCatalogTreatment({ id: 'dermabrasion-facial', title: 'Dermabrasión Facial', shortTitle: 'Dermabrasión', eyebrow: 'Exfoliación Mecánica', subheadline: 'Exfoliación mecánica para renovar textura, manchas, marcas y líneas finas.', explanationTitle: 'Renovación visible de textura', explanationBody: 'La Dermabrasión Facial remueve células muertas mediante exfoliación mecánica. Ayuda a mejorar textura, atenuar manchas superficiales, marcas y líneas finas para una piel más uniforme.', benefits: [{ title: 'Textura más uniforme', description: 'Suaviza aspereza y mejora luminosidad.', icon: 'sparkles' }, { title: 'Renovación superficial', description: 'Retira células muertas y prepara la piel para activos.', icon: 'layers' }], steps: [{ title: 'Preparación', description: 'Limpiamos y evaluamos sensibilidad antes de exfoliar.' }, { title: 'Dermabrasión', description: 'Trabajamos la piel con técnica controlada.' }, { title: 'Calma e hidratación', description: 'Aplicamos activos reparadores y protección.' }], candidates: ['Textura irregular', 'Manchas superficiales', 'Piel opaca con células muertas acumuladas'], safetyItems: ['Requiere fotoprotección posterior', 'No se aplica sobre piel irritada', 'Intensidad ajustada por sensibilidad'], relatedTreatmentIds: ['peel-coreano', 'hidrofacial', 'limpieza-facial-profunda'] }),
+  createFacialCatalogTreatment({ id: 'masajes-relajantes-faciales', title: 'Masajes Relajantes Faciales', shortTitle: 'Masajes Relajantes', eyebrow: 'Bienestar Facial', subheadline: 'Relajación profunda para oxigenar tejidos, reducir estrés y mejorar el aspecto del rostro.', explanationTitle: 'Bienestar que también embellece', explanationBody: 'Los Masajes Relajantes Faciales oxigenan tejidos, reducen estrés y ayudan a descontracturar músculos faciales. Mejoran circulación, expresión, descanso y sensación general de bienestar.', benefits: [{ title: 'Relajación profunda', description: 'Libera tensiones acumuladas en el rostro.', icon: 'sparkles' }, { title: 'Circulación', description: 'Favorece oxigenación y aspecto saludable.', icon: 'droplets' }], steps: [{ title: 'Preparación', description: 'Limpieza ligera y selección de producto de masaje.' }, { title: 'Masaje facial', description: 'Maniobras relajantes y de oxigenación.' }, { title: 'Cierre', description: 'Hidratación y recomendaciones de cuidado.' }], candidates: ['Estrés facial', 'Tensión muscular', 'Piel cansada o apagada'], safetyItems: ['No invasivo', 'Apto como mantenimiento', 'Se evita presión excesiva en piel sensibilizada'], relatedTreatmentIds: ['masajes-faciales-marcacion-mandibular', 'maderoterapia-facial', 'limpieza-facial-profunda'] }),
+  createFacialCatalogTreatment({ id: 'maderoterapia-facial', title: 'Maderoterapia Facial', shortTitle: 'Maderoterapia Facial', eyebrow: 'Lifting Manual', subheadline: 'Técnica con instrumentos de madera para estimular drenaje, circulación y contorno facial.', explanationTitle: 'Maderoterapia rejuvenecedora para rostro', explanationBody: 'La Maderoterapia Facial utiliza instrumentos de madera diseñados para el rostro. Estimula producción de colágeno, circulación y drenaje linfático, mejora firmeza, redefine contorno y devuelve luminosidad.', benefits: [{ title: 'Contorno facial', description: 'Ayuda a redefinir y estilizar el rostro.', icon: 'focus' }, { title: 'Brillo natural', description: 'Estimula circulación y sensación de bienestar inmediato.', icon: 'sparkles' }], steps: [{ title: 'Evaluación', description: 'Identificamos zonas de tensión, retención o pérdida de firmeza.' }, { title: 'Trabajo con madera', description: 'Aplicamos maniobras específicas con instrumentos faciales.' }, { title: 'Drenaje final', description: 'Cerramos con maniobras suaves e hidratación.' }], candidates: ['Pérdida de firmeza leve', 'Retención facial', 'Personas que buscan lifting suave sin aparatología'], safetyItems: ['No invasivo', 'Presión ajustada a sensibilidad', 'No se realiza sobre inflamación activa'], relatedTreatmentIds: ['masajes-faciales-marcacion-mandibular', 'masajes-relajantes-faciales', 'radiofrecuencia-facial'] }),
+  createFacialCatalogTreatment({ id: 'hifu-facial', title: 'HIFU Facial', shortTitle: 'HIFU Facial', eyebrow: 'Lifting No Invasivo', subheadline: 'Ultrasonido focalizado para reafirmar, tensar y definir el rostro sin cirugía.', explanationTitle: 'Lifting facial sin cirugía', explanationBody: 'HIFU Facial utiliza ultrasonido focalizado para trabajar capas profundas de la piel. Estimula colágeno, reduce flacidez y mejora el contorno facial sin cirugía ni tiempo de recuperación.', benefits: [{ title: 'Tensión profunda', description: 'Trabaja firmeza desde capas profundas.', icon: 'maximize' }, { title: 'Definición facial', description: 'Ayuda a mejorar óvalo y contorno del rostro.', icon: 'focus' }], steps: [{ title: 'Marcación', description: 'Definimos zonas de trabajo según anatomía y objetivo.' }, { title: 'Aplicación HIFU', description: 'Usamos ultrasonido focalizado con parámetros controlados.' }, { title: 'Seguimiento', description: 'Indicamos cuidados y evolución esperada del colágeno.' }], candidates: ['Flacidez facial', 'Pérdida de definición', 'Personas que buscan efecto lifting sin cirugía'], safetyItems: ['Evaluación previa obligatoria', 'Resultados progresivos', 'No requiere cortes ni agujas'], relatedTreatmentIds: ['radiofrecuencia-facial', 'ems-facial-enyong', 'microneedling'] }),
+  createFacialCatalogTreatment({ id: 'evefus-10-radiofrecuencia-fraccionada', title: 'Evefus 10 (Radiofrecuencia Fraccionada)', shortTitle: 'Evefus 10', eyebrow: 'Radiofrecuencia Fraccionada', subheadline: 'Tecnología estética para estimular colágeno, elastina, firmeza, textura y elasticidad.', explanationTitle: 'Tecnología estética de última generación', explanationBody: 'Evefus 10 combina radiofrecuencia fraccionada con energía térmica controlada para estimular intensamente colágeno y elastina. Mejora firmeza, textura, elasticidad, líneas de expresión, poros dilatados y piel apagada sin dañar la superficie cutánea.', benefits: [{ title: 'Colágeno y elastina', description: 'Reactiva procesos naturales de firmeza y renovación.', icon: 'layers' }, { title: 'Textura y poros', description: 'Ayuda a mejorar piel apagada, poros y pérdida de tonicidad.', icon: 'sparkles' }], steps: [{ title: 'Evaluación', description: 'Definimos si Evefus 10 es adecuado para tu piel.' }, { title: 'Aplicación térmica', description: 'Trabajamos con energía controlada y protocolo seguro.' }, { title: 'Recuperación', description: 'Cerramos con activos calmantes y cuidados posteriores.' }], candidates: ['Flacidez leve', 'Poros dilatados', 'Líneas de expresión o pérdida de tonicidad'], safetyItems: ['No quirúrgico', 'Energía controlada', 'Cuidados posteriores según intensidad'], relatedTreatmentIds: ['radiofrecuencia-facial', 'hifu-facial', 'microneedling'] })
+];
+
 export const tier3Treatments: Tier3Treatment[] = [
   {
     id: 'hidrofacial',
@@ -126,11 +214,11 @@ export const tier3Treatments: Tier3Treatment[] = [
     category: 'facial',
     title: 'Microneedling',
     shortTitle: 'Microneedling',
-    seoTitle: 'Microneedling West Palm Beach | DERMA.M',
+    seoTitle: 'Microneedling Dermapen 3 West Palm Beach | DERMA.M',
     metaDescription: 'Mejora la textura, poros y cicatrices con Microneedling en West Palm Beach. Tratamiento profesional de inducción de colágeno en DERMA.M.',
     canonicalEs: 'https://dermamskinhealth.com/es/microneedling/',
     eyebrow: 'Textura y Colágeno',
-    h1: 'Microneedling en West Palm Beach',
+    h1: 'Microneedling Dermapen 3 en West Palm Beach',
     subheadline: 'Inducción natural de colágeno para una piel más firme y uniforme.',
     primaryCta: {
       label: 'Agendar Evaluación',
@@ -1040,5 +1128,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     showPrice: false,
     whatsappMessage: 'Hola, quiero información sobre la Radiofrecuencia Facial en DERMA.M.',
     isPublished: true
-  }
+  },
+  ...facialCatalogTreatments
 ];
+
