@@ -35,6 +35,4 @@ All notable changes to this project will be documented in this file.
 - Updated `ivKits.ts` to display exactly the 11 official IV kits, removing all pricing, e-commerce checkout links, and unconfirmed kits.
 - Updated types in `src/types/ivTherapy.ts` and configurations in `src/data/ivTherapyContent.ts` to support the new layout structure.
 - Replaced the heavy post-hero check card sections with compact orientation strips on PRP (`PrfAudienceSection`), Limpieza Facial (`DeepFacialAudienceSection`), and Postoperatorio (`PostOpSurgeryTypesSection`) landing pages to match the hub intro styles.
-
-
-
+- Executed production build (`npm run build`) to refresh the pre-rendered static HTML files in `dist/` (specifically `dist/es/plasma-rico-en-plaquetas-west-palm-beach/index.html`), ensuring the live preview serves the updated orientation strip instead of the stale check-card section.
