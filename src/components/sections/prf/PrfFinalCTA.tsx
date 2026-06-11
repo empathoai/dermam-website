@@ -22,11 +22,11 @@ export default function PrfFinalCTA() {
  <div className="bg-base-900/85 backdrop-blur-md rounded-[1.5rem] px-8 py-20 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 shadow-subtle border border-white/10">
  <div className="lg:max-w-xl text-center lg:text-left">
  <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold tracking-[-0.035em] lg:text-6xl mb-8 leading-tight text-base-100">
- <span className="uppercase">¿Lista para</span>{' '}
+ <span className="uppercase">¿Lista para entender qué necesita</span>{' '}
  <span className="script-accent normal-case text-[1.56em] align-[-0.08em] inline-block ml-3">
  tu
  </span>{' '}
- <span className="uppercase">evaluación?</span>
+ <span className="uppercase">piel?</span>
  </h2>
  <p className="text-lg text-base-300 leading-[1.65] font-light mb-8">
  {finalCTA.body}
@@ -51,7 +51,7 @@ export default function PrfFinalCTA() {
  {finalCTA.secondaryCTA}
  </Button>
  <p className="text-xs text-center text-base-300 uppercase tracking-[0.15em] mt-2">
- Evaluación gratuita · Sin compromiso
+  Evaluación personalizada · Sin compromiso
  </p>
  </div>
  </div>

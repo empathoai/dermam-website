@@ -10,7 +10,7 @@ export default function PrfBenefitsSection() {
       <Container>
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase">
-            Beneficios del plasma rico en plaquetas y fibrina
+            Lo que buscamos con el PRF
           </h2>
         </div>
 

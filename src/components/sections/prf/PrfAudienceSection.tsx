@@ -3,16 +3,16 @@ import Container from '../../ui/Container';
 import { motion } from 'motion/react';
 
 export default function PrfAudienceSection() {
-  const eyebrow = 'Guía rápida del tratamiento';
-  const headline = '¿Tu piel necesita regeneración?';
-  const support = 'Este protocolo está orientado a piel con pérdida de luminosidad, textura irregular, líneas finas, marcas o señales de envejecimiento.';
+  const eyebrow = 'Antes de comenzar';
+  const headline = '¿Tu piel necesita más frescura?';
+  const support = 'A veces la piel no necesita verse diferente. Solo necesita recuperar luminosidad, textura uniforme y una apariencia más descansada.';
   const chips = [
-    'Piel opaca',
-    'Líneas finas',
-    'Marcas de acné',
+    'Piel apagada',
     'Textura irregular',
-    'Pérdida de firmeza',
-    'Poros visibles'
+    'Líneas finas',
+    'Manchas visibles',
+    'Cicatrices de acné',
+    'Pérdida de luminosidad'
   ];
 
   return (

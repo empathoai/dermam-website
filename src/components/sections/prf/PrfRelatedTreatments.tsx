@@ -11,7 +11,7 @@ export default function PrfRelatedTreatments() {
       {/* Heading inside Container */}
       <Container>
         <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase text-center mb-14 font-sans">
-          Tratamientos que complementan tu PRF
+          Protocolos que pueden acompañar tu PRF
         </h2>
       </Container>
 

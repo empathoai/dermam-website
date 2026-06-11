@@ -25,7 +25,7 @@ export default function PrfFAQSection() {
 
       <Container>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase text-center mb-16">Preguntas frecuentes sobre PRF</h2>
+          <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase text-center mb-16">Preguntas frecuentes sobre Plasma Rico en Fibrina</h2>
           <FAQAccordion items={faqs} />
         </div>
       </Container>

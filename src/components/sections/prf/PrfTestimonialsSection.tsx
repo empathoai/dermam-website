@@ -12,7 +12,7 @@ export default function PrfTestimonialsSection() {
     <section className="py-24 bg-canvas">
       <Container>
         <SectionHeader
-          headline="Testimonios reales de PRF"
+          headline="Experiencias reales en DERMA.M"
           align="center"
           className="mb-16"
         />

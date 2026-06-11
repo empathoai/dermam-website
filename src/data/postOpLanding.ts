@@ -32,26 +32,24 @@ export const postOpContent = {
   },
   urgency: {
     headline: 'El post-operatorio define tu resultado final',
-    blocks: [
+    intro: 'Un protocolo postoperatorio bien guiado ayuda a manejar inflamación, drenaje, fibrosis y evolución del tejido durante la recuperación.',
+    cards: [
       {
-        title: 'Sin drenaje especializado',
-        description: 'Acumulación de líquidos → inflamación prolongada → fibrosis',
-        type: 'warning'
+        title: 'Drenaje desde fases tempranas',
+        body: 'El seguimiento adecuado ayuda a movilizar líquidos y apoyar una recuperación más cómoda.'
       },
       {
-        title: 'Con el protocolo correcto',
-        description: 'Recuperación más rápida, menos inflamación, mejores resultados finales',
-        type: 'success'
+        title: 'Acompañamiento según evolución',
+        body: 'Cada cuerpo responde diferente. Adaptamos el protocolo según tu cirugía, inflamación y etapa de recuperación.'
       },
       {
-        title: 'Los primeros 7-14 días son críticos',
-        description: 'El momento del inicio del post-op impacta directamente el resultado final',
-        type: 'info'
+        title: 'Prevención de fibrosis y endurecimiento',
+        body: 'El trabajo profesional puede ayudar a reducir molestias, rigidez y cambios no deseados durante el proceso postoperatorio.'
       }
     ],
     image: {
         src: '/assets/treatments/postop-urgency.jpg',
-        alt: 'Planificación post-operatoria',
+        alt: 'Protocolo postoperatorio profesional en DERMA.M',
         prompt: 'Elegant clinical recovery still-life, folded compression garment, white towel, small notebook with recovery plan, glass of water, soft sage leaves, warm ivory background, calm aesthetic spa atmosphere, subtle visual metaphor for post-surgery planning, no people, no surgery tools, no blood, no alarm tone, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
   },
