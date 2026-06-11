@@ -34,7 +34,7 @@ export default function HubPageTemplate({ content }: HubPageTemplateProps) {
         <HubAllTreatmentsGrid content={content.allGrid} />
       )}
       
-      <GoogleReviews filter="featured" maxItems={3} showMeta />
+      <GoogleReviews filter="featured" maxItems={3} showMeta variant="dark" />
       <HubFAQSection content={content.faqs} />
       <HubFinalCTA content={content.finalCTA} />
     </PageShell>
