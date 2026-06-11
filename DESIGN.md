@@ -218,6 +218,352 @@ Approved Tier 1 landing sequence:
 - Founder → bg-white
 - FAQ → bg-base-200
 - FinalCTA → bg-base-900 ✅
+
+---
+
+## Editorial-First Design Direction
+
+DERMA.M is not a card-first interface. It is an image-led editorial website system.
+
+The interface must feel like a premium skin health brand with visual direction, not a generic React component library. Cards, chips, icons, and repeated UI modules must never become the dominant visual language.
+
+Photography, section rhythm, dark editorial inversion, split layouts, whitespace, and typographic hierarchy are the primary tools. Cards are secondary tools used only when content needs to be scanned or compared.
+
+### Core Principle
+
+Do not solve every section with cards.
+
+Use cards only when the content is naturally modular:
+- Treatment cards
+- Review cards
+- Booking options
+- FAQ items
+- Contact channels
+- Compact comparison modules
+- Catalog items that require scanning
+
+Do not use cards as the default solution for:
+- Philosophy
+- Method
+- Trust positioning
+- Founder authority
+- Brand experience
+- Differentiators
+- Clinical/aesthetic approach
+- Emotional or premium storytelling
+- Section transitions
+- Proof of expertise
+
+Those sections must use editorial layouts instead.
+
+---
+
+## Editorial Layout Patterns
+
+Use these patterns before creating more cards.
+
+### 1. Dark Editorial Inversion
+
+Purpose:
+Create authority, visual contrast, and premium interruption between light content sections.
+
+Use for:
+- Method / philosophy
+- Why DERMA.M
+- Protocol approach
+- Trust positioning
+- Brand experience
+- Google Reviews / social proof
+- Final CTA
+
+Structure:
+- `bg-base-900`
+- Full-bleed or contained dark section
+- Strong photography, either as a split image or background with controlled overlay
+- White/inverse typography
+- Minimal text
+- No decorative icons
+- No card grids unless they are reviews
+
+Typography:
+- Eyebrow: `label-uppercase`
+- Heading: `heading-section` or `heading-section-soft`
+- Body: `body-md` or `body-lg`
+- Links: `link-editorial`
+
+Anti-pattern:
+Do not place white dashboard-style cards over dark sections unless the content is reviews or form/booking related.
+
+---
+
+### 2. Editorial Split Section
+
+Purpose:
+Ground text-heavy content with photography so light sections do not feel flat.
+
+Use for:
+- Founder
+- Explanation
+- Treatment education
+- Protocol approach
+- Method
+- Technology/experience sections
+
+Structure:
+- 50/50 or 60/40 grid
+- One strong image column
+- One text column
+- Text should sit on a clean surface, not directly over busy image texture
+- Use `rounded.section` or `rounded.panel` where appropriate
+
+Rules:
+- Image must carry atmosphere.
+- Text block must be readable without over-decorating.
+- Do not use decorative Lucide icons.
+- Do not create small floating cards unless they communicate essential content.
+
+---
+
+### 3. Full-Bleed Interstitial
+
+Purpose:
+Create visual rhythm and prevent long flat runs of white/canvas sections.
+
+Use for:
+- Transition between featured treatments and catalog
+- Transition before social proof
+- Short experience/philosophy statement
+- Brand atmosphere moment
+
+Structure:
+- Full-width image or dark image-led section
+- Minimal copy
+- One short headline or statement
+- Optional single CTA only if needed
+- Strong overlay if text sits on image
+
+Rules:
+- Keep text minimal.
+- Do not use dense copy.
+- Do not place FAQ, catalog grids, or long card lists over image backgrounds.
+- The image is the structure, not decoration.
+
+---
+
+### 4. Editorial Proof List
+
+Purpose:
+Replace generic icon cards in trust/method sections.
+
+Use instead of:
+- Icon rows
+- Lucide trust cards
+- Dashboard proof cards
+- KPI widget layouts
+
+Structure:
+- Text-only numbered list
+- Thin dividers
+- Short title
+- Short body
+- No icons
+- No circular badges
+
+Example:
+01 — Diagnóstico antes de tratamiento
+02 — Protocolos diseñados según tu piel
+03 — Resultados documentados
+
+Rules:
+- Numbers are editorial markers, not SaaS badges.
+- Keep copy short.
+- Avoid white floating boxes unless section readability requires a subtle panel.
+
+---
+
+## Iconography Policy — Premium Restriction
+
+DERMA.M must not look like a SaaS dashboard, productivity app, or generic template.
+
+Functional icons may remain only when they improve usability:
+- Menu
+- Close
+- Chevron
+- External link
+- WhatsApp
+- Instagram
+- Facebook
+- Phone
+- Mail
+- MapPin
+- Calendar only in booking context
+
+Decorative icons are restricted.
+
+Do not use Lucide or any other generic icon set for:
+- Differentiators
+- Stats
+- Trust cards
+- Benefit cards
+- Proof cards
+- Method sections
+- Philosophy sections
+- Treatment decision cards
+
+Replace decorative icons with:
+- Editorial numbers
+- Thin dividers
+- Text labels
+- Typography hierarchy
+- Photography
+- Monogram marks only when subtle and brand-appropriate
+
+---
+
+## Surface Rhythm — Anti-Flat Rule
+
+DERMA.M pages must not feel like a long stack of white or off-white blocks.
+
+Rules:
+1. Do not stack more than two visually similar light sections back-to-back.
+2. Use surface rhythm intentionally:
+   - `bg-canvas`
+   - `bg-white`
+   - `bg-base-200`
+   - `bg-base-900`
+   - image-led editorial section
+3. Use dark editorial inversion after long light content runs.
+4. Do not introduce cold blue-gray, teal, medical blue, or new accent palettes to create variation.
+5. Do not use decorative gradients as a substitute for composition.
+6. Do not use large gray/off-white empty blocks as filler.
+
+Recommended hub rhythm:
+1. Hero — dark full-bleed editorial image
+2. Orientation / decision guide — light editorial section
+3. Featured treatments — soft tonal surface or white with strong image-led cards
+4. Editorial method / experience interstitial — dark or split image-led
+5. Catalog sections — light structured catalog
+6. Google Reviews — dark inversion
+7. FAQ — light or soft tonal
+8. FinalCTA — dark image-led
+9. Footer — dark
+
+Recommended Tier 1 rhythm:
+1. Hero — dark full-bleed editorial image
+2. Audience / QuickFit — light orientation
+3. Education / Explanation — white or split editorial
+4. Benefits — soft tonal
+5. Protocol / Steps — dark or image-led
+6. Results / Testimonials — light or dark depending rhythm
+7. Founder / Authority — split editorial
+8. FAQ — light
+9. FinalCTA — dark image-led
+
+---
+
+## Card Usage Rules
+
+Cards are allowed, but only when they serve scanning, comparison, or conversion.
+
+Approved card use:
+- Treatment cards
+- Catalog cards
+- Booking cards
+- Review cards
+- FAQ accordion items
+- Contact channel cards
+
+Rejected card use:
+- Philosophy cards
+- Why-us cards
+- Method cards
+- Generic proof cards
+- Icon benefit cards
+- Repeated white cards over image backgrounds
+- KPI/stat widgets in brand storytelling sections
+
+If a section feels weak, do not add more cards. Use:
+- stronger imagery
+- better section rhythm
+- dark editorial inversion
+- split layout
+- typographic hierarchy
+- less copy
+
+---
+
+## Home Differentiators Rule
+
+The Home differentiators section must not use:
+- Lucide icons
+- white floating proof cards
+- KPI stat widgets
+- circular icon badges
+- dashboard-style layouts
+
+Approved structure:
+- Full-bleed image background or dark split editorial section
+- Left editorial panel or text block
+- Method statement: diagnóstico, protocolo, seguimiento
+- Text-only proof list
+- Editorial CTA
+- No stats unless integrated extremely subtly and approved
+
+If stats already appear elsewhere on the Home page, do not repeat them inside the differentiators section.
+
+---
+
+## Implementation Enforcement
+
+Any AI agent or front-end builder must follow these checks before modifying UI:
+
+1. Is this section naturally modular?
+   - If yes, cards may be used.
+   - If no, use editorial layout.
+
+2. Is the section becoming a SaaS-style component block?
+   - If yes, remove icons/cards and use typography + imagery.
+
+3. Are there more than two light sections in a row?
+   - If yes, introduce tonal surface, dark inversion, or image-led interstitial.
+
+4. Is the solution relying on icons to create visual interest?
+   - If yes, replace with editorial numbers, dividers, or photography.
+
+5. Does the section feel like DERMA.M or a template?
+   - If template, simplify and make photography/typography lead.
+
+---
+
+## Anti-Patterns
+
+Do not:
+- Use cards as the default layout pattern.
+- Add icons to make sections feel designed.
+- Use Lucide icons decoratively.
+- Add pill chips as primary navigation unless the section is truly a filter/control.
+- Use white floating cards over every image.
+- Use cold colors to create variation.
+- Create long white/off-white page runs.
+- Use background images behind dense text.
+- Use decorative overlays that reduce readability.
+- Copy SaaS landing page structures.
+- Copy beauty-template ornamentation such as gold lines, diamonds, decorative frames, or excessive script typography.
+
+DERMA.M must remain:
+- premium
+- monochromatic
+- editorial
+- calm
+- image-led
+- clinically credible
+- conversion-oriented
+- not SaaS
+- not dashboard
+- not generic beauty template
+
+---
+
 ## Components
 
 ### HeroSection — Full-Bleed Editorial System
