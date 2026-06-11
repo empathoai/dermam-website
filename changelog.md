@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
+- Created [DERMA_M_SITE_ARCHITECTURE_AUDIT_INPUT.md](file:///d:/Derma_Content/DermaM-WebSite/DERMA_M_SITE_ARCHITECTURE_AUDIT_INPUT.md) containing a complete, structured extraction of the current website architecture, pages, sections, components, styling system, and content model in Spanish.
 - Created `changelog.md` to track all project modifications.
 - Added `catalogSections` data to facial and corporate hub content files (`src/data/facialHubContent.ts` and `src/data/bodyHubContent.ts`).
 - Added type definition for `HubCatalogSection` in `src/types/hub.ts` and added optional `catalogSections` field to `HubPageContent`.
