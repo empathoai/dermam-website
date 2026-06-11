@@ -1,9 +1,7 @@
 import React from 'react';
 import Container from '../../ui/Container';
 import { motion } from 'motion/react';
-import StatItem from '../../ui/StatItem';
 import { Check } from '../../../design-system/icons';
-import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
 
 interface Tier3QuickFitSectionProps {
   quickFacts: Array<{ label: string; value: string }>;
@@ -11,63 +9,70 @@ interface Tier3QuickFitSectionProps {
 }
 
 export default function Tier3QuickFitSection({ quickFacts, quickFit }: Tier3QuickFitSectionProps) {
+  const columnsCount = quickFit.items.length;
+  const gridColsClass = columnsCount === 3 
+    ? 'lg:grid-cols-3' 
+    : columnsCount === 2 
+      ? 'lg:grid-cols-2' 
+      : 'lg:grid-cols-4';
+
   return (
-    <section className="bg-canvas py-12 relative z-20">
+    <section className="bg-canvas py-12 lg:py-16 relative z-20">
       <Container>
         {/* Quick Facts Strip */}
-        <ResponsiveCardGroup desktopColumns={3} desktopClassName="gap-4 md:gap-6" className="mb-16" mobileCardWidth="78vw">
+        <div className="grid grid-cols-3 divide-x divide-border-subtle text-center mb-12 max-w-4xl mx-auto">
           {quickFacts.map((fact, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="h-full"
+              transition={{ delay: idx * 0.1, duration: 0.5 }}
+              className="flex flex-col items-center justify-center px-2"
             >
-              <StatItem stat={fact} />
+              <span className="text-label-xs font-medium uppercase tracking-[0.16em] text-text-secondary mb-2">
+                {fact.label}
+              </span>
+              <span className="text-xl sm:text-2xl md:text-3xl font-semibold leading-tight tracking-[-0.02em] font-sans text-text-primary">
+                {fact.value}
+              </span>
             </motion.div>
           ))}
-        </ResponsiveCardGroup>
+        </div>
 
-        {/* Is this for you? */}
+        {/* Horizontal Divider */}
+        <div className="w-full h-[1px] bg-border-subtle mb-12 max-w-4xl mx-auto" />
+
+        {/* Indicado para: Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto"
+          transition={{ duration: 0.6 }}
+          className="bg-white border border-border-card rounded-[1.25rem] p-6 sm:p-8 lg:p-10 shadow-subtle max-w-4xl mx-auto"
         >
-          <h2 className="text-[clamp(1.35rem,2.4vw,1.75rem)] font-semibold leading-[1.2] tracking-[-0.015em] uppercase font-sans text-text-primary mb-10">
+          <h3 className="text-center text-lg sm:text-xl font-semibold leading-tight tracking-[-0.015em] font-sans text-text-primary mb-8">
             {quickFit.title}
-          </h2>
+          </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            {quickFit.items.map((item, idx) => {
-              const commaIndex = item.indexOf(',');
-              const label = commaIndex >= 0 ? item.slice(0, commaIndex).trim() : item;
-              const copy = commaIndex >= 0 ? item.slice(commaIndex + 1).trim() : '';
-              const totalItems = quickFit.items.length;
-              const isLastRow = idx >= totalItems - (totalItems % 2 === 0 ? 2 : 1);
-
-              return (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.05 }}
-                  className={`flex items-start gap-4 py-5 pr-8 ${isLastRow ? '' : 'border-b border-border-strong'}`}
-                >
-                  <div className="w-5 h-5 rounded-full border border-border-strong flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check size={11} strokeWidth={3} className="text-text-primary" />
-                  </div>
-                  <p className="text-text-secondary text-base leading-relaxed">
-                    <span className="font-semibold text-text-primary">{label}</span>
-                    {copy && <span className="font-normal"> — {copy}</span>}
-                  </p>
-                </motion.div>
-              );
-            })}
+          <div className={`grid grid-cols-1 sm:grid-cols-2 ${gridColsClass} gap-4`}>
+            {quickFit.items.map((item, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.05, duration: 0.4 }}
+                className="bg-canvas px-4 py-4 rounded-[0.75rem] flex items-center justify-start gap-3 w-full h-full"
+              >
+                <div className="w-5 h-5 rounded-full border border-border-strong flex items-center justify-center flex-shrink-0">
+                  <Check size={11} strokeWidth={3} className="text-text-primary" />
+                </div>
+                <span className="text-text-primary text-sm sm:text-base font-sans font-medium leading-snug">
+                  {item}
+                </span>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </Container>
