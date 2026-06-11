@@ -186,6 +186,26 @@ export const facialHubContent: HubPageContent = {
       { label: 'Acné y manchas', targetId: '#acne-manchas-piel-sensible' },
       { label: 'Firmeza y contorno', targetId: '#firmeza-lifting-contorno-facial' },
       { label: 'Bienestar facial', targetId: '#bienestar-facial-relajacion' }
+    ],
+    decisionCards: [
+      {
+        title: 'Preparar y equilibrar',
+        body: 'Para pieles que necesitan limpieza profunda, hidratación, oxigenación o una base saludable antes de tratamientos más avanzados.',
+        labels: ['Limpieza facial', 'Hidrofacial', 'Oxigenoterapia'],
+        href: '#limpieza-hidratacion-preparacion-piel',
+      },
+      {
+        title: 'Renovar textura y tono',
+        body: 'Para poros, textura irregular, manchas superficiales, acné activo o piel sensible que requiere renovación progresiva.',
+        labels: ['Peel coreano', 'Microneedling', 'Dermabrasión'],
+        href: '#textura-poros-renovacion',
+      },
+      {
+        title: 'Estimular firmeza y colágeno',
+        body: 'Para pérdida de firmeza, contorno facial, calidad de piel y protocolos de bioestimulación personalizados.',
+        labels: ['PRF', 'HIFU', 'Radiofrecuencia'],
+        href: '#regeneracion-colageno-calidad-piel',
+      },
     ]
   },
   featured: {

@@ -130,6 +130,26 @@ export const laserLightHubContent: HubPageContent = {
       { label: 'Depilación láser', targetId: '#depilacion-laser-diodo' },
       { label: 'Luz pulsada', targetId: '#ipl-luz-pulsada-intensa' },
       { label: 'Láser CO2', targetId: '#laser-co2-fraccionado' }
+    ],
+    decisionCards: [
+      {
+        title: 'Reducir vello',
+        body: 'Depilación definitiva con láser diodo para todas las zonas corporales y faciales. Rápido, seguro y sin dolor.',
+        labels: ['Láser diodo', 'Facial', 'Corporal'],
+        href: '#depilacion-laser-diodo',
+      },
+      {
+        title: 'Mejorar manchas y tono',
+        body: 'Tratamientos de luz pulsada para manchas solares, rojeces, rosácea y uniformidad del tono de piel.',
+        labels: ['IPL', 'Luz pulsada', 'Fotorejuvenecimiento'],
+        href: '#ipl-luz-pulsada-intensa',
+      },
+      {
+        title: 'Renovar textura',
+        body: 'Láser CO2 fraccionado para cicatrices, poros dilatados, arrugas y renovación profunda de la superficie dérmica.',
+        labels: ['Láser CO2', 'Cicatrices', 'Resurfacing'],
+        href: '#laser-co2-fraccionado',
+      },
     ]
   },
 

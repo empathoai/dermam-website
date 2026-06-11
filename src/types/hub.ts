@@ -90,6 +90,12 @@ export interface HubPageContent {
       alt: string;
     };
     chips?: Array<{ label: string; targetId: string }>;
+    decisionCards?: Array<{
+      title: string;
+      body: string;
+      labels: string[];
+      href: string;
+    }>;
   };
   featured: {
     headline: string;

@@ -107,6 +107,20 @@ export const dentalHubContent: HubPageContent = {
     chips: [
       { label: 'Blanqueamiento', targetId: '#blanqueamiento-dental-estetico' },
       { label: 'Limpieza profesional', targetId: '#limpieza-dental-profesional' }
+    ],
+    decisionCards: [
+      {
+        title: 'Aclarar la sonrisa',
+        body: 'Para recuperar el blanco natural de los dientes de forma rápida y sin sensibilidad mediante blanqueamiento profesional.',
+        labels: ['Blanqueamiento dental', 'Estético', 'Sin sensibilidad'],
+        href: '#blanqueamiento-dental-estetico',
+      },
+      {
+        title: 'Mantener salud y limpieza',
+        body: 'Para higiene oral profunda, eliminación de sarro y mantenimiento del estado general de la salud dental.',
+        labels: ['Limpieza profesional', 'Profilaxis', 'Mantenimiento'],
+        href: '#limpieza-dental-profesional',
+      },
     ]
   },
 

@@ -1,54 +1,28 @@
-import React from 'react';
-import Container from '../../ui/Container';
-import { motion } from 'motion/react';
+import PostHeroOrientationSection from '../shared/PostHeroOrientationSection';
 
 export default function DeepFacialAudienceSection() {
-  const eyebrow = 'Antes de iniciar un protocolo';
-  const headline = '¿Tu piel necesita una limpieza profunda?';
-  const support = 'Este tratamiento ayuda a preparar la piel cuando hay congestión, poros obstruidos, exceso de grasa o falta de luminosidad.';
-  const chips = [
-    'Poros obstruidos',
-    'Puntos negros',
-    'Exceso de grasa',
-    'Piel opaca',
-    'Primera visita',
-    'Mantenimiento facial'
-  ];
-
   return (
-    <section className="py-8 lg:py-10 bg-canvas border-b border-border-subtle">
-      <Container>
-        <motion.div 
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto text-center"
-        >
-          <span className="text-[10px] font-bold text-text-muted uppercase tracking-[0.15em] mb-2 block">
-            {eyebrow}
-          </span>
-          
-          <h2 className="text-[clamp(1.25rem,2.2vw,1.65rem)] font-extrabold tracking-[-0.02em] uppercase font-sans text-text-primary leading-[1.2] mb-2.5">
-            {headline}
-          </h2>
-          
-          <p className="text-text-secondary text-xs md:text-sm font-light leading-relaxed max-w-xl mx-auto mb-6">
-            {support}
-          </p>
-
-          <div className="flex flex-wrap gap-2.5 justify-center">
-            {chips.map((chip, idx) => (
-              <span 
-                key={idx}
-                className="inline-flex items-center justify-center px-4 py-2 bg-white border border-border-card rounded-full text-[11px] font-medium text-text-primary shadow-sm hover:border-border-card-hover hover:bg-canvas transition-all duration-200"
-              >
-                {chip}
-              </span>
-            ))}
-          </div>
-        </motion.div>
-      </Container>
-    </section>
+    <PostHeroOrientationSection
+      eyebrow="ANTES DE COMENZAR"
+      title="¿TU PIEL NECESITA UNA BASE MÁS LIMPIA?"
+      description="La limpieza facial profunda ayuda a preparar la piel, retirar acumulación superficial y crear una mejor base antes de otros protocolos."
+      cards={[
+        {
+          title: 'Congestión y poros',
+          body: 'Para pieles con textura cargada, poros visibles, puntos negros o sensación de acumulación.',
+          labels: ['Poros', 'Congestión', 'Limpieza'],
+        },
+        {
+          title: 'Luminosidad apagada',
+          body: 'Para pieles que se ven opacas, cansadas o con poca uniformidad después de rutina diaria, maquillaje o exposición ambiental.',
+          labels: ['Frescura', 'Hidratación', 'Oxigenación'],
+        },
+        {
+          title: 'Preparación de piel',
+          body: 'Para quienes quieren mejorar la base de la piel antes de PRF, peel, microneedling u otros tratamientos.',
+          labels: ['Diagnóstico', 'Preparación', 'Seguimiento'],
+        },
+      ]}
+    />
   );
 }

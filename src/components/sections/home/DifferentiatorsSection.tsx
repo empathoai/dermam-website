@@ -1,82 +1,105 @@
 import { homeContent } from '../../../data/homeContent';
 import Container from '../../ui/Container';
-import Card from '../../ui/Card';
 import SectionMedia from '../../ui/SectionMedia';
-import ResponsiveCardGroup from '../../ui/ResponsiveCardGroup';
-import { Award, BadgeCheck, BarChart, Microscope, ShieldCheck, Users } from '../../../design-system/icons';
+import {
+  headingSectionClass,
+  eyebrowClass,
+  bodyLgClass,
+  bodyMdClass,
+  cardTitleClass,
+} from '../../../lib/typography';
+
+const miniList = [
+  'Evaluación previa',
+  'Protocolo según tu piel',
+  'Seguimiento real',
+];
+
+const proofBlocks = [
+  {
+    title: 'Diagnóstico antes de tratamiento',
+    body: 'Analizamos tu piel antes de recomendar cualquier protocolo.',
+  },
+  {
+    title: 'Protocolos diseñados según tu piel',
+    body: 'Adaptamos cada tratamiento a tus necesidades, sensibilidad y objetivo.',
+  },
+  {
+    title: 'Resultados documentados',
+    body: 'Damos seguimiento a tu evolución con expectativas claras y criterio profesional.',
+  },
+];
 
 export default function DifferentiatorsSection() {
   const { differentiators } = homeContent;
-  const statIcons = [Award, Users, ShieldCheck];
-  const benefitIcons = [Microscope, BadgeCheck, BarChart];
 
   return (
-    <section className="py-24 relative overflow-hidden isolation-isolate">
+    <section className="py-28 lg:py-32 relative overflow-hidden isolation-isolate">
       <SectionMedia
         type="image"
         src={differentiators.bgImage.src}
         alt={differentiators.bgImage.alt}
         overlay="none"
-        position="right"
+        position="center"
         opacity={1}
       />
+      <div className="absolute inset-0 z-[1] bg-base-900/35 pointer-events-none" />
 
       <Container className="relative z-10">
-        {/* Stats Row */}
-        <ResponsiveCardGroup desktopColumns={3} desktopClassName="gap-5 lg:gap-8" className="mb-20" mobileCardWidth="82vw">
-          {differentiators.stats.map((stat, idx) => {
-            const Icon = statIcons[idx] || ShieldCheck;
+        {/* Two-column editorial block */}
+        <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-center">
 
-            return (
-              <div key={idx} className="flex items-center gap-5 rounded-[1rem] border border-border bg-white px-8 py-6 shadow-card-soft">
-                <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full border border-border bg-surface text-text-primary">
-                  <Icon size={24} strokeWidth={1.8} />
-                </div>
-                <div className="h-12 w-px flex-shrink-0 bg-border" aria-hidden="true" />
-                <div>
-                  <div className="text-[clamp(2.2rem,3vw,3.5rem)] font-extrabold leading-[1.05] tracking-[-0.03em] text-text-primary">
-                    {stat.value}
-                  </div>
-                  <div className="text-label-xs font-medium uppercase tracking-[0.15em] text-text-secondary">
-                    {stat.label}
-                  </div>
-                </div>
+          {/* Left editorial panel */}
+          <div className="rounded-[1.5rem] bg-base-900/82 backdrop-blur-sm border border-white/10 p-8 lg:p-12 max-w-[560px] w-full">
+            <span className={`${eyebrowClass} text-base-300 mb-5 block`}>
+              NUESTRO ENFOQUE
+            </span>
+            <h2 className={`${headingSectionClass} text-base-100 mb-6`}>
+              DIAGNÓSTICO, PROTOCOLO Y SEGUIMIENTO
+            </h2>
+            <div className="w-10 h-px bg-white/20 mb-7" />
+            <p className={`${bodyLgClass} text-base-300 mb-8`}>
+              Evaluamos tu piel antes de recomendar cualquier tratamiento. Diseñamos protocolos personalizados, seguros y orientados a resultados naturales.
+            </p>
+
+            {/* Text-only principle list */}
+            <ul className="mb-10" role="list">
+              {miniList.map((item, idx) => (
+                <li key={idx}>
+                  {idx > 0 && <div className="border-t border-white/10 my-3" />}
+                  <span className="text-sm font-medium text-base-200 tracking-[0.01em]">
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="/es/reservar"
+              className="inline-flex items-center gap-2 text-base-100 text-sm font-medium border-b border-base-100/40 pb-0.5 hover:opacity-70 transition-opacity duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+              Agendar diagnóstico →
+            </a>
+          </div>
+
+          {/* Right proof blocks */}
+          <div className="flex flex-col gap-4">
+            {proofBlocks.map((block, idx) => (
+              <div
+                key={idx}
+                className="rounded-[1rem] bg-base-100/92 backdrop-blur-sm border border-[rgba(20,19,19,0.12)] p-7 lg:p-8"
+              >
+                <h3 className={`${cardTitleClass} text-base-900 mb-2`}>
+                  {block.title}
+                </h3>
+                <p className={`${bodyMdClass} text-base-600`}>
+                  {block.body}
+                </p>
               </div>
-            );
-          })}
-        </ResponsiveCardGroup>
-
-        <div className="border-t border-border-soft pt-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
-            <div className="rounded-[1rem] bg-base-900/55 p-8 backdrop-blur-sm border border-white/10">
-              <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-8 text-base-100">Por qué DERMA.M</h2>
-              <p className="text-base-200 text-base leading-relaxed">
-                Nos enfocamos en un enfoque estético integral, donde la salud de tu piel es lo primero. Nuestro compromiso es ofrecer resultados naturales a través de diagnósticos precisos y protocolos personalizados.
-              </p>
-            </div>
-            
-            <ResponsiveCardGroup desktopColumns={1} desktopClassName="gap-6" mobileCardWidth="84vw">
-              {differentiators.benefits.map((benefit, idx) => {
-                const Icon = benefitIcons[idx] || ShieldCheck;
-
-                return (
-                <Card key={idx} className="p-8 flex items-center gap-7 bg-white shadow-card-soft hover:-translate-y-1 hover:border-border-card-hover hover:shadow-subtle transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] border border-border-card">
-                  <div className="w-16 h-16 rounded-full bg-base-100 border border-border flex items-center justify-center text-base-900 flex-shrink-0">
-                    <Icon size={28} strokeWidth={1.8} />
-                  </div>
-                  <div className="h-16 w-px flex-shrink-0 bg-border" aria-hidden="true" />
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
-                    <p className="text-sm text-text-secondary leading-relaxed">
-                      {benefit.description}
-                    </p>
-                  </div>
-                </Card>
-                );
-              })}
-            </ResponsiveCardGroup>
+            ))}
           </div>
         </div>
+
       </Container>
     </section>
   );

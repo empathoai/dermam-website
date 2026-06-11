@@ -180,6 +180,26 @@ export const bodyHubContent: HubPageContent = {
       { label: 'Glúteos y contorno', targetId: '#gluteos-contorno-corporal' },
       { label: 'Celulitis y estrías', targetId: '#textura-piel-celulitis-estrias' },
       { label: 'Bienestar corporal', targetId: '#bienestar-corporal-tratamientos-complementarios' }
+    ],
+    decisionCards: [
+      {
+        title: 'Reducir volumen localizado',
+        body: 'Para grasa resistente, perímetros y zonas específicas que no responden al ejercicio ni a la dieta.',
+        labels: ['Cavitación', 'Criolipólisis', 'Carboxiterapia'],
+        href: '#remodelacion-reduccion-corporal',
+      },
+      {
+        title: 'Mejorar drenaje y recuperación',
+        body: 'Para postoperatorio, retención de líquidos, circulación linfática o recuperación tras procedimientos.',
+        labels: ['Drenaje linfático', 'Presoterapia', 'Masajes post-op'],
+        href: '#recuperacion-postoperatoria',
+      },
+      {
+        title: 'Reafirmar y moldear',
+        body: 'Para flacidez, tonicidad, contorno corporal y protocolos de estimulación muscular o firmeza dérmica.',
+        labels: ['Radiofrecuencia', 'EMS corporal', 'Glúteos'],
+        href: '#firmeza-tonificacion-musculacion',
+      },
     ]
   },
   featured: {
