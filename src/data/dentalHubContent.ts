@@ -121,7 +121,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver servicio →',
         href: '/es/blanqueamiento-dental',
         image: {
-          src: '/assets/images/dental-office.jpg',
+          src: '/assets/treatments/dental/hero.jpg',
           alt: 'Blanqueamiento Dental Estético'
         }
       },
@@ -132,7 +132,7 @@ export const dentalHubContent: HubPageContent = {
         ctaLabel: 'Ver servicio →',
         href: '/es/limpieza-dental',
         image: {
-          src: '/assets/images/dental-mouth.jpg',
+          src: '/assets/treatments/dental/cta.jpg',
           alt: 'Limpieza Dental Profesional'
         }
       }
@@ -148,7 +148,7 @@ export const dentalHubContent: HubPageContent = {
         category: 'Estética',
         ctaLabel: 'Ver más →',
         href: '/es/blanqueamiento-dental',
-        image: { src: '/assets/images/dental-office.jpg', alt: 'Blanqueamiento Dental Estético' }
+        image: { src: '/assets/treatments/dental/hero.jpg', alt: 'Blanqueamiento Dental Estético' }
       },
       {
         id: 'limpieza-dental-profesional-grid',
@@ -156,7 +156,7 @@ export const dentalHubContent: HubPageContent = {
         category: 'Higiene',
         ctaLabel: 'Ver más →',
         href: '/es/limpieza-dental',
-        image: { src: '/assets/images/dental-mouth.jpg', alt: 'Limpieza Dental Profesional' }
+        image: { src: '/assets/treatments/dental/cta.jpg', alt: 'Limpieza Dental Profesional' }
       }
     ]
   },

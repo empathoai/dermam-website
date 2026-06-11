@@ -5,7 +5,7 @@ export const aboutContent: AboutContent = {
     headline: 'El equipo detrás de tu piel',
     subheadline: 'Especialistas certificados en cada área. Un solo objetivo: resultados reales para tu piel.',
     image: {
-      src: '/assets/images/hero-team.jpg',
+      src: '/assets/pages/home/hero-home.jpg',
       alt: 'Equipo DERMA.M Skin Health',
       prompt: 'Premium editorial group portrait of a premium aesthetics center team in a bright treatment room, Latina founder and diverse team of specialists, elegant white or soft neutral clinical uniforms, warm confident expressions, soft ivory and sage environment, professional but approachable, clean medspa setting, botanical minimal decor, natural light, no hospital feeling, no corporate stiffness, luxury wellness clinic team photography, 16:9 horizontal.'
     }
@@ -17,7 +17,7 @@ export const aboutContent: AboutContent = {
     storyCopy: 'Nancy Nieto creó DERMA.M para ofrecer una experiencia estética basada en diagnóstico, criterio profesional y protocolos personalizados. La evolución de DERMA.M a MedSpa certificado marcó un paso importante: pasar de tratamientos aislados a un sistema de cuidado de piel con mayor seguridad, tecnología y seguimiento.',
     quote: '“Diagnóstico antes de tratamiento. Siempre.”',
     image: {
-      src: '/assets/avatars/nancy-nieto-founder-about.jpg',
+      src: '/assets/pages/home/nancy-nieto-founder-home.jpg',
       alt: 'Nancy Nieto Fundadora',
       prompt: 'Premium editorial portrait of Nancy Nieto, Latina woman aesthetic clinic founder, 35-45 years old, warm confident expression, elegant white or ivory clinical uniform, hands visible, seated or standing inside a bright DERMA.M treatment room, soft sage and ivory palette, botanical minimal decor, professional but approachable, no corporate headshot, no hospital look, no white coat cliché, luxury clinical wellness portrait, 4:5 vertical.'
     },

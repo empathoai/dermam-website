@@ -47,7 +47,7 @@ export default function AboutFounderStorySection() {
  </p>
  </div>
 
- <div className="border-l-4 border-base-900 pl-8 py-2 mb-12">
+ <div className="border-y border-border-subtle py-6 mb-12">
  <p className="text-2xl font-sans text-text-primary italic leading-relaxed">
  {story.quote}
  </p>

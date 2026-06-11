@@ -19,7 +19,7 @@ export const homeContent = {
       prompt: 'Bright premium spa wellness editorial scene for a premium aesthetics center, soft white curtains, warm ivory light, mother and daughter in white spa robes enjoying a gentle facial mask moment, cucumber slices, serene and natural expressions, luxury but approachable, pastel sage and ivory harmony, clean clinical wellness environment, soft botanical decor, candles and folded white towels on the side, airy composition, high-end skincare clinic photography, no dark background, no harsh shadows, no exaggerated beauty retouching, realistic skin texture, 16:9 horizontal, bright soft clinical wellness aesthetic. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     },
     video: {
-      src: '', // Agregar ruta al video local (ej. '/assets/pages/home/hero-video.mp4') para activar fondo de video
+      src: '', // Agregar ruta al video local (ej. '/assets/pages/home/hero-home.jpg') para activar fondo de video
       poster: '/assets/pages/home/hero-home.jpg'
     }
   },

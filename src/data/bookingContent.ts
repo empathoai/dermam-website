@@ -7,7 +7,7 @@ export const bookingContent: BookingPageContent = {
     subheadline: 'Evaluación gratuita de piel o reserva directa de tu tratamiento. Sin compromiso.',
     trustLine: '4.9 Google · MedSpa Certificado · Bilingüe ES/EN',
     image: {
-      src: '/assets/images/booking-hero.jpg',
+      src: '/assets/pages/home/home-final-cta.jpg',
       alt: 'Preparación de tratamiento en DERMA.M',
       prompt: 'Bright premium aesthetics center booking scene, warm ivory treatment room, professional hands preparing a treatment tray with folded white towels and skincare tools, soft sage accents, calm clinical wellness environment, subtle DERMA.M style, natural light, no people faces, no surgery tools, no blood, no hospital feeling, no dark background, premium medspa photography, 16:9 horizontal.'
     }

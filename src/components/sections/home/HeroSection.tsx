@@ -40,7 +40,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-[86vh] flex items-center overflow-hidden bg-base-900 py-20 lg:py-24 isolation-isolate">
+    <section className="relative hero-viewport overflow-hidden bg-base-900 isolation-isolate">
       {/* Background Media - Always takes priority */}
       <div className="absolute inset-0 z-0">
         <HeroMedia
@@ -52,12 +52,12 @@ export default function HeroSection() {
         />
       </div>
 
-      <Container className="relative z-10 w-full">
+      <Container className="relative z-10 flex hero-content-viewport w-full items-center">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="max-w-[48rem] pt-20 lg:pt-0"
+          className="max-w-[48rem]"
         >
           {/* Eyebrow */}
           <motion.div variants={itemVariants} className="mb-8">
@@ -89,7 +89,7 @@ export default function HeroSection() {
           </motion.p>
           
           {/* CTAs */}
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-20">
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12 lg:mb-20">
             <Button
               variant="primary"
               to="/es/reservar"

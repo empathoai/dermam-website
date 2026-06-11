@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-base-900 py-3 shadow-card-soft' : 'bg-base-900 py-5'
+        scrolled ? 'bg-base-900 py-2 lg:py-3 shadow-card-soft' : 'bg-base-900 py-2 lg:py-5'
       }`}
     >
       <Container>
@@ -108,7 +108,7 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div
-          className="lg:hidden fixed inset-0 top-[70px] bg-white z-40 flex flex-col p-8 gap-4 overflow-y-auto animate-in fade-in slide-in-from-top-4 duration-300"
+          className="lg:hidden fixed inset-0 top-[var(--header-height)] bg-white z-40 flex flex-col p-8 gap-4 overflow-y-auto animate-in fade-in slide-in-from-top-4 duration-300"
           role="dialog"
           aria-modal="true"
         >

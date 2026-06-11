@@ -8,7 +8,7 @@ export const teamMembers: TeamMember[] = [
     role: 'Fundadora · Especialista Dermal',
     specialties: ['Fundadora', 'Faciales', 'Corporales'],
     shortBio: 'Especialista en Salud Dermal con más de 10 años de experiencia transformando pieles.',
-    posterSrc: '/assets/avatars/nancy-nieto-founder.jpg',
+    posterSrc: '/assets/pages/home/nancy-nieto-founder-home.jpg',
     featured: true,
     vcardUrl: '#',
   },

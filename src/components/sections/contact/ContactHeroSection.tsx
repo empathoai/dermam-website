@@ -7,7 +7,7 @@ export default function ContactHeroSection() {
   const { hero } = contactContent;
 
   return (
-    <section className="relative h-[40vh] md:h-[50vh] flex items-center overflow-hidden bg-base-900 isolation-isolate">
+    <section className="relative hero-viewport overflow-hidden bg-base-900 isolation-isolate">
       <SectionMedia
         type="image"
         src={hero.image.src}
@@ -15,12 +15,12 @@ export default function ContactHeroSection() {
         overlay="heroSoft"
       />
 
-      <Container className="relative z-10 w-full">
+      <Container className="relative z-10 flex hero-content-viewport w-full items-center">
         <motion.div
            initial={{ opacity: 0, y: 10 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 0.6 }}
-           className="max-w-[48rem] pt-20 lg:pt-0"
+           className="max-w-[48rem]"
         >
           <h1 className="text-[clamp(2.65rem,5.8vw,4.8rem)] font-extrabold leading-[0.96] tracking-[-0.04em] uppercase text-white drop-shadow-md mb-6">
             {hero.headline}

@@ -54,6 +54,17 @@
     isolation: isolate;
   }
 
+  .hero-viewport {
+    min-height: calc(100svh - var(--header-height));
+  }
+
+  .hero-content-viewport {
+    min-height: calc(100svh - var(--header-height));
+    padding-top: clamp(72px, 12svh, 120px);
+    padding-bottom: clamp(48px, 10svh, 96px);
+  }
+
+
   /* Horizontal scroll rails — hides scrollbar visually, keeps touch/mouse scroll */
   .scrollbar-hide {
     -ms-overflow-style: none;
@@ -69,5 +80,18 @@
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --header-height: var(--mobile-header-height);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-content-viewport {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }

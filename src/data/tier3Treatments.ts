@@ -346,7 +346,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: '/assets/treatments/blanqueamiento-dental/hero.jpg',
+      src: '/assets/treatments/dental/hero.jpg',
       alt: 'Blanqueamiento dental en DERMA.M',
       position: 'center'
     },
@@ -368,7 +368,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: '¿En qué consiste?',
       body: 'Nuestro blanqueamiento dental utiliza agentes aclaradores de alta concentración supervisados por profesionales. El proceso elimina manchas profundas en el esmalte sin comprometer la estructura dental, logrando varios tonos de aclarado en una sola sesión.',
       media: {
-        src: '/assets/treatments/blanqueamiento-dental/explanation.jpg',
+        src: '/assets/treatments/dental/cta.jpg',
         alt: 'Proceso de blanqueamiento',
         prompt: `IMAGE PROMPT — BLANQUEAMIENTO DENTAL PROCESS: ${commonImagePrompt} ${'Professional dental whitening setup, protective gel applied to gums, bright clinical setting, 4:3 ratio.'}`
       }
@@ -418,7 +418,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Evaluación',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: '/assets/treatments/blanqueamiento-dental/cta.jpg',
+        src: '/assets/treatments/dental/cta.jpg',
         alt: 'Final CTA Blanqueamiento',
         prompt: `IMAGE PROMPT — BLANQUEAMIENTO DENTAL CTA: ${commonImagePrompt} ${'Clean white clinical still-life with dental mirror and sage branch, 16:9 horizontal.'}`
       }
@@ -453,7 +453,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: '/assets/treatments/limpieza-dental/hero.jpg',
+      src: '/assets/treatments/dental/cta.jpg',
       alt: 'Limpieza dental profesional en DERMA.M',
       position: 'center'
     },
@@ -475,7 +475,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'Importancia de la profilaxis',
       body: 'La limpieza dental profesional o profilaxis elimina la placa bacteriana y el sarro que el cepillado diario no alcanza. Es la base fundamental para prevenir problemas mayores y mantener una estética dental saludable.',
       media: {
-        src: '/assets/treatments/limpieza-dental/explanation.jpg',
+        src: '/assets/treatments/dental/hero.jpg',
         alt: 'Higiene dental profesional',
         prompt: `IMAGE PROMPT — LIMPIEZA DENTAL PROCESS: ${commonImagePrompt} ${'Close up of clean dental instruments on a white tray, soft ivory background, 4:3 ratio.'}`
       }
@@ -524,7 +524,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Limpieza',
       secondaryLabel: 'Dudas por WhatsApp',
       image: {
-        src: '/assets/treatments/limpieza-dental/cta.jpg',
+        src: '/assets/treatments/dental/cta.jpg',
         alt: 'Final CTA Limpieza Dental',
         prompt: `IMAGE PROMPT — LIMPIEZA DENTAL CTA: ${commonImagePrompt} ${'Soft white dental still-life, fresh mint or sage, ivory background, 16:9 horizontal.'}`
       }
@@ -751,7 +751,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: '/assets/treatments/cavitacion/hero.jpg',
+      src: '/assets/treatments/tratamientos-corporales/hero.jpg',
       alt: 'Cavitación corporal en DERMA.M',
       position: 'center'
     },
@@ -773,7 +773,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: '¿Cómo funciona?',
       body: 'La cavitación utiliza ultrasonidos de baja frecuencia que generan micro-burbujas en el tejido graso. Estas burbujas colapsan y rompen selectivamente las células adiposas, convirtiéndolas en una sustancia líquida que el cuerpo elimina naturalmente a través del sistema linfático y la orina.',
       media: {
-        src: '/assets/treatments/cavitacion/explanation.jpg',
+        src: '/assets/treatments/tratamientos-corporales/cta.jpg',
         alt: 'Proceso de cavitación',
         prompt: `IMAGE PROMPT — CAVITACION PROCESS: ${commonImagePrompt} ${'Non-invasive body device gently applied to a modestly framed abdominal area, professional setting, 4:3 ratio.'}`
       }
@@ -822,7 +822,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Evaluar mi Caso',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: '/assets/treatments/cavitacion/cta.jpg',
+        src: '/assets/treatments/tratamientos-corporales/cta.jpg',
         alt: 'Final CTA Cavitación',
         prompt: `IMAGE PROMPT — CAVITACION CTA: ${commonImagePrompt} ${'Soft minimalist still-life with measuring tape and sage, pearl gray background, 16:9 horizontal.'}`
       }
@@ -851,7 +851,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: '/assets/treatments/radiofrecuencia-corporal/hero.jpg',
+      src: '/assets/treatments/tratamientos-corporales/hero.jpg',
       alt: 'Radiofrecuencia corporal en DERMA.M',
       position: 'center'
     },
@@ -873,7 +873,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'Tecnología de calor profundo',
       body: 'La radiofrecuencia entrega energía térmica a las capas profundas de la piel sin dañar la superficie. Este calor estimula la contracción de las fibras de colágeno existentes y promueve la formación de nuevas, resultando en una piel más tersa y firme.',
       media: {
-        src: '/assets/treatments/radiofrecuencia-corporal/explanation.jpg',
+        src: '/assets/treatments/tratamientos-corporales/cta.jpg',
         alt: 'Tratamiento de radiofrecuencia',
         prompt: `IMAGE PROMPT — RADIOFRECUENCIA CORPORAL PROCESS: ${commonImagePrompt} ${'Professional device generating gentle warmth on skin, calm aesthetics, 4:3 ratio.'}`
       }
@@ -921,7 +921,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Evaluación',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: '/assets/treatments/radiofrecuencia-corporal/cta.jpg',
+        src: '/assets/treatments/tratamientos-corporales/cta.jpg',
         alt: 'Final CTA Radiofrecuencia',
         prompt: `IMAGE PROMPT — RADIOFRECUENCIA CORPORAL CTA: ${commonImagePrompt} ${'Warm abstract clinical scene, soft light, ivory towels, 16:9 horizontal.'}`
       }
@@ -950,7 +950,7 @@ export const tier3Treatments: Tier3Treatment[] = [
     },
     heroMedia: {
       type: 'image',
-      src: '/assets/treatments/drenaje-linfatico-corporal/hero.jpg',
+      src: '/assets/treatments/postoperatorio/hero.jpg',
       alt: 'Drenaje linfático en DERMA.M',
       position: 'center'
     },
@@ -972,7 +972,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'El arte del toque suave',
       body: 'A diferencia de los masajes reductores intensos, el drenaje linfático utiliza maniobras extremadamente suaves y lentas. El objetivo es estimular los ganglios y conductos linfáticos para facilitar el transporte de líquidos y desechos del cuerpo hacia su eliminación natural.',
       media: {
-        src: '/assets/treatments/drenaje-linfatico-corporal/explanation.jpg',
+        src: '/assets/treatments/postoperatorio/cta.jpg',
         alt: 'Técnica de drenaje',
         prompt: `IMAGE PROMPT — DRENAJE LINFATICO PROCESS: ${commonImagePrompt} ${'Gentle hands performing Rhythmic massage over white linens, 4:3 ratio.'}`
       }
@@ -1021,7 +1021,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       primaryLabel: 'Agendar Ahora',
       secondaryLabel: 'WhatsApp',
       image: {
-        src: '/assets/treatments/drenaje-linfatico-corporal/cta.jpg',
+        src: '/assets/treatments/postoperatorio/cta.jpg',
         alt: 'Final CTA Drenaje',
         prompt: `IMAGE PROMPT — DRENAJE LINFATICO CTA: ${commonImagePrompt} ${'Calm water ripples still-life, pearl gray background, 16:9 horizontal.'}`
       }
@@ -1072,7 +1072,7 @@ export const tier3Treatments: Tier3Treatment[] = [
       title: 'Estimulación térmica profunda',
       body: 'La radiofrecuencia utiliza ondas que elevan la temperatura de las capas más profundas de la dermis de forma segura. Este calor controlado provoca la contracción inmediata de las fibras de colágeno y activa a los fibroblastos para producir colágeno nuevo en los meses siguientes.',
       media: {
-        src: '/assets/treatments/radiofrecuencia-facial/explanation.jpg',
+        src: '/assets/treatments/radiofrecuencia-facial/cta.jpg',
         alt: 'Sesión de radiofrecuencia facial',
         prompt: `IMAGE PROMPT — RADIOFRECUENCIA FACIAL PROCESS: ${commonImagePrompt} ${'Professional device gently applied to jawline, calm patient, 4:3 ratio.'}`
       }

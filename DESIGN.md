@@ -144,14 +144,15 @@ Default container width is `1280px` with horizontal padding from `container-x`. 
 
 Default desktop section spacing is `section-y` / `6rem`. Compact utility sections may use `4rem`. Mobile sections use `section-y-mobile` / `4rem`.
 
-The Homepage hero uses a minimum height of `86vh`. Internal hero heights vary by page type:
+All primary page heroes use the shared fullscreen responsive hero viewport contract. The fixed navbar is compensated through CSS variables:
 
-- Tier 1 landing pages: `72vh`.
-- Hub pages: `68vh`.
-- About page: `72vh`.
-- Booking and Contact: `50–58vh`.
-- IV Therapy: `60vh`.
-- Tier 3 treatment pages: `60–68vh`.
+- `--header-height: 96px` on desktop.
+- `--mobile-header-height: 72px` on mobile.
+- `--header-height: var(--mobile-header-height)` below `768px`.
+- `hero-viewport`: `min-height: calc(100svh - var(--header-height))`.
+- `hero-content-viewport`: the same minimum height, `display: flex`, vertical centering, and safe mobile padding (`clamp(72px, 12svh, 120px)` top / `clamp(48px, 10svh, 96px)` bottom).
+
+Do not use fixed pixel hero heights, short `40vh`, `60vh`, or `60–68vh` page heroes, or 1920x1080-dependent values. Homepage, Tier 1 landings, hub pages, IV Therapy, Tier 3 pages, About, Booking, and Contact must all use the same fullscreen hero base class or shared hero component contract.
 
 All Hero sections are full-bleed editorial systems. Do not create split heroes with image on one side and text on the other. The image or video always covers the full Hero container with `object-fit: cover`, and text sits over the image with a mandatory overlay.
 
@@ -256,11 +257,11 @@ The approved Homepage hero is the benchmark for editorial image treatment, dark 
 
 Hero Visual Contract:
 
-1. The Homepage Hero is the visual baseline for every hero in the site. Other heroes may adapt content, height, CTA count, and proof items, but they must preserve the same premium editorial presence.
-2. Every hero must use full-bleed media with `object-fit: cover` and a protective overlay. A hero that reads as a short banner is not acceptable for Homepage, Tier 1 landing pages, or Tier 3 treatment pages.
+1. The Homepage Hero is the visual baseline for every hero in the site. Other heroes may adapt content, CTA count, and proof items, but they must preserve the same premium editorial presence.
+2. Every hero must use full-bleed media with `object-fit: cover` and a protective overlay. A hero that reads as a short banner is not acceptable for any primary page.
 3. Hero H1 typography must stay visually compatible with the Homepage scale. Homepage uses `display-hero`; internal and treatment heroes may use `display-hero-compact`, but the title must still feel dominant, not weak, compressed, or secondary to surrounding content.
 4. On dark or image-backed heroes, H1 color must use `text-base-300` / `text-inverse` or an explicitly equivalent token. Do not mix `text-white`, `text-base-100`, and `text-base-300` arbitrarily across heroes.
-5. Minimum hero height must protect editorial impact: Homepage `86vh`; Tier 1 landing pages `72–90vh`; Tier 3 treatment pages should not drop to `60vh` when doing so makes the image and title feel compressed. Use `72vh` as the recommended Tier 3 minimum unless a very specific page constraint justifies otherwise.
+5. Minimum hero height must use the fullscreen responsive contract: `calc(100svh - var(--header-height))`, with mobile using `--mobile-header-height`. Do not reintroduce `86vh`, `90vh`, `60vh`, `40vh`, or fixed pixel heights for primary heroes.
 6. Pills, trust signals, stats, and proof rows must share the same dark glass language: translucent background, soft border, restrained blur, rounded pill/card geometry, and monochrome text/icons.
 7. Proof rows and quick facts may vary by page, but they must feel visually connected to the hero when they are part of immediate trust-building. Do not separate proof metrics into an unrelated block if they should reinforce the hero message.
 8. Primary CTA buttons on dark or image-backed heroes must use the light-on-dark pattern: `background` / `base-100` surface, `text-primary` / `base-900` label, soft shadow, and subtle white/light hover. The secondary CTA may use dark glass. Do not place a dark primary CTA over a dark hero image.
@@ -297,10 +298,10 @@ Required order:
 1. Hero.
 2. Intro / proof facts.
 3. Featured treatments.
-4. Full treatment catalog.
+4. Full treatment catalog (`HubCatalogSections` when structured catalog sections exist; `HubAllTreatmentsGrid` only as fallback).
 5. Real Google Reviews.
-6. Final CTA.
-7. FAQ.
+6. FAQ.
+7. Final CTA.
 
 Rules:
 
@@ -311,6 +312,38 @@ Rules:
 5. Section rhythm must alternate intentionally through surface contrast, not random background swaps. Avoid long runs of visually identical `bg-canvas` sections.
 6. Category hubs must not list treatments that belong to another category just to fill space. If a category is still incomplete, keep the catalog honest and route users to evaluation instead of misclassifying services.
 7. Featured treatment cards inside hub pages should match the Homepage treatment card structure: horizontal row/grid of vertical image-led cards, top image, bottom-left glass/category pill, white content body, title-card typography, calm body copy, and a single editorial text link with one arrow.
+
+### HubCatalogSections — Editorial Catalog Modules
+
+Purpose: turn hub catalog groups into premium editorial decision modules instead of dense treatment grids. This pattern is used when `catalogSections` exists in hub content.
+
+Internal hierarchy:
+
+1. Large image column with soft overlay.
+2. Image overlay pill with editorial number and objective label.
+3. Oversized monochrome watermark number behind the content.
+4. Objective eyebrow with thin divider.
+5. Uppercase catalog title.
+6. Calm body description.
+7. Treatment chips.
+8. `Ideal para` checklist.
+9. CTA pair: primary solid action first, secondary outline action second.
+
+Token mapping:
+
+- Section surface: `bg-canvas`.
+- Card surface: `bg-white` / `surface`.
+- Card border: `border-card`.
+- Card radius: `rounded.section` / `1.5rem`.
+- Image surface fallback: `bg-base-200`.
+- Watermark number: `base-900` at very low opacity.
+- Treatment chips: `bg-canvas`, `border-subtle`, `text-secondary`.
+- Checklist icons: circular `border-card` outlines with monochrome `Check` icon.
+- Motion: one subtle parent reveal (`opacity` + small `y`), no bouncy child animations.
+
+Desktop layout uses a Z-pattern: odd cards image-left/content-right, even cards content-left/image-right. The card keeps a large editorial footprint (`lg:min-h` around `430px`) without forcing copy overflow. Mobile stacks image first, then content, then checklist and CTAs.
+
+Do not add decorative colored icons, multiple icon rows, Hamilton typography, gradients, or dense four-column grids inside `HubCatalogSections`. If a hub has no structured `catalogSections`, use `HubAllTreatmentsGrid` as the fallback catalog pattern.
 
 ### TrustBar — Immediate Confidence System
 
@@ -475,6 +508,8 @@ EL EQUIPO DETRÁS DE tu PIEL
 
 Team cards include portrait, name, role, specialty, and optional vCard/contact action. Team imagery must feel real, warm, professional, and consistent. Avoid fake stock doctors and overly corporate headshots. Founder/team imagery may use subtle approved motion and should remain image-led; do not flatten it into generic clinical bio cards.
 
+Founder quote treatments should read as quiet editorial pull quotes, not side-tab cards. Use subtle horizontal separators (`border-y border-border-subtle`) with relaxed vertical padding and italic Poppins quote text. Do not use thick left accent bars (`border-l-4`) or colored quote tabs in founder/about sections.
+
 ### BookingSelector — Conversion Routing System
 
 Purpose: route users to the correct booking action without creating friction.
@@ -613,20 +648,22 @@ The approved dark footer is part of the Homepage baseline and should not be reve
 These rules apply to every page on the site without exception.
 Any component that violates these standards must be corrected.
 
-### HERO ? All pages
-- Section: min-h-[86vh] lg:min-h-[90vh], bg-base-900, py-20 lg:py-24
-- Background: full-bleed image via HeroMedia, overlay left-to-right gradient
-- Trust signal: HeroTrustPill with stars ? ONE pill only, no eyebrow span
+### HERO — All pages
+- Section: `hero-viewport`, `bg-base-900`, `overflow-hidden`, no fixed `vh` or pixel height.
+- Content wrapper: `hero-content-viewport`, `items-center`, centered vertically below the fixed header.
+- Header compensation: desktop `--header-height: 96px`; mobile `--mobile-header-height: 72px`; use `calc(100svh - var(--header-height))`.
+- Background: full-bleed image/video via HeroMedia or SectionMedia, `absolute inset-0`, `w-full h-full`, `object-cover`, overlay left-to-right gradient.
+- Trust signal: HeroTrustPill with stars — ONE pill only, no eyebrow span
 - H1: text-[clamp(3rem,6.6vw,5.35rem)] font-extrabold uppercase text-base-300
-- City line: block span below H1 ? normal-case, text-[clamp(0.9rem,1.8vw,1.35rem)], text-base-300/70
-  - Facial treatments: "en West Palm Beach ? Miami"
+- City line: block span below H1 — normal-case, text-[clamp(0.9rem,1.8vw,1.35rem)], text-base-300/70
+  - Facial treatments: "en West Palm Beach · Miami"
   - Non-facial treatments: "en West Palm Beach"
-  - Hubs: "en DERMA.M ? West Palm Beach ? Miami"
+  - Hubs: "en DERMA.M · West Palm Beach · Miami"
 - Subheadline: text-lg font-light text-base-300, max-w-lg
 - CTA: single Button, !bg-base-100 !text-base-900, hover:!bg-white
 - NO address, NO phone number, NO second eyebrow pill
 
-### FINAL CTA ? All pages
+### FINAL CTA — All pages
 - Section: py-32 relative overflow-hidden, full-bleed background image
 - Panel: bg-base-900/85 backdrop-blur-md rounded-[1.5rem] border border-white/10
 - Layout: flex-col lg:flex-row, items-center justify-between
@@ -634,25 +671,25 @@ Any component that violates these standards must be corrected.
 - Copy: text-lg text-base-300 font-light
 - Primary CTA: !bg-white !text-base-900 hover:!bg-base-100
 - Secondary CTA: WhatsApp link, outline style, !border-base-300/70 !text-base-300
-- Microcopy: text-xs uppercase tracking-[0.15em] text-base-300 ? "Evaluaci?n gratuita ? Sin compromiso"
-- NO address, NO phone number in this section ? those belong in Footer only
+- Microcopy: text-xs uppercase tracking-[0.15em] text-base-300 — "Evaluación gratuita • Sin compromiso"
+- NO address, NO phone number in this section — those belong in Footer only
 
-### FAQ ? All pages
+### FAQ — All pages
 - Section: bg-white py-24
 - H2: heading-section scale, uppercase, text-center
 - Items: FAQAccordion component, ChevronDown icon
 - Max-width: max-w-3xl mx-auto
 - NO decorative elements, NO icons per item
 
-### FOOTER ? All pages
+### FOOTER — All pages
 - Background: bg-base-900
 - Address: 5707 S Dixie Hwy Unit D, West Palm Beach, FL 33405
 - Phone: (561) 253-5384
-- Hours: Mon?Sat 8am?8pm, Sun 10am?4pm
+- Hours: Mon–Sat 8am–8pm, Sun 10am–4pm
 - Social: Instagram @dermamskinhealth, Facebook: https://www.facebook.com/DermaMskinhealth 
-- Address and phone appear ONLY in Footer and Contact page ? never in Hero or CTA sections
+- Address and phone appear ONLY in Footer and Contact page — never in Hero or CTA sections
 
-### Section Order ? Tier 1 Landing Pages (PRF, Limpieza Facial, Post-Op)
+### Section Order — Tier 1 Landing Pages (PRF, Limpieza Facial, Post-Op)
 1. Hero
 2. Audience / QuickFit
 3. Education / Explanation
@@ -665,11 +702,11 @@ Any component that violates these standards must be corrected.
 10. Final CTA
 11. Related Treatments
 
-### Section Order ? Hub Pages (Faciales, Corporales, L?ser, Dental)
+### Section Order — Hub Pages (Faciales, Corporales, Láser, Dental)
 1. Hero
 2. Intro / Stats
 3. Featured Treatments
-4. All Treatments Grid
+4. Catalog Sections / All Treatments Grid fallback
 5. Social Proof / Reviews
 6. FAQ
 7. Final CTA

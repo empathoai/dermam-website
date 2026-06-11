@@ -146,7 +146,7 @@ export const laserLightHubContent: HubPageContent = {
         isPlaceholderRoute: true,
         badge: 'Depilación',
         image: {
-          src: '/assets/images/laser-hair.jpg',
+          src: '/assets/treatments/laser-luz/hero.jpg',
           alt: 'Depilación Láser Diodo'
         }
       },
@@ -159,7 +159,7 @@ export const laserLightHubContent: HubPageContent = {
         isPlaceholderRoute: true,
         badge: 'Luz pulsada',
         image: {
-          src: '/assets/images/laser-device.jpg',
+          src: '/assets/treatments/laser-luz/cta.jpg',
           alt: 'IPL – Luz Pulsada Intensa'
         }
       },
@@ -172,7 +172,7 @@ export const laserLightHubContent: HubPageContent = {
         isPlaceholderRoute: true,
         badge: 'Láser CO₂',
         image: {
-          src: '/assets/images/consultation-room.jpg',
+          src: '/assets/treatments/laser-luz/hero.jpg',
           alt: 'Láser CO₂ Fraccionado'
         }
       }
@@ -189,7 +189,7 @@ export const laserLightHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/laser-hair.jpg', alt: 'Depilación Láser Diodo' }
+        image: { src: '/assets/treatments/laser-luz/hero.jpg', alt: 'Depilación Láser Diodo' }
       },
       {
         id: 'ipl-grid',
@@ -198,7 +198,7 @@ export const laserLightHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/laser-device.jpg', alt: 'IPL – Luz Pulsada Intensa' }
+        image: { src: '/assets/treatments/laser-luz/cta.jpg', alt: 'IPL – Luz Pulsada Intensa' }
       },
       {
         id: 'laser-co2-fraccionado-grid',
@@ -207,7 +207,7 @@ export const laserLightHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/consultation-room.jpg', alt: 'Láser CO₂ Fraccionado' }
+        image: { src: '/assets/treatments/laser-luz/hero.jpg', alt: 'Láser CO₂ Fraccionado' }
       }
     ]
   },

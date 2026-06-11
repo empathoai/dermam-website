@@ -25,7 +25,7 @@ export const postOpContent = {
       'Cualquier procedimiento estético'
     ],
     image: {
-      src: '/assets/treatments/postop-care.jpg',
+      src: '/assets/treatments/postoperatorio/cta.jpg',
       alt: 'Drenaje linfático post-operatorio',
       prompt: 'Soft clinical post-operative lymphatic drainage image, professional hands applying gentle pressure on torso or arm over clean white clinical linens, patient calm and covered appropriately, warm ivory treatment room, sage botanical detail, recovery-focused and safe, no exposed wounds, no bruising, no scars, no clinical alarm feeling, premium medspa photography, 4:3 ratio.'
     }
@@ -48,7 +48,7 @@ export const postOpContent = {
       }
     ],
     image: {
-        src: '/assets/treatments/postop-urgency.jpg',
+        src: '/assets/treatments/postoperatorio/cta.jpg',
         alt: 'Protocolo postoperatorio profesional en DERMA.M',
         prompt: 'Elegant clinical recovery still-life, folded compression garment, white towel, small notebook with recovery plan, glass of water, soft sage leaves, warm ivory background, calm aesthetic spa atmosphere, subtle visual metaphor for post-surgery planning, no people, no surgery tools, no blood, no alarm tone, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -74,7 +74,7 @@ export const postOpContent = {
     ],
     cta: '¿Cuántas sesiones necesito?',
     image: {
-        src: '/assets/treatments/postop-protocol.jpg',
+        src: '/assets/treatments/postoperatorio/hero.jpg',
         alt: 'Sala de recuperación post-operatoria',
         prompt: 'Premium editorial image of a treatment room prepared for post-operative lymphatic drainage, clean massage table with white linens, soft warm light, sage and ivory palette, folded towel, subtle botanical decor, clinically clean but warm and reassuring, no people, no surgical equipment, no hospital aesthetic, 16:9 horizontal. Main subject must remain visible within the center 60% of the frame for mobile crop safety. Leave soft negative space around edges. No important visual information near left or right edge.'
     }
@@ -187,7 +187,7 @@ export const postOpContent = {
       category: 'Corporal',
       href: '#',
       image: {
-        src: '/assets/treatments/related-postop-1.jpg',
+        src: '/assets/treatments/postoperatorio/hero.jpg',
         alt: 'Drenaje linfático corporal',
         prompt: 'Premium body lymphatic drainage treatment image, professional hands performing gentle manual drainage over covered body area, white linens, warm ivory light, soft sage clinical wellness room, calm and discreet, no surgery visuals, 4:3 ratio.'
       }
@@ -199,7 +199,7 @@ export const postOpContent = {
       category: 'Corporal',
       href: '#',
       image: {
-        src: '/assets/treatments/related-postop-2.jpg',
+        src: '/assets/treatments/tratamientos-corporales/hero.jpg',
         alt: 'Radiofrecuencia corporal',
         prompt: 'Premium non-invasive body treatment image, aesthetic device applied gently over covered or modestly framed body area, clean ivory clinical room, soft sage accents, professional wellness atmosphere, no pain, no redness, no aggressive machine look, 4:3 ratio.'
       }
@@ -211,7 +211,7 @@ export const postOpContent = {
       category: 'Corporal',
       href: '#',
       image: {
-        src: '/assets/treatments/related-postop-3.jpg',
+        src: '/assets/treatments/limpieza-facial/hero.jpg',
         alt: 'Tratamiento de estrías y celulitis',
         prompt: 'Soft premium body skin treatment image, close-up of natural skin texture on thigh or hip area in modest framing, clinical wellness light, warm ivory background, no extreme retouching, no explicit nudity, no harsh before/after, calm and professional, 4:3 ratio.'
       }

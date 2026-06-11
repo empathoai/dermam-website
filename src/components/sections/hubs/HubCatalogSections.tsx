@@ -5,19 +5,7 @@ import Button from '../../ui/Button';
 import ResponsiveImage from '../../ui/ResponsiveImage';
 import { siteConfig } from '../../../data/siteConfig';
 import { motion } from 'motion/react';
-import { 
-  Droplet, 
-  Sparkles, 
-  Layers, 
-  Zap, 
-  Activity, 
-  Shield, 
-  Smile, 
-  Heart, 
-  Scale, 
-  Leaf,
-  Check
-} from 'lucide-react';
+import { Check } from 'lucide-react';
 
 interface HubCatalogSectionsProps {
   sections: HubCatalogSection[];
@@ -41,257 +29,159 @@ const sectionImages: Record<string, string> = {
   'bienestar-corporal-tratamientos-complementarios': '/assets/pages/home/postop-card.jpg',
 
   // Laser & Light Hub
-  'depilacion-laser-diodo': '/assets/images/laser-hair.jpg',
-  'ipl-luz-pulsada-intensa': '/assets/images/laser-device.jpg',
-  'laser-co2-fraccionado': '/assets/images/consultation-room.jpg',
+  'depilacion-laser-diodo': '/assets/treatments/laser-luz/hero.jpg',
+  'ipl-luz-pulsada-intensa': '/assets/treatments/laser-luz/cta.jpg',
+  'laser-co2-fraccionado': '/assets/treatments/laser-luz/hero.jpg',
 
   // Dental Hub
-  'blanqueamiento-dental-estetico': '/assets/images/dental-office.jpg',
-  'limpieza-dental-profesional': '/assets/images/dental-mouth.jpg',
+  'blanqueamiento-dental-estetico': '/assets/treatments/dental/hero.jpg',
+  'limpieza-dental-profesional': '/assets/treatments/dental/cta.jpg',
 };
 
-interface BenefitItem {
-  icon: React.ComponentType<{ className?: string }>;
-  label: string;
+const fallbackImage = '/assets/treatments/tratamientos-faciales/hero.jpg';
+
+function getEditorialNumber(index: number) {
+  return String(index + 1).padStart(2, '0');
 }
 
-const catalogBenefits: Record<string, BenefitItem[]> = {
-  // Facial Hub
-  'limpieza-hidratacion-preparacion-piel': [
-    { icon: Droplet, label: 'Limpia impurezas' },
-    { icon: Sparkles, label: 'Oxigena la piel' },
-    { icon: Droplet, label: 'Prepara el rostro' }
-  ],
-  'textura-poros-renovacion': [
-    { icon: Sparkles, label: 'Renueva células' },
-    { icon: Layers, label: 'Suaviza poros' },
-    { icon: Droplet, label: 'Aporta luz' }
-  ],
-  'regeneracion-colageno-calidad-piel': [
-    { icon: Zap, label: 'Estimula colágeno' },
-    { icon: Activity, label: 'Firmeza dérmica' },
-    { icon: Sparkles, label: 'Calidad de piel' }
-  ],
-  'acne-manchas-piel-sensible': [
-    { icon: Shield, label: 'Equilibra la piel' },
-    { icon: Droplet, label: 'Calma brotes' },
-    { icon: Sparkles, label: 'Mejora secuelas' }
-  ],
-  'firmeza-lifting-contorno-facial': [
-    { icon: Activity, label: 'Efecto lifting' },
-    { icon: Layers, label: 'Define contornos' },
-    { icon: Zap, label: 'Reafirma tejidos' }
-  ],
-  'bienestar-facial-relajacion': [
-    { icon: Smile, label: 'Relaja tensiones' },
-    { icon: Activity, label: 'Mejora circulación' },
-    { icon: Sparkles, label: 'Bienestar y relax' }
-  ],
+function getEyebrowLabel(section: HubCatalogSection, index: number) {
+  if (!section.eyebrow) return `Módulo ${getEditorialNumber(index)}`;
 
-  // Corporate Hub
-  'recuperacion-postoperatoria': [
-    { icon: Heart, label: 'Baja inflamación' },
-    { icon: Shield, label: 'Drenaje linfático' },
-    { icon: Activity, label: 'Soporte post-op' }
-  ],
-  'remodelacion-reduccion-corporal': [
-    { icon: Scale, label: 'Grasa localizada' },
-    { icon: Layers, label: 'Moldeo corporal' },
-    { icon: Activity, label: 'Reduce medidas' }
-  ],
-  'firmeza-tonificacion-musculacion': [
-    { icon: Zap, label: 'Musculación' },
-    { icon: Activity, label: 'Tonifica y afirma' },
-    { icon: Layers, label: 'Combate flacidez' }
-  ],
-  'gluteos-contorno-corporal': [
-    { icon: Activity, label: 'Mayor firmeza' },
-    { icon: Layers, label: 'Proyección' },
-    { icon: Zap, label: 'Moldeo silueta' }
-  ],
-  'textura-piel-celulitis-estrias': [
-    { icon: Layers, label: 'Reduce celulitis' },
-    { icon: Sparkles, label: 'Mejora textura' },
-    { icon: Droplet, label: 'Calidad de tejido' }
-  ],
-  'bienestar-corporal-tratamientos-complementarios': [
-    { icon: Leaf, label: 'Desintoxicación' },
-    { icon: Smile, label: 'Mantenimiento' },
-    { icon: Sparkles, label: 'Cuidado capilar' }
-  ],
-
-  // Laser & Light Hub
-  'depilacion-laser-diodo': [
-    { icon: Zap, label: 'Tecnología diodo' },
-    { icon: Sparkles, label: 'Piel suave' },
-    { icon: Shield, label: 'Sin rasuradoras' }
-  ],
-  'ipl-luz-pulsada-intensa': [
-    { icon: Shield, label: 'Manchas solares' },
-    { icon: Layers, label: 'Tono uniforme' },
-    { icon: Sparkles, label: 'Luminosidad' }
-  ],
-  'laser-co2-fraccionado': [
-    { icon: Sparkles, label: 'Renovación profunda' },
-    { icon: Layers, label: 'Textura y poros' },
-    { icon: Zap, label: 'Colágeno' }
-  ],
-
-  // Dental Hub
-  'blanqueamiento-dental-estetico': [
-    { icon: Sparkles, label: 'Sonrisa brillante' },
-    { icon: Zap, label: 'Una sesión' },
-    { icon: Smile, label: 'Estética dental' }
-  ],
-  'limpieza-dental-profesional': [
-    { icon: Droplet, label: 'Limpieza profunda' },
-    { icon: Sparkles, label: 'Frescura' },
-    { icon: Shield, label: 'Cuidado preventivo' }
-  ]
-};
-
-const defaultBenefits = [
-  { icon: Sparkles, label: 'Cuidado experto' },
-  { icon: Shield, label: 'Seguridad' },
-  { icon: Activity, label: 'Resultados' }
-];
+  const parts = section.eyebrow.split('·');
+  return (parts[1] || section.eyebrow).trim();
+}
 
 export default function HubCatalogSections({ sections }: HubCatalogSectionsProps) {
   if (!sections || sections.length === 0) return null;
 
   return (
-    <div className="bg-canvas flex flex-col gap-8 lg:gap-12 py-12">
-      {sections.map((section, index) => {
-        const imageSrc = sectionImages[section.id] || '/assets/treatments/tratamientos-faciales/hero.jpg';
-        const isAlternate = index % 2 === 1;
+    <div className="bg-canvas py-14 lg:py-20">
+      <div className="flex flex-col gap-8 lg:gap-10">
+        {sections.map((section, index) => {
+          const imageSrc = sectionImages[section.id] || fallbackImage;
+          const isAlternate = index % 2 === 1;
+          const editorialNumber = getEditorialNumber(index);
+          const eyebrowLabel = getEyebrowLabel(section, index);
+          const whatsappText = `Hola, quiero información sobre tratamientos de: ${section.title} en DERMA.M.`;
+          const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
+          const secondaryHref = section.secondaryCta?.type === 'internal'
+            ? section.secondaryCta.href
+            : whatsappUrl;
 
-        // Custom WhatsApp message for the specific section
-        const whatsappText = `Hola, quiero información sobre tratamientos de: ${section.title} en DERMA.M.`;
-        const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
-        const benefits = catalogBenefits[section.id] || defaultBenefits;
-
-        return (
-          <section 
-            key={section.id} 
-            id={section.id}
-            className="py-4 last:pb-12 scroll-mt-24"
-          >
-            <Container>
-              <div className="bg-white border border-border-card rounded-[1.5rem] p-6 lg:p-8 xl:p-10 shadow-card-soft lg:h-[420px] flex flex-col justify-center">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-stretch h-full">
-                  
-                  {/* Image Column */}
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: '-100px' }}
-                    transition={{ duration: 0.6 }}
-                    className={`lg:col-span-4 w-full flex h-full ${isAlternate ? 'lg:order-last' : ''}`}
+          return (
+            <section
+              key={section.id}
+              id={section.id}
+              className="scroll-mt-24"
+            >
+              <Container>
+                <motion.div
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-100px' }}
+                  transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+                  className="relative overflow-hidden rounded-[1.5rem] border border-border-card bg-white shadow-card-soft"
+                >
+                  <div
+                    aria-hidden="true"
+                    className={`pointer-events-none absolute top-4 z-0 select-none font-sans text-[clamp(5.5rem,12vw,11rem)] font-extrabold leading-none tracking-[-0.08em] text-base-900/[0.035] ${isAlternate ? 'left-5 lg:left-8' : 'right-5 lg:right-8'}`}
                   >
-                    <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-full rounded-[1.25rem] overflow-hidden border border-border-card shadow-subtle group">
-                      <ResponsiveImage
-                        src={imageSrc}
-                        alt={section.title}
-                        className="w-full h-full object-cover transition-transform duration-[400ms] ease-out group-hover:scale-102"
-                      />
+                    {editorialNumber}
+                  </div>
+
+                  <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 lg:min-h-[430px]">
+                    <div className={`lg:col-span-5 ${isAlternate ? 'lg:order-last' : ''}`}>
+                      <div className="group relative h-full min-h-[260px] overflow-hidden bg-base-200 lg:min-h-full">
+                        <ResponsiveImage
+                          src={imageSrc}
+                          alt={section.title}
+                          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-base-900/35 via-base-900/5 to-transparent lg:bg-gradient-to-r lg:from-base-900/20 lg:via-transparent lg:to-transparent" />
+                        <div className="absolute left-5 top-5 rounded-full border border-white/30 bg-base-900/45 px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-base-100 backdrop-blur-md">
+                          {editorialNumber} · {eyebrowLabel}
+                        </div>
+                      </div>
                     </div>
-                  </motion.div>
 
-                  {/* Content Column */}
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: '-100px' }}
-                    transition={{ duration: 0.6, delay: 0.15 }}
-                    className={`lg:col-span-8 h-full ${isAlternate ? 'lg:order-first' : ''}`}
-                  >
-                    <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 h-full">
-                      
-                      {/* Left: Eyebrow, Title, Description, 3 circular icons */}
-                      <div className="flex flex-col justify-start h-full space-y-4">
-                        <div>
-                          {section.eyebrow && (
-                            <span className="text-[10px] font-bold text-text-muted uppercase tracking-[0.15em] mb-1.5 block">
-                              {section.eyebrow}
+                    <div className={`lg:col-span-7 ${isAlternate ? 'lg:order-first' : ''}`}>
+                      <div className="flex h-full flex-col justify-between gap-8 p-6 sm:p-8 lg:p-10 xl:p-12">
+                        <div className="max-w-2xl">
+                          <div className="mb-5 flex items-center gap-3">
+                            <span className="text-[0.68rem] font-medium uppercase tracking-[0.16em] text-text-muted">
+                              {eyebrowLabel}
                             </span>
-                          )}
-                          
-                          <h3 className="text-[clamp(1.25rem,2vw,1.6rem)] font-bold tracking-[-0.03em] font-sans text-text-primary leading-[1.2] mb-2">
+                            <span className="h-px flex-1 bg-border-subtle" />
+                          </div>
+
+                          <h3 className="max-w-[620px] font-sans text-[clamp(1.55rem,2.7vw,2.35rem)] font-bold uppercase leading-[1.02] tracking-[-0.04em] text-text-primary">
                             {section.title}
                           </h3>
 
-                          <div className="w-12 h-0.5 bg-border-strong mb-3" />
-                          
-                          <p className="text-text-secondary text-xs md:text-sm font-light leading-relaxed line-clamp-3">
+                          <p className="mt-5 max-w-[620px] text-sm font-light leading-relaxed text-text-secondary md:text-base">
                             {section.description}
                           </p>
-                        </div>
 
-                        {/* 3 circular icons row */}
-                        <div className="grid grid-cols-3 gap-2 pt-3 border-t border-border-subtle lg:border-t-0 lg:pt-0">
-                          {benefits.map((benefit, idx) => {
-                            const IconComponent = benefit.icon;
-                            return (
-                              <div key={idx} className="flex flex-col items-center text-center">
-                                <div className="w-10 h-10 rounded-full bg-canvas border border-border-subtle flex items-center justify-center mb-1.5">
-                                  <IconComponent className="w-4.5 h-4.5 text-text-secondary" />
-                                </div>
-                                <span className="text-[9px] font-medium text-text-secondary leading-tight max-w-[85px] line-clamp-2">
-                                  {benefit.label}
+                          {section.treatments?.length > 0 && (
+                            <div className="mt-7 flex flex-wrap gap-2.5">
+                              {section.treatments.map((treatment) => (
+                                <span
+                                  key={treatment}
+                                  className="rounded-full border border-border-subtle bg-canvas px-4 py-2 text-xs font-light leading-none text-text-secondary"
+                                >
+                                  {treatment}
                                 </span>
-                              </div>
-                            );
-                          })}
+                              ))}
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="flex flex-col gap-6 border-t border-border-subtle pt-6">
+                          <div>
+                            <h4 className="mb-3 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-text-primary">
+                              Ideal para
+                            </h4>
+                            <ul className="grid gap-3 md:grid-cols-2">
+                              {section.idealFor.slice(0, 4).map((item) => (
+                                <li key={item} className="flex items-start gap-2.5 text-sm font-light leading-snug text-text-secondary">
+                                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-border-card bg-white text-text-primary">
+                                    <Check className="h-3 w-3" />
+                                  </span>
+                                  <span>{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+
+                          <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
+                            <Button
+                              to={section.primaryCta.href}
+                              className="w-full px-5 py-3 text-sm sm:w-auto"
+                            >
+                              {section.primaryCta.label}
+                            </Button>
+                            {section.secondaryCta && secondaryHref && (
+                              <Button
+                                variant="outline"
+                                {...(section.secondaryCta.type === 'internal'
+                                  ? { to: secondaryHref }
+                                  : { href: secondaryHref, target: '_blank', rel: 'noopener noreferrer' })}
+                                className="w-full px-5 py-3 text-sm sm:w-auto"
+                              >
+                                {section.secondaryCta.label}
+                              </Button>
+                            )}
+                          </div>
                         </div>
                       </div>
-
-                      {/* Right: Benefits checklist and Buttons */}
-                      <div className="lg:border-l lg:border-border-subtle lg:pl-8 xl:pl-10 h-full flex flex-col justify-between space-y-4 pt-6 border-t border-border-subtle lg:pt-0 lg:border-t-0">
-                        <div>
-                          <h4 className="text-[10px] font-bold uppercase tracking-[0.15em] text-text-primary mb-3">
-                            Beneficios
-                          </h4>
-                          <ul className="space-y-2.5">
-                            {section.idealFor.slice(0, 3).map((item, idx) => (
-                              <li key={idx} className="flex items-start gap-2.5 text-xs text-text-secondary font-light leading-snug">
-                                <div className="w-5 h-5 rounded-full border border-border-card flex items-center justify-center flex-shrink-0 mt-0.5">
-                                  <Check className="w-3 h-3 text-text-primary" />
-                                </div>
-                                <span className="line-clamp-2">{item}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* CTA Row */}
-                        <div className="flex flex-col sm:flex-row gap-3 pt-3 border-t border-border-subtle">
-                          <Button 
-                            variant="outline"
-                            to={section.primaryCta.href}
-                            className="py-2.5 px-4 w-full sm:w-auto text-center font-bold uppercase tracking-wider text-[9px]"
-                          >
-                            Más información
-                          </Button>
-                          <Button 
-                            href={whatsappUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="py-2.5 px-4 w-full sm:w-auto text-center font-bold uppercase tracking-wider text-[9px]"
-                          >
-                            Agenda tu evaluación
-                          </Button>
-                        </div>
-                      </div>
-
                     </div>
-                  </motion.div>
-
-                </div>
-              </div>
-            </Container>
-          </section>
-        );
-      })}
+                  </div>
+                </motion.div>
+              </Container>
+            </section>
+          );
+        })}
+      </div>
     </div>
   );
 }

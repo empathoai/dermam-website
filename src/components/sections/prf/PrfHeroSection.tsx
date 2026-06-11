@@ -61,7 +61,7 @@ export default function PrfHeroSection() {
   };
 
   return (
-    <section className="relative min-h-[86vh] lg:min-h-[90vh] flex items-center overflow-hidden bg-base-900 py-20 lg:py-24 isolation-isolate">
+    <section className="relative hero-viewport overflow-hidden bg-base-900 isolation-isolate">
       <div className="absolute inset-0 z-0">
         <HeroMedia
           type="image"
@@ -72,12 +72,12 @@ export default function PrfHeroSection() {
         />
       </div>
 
-      <Container className="relative z-10 w-full">
+      <Container className="relative z-10 flex hero-content-viewport w-full items-center">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="max-w-[48rem] pt-20 lg:pt-0"
+          className="max-w-[48rem]"
         >
           <motion.div variants={itemVariants} className="mb-6 flex flex-col items-start gap-3">
             <HeroTrustPill>{hero.trustBar}</HeroTrustPill>
@@ -89,7 +89,7 @@ export default function PrfHeroSection() {
           >
             {renderHeadline()}
             <span className="block text-[clamp(0.9rem,1.8vw,1.35rem)] font-medium normal-case tracking-[0.02em] text-base-300/70 mt-3 leading-[1.4]">
-              en West Palm Beach ? Miami
+              en West Palm Beach · Miami
             </span>
           </motion.h1>
           

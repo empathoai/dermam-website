@@ -66,7 +66,7 @@ export default function IVTherapyHeroSection({ content, onScrollToKits }: IVTher
   };
 
   return (
-    <section className="relative min-h-[86vh] lg:min-h-[90vh] flex items-center overflow-hidden bg-base-900 py-20 lg:py-24 isolation-isolate">
+    <section className="relative hero-viewport overflow-hidden bg-base-900 isolation-isolate">
       <div className="absolute inset-0 z-0">
         <HeroMedia
         type="image"
@@ -77,12 +77,12 @@ export default function IVTherapyHeroSection({ content, onScrollToKits }: IVTher
         />
       </div>
 
-      <Container className="relative z-10 w-full">
+      <Container className="relative z-10 flex hero-content-viewport w-full items-center">
           <motion.div
              variants={containerVariants}
              initial="hidden"
              animate="visible"
-             className="max-w-[48rem] pt-20 lg:pt-0"
+             className="max-w-[48rem]"
           >
             <motion.div variants={itemVariants} className="mb-6">
               <HeroTrustPill>4.9 Google · West Palm Beach · Miami, FL</HeroTrustPill>

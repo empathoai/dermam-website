@@ -207,7 +207,7 @@ export const bodyHubContent: HubPageContent = {
         badge: 'Moldeo',
         isPlaceholderRoute: true,
         image: {
-          src: '/assets/images/body-massage-oil.jpg',
+          src: '/assets/treatments/tratamientos-corporales/hero.jpg',
           alt: 'Lipo 360 sin Cirugía',
           prompt: 'Premium non-invasive body contouring treatment image, aesthetic device applied gently over modestly framed body area, clean ivory room, soft sage accents, calm professional medspa atmosphere, no pain, no redness, no explicit nudity, 4:3 ratio.'
         }
@@ -232,7 +232,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/body-massage-oil.jpg', alt: 'Lipo 360 sin Cirugía', prompt: 'Non-invasive body contouring' }
+        image: { src: '/assets/treatments/tratamientos-corporales/hero.jpg', alt: 'Lipo 360 sin Cirugía', prompt: 'Non-invasive body contouring' }
       },
       {
         id: 'levantamiento-gluteos-grid',
@@ -241,7 +241,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/body-stretching.jpg', alt: 'Levantamiento de Glúteos', prompt: 'Glute lifting body treatment' }
+        image: { src: '/assets/treatments/tratamientos-corporales/cta.jpg', alt: 'Levantamiento de Glúteos', prompt: 'Glute lifting body treatment' }
       },
       {
         id: 'marcacion-abdominal-grid',
@@ -250,7 +250,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/skin-therapy.jpg', alt: 'Marcación Abdominal Corporal', prompt: 'Abdominal contouring treatment' }
+        image: { src: '/assets/treatments/tratamientos-corporales/hero.jpg', alt: 'Marcación Abdominal Corporal', prompt: 'Abdominal contouring treatment' }
       },
       {
         id: 'detox-corporal-grid',
@@ -259,7 +259,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/skincare-products.jpg', alt: 'Detox Corporal', prompt: 'Ionic detox treatment' }
+        image: { src: '/assets/treatments/tratamientos-corporales/cta.jpg', alt: 'Detox Corporal', prompt: 'Ionic detox treatment' }
       },
       {
         id: 'bodywrap-scrub-grid',
@@ -268,7 +268,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/body-massage-oil.jpg', alt: 'BodyWrap & Scrub', prompt: 'Body wrap and scrub' }
+        image: { src: '/assets/treatments/tratamientos-corporales/hero.jpg', alt: 'BodyWrap & Scrub', prompt: 'Body wrap and scrub' }
       },
       {
         id: 'maderoterapia-corporal-grid',
@@ -286,7 +286,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/consultation-room.jpg', alt: 'Corrientes Rusas Corporales', prompt: 'Body electrostimulation treatment' }
+        image: { src: '/assets/treatments/tratamientos-corporales/cta.jpg', alt: 'Corrientes Rusas Corporales', prompt: 'Body electrostimulation treatment' }
       },
       {
         id: 'ems-tesla-power-grid',
@@ -295,7 +295,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/consultation-room.jpg', alt: 'EMS Tesla Power', prompt: 'EMS body sculpting treatment' }
+        image: { src: '/assets/treatments/tratamientos-corporales/cta.jpg', alt: 'EMS Tesla Power', prompt: 'EMS body sculpting treatment' }
       },
       {
         id: 'hifu-corporal-grid',
@@ -304,7 +304,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/skin-therapy.jpg', alt: 'HIFU Corporal', prompt: 'HIFU body treatment' }
+        image: { src: '/assets/treatments/tratamientos-corporales/hero.jpg', alt: 'HIFU Corporal', prompt: 'HIFU body treatment' }
       },
       {
         id: 'carboxiterapia-corporal-grid',
@@ -313,7 +313,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/body-massage-oil.jpg', alt: 'Carboxiterapia Corporal', prompt: 'Body carboxytherapy treatment' }
+        image: { src: '/assets/treatments/tratamientos-corporales/hero.jpg', alt: 'Carboxiterapia Corporal', prompt: 'Body carboxytherapy treatment' }
       },
       {
         id: 'estrias-celulitis-grid',
@@ -322,7 +322,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/body-stretching.jpg', alt: 'Estrías y Celulitis', prompt: 'Stretch marks and cellulite treatment' }
+        image: { src: '/assets/treatments/tratamientos-corporales/cta.jpg', alt: 'Estrías y Celulitis', prompt: 'Stretch marks and cellulite treatment' }
       },
       {
         id: 'capilar-estetico-grid',
@@ -331,7 +331,7 @@ export const bodyHubContent: HubPageContent = {
         ctaLabel: 'Ver más →',
         href: '/es/reservar',
         isPlaceholderRoute: true,
-        image: { src: '/assets/images/skincare-products.jpg', alt: 'Capilar Estético', prompt: 'Aesthetic hair wellness treatment' }
+        image: { src: '/assets/treatments/tratamientos-corporales/cta.jpg', alt: 'Capilar Estético', prompt: 'Aesthetic hair wellness treatment' }
       }
     ]
   },

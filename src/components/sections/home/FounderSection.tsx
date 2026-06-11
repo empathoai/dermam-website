@@ -44,7 +44,7 @@ export default function FounderSection() {
               <p className="text-text-secondary leading-relaxed md:text-lg">
                 {founder.bio}
               </p>
-              <div className="border-l-4 border-base-900 pl-6 py-2">
+              <div className="border-y border-border-subtle py-5">
                  <p className="text-xl md:text-2xl font-sans text-text-primary italic">
                   {founder.quote}
                 </p>

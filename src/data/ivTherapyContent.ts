@@ -79,7 +79,7 @@ export const ivTherapyContent: IVTherapyPageContent = {
       whatsappMessage: 'Hola, quiero orientación sobre IV Therapy en DERMA.M.'
     },
     image: {
-      src: '/assets/treatments/iv-therapy/cta.jpg',
+      src: '/assets/treatments/iv-therapy/hero.jpg',
       alt: 'Reserva tu sesión de IV Therapy',
       prompt: 'Premium IV therapy wellness still-life, elegant IV bag, folded white towel, fresh citrus, cucumber water, soft sage leaves, warm ivory background, lots of negative space for CTA text, bright clinical wellness atmosphere, no people, no needles close-up, no hospital look, 16:9 horizontal, main visual elements centered for mobile crop safety.'
     }

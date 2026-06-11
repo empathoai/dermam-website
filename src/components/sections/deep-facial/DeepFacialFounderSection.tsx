@@ -33,7 +33,7 @@ export default function DeepFacialFounderSection() {
             <h2 className="text-[clamp(1.9rem,3.6vw,3rem)] font-bold leading-[1.05] tracking-[-0.035em] uppercase mb-2">{founder.name}</h2>
             <p className="text-text-secondary font-medium mb-8 italic">{founder.title}</p>
             
-            <div className="border-l-4 border-base-900 pl-6 py-2 mb-10">
+            <div className="border-y border-border-subtle py-5 mb-10">
                 <p className="text-xl font-sans text-text-primary italic leading-relaxed">
                 {founder.quote}
             </p>

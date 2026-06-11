@@ -20,7 +20,7 @@ export default function PageShell({
   ogType 
 }: PageShellProps) {
   return (
-    <div className="min-h-screen flex flex-col pt-[80px]">
+    <div className="min-h-screen flex flex-col pt-[var(--header-height)]">
       <SEO 
         title={title} 
         description={description} 
